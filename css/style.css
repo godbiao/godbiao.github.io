@@ -1,0 +1,234 @@
+body {
+	font-family: serif, sans-serif;
+	overflow-x: hidden;
+}
+
+#item {
+	padding-top: 46px;
+	background-color: #fff;
+	padding-bottom: 60px;
+}
+
+a,
+a:link {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.split {
+	height: 10px;
+	background-color: #efeff0;
+}
+
+.nomore {
+	font-size: 12px;
+	color: #ccc;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #efeff0;
+}
+
+.none {
+	display: none;
+}
+
+.center {
+	text-align: center;
+}
+
+
+/*BANNER*/
+
+#banner {
+	width: 100%;
+	cursor: pointer;
+}
+
+#banner img {
+	width: 100%;
+}
+
+.skin-name {
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/*皮肤列表*/
+
+.skinlist {
+	padding-top: 9px;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.col-xs-4,
+.col-xs-6 {
+	padding-left: 4px;
+	padding-right: 4px;
+	cursor: pointer;
+}
+
+.row-title {
+	font-size: 14px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.row-title span {
+	display: inline-block;
+	width: 5px;
+	height: 10px;
+	border-left-width: 2px;
+	border-left-style: solid;
+}
+
+.vline-blue {
+	border-left-color: #54e5d6;
+}
+
+.vline-green {
+	border-left-color: #b1d835;
+}
+
+.vline-red {
+	border-left-color: #f59074;
+}
+
+.thumbnail {
+	border: none;
+	padding: 0px;
+	margin-bottom: 9px;
+}
+
+.thumbnail .caption {
+	padding: 2px;
+}
+
+.thumbnail .skin-preview {
+	border-radius: 5px;
+	width: 100%;
+}
+
+.thumbnail .skin-name {
+	color: #343434;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+/*皮肤详情*/
+
+#item .navbar-fixed-top {
+	background-color: #f7f7f7;
+	font-size: 16px;
+	padding: 12px 0px;
+}
+
+#item .navbar-fixed-bottom {
+	background-color: rgba(247, 247, 247, 0.9);
+}
+
+#item .skin-name {
+	color: #181818;
+	text-align: center;
+	font-size: 16px;
+}
+
+#item .skin-sas {
+	text-align: center;
+	font-size: 11px;
+	color: #7f7f7f;
+	padding: 6px;
+}
+
+#item .skin-star {
+	color: #ff7e00;
+	font-size: 9px;
+}
+
+#item .skin-details-preview img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+#item .skin-description {
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 15px;
+}
+
+#item .skin-description-title {
+	font-size: 14px;
+	color: #181818;
+}
+
+#item .skin-description-content,
+#item .skin-description-update {
+	font-size: 14px;
+	color: #7f7f7f;
+	padding-bottom: 15px;
+}
+
+#item .lables {
+	padding-bottom: 15px;
+}
+
+#item .back,
+#item .share,
+#item .like {
+	color: #656970;
+	font-size: 10px;
+	position: absolute;
+	border: 1px solid #abacb0;
+	text-align: center;
+	border-radius: 300px;
+	cursor: pointer;
+}
+
+#item .back {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	margin-top: -3px;
+	left: 12px;
+}
+
+#item .share {
+	display: none;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	left: 18px;
+	margin-top: 3px;
+}
+
+#item .like {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	right: 18px;
+	margin-top: 3px;
+}
+
+#item .liked {}
+
+#item .navbar-fixed-bottom {
+	padding: 15px 0px;
+	border-top: 1pt solid #eeeeee;
+}
+
+#item .skin-download {
+	width: 60%;
+	border-radius: 100px;
+}
