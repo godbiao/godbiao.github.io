@@ -67,10 +67,19 @@ for (var i = 0; i < s_len; i++) {
 
 
 //随机推荐
-var ransid = getsid(s_len, 3);
+var ransid = getsid(s_len, 4);
 for (var i = 0; i < 3; i++) {
 	var j = parseInt(ransid[i]);
 	var sid = skins[j].id;
+	if (sid == skinID) {
+		j = parseInt(ransid[3]);
+		sid = skins[j].id;
+		var sname = skins[j].name;
+		var spreview = "res/it/" + sid + "_preview.jpg";
+		var rowmore = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
+		$("#row-more").append(rowmore);
+		continue;
+	}
 	var sname = skins[j].name;
 	var spreview = "res/it/" + sid + "_preview.jpg";
 	var rowmore = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
