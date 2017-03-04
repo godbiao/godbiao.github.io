@@ -13,7 +13,7 @@ var skins = [
 		"time": "2017-3-2"
 	}, {
 		"id": "4e43b330-ba92-11e6-9598-0800200c9a66",
-		"name": "iOS10风格·BETA",
+		"name": "iOS10风格",
 		"author": "IM追清风",
 		"size": "57KB",
 		"description": "精仿苹果iOS10默认输入法界面风格，水果迷们可下载体验~<br>目前尚未完善，敬请期待！",
