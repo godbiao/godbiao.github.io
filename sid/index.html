@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+	<title>按键ID查找器</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="popup"></div>
+	<div id="container">
+		<div id="keyboard">
+			<div id="top" class="top">
+				<ul class="cand">
+					<li class="icon" id="set" sid="1229" title="设置">设置</li>
+					<li class="icon" id="switch" sid="4000" title="切换">切换</li>
+					<li class="icon" id="voice" sid="4001" title="语音">语音</li>
+					<li class="icon" id="edit" sid="4002" title="编辑">编辑</li>
+					<li class="icon" id="exp" sid="4003" title="表情">表情</li>
+					<li class="icon" id="hide" sid="1230" title="收起">收起</li>
+				</ul>
+			</div>
+
+			<div id="left" class="left">
+				<ul class="comb">
+					<li>，</li>
+					<li>。</li>
+					<li>？</li>
+					<li>！</li>
+					<li>…</li>
+				</ul>
+			</div>
+
+			<div id="center" class="center">
+				<ul>
+					<li class="key" sid="1101" title="^_^">^_^</li>
+					<li class="key" sid="1102" title="ABC">ABC</li>
+					<li class="key" sid="1103" title="DEF">DEF</li>
+					<li class="key" sid="1104" title="GHI">GHI</li>
+					<li class="key" sid="1105" title="JKL">JKL</li>
+					<li class="key" sid="1106" title="MNO">MNO</li>
+					<li class="key" sid="1107" title="PQRS">PQRS</li>
+					<li class="key" sid="1108" title="TUV">TUV</li>
+					<li class="key" sid="1109" title="WXYZ">WXYZ</li>
+					<li class="func" sid="1110" title="符">符</li>
+					<li class="key" sid="1112" title="空格">空格</li>
+					<li class="func" sid="1113" title="中">中</li>
+				</ul>
+			</div>
+
+			<div id="right" class="right">
+				<ul>
+					<li class="func" sid="1115" title="退格">退格</li>
+					<li class="func" sid="1116" title="ab">ab</li>
+					<li class="func" sid="1118" title="123">123</li>
+					<li class="func" sid="1119" title="回车">回车</li>
+				</ul>
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+		//页面加载完成时执行
+		window.onload = function() {
+			zoomBody(720);
+		};
+
+	</script>
+</body>
+
+</html>
