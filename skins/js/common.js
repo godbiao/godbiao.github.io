@@ -62,8 +62,20 @@ for (var i = 0; i < s_len; i++) {
 	} else {
 		$("#row-new").append(rownew);
 	}
+}
 
-};
+
+//随机推荐
+var ransid = getsid(s_len, 3);
+for (var i = 0; i < 3; i++) {
+	var j = parseInt(ransid[i]);
+	var sid = skins[j].id;
+	var sname = skins[j].name;
+	var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
+	var rowmore = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
+	$("#row-more").append(rowmore);
+}
+
 
 //点赞逻辑
 var likeTime = 0;
@@ -204,4 +216,17 @@ function GetRequest() {
 		}
 	}
 	return theRequest;
+}
+
+//获取随机数
+function getsid(sum, num) {
+	var a = [];
+	for (var i = 0; i < sum; i++) {
+		a.push(i);
+	}
+	a.sort(function () {
+		return 0.5 - Math.random()
+	});
+	a.length = num;
+	return a;
 }
