@@ -21,7 +21,7 @@ $(document).ready(function () {
     $(".back").click(function () {
 		var urlNum = getsid(3,1)[0];
 		if(urlNum==0){
-			window.location.href = "index.html";
+			window.location.href = "http://godbiao.github.io/skins/index.html";
 		}else if(urlNum==1){
 			window.location.href = "http://skins.55555.io/";
 		}else
