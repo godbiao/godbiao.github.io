@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     //返回
     $(".back").click(function () {
-		window.location.href = "http://godbiao.github.io/skins/index.html";
+		window.location.href = "index.html";
 		/*var urlNum = getsid(3,1)[0];
 		if(urlNum==0){
 			window.location.href = "http://godbiao.github.io/skins/index.html";
