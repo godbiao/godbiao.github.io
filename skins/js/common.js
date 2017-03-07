@@ -26,7 +26,7 @@ $(document).ready(function () {
 			window.location.href = "http://skins.55555.io/";
 		}else
 		{
-			window.location.href = "http://godbiao.iok.la/";
+			window.location.href = "http://godbiao.iok.la/skins/";
 		}
         
     });
