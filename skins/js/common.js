@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     //返回
     $(".back").click(function () {
-        window.location.href = "index.html";
+        window.location.href = "http://skins.55555.io/";
     });
 
     //不要再扯了
