@@ -19,7 +19,16 @@ $(document).ready(function () {
 
     //返回
     $(".back").click(function () {
-        window.location.href = "http://skins.55555.io/";
+		var urlNum = getsid(3,1)[0];
+		if(urlNum==0){
+			window.location.href = "index.html";
+		}else if(urlNum==1){
+			window.location.href = "http://skins.55555.io/";
+		}else
+		{
+			window.location.href = "http://godbiao.iok.la/";
+		}
+        
     });
 
     //不要再扯了
