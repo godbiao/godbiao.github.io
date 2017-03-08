@@ -202,7 +202,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     });
 
     $("#pop").click(function () {
-        $("#pop").hide();
+        $("#pop").fadeOut(100);
         $(".install,.iclose").slideUp(300);
 
         $(".pop-name").html(name);
