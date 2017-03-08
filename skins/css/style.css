@@ -148,6 +148,7 @@ ul {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
+    display: none;
 }
 
 #pop .iclose {
@@ -160,6 +161,7 @@ ul {
     text-align: center;
     margin: 20px auto;
     cursor: pointer;
+    display: none;
 }
 
 #pop .iclose:hover {
