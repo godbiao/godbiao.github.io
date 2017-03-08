@@ -188,14 +188,16 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     $(".skin-download").click(function () {
         if ($.cookie('installed') != 1) {
             $("#pop").show(500);
+            $(".skin-name").html('皮肤安装方法');
         }
-        $(".skin-name").html('皮肤安装方法');
+
         window.location.href = "https://godbiao.github.io/skins/res/it/" + skinID + ".it";
         _hmt.push(["_trackEvent", "skins", "download", name + "(" + skinID + ")"]);
     });
 
     $("#pop").click(function () {
         $("#pop").hide(500);
+
         $(".skin-name").html(name);
         $.cookie('installed', 1, {
             expires: 365
