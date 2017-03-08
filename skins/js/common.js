@@ -19,6 +19,7 @@ $(document).ready(function () {
 
     $(".share").click(function () {
         $("#pop").show(500);
+        $(".skin-name").html('皮肤安装方法');
     });
 
     //返回
