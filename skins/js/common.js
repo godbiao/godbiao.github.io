@@ -17,19 +17,23 @@ $(document).ready(function () {
         alert("很抱歉，此功能尚未开发完成！");
     });
 
+    $(".share").click(function () {
+        $("#pop").show(500);
+    });
+
     //返回
     $(".back").click(function () {
-		window.location.href = "index.html";
-		/*var urlNum = getsid(3,1)[0];
-		if(urlNum==0){
-			window.location.href = "http://godbiao.github.io/skins/index.html";
-		}else if(urlNum==1){
-			window.location.href = "http://skins.55555.io/";
-		}else
-		{
-			window.location.href = "http://godbiao.iok.la/skins/";
-		}*/
-        
+        window.location.href = "index.html";
+        /*var urlNum = getsid(3,1)[0];
+        if(urlNum==0){
+        	window.location.href = "http://godbiao.github.io/skins/index.html";
+        }else if(urlNum==1){
+        	window.location.href = "http://skins.55555.io/";
+        }else
+        {
+        	window.location.href = "http://godbiao.iok.la/skins/";
+        }*/
+
     });
 
     //不要再扯了
@@ -182,8 +186,20 @@ function skinInfo(name, author, size, description, update, star, type, time) {
 
     //下载皮肤
     $(".skin-download").click(function () {
+        if ($.cookie('installed') != 1) {
+            $("#pop").show(500);
+        }
+        $(".skin-name").html('皮肤安装方法');
         window.location.href = "https://godbiao.github.io/skins/res/it/" + skinID + ".it";
         _hmt.push(["_trackEvent", "skins", "download", name + "(" + skinID + ")"]);
+    });
+
+    $("#pop").click(function () {
+        $("#pop").hide(500);
+        $(".skin-name").html(name);
+        $.cookie('installed', 1, {
+            expires: 365
+        });
     });
 
     //全局标题
