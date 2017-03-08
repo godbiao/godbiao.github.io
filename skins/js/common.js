@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     $(".share").click(function () {
         $("#pop").show(500);
-        $(".skin-name").html('皮肤安装方法');
+        $(".pop-name").html('皮肤安装方法');
     });
 
     //返回
@@ -189,7 +189,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     $(".skin-download").click(function () {
         if ($.cookie('installed') != 1) {
             $("#pop").show(500);
-            $(".skin-name").html('皮肤安装方法');
+            $(".pop-name").html('皮肤安装方法');
         }
 
         window.location.href = "https://godbiao.github.io/skins/res/it/" + skinID + ".it";
@@ -199,7 +199,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     $("#pop").click(function () {
         $("#pop").hide(500);
 
-        $(".skin-name").html(name);
+        $(".pop-name").html(name);
         $.cookie('installed', 1, {
             expires: 365
         });
