@@ -190,8 +190,10 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     //下载皮肤
     $(".skin-download").click(function () {
         if ($.cookie('installed') != 1) {
+
             $("#pop").show();
             $(".install,.iclose").slideDown(300);
+
             $(".pop-name").html('皮肤安装方法');
         }
 
@@ -200,8 +202,9 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     });
 
     $("#pop").click(function () {
-        $("#pop").slideUp(200);
+        $("#pop").hide();
         $(".install,.iclose").slideUp(300);
+
         $(".pop-name").html(name);
         $.cookie('installed', 1, {
             expires: 365
