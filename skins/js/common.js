@@ -5,6 +5,10 @@ $(document).ready(function () {
         window.location.href = "http://m.weibo.cn/u/1136590322";
     });
 
+    $(".ime-update").click(function () {
+        window.location.href = "https://godbiao.github.io/update/";
+    });
+
     //打开皮肤详情
     $(".skin-id").click(function () {
         var skinID = $(this).attr('id');

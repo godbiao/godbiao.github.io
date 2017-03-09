@@ -172,6 +172,10 @@ ul {
     background-color: crimson;
 }
 
+#pop .ime-update {
+    line-height: 2;
+}
+
 #item .navbar-fixed-top {
     background-color: #f8f8f8;
     font-size: 16px;
