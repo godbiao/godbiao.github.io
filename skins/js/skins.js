@@ -1,7 +1,7 @@
 //皮肤数据表
 var skins = [
     {
-        "id": "bbd806a0-046e-11e7-9598-0800200c9a66",
+        "id": "bdfba2f0-04bb-11e7-9598-0800200c9a66",
         "name": "Flyme 6",
         "author": "IM追清风",
         "size": "45KB",
