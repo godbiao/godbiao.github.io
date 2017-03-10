@@ -2,6 +2,17 @@
 var skins = [
     {
         "id": "bbd806a0-046e-11e7-9598-0800200c9a66",
+        "name": "Flyme 6",
+        "author": "IM追清风",
+        "size": "45KB",
+        "description": "精仿魅族Flyme 6系统自带魅族输入法界面UI，欢迎下载体验~",
+        "update": "",
+        "star": "5",
+        "type": "jpg",
+        "lables": ["设计创意", "魅族", "简约", "Flyme6", "商务", "精仿"],
+        "time": "2017-3-10"
+	}, {
+        "id": "bbd806a0-046e-11e7-9598-0800200c9a66",
         "name": "搜狗Style",
         "author": "IM标神",
         "size": "44KB",
