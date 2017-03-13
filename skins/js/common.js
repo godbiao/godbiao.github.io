@@ -115,7 +115,7 @@ $(".like").click(function () {
         $.cookie(skinID, 1, {
             expires: 365
         });
-        $(this).html("已赞");
+        $(this).html("&#xe66e;");
         $(this).addClass("liked");
         _hmt.push(["_trackEvent", "skins", "like", $(".skin-name").html() + "(" + skinID + ")"]);
         alert("已赞");
@@ -130,7 +130,7 @@ $(".like").click(function () {
 });
 
 if ($.cookie(skinID) == 1) {
-    $(".like").html("已赞");
+    $(".like").html("&#xe66e;");
     $(".like").addClass("liked");
 }
 
