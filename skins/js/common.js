@@ -123,9 +123,7 @@ $(".like").click(function () {
         if (likeTime >= 2) {
             alert("你到底想干哈？");
         } else {
-            $(this).html("&#xe601;");
-            $(this).addClass("liked");
-            //alert("已经赞过了");
+            alert("已经赞过了");
         }
         likeTime++;
     }
