@@ -3,6 +3,20 @@ body {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: 'iconfont';
+    src: url('font/iconfont.eot');
+    src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfontyyy') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 #item {
     padding-top: 46px;
     background-color: #fff;
@@ -28,9 +42,9 @@ ul {
 .nomore {
     font-size: 12px;
     color: #ccc;
-    height: 40px;
+    height: 45px;
     text-align: center;
-    line-height: 40px;
+    line-height: 20px;
     background-color: #efeff0;
 }
 
@@ -240,42 +254,106 @@ ul {
 #item .back,
 #item .share,
 #item .like {
-    color: #656970;
-    font-size: 10px;
+    color: #666;
+    font-size: 16px;
     position: absolute;
-    border: 1px solid #abacb0;
+    border: 1px solid rgba(171, 172, 176, 0.38);
     text-align: center;
-    border-radius: 300px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
 #item .back {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
     float: left;
-    margin-top: -3px;
+    margin-top: -2px;
     left: 12px;
 }
 
 #item .share {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
     float: left;
     left: 18px;
-    margin-top: 3px;
+    margin-top: 4px;
 }
 
 #item .like {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
     right: 18px;
-    margin-top: 3px;
+    margin-top: 4px;
 }
 
-#item .liked {}
+#item .liked {
+    animation: like linear 0.35s;
+    -webkit-animation: like linear 0.35s;
+    -o-animation: like linear 0.35s;
+}
+
+@-webkit-keyframes like {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        border: none;
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes like {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        border: none;
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes like {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        border: none;
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes like {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        border: none;
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 #item .split {
     height: 10px;

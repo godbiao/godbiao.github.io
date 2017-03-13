@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     //banner打开微博
-    $(".banner-weibo,.install").click(function () {
+    $(".banner-weibo, .insstall-cont").click(function () {
         window.location.href = "http://m.weibo.cn/u/1136590322";
     });
 
@@ -109,29 +109,36 @@ for (var i = 0; i < 3; i++) {
 
 
 //点赞逻辑
-var likeTime = 0;
+var likeTime = 1;
 $(".like").click(function () {
     if ($.cookie(skinID) != 1) {
         $.cookie(skinID, 1, {
             expires: 365
         });
-        $(this).html("已赞");
+        $(this).html("&#xe66e;");
         $(this).addClass("liked");
         _hmt.push(["_trackEvent", "skins", "like", $(".skin-name").html() + "(" + skinID + ")"]);
-        alert("已赞");
+        //alert("已赞");
     } else {
-        if (likeTime >= 2) {
-            alert("你到底想干哈？");
+        if (likeTime == 2) {
+            alert("_^后悔点赞了么？");
+        } else if (likeTime == 3) {
+            alert("^_后悔也没用了呀~");
+        } else if (likeTime == 4) {
+            alert("^V^其实是我太懒没加取消点赞功能~");
+        } else if (likeTime > 4) {
+            alert("^:^悲催鸟,要跳转到我微博了……");
+            window.location.href = "http://m.weibo.cn/u/1136590322";
         } else {
-            alert("已经赞过了");
+            alert("^_^你已坚定地赞过!");
         }
         likeTime++;
     }
 });
 
 if ($.cookie(skinID) == 1) {
-    $(".like").html("已赞");
-    $(".like").addClass("liked");
+    $(".like").html("&#xe66e;");
+    //$(".like").addClass("liked");
 }
 
 
