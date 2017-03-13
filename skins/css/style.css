@@ -257,9 +257,9 @@ ul {
     color: #666;
     font-size: 16px;
     position: absolute;
-    border: 1px solid #abacb0;
+    border: 1px solid rgba(171, 172, 176, 0.38);
     text-align: center;
-    border-radius: 300px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -268,7 +268,7 @@ ul {
     height: 25px;
     line-height: 25px;
     float: left;
-    margin-top: -3px;
+    margin-top: -2px;
     left: 12px;
 }
 
@@ -278,7 +278,7 @@ ul {
     line-height: 25px;
     float: left;
     left: 18px;
-    margin-top: 3px;
+    margin-top: 4px;
 }
 
 #item .like {
@@ -286,7 +286,7 @@ ul {
     height: 25px;
     line-height: 25px;
     right: 18px;
-    margin-top: 3px;
+    margin-top: 4px;
 }
 
 #item .liked {}
