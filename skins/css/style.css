@@ -289,7 +289,71 @@ ul {
     margin-top: 4px;
 }
 
-#item .liked {}
+#item .liked {
+    animation: like linear 0.35s;
+    -webkit-animation: like linear 0.35s;
+    -o-animation: like linear 0.35s;
+}
+
+@-webkit-keyframes like {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        border: none;
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes like {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        border: none;
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes like {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        border: none;
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes like {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        border: none;
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 #item .split {
     height: 10px;
