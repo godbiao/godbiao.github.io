@@ -118,7 +118,7 @@ $(".like").click(function () {
         $(this).html("&#xe66e;");
         $(this).addClass("liked");
         _hmt.push(["_trackEvent", "skins", "like", $(".skin-name").html() + "(" + skinID + ")"]);
-        alert("已赞");
+        //alert("已赞");
     } else {
         if (likeTime >= 2) {
             alert("你到底想干哈？");
