@@ -123,7 +123,9 @@ $(".like").click(function () {
         if (likeTime >= 2) {
             alert("你到底想干哈？");
         } else {
-            alert("已经赞过了");
+            $(this).html("&#xe601;");
+            $(this).addClass("liked");
+            //alert("已经赞过了");
         }
         likeTime++;
     }
@@ -131,7 +133,7 @@ $(".like").click(function () {
 
 if ($.cookie(skinID) == 1) {
     $(".like").html("&#xe66e;");
-    $(".like").addClass("liked");
+    //$(".like").addClass("liked");
 }
 
 
