@@ -1,6 +1,17 @@
 //皮肤数据表
 var skins = [
-    {
+     {
+        "id": "bc3df4ab-d4fe-4443-a907-779718a55640",
+        "name": "iPhone7RED",
+        "author": "IM追清风",
+        "size": "77KB",
+        "description": "讯飞输入法，现更以红色呈现~",
+        "update": "",
+        "star": "2",
+        "type": "jpg",
+        "lables": ["设计创意", "苹果", "简约", "iPhone 7", "热点", "中国红"],
+        "time": "2017-3-23"
+	},{
         "id": "bdfba2f0-04bb-11e7-9598-0800200c9a66",
         "name": "Flyme 6",
         "author": "IM追清风",
