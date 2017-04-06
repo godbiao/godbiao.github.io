@@ -40,7 +40,7 @@
 		</div>
 
 		<div id="header" class="header">
-			<p id="header_p" style="text-align:center;">声明：1.本工具仅供个人学习测试使用 2.请使用非IE浏览器访问 3.<a href="http://pan.baidu.com/s/1jINr5jS" target="_blank">最新表情制作规范下载</a>
+			<p id="header_p" style="text-align:center;">声明：1.本工具仅供个人学习测试使用 2.请使用非IE浏览器访问 
 			</p>
 		</div>
 
