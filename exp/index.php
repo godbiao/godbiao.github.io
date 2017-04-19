@@ -163,7 +163,7 @@
 		</div>
 
 		<div id="footer" class="footer">
-			<i><span>Alpha-1.0.20170301</span> by godBiao</i>
+			<i><span>Alpha-1.0.20170301</span></i>
 		</div>
 
 		<script type="text/javascript" src="swfupload/swfupload.js"></script>
