@@ -4,7 +4,7 @@ var skins = [
         "id": "d32697f4-d850-4af5-93da-b4df99310887",
         "name": "哔哩哔哩Style·少女粉",
         "author": "IM标神",
-        "size": "49KB",
+        "size": "40KB",
         "description": "原生展现哔哩哔哩APP配色方案，小手一抖骚粉到手。",
         "update": "",
         "star": "5",
