@@ -1,0 +1,6 @@
+array (
+  'dirname' => '.',
+  'basename' => '150.png',
+  'extension' => 'png',
+  'filename' => '150',
+)

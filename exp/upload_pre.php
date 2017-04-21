@@ -18,7 +18,7 @@ if (isset($_FILES["Filedata"]) || !is_uploaded_file($_FILES["Filedata"]["tmp_nam
     }
   
     //将数组的输出存起来以供查看 
-    $fileName = 'log.txt'; 
+    $fileName = 'log_pre.txt'; 
     $postData = var_export($file_info, true); 
     $file     = fopen('' . $fileName, "w"); 
     fwrite($file,$postData); 

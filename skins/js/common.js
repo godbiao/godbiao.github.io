@@ -6,7 +6,7 @@ $(document).ready(function () {
     });
 
     $(".ime-update").click(function () {
-        window.location.href = "https://godbiao.github.io/update/";
+        window.location.href = "https://godbiao.github.io/update/beta.html";
     });
 
     //打开皮肤详情
