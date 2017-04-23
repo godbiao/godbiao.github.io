@@ -23,7 +23,7 @@ setColor($key,$keyColor,$keypColor,'','','');
 
 
 function setColor($id,$NM_Color,$PS_Color,$FS_Color,$SL_Color,$DS_Color){
-    $style = new SimpleIniIterator('ini/style.ini');
+    $style = new SimpleIniIterator(INIDIR);
     foreach($id as $value){
         switch ($value)
         {
@@ -49,8 +49,8 @@ function setColor($id,$NM_Color,$PS_Color,$FS_Color,$SL_Color,$DS_Color){
                 $style->setIniValue('DS_Color', '80'.$DS_Color, $value); 
         }
     } 
-    $style = '';
+    //$style = '';
 }
 
-echo '已保存';
+echo '<div class="saved">已保存</div>';
 ?>

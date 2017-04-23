@@ -9,12 +9,13 @@
 
 <body>
     <?php
-    include_once("function.php");
-    include_once("class/SimpleIniIterator.php"); 
-    if(@$_POST['save']==1){
-        include_once("save.php");    
+    include("class/SimpleIniIterator.php"); 
+    include("function.php");
+    include("config.php");
+    if($_POST){
+        include("save.php");    
     }else{
-        $style = new SimpleIniIterator('ini/style.ini');
+        $style = new SimpleIniIterator(INIDIR);
         $funcColor = substr($style->getIniValue('602', 'NM_Color'),2);
         $funcpColor = substr($style->getIniValue('602', 'PS_Color'),2);
         $keyColor = substr($style->getIniValue('605', 'NM_Color'),2);
@@ -40,7 +41,7 @@
                         <span><input class="color" maxlength="6" type="text" name="keypColor" value="<?php echo $keypColor; ?>"></span></li>
                 </ul>
                 <div>
-                    <button class="save" name="save" value="1">保存</button>
+                    <button class="save" name="save">保存</button>
                 </div>
             </form>
         </div>

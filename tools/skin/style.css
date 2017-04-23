@@ -29,3 +29,17 @@
      height: 25px;
      color: royalblue;
  }
+ 
+ .saved {
+     transition: 2s;
+     animation: hide 2s linear;
+ }
+ 
+ @keyframes hide {
+     from {
+         display: block;
+     }
+     to {
+         display: none!important;
+     }
+ }
