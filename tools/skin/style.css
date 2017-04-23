@@ -7,13 +7,18 @@
  
  body {
      word-wrap: break-word;
-     padding: 40px;
      font-size: 14px;
      font-family: '微软雅黑';
  }
  
+ .main {
+     width: 320px;
+     margin: 20px auto;
+     text-align: right;
+ }
+ 
  .color {
-     width: 65px;
+     width: 70px;
      color: blue;
      font-size: 16px;
      border-bottom: 1px solid red;
@@ -32,10 +37,18 @@
  
  .save:hover {
      color: white;
-     background: blue;
+     background: #45a16b;
  }
  
  .save:active {
      color: aqua;
-     background: black;
+     background: #4e424d;
+ }
+ 
+ .pre-color {
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     border: 1px solid #ccc;
+     vertical-align: bottom;
  }
