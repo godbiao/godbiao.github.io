@@ -88,7 +88,8 @@
 			{
 				$strNewIniContent = $this->fileContentString."\r\n";
 				$strNewIniContent .= '['.$nodeName.']'."\r\n";
-				$strNewIniContent .= $keyName.'='.$value."\r\n";
+				$strNewIniContent .= $keyName.'='.$value."\r\n";               
+            
 			}
 			
 			if(file_put_contents($this->filename, $strNewIniContent))
@@ -112,12 +113,25 @@
 		 */
 		private function getNewIniString($nodeName, $keyName, $newValue)
 		{
-			$iniNewContent = '';
+			$iniNewContent = "#注意文件为utf-8格式";
 			$arrKey = array_keys($this->originalIniContent);
 			
 			foreach ($arrKey as $k => $v)
 			{
-				$iniNewContent .= '['.$v.']'."\r\n";
+                switch($v){
+                    case '1':
+                        $iniNewContent .= "\r\n#总控";
+                        break;
+                    case '602':
+                        $iniNewContent .= "#功能键前景开始\r\n#功能键前景(系统字体)";
+                        break;
+                    case '603':
+                        $iniNewContent .= "#功能键前景(自定义字体)";
+                        break;
+                    default:
+                        $iniNewContent .= '';
+                }
+				$iniNewContent .= "\r\n".'['.$v.']'."\r\n";
 				foreach ($this->originalIniContent["$v"] as $key => $value)
 				{
 					if((strtoupper($nodeName) == strtoupper($v)) && (strtoupper($keyName) == strtoupper($key)))
@@ -129,6 +143,8 @@
 						$iniNewContent .= $key .'='.$value."\r\n";	
 					}
 				}
+                $iniNewContent .= "\r\n";
+                
 			}
 			return $iniNewContent;
 		}

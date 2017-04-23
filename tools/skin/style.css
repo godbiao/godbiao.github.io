@@ -8,8 +8,6 @@
  body {
      word-wrap: break-word;
      padding: 40px;
-     color: white;
-     background: #000;
      font-size: 14px;
      font-family: '微软雅黑';
  }
@@ -18,6 +16,8 @@
      width: 65px;
      color: blue;
      font-size: 16px;
+     border-bottom: 1px solid red;
+     text-align: center;
  }
  
  .list li {
@@ -27,19 +27,15 @@
  .save {
      width: 60px;
      height: 25px;
-     color: royalblue;
+     color: black;
  }
  
- .saved {
-     transition: 2s;
-     animation: hide 2s linear;
+ .save:hover {
+     color: white;
+     background: blue;
  }
  
- @keyframes hide {
-     from {
-         display: block;
-     }
-     to {
-         display: none!important;
-     }
+ .save:active {
+     color: aqua;
+     background: black;
  }
