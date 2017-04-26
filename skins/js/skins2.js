@@ -1,7 +1,7 @@
 //皮肤数据表
 
 var skinsAjax = $.ajax({
-    url: "http://skins.55555.io/skins.php",
+    url: "http://godbiao.iok.la/skins/skins.php",
     async: false
 });
 
