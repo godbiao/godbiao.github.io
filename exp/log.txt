@@ -1,12 +1,6 @@
 array (
   'dirname' => '.',
-<<<<<<< HEAD
-  'basename' => 'preview_16.png',
+  'basename' => 'preview_24.png',
   'extension' => 'png',
-  'filename' => 'preview_16',
-=======
-  'basename' => '75.png',
-  'extension' => 'png',
-  'filename' => '75',
->>>>>>> a98fcfd6b95d6fa13dcbcff2f0d16bc3036109a3
+  'filename' => 'preview_24',
 )
