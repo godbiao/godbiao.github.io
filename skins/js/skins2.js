@@ -2,13 +2,11 @@
 
 var skinsAjax = $.ajax({
     url: "http://godbiao.iok.la/skins/skins.php",
-    type: 'GET',
-    dataType: 'JSONP',
     async: false
 });
 
 
-if (skinsAjax.status == 0) {
+if (skinsAjax.status == 0 || skinsAjax.status == 404) {
     var skinsAjaxBackup = $.ajax({
         url: "skins.json",
         async: false
@@ -16,7 +14,7 @@ if (skinsAjax.status == 0) {
     var skinsData = skinsAjaxBackup.responseText;
 
 } else {
-    console.log(skinsAjax);
+    //console.log(skinsAjax);
     var skinsData = skinsAjax.responseText;
 }
 
