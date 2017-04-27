@@ -8,8 +8,7 @@ var skinsAjax = $.ajax({
 
 if (skinsAjax.status == 0 || skinsAjax.status == 404) {
     var skinsAjaxBackup = $.ajax({
-        url: "skins.json",
-        async: false
+        url: "skins.json"
     });
     var skinsData = skinsAjaxBackup.responseText;
 

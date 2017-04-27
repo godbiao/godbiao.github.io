@@ -2,7 +2,7 @@
 
 //加载JSON皮肤
 var skinsAjaxBackup = $.ajax({
-    url: "https://godbiao.github.io/skins/skins.json",
+    url: "skins.json",
     async: false
 });
 
