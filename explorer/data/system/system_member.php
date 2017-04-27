@@ -1,1 +1,0 @@
-<?php exit;?>{"1":{"name":"admin","path":"admin","password":"f9099446c08ccd3d95d8c8963cff577c","user_id":"1","role":"1","config":{"size_max":"0","size_use":1024},"group_info":{"1":"write"},"create_time":1493207786,"status":1,"last_login":1493208029}}
