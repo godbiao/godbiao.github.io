@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    font-family: "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+    white-space: normal;
+    letter-spacing: 1px;
+    line-height: 1.75em;
+    background-color: #f3f3f3;
+    line-height: inherit;
+}
+
+.main {
+    width: 360px;
+    padding: 10px 15px 15px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.t1 li p strong {
+    font-size: 17px;
+    line-height: 2em;
+}
+
+.t2 p {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 2em;
+}
+
+.t3 li {
+    margin-bottom: 5px;
+}
+
+.tese .t3 li:before {
+    content: "●";
+    display: inline-block;
+    height: 100%;
+    font-size: 8px;
+    vertical-align: middle;
+}
