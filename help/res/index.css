@@ -23,6 +23,7 @@ body {
     background-color: #fff;
     margin: 0 auto;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .logo {
@@ -55,4 +56,87 @@ body {
     height: 100%;
     font-size: 8px;
     vertical-align: middle;
+    margin-top: -2px;
+}
+
+.img-330 {
+    width: 326px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.try {
+    cursor: pointer;
+    color: #479af8;
+    display: block;
+    /*    float: right;*/
+    line-height: 2em;
+    padding-left: 5px;
+}
+
+
+/*弹框*/
+
+.window {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    height: 200px;
+    bottom: 50%;
+    margin-bottom: -100px;
+    background: #fff;
+}
+
+.window .win-title {
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.window p {
+    padding: 15px;
+}
+
+.window ul {
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    border-top: 1px solid #eee;
+}
+
+.window ul li {
+    float: left;
+    text-align: center;
+    width: 49%;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.window ul li:nth-child(2) {
+    border-left: 1px solid #eee;
+}
+
+.window ul li:active,
+.window ul li:hover {
+    color: #479af8;
+}
+
+
+/*蒙板*/
+
+.shade {
+    display: none;
+    position: fixed;
+    z-index: 98;
+    width: 380px;
+    margin: -20px -20px -20px -20px;
+    height: 110%;
+    background: rgba(0, 0, 0, .618);
 }
