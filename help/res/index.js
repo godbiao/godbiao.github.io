@@ -4,7 +4,7 @@ _czc.push(["_setAccount", "2604584"]);
 
 $(document).ready(function () {
     //页面适应
-    zoomBody(360);
+    //zoomBody(360);
     //logo点击
     $(".logo").click(function () {
         //检查更新
