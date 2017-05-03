@@ -6,9 +6,13 @@
     border: none;
 }
 
+html {
+    font-size: 100%;
+}
+
 body {
     font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
-    /*    font-size: 15px;*/
+    font-size: 15px;
     font-size: 0.9375rem;
     color: rgb(51, 51, 51);
     white-space: normal;
@@ -21,8 +25,9 @@ body {
 
 .main {
     width: 100%;
-    max-width: 780px;
+    max-width: 768px;
     padding: 10px 15px 15px;
+    padding: 0.625rem 0.9375rem 0.9375rem;
     background-color: #fff;
     margin: 0 auto;
     box-sizing: border-box;
@@ -34,19 +39,19 @@ body {
 }
 
 .logo img {
-    /*    width: 150px;*/
+    width: 150px;
     width: 9.375rem;
     height: auto;
 }
 
 .t1 li p strong {
-    font-size: 1.0625rem;
+    font-size: 16px;
+    font-size: 1rem;
     line-height: 2em;
 }
 
 .t2 p {
     font-weight: bold;
-    /*    font-size: 15px;*/
     line-height: 2em;
 }
 
@@ -58,7 +63,7 @@ body {
     content: "●";
     display: inline-block;
     height: 100%;
-    /*    font-size: 8px;*/
+    font-size: 8px;
     font-size: 0.5rem;
     vertical-align: middle;
     margin-top: -2px;
@@ -68,7 +73,6 @@ body {
     width: 100%;
     border: 1px solid #eee;
     border-radius: 5px;
-    /*    max-width: 540px;*/
 }
 
 .try {
@@ -99,7 +103,7 @@ body {
 }
 
 .window .win-title {
-    /*    font-size: 18px;*/
+    font-size: 18px;
     font-size: 1.125rem;
     height: 40px;
     line-height: 40px;
@@ -123,7 +127,7 @@ body {
     text-align: center;
     width: 49%;
     height: 40px;
-    /*    font-size: 18px;*/
+    font-size: 16px;
     font-size: 1rem;
     line-height: 40px;
     cursor: pointer;
