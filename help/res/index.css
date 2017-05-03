@@ -17,6 +17,7 @@ body {
     color: rgb(51, 51, 51);
     white-space: normal;
     letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
     word-wrap: break-word;
     line-height: 1.75em;
     background-color: #f3f3f3;
