@@ -15,23 +15,11 @@ $(document).ready(function () {
     //普通话识别
     $(".try-mandarin").click(function () {
         //跳转
+        window.location = "https://s1.voicecloud.cn/activity/imeVoiceGuide3/index.html";
         //统计
         _czc.push(["_trackEvent", '使用帮助', '体验', '普通话识别']);
     });
 
-    //方言识别
-    $(".try-dialect").click(function () {
-        //跳转
-        //统计
-        _czc.push(["_trackEvent", '使用帮助', '体验', '方言识别']);
-    });
-
-    //随声译
-    $(".try-translate").click(function () {
-        //跳转
-        //统计
-        _czc.push(["_trackEvent", '使用帮助', '体验', '随声译']);
-    });
 
     //音乐皮肤
     $(".try-skin-music").click(function () {
@@ -113,6 +101,18 @@ $(document).ready(function () {
         //统计
         _czc.push(["_trackEvent", '使用帮助', '体验', '斗图']);
     });
+
+
+    //打开QQ群
+    $(".qq-group").click(function () {
+        exec("imeExtendComponents", "open_qq_group", ["打开输入法官方qq群"]);
+    });
+
+    //打开官方微信
+    $(".weixin").click(function () {
+        exec("imeExtendComponents", "open_mm_group", ["打开输入法官方微信账号"])
+    });
+
 
     //清广告
     $(".try-clear-ad").click(function () {

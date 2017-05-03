@@ -21,6 +21,7 @@ body {
     letter-spacing: 0.0625rem;
     word-wrap: break-word;
     line-height: 1.75em;
+    line-height: 1.75rem;
     background-color: #f3f3f3;
     line-height: inherit;
 }
@@ -44,6 +45,12 @@ body {
     width: 150px;
     width: 9.375rem;
     height: auto;
+}
+
+.icon {
+    height: 20px;
+    height: 1.25rem;
+    vertical-align: text-bottom;
 }
 
 .t1 li p strong {
@@ -80,10 +87,16 @@ body {
 .try {
     cursor: pointer;
     color: #479af8;
-    display: block;
+    /*    display: block;*/
     /*    float: right;*/
     line-height: 2em;
     padding-left: 5px;
+}
+
+.qq-group,
+.weixin {
+    cursor: pointer;
+    color: #479af8;
 }
 
 
