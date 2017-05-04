@@ -3,13 +3,12 @@ var _czc = _czc || [];
 _czc.push(["_setAccount", "2604584"]);
 
 $(document).ready(function () {
-    //页面适应
-    //zoomBody(360);
     //logo点击
     $(".logo").click(function () {
         //检查更新
         exec("imeExtendComponents", "click_update");
-        //window.location = "https://www.xunfei.cn";
+        //window.location = "https://www.xunfei.cn";        
+
     });
 
     //普通话识别
@@ -133,21 +132,4 @@ $(document).ready(function () {
         alert("广告已清理");
     });
 
-
-
 });
-
-/*网页缩放
-@s:设计分辨率
-*/
-function zoomBody(s) {
-    //取得浏览器页面可视区域的高度
-    var screenHeight = document.documentElement.clientHeight;
-    //取得浏览器页面可视区域的宽度
-    var screenWidth = document.documentElement.clientWidth;
-    //竖屏或者屏幕宽度小于设计分辨率s
-    if (screenHeight > screenWidth || screenWidth < s) {
-        //缩放body
-        document.body.style.zoom = screenWidth / s;
-    }
-}
