@@ -26,6 +26,11 @@ body {
     line-height: inherit;
 }
 
+a:link,
+a:visited {
+    color: #479af8;
+}
+
 .main {
     width: 100%;
     max-width: 768px;
@@ -51,6 +56,28 @@ body {
     height: 20px;
     height: 1.25rem;
     vertical-align: text-bottom;
+}
+
+.mulu li {
+    line-height: 2em;
+}
+
+.mulu li:before {
+    content: "●";
+    display: inline-block;
+    height: 100%;
+    font-size: 8px;
+    font-size: 0.5rem;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.mulu2 li {
+    padding-left: 10px;
+}
+
+.mulu2 li:before {
+    content: "";
 }
 
 .t1 li p strong {
