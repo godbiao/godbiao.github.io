@@ -1,6 +1,6 @@
 <?php
 
-include('inc/function.php');//引入函数
+@include('inc/function.php');//引入函数
 include('config.php');//获取配置文件
 
 createDir($qqdir);//创建目录

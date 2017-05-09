@@ -28,19 +28,19 @@
     </div>
     <div class="shade"> </div>
 
-    <div id="main" class="main">       
+    <div id="main" class="main">
         <div class="logo"><img src="res/logo.png" alt=""></div>
         <div id="list" class="list">
             <p id="mulu"><strong>目录</strong></p>
             <ul class="mulu">
-                <li><a href="#tesegongneng">特色功能</a></li>
-                <li><a href="#bianjiekepu">便捷科普</a>
+                <li class="mulu-tesegongneng"><a href="javascript:;">特色功能</a></li>
+                <li><a class="mulu-bianjiekepu" href="javascript:;">便捷科普</a>
                     <ul class="mulu2">
-                        <li><a href="#bianjiekepu">便捷输入tips</a></li>
-                        <li><a href="#fuzhugongneng">辅助功能</a></li>
+                        <li class="mulu-bianjieshuru"><a href="javascript:;">便捷输入tips</a></li>
+                        <li class="mulu-fuzhugongneng"><a href="javascript:;">辅助功能</a></li>
                     </ul>
                 </li>
-                <li><a href="#changjianwenti">常见问题</a></li>
+                <li class="mulu-changjianwenti"><a href="javascript:;">常见问题</a></li>
 
             </ul>
         </div>
@@ -85,10 +85,10 @@
                 </ul>
             </li>
             <li>
-                <p id="bianjiekepu"><strong>三、便捷科普</strong></p>
+                <p id="bianjiekepu"><strong>三、便捷科普</strong><span class="back-top"><a href="javascript:;">回到目录</a></span></p>
                 <ul class="t2">
                     <li>
-                        <p>1、便捷输入tips</p>
+                        <p id="bianjieshuru">1、便捷输入tips</p>
                         <ul class="t3">
                             <li>（1）设置快捷键：长按工具栏第一个设置图标【<img class="icon" src="res/set.png">】（以下统称【齿轮】）可进入设置界面，一步设置； </li>
                             <li>（2）删除快捷键：输入时向左快速滑动删除键【<img class="icon" src="res/backspace.png">】，即可一键清除候选内容； </li>
@@ -105,7 +105,7 @@
                         </ul>
                     </li>
                     <li>
-                        <p id="fuzhugongneng"> 2、辅助功能：</p>
+                        <p id="fuzhugongneng"> 2、辅助功能：<span class="back-top"><a href="javascript:;">回到目录</a></span></p>
                         <ul class="t3">
                             <li>（1）离线语音：点击【齿轮】-【工具】-【离线语音】-【下载并启用】就可以啦，不联网、不耗流量随时随地使用；</li>
                             <li>（2）个性化语音：长按【齿轮】-【个性化语音】-【语音识别修正】-进入后将识别不准确的词汇进行上传，你想语音输入的晶晶再不会变成静静了。此外，在wifi环境中会自动对平时语音输入过的文字进行记忆优化，让语音识别更贴近你的输入习惯； </li>
@@ -123,7 +123,7 @@
                     </li>
                 </ul>
                 <li>
-                    <p id="changjianwenti"><strong>四、常见问题（Q&A）</strong></p>
+                    <p id="changjianwenti"><strong>四、常见问题（Q&A）</strong><span class="back-top"><a href="javascript:;">回到目录</a></span></p>
                     <ul class="t2">
                         <li>
                             <p>输入方面：</p>
@@ -260,6 +260,7 @@
                     </ul>
                 </li>
         </ul>
+        <span class="back-top"><a href="javascript:;">回到目录</a></span>
     </div>
 
     <script src="res/jquery-3.1.1.min.js"></script>

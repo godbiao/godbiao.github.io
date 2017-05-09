@@ -10,6 +10,33 @@ $(document).ready(function () {
         //window.location = "https://www.xunfei.cn";        
     });
 
+    //目录平滑停转
+    $(".mulu-tesegongneng").click(function () {
+        scrollID("#tesegongneng");
+    });
+
+    $(".mulu-bianjiekepu,.mulu-bianjieshuru").click(function () {
+        scrollID("#bianjiekepu");
+    });
+
+    $(".mulu-fuzhugongneng").click(function () {
+        scrollID("#fuzhugongneng");
+    });
+
+    $(".mulu-changjianwenti").click(function () {
+        scrollID("#changjianwenti");
+    });
+
+    $(".back-top").click(function () {
+        scrollID("#mulu");
+    });
+
+    function scrollID(id) {
+        $("html,body").animate({
+            scrollTop: $(id).offset().top
+        }, 500);
+    }
+
     //普通话识别
     $(".try-mandarin").click(function () {
         //跳转
