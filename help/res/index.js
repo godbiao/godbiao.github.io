@@ -8,7 +8,6 @@ $(document).ready(function () {
         //检查更新
         exec("imeExtendComponents", "click_update");
         //window.location = "https://www.xunfei.cn";        
-
     });
 
     //普通话识别
