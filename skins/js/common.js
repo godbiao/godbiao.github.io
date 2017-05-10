@@ -184,7 +184,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     } else {
         //预览图切换	
         $(".preview").click(function () {
-            $(this).addClass("none").siblings().removeClass("none");
+           $(this).addClass("none").siblings().removeClass("none");               
         });
         //预览图
         if (type == "png") {

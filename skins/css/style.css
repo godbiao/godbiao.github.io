@@ -225,10 +225,15 @@ ul {
     font-size: 9px;
 }
 
+#item .skin-details-preview {
+	overflow:none;
+}
+
 #item .skin-details-preview img {
     width: 100%;
     border-radius: 5px;
 }
+
 
 #item .skin-description {
     padding-left: 6px;
@@ -251,6 +256,7 @@ ul {
 #item .lables {
     padding-bottom: 15px;
 }
+
 
 #item .back,
 #item .share,
