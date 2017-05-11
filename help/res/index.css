@@ -201,3 +201,19 @@ a:visited {
     height: 100%;
     background: rgba(0, 0, 0, .618);
 }
+
+
+/*private&&uxp*/
+
+#private .t1 li,
+#uxp .t1 li {
+    padding-top: 10px;
+    padding-top: 0.625rem;
+}
+
+#private .h3,
+#uxp .h3 {
+    text-align: center;
+    padding-top: 10px;
+    padding-top: 0.625rem;
+}
