@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     if (!isApp()) {
-        $("#banner").show();
+        $("#banner").show(200);
     }
 
     //banner打开微博
