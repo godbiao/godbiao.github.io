@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    if (!isApp()) {
+        $("#banner").show();
+    }
+
     //banner打开微博
     $(".banner-weibo, .insstall-cont").click(function () {
         window.location.href = "http://m.weibo.cn/u/1136590322";
@@ -43,12 +47,6 @@ $(document).ready(function () {
 
     });
 
-    //不要再扯了
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 20) {
-            $(".nomore,.split").removeClass("none");
-        }
-    });
 
 
 
