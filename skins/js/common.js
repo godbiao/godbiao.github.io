@@ -143,6 +143,7 @@ $(".like").click(function () {
             } else {
                 alert(msg[4]);
             }
+            alert(navigator.userAgent);
         } else if (likeTime > 4) {
             if (isApp()) {
                 app.toast(msg[5]);
