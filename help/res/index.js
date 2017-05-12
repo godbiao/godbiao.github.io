@@ -6,8 +6,9 @@ $(document).ready(function () {
     //logo点击
     $(".logo").click(function () {
         //检查更新
-        exec("imeExtendComponents", "click_update");
-        //window.location = "https://www.xunfei.cn";        
+        //exec("imeExtendComponents", "click_update");
+        //window.location = "https://www.xunfei.cn"; 
+		 app.toast("js中调用本地方法");
     });
 
     //目录平滑停转
