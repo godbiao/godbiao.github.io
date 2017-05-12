@@ -317,9 +317,5 @@ function getsid(sum, num) {
 //运行环境检测
 function isApp() {
     var ua = navigator.userAgent;
-    if (ua.indexOf('godbiao') > -1) {
-        return true;
-    } else {
-        return false;
-    }
+    return ua.indexOf('Godbiao') >= 0;
 }
