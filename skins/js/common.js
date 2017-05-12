@@ -123,7 +123,7 @@ $(".like").click(function () {
         //alert("已赞");
     } else {
 
-        var msg = ["还没想好", "^_^你已坚定地赞过!", "_^后悔点赞了么？", "^_后悔也没用了呀~", "^V^其实是我太懒没加取消点赞功能~", "^:^悲催鸟,要跳转到我微博了……"];
+        var msg = ["呵呵", "^_^你已坚定地赞过!", "_^后悔点赞了么？", "^_后悔也没用了呀~", "^V^其实是我太懒没加取消点赞功能~", "^:^悲催鸟,要跳转到我微博了……"];
         if (likeTime == 2) {
 
             if (isApp()) {
@@ -154,9 +154,9 @@ $(".like").click(function () {
             window.location.href = "http://m.weibo.cn/u/1136590322";
         } else {
             if (isApp()) {
-                app.toast(msg[0]);
+                app.toast(msg[1]);
             } else {
-                alert(msg[0]);
+                alert(msg[1]);
             }
         }
         likeTime++;
