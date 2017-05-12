@@ -57,6 +57,8 @@ $(document).ready(function () {
 
 var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你飞";
 
+
+
 //详情页面遍历ID进行匹配数据
 var Request = new Object();
 Request = GetRequest();
@@ -120,17 +122,42 @@ $(".like").click(function () {
         _hmt.push(["_trackEvent", "skins", "like", $(".skin-name").html() + "(" + skinID + ")"]);
         //alert("已赞");
     } else {
+
+        var msg = ["还没想好", "^_^你已坚定地赞过!", "_^后悔点赞了么？", "^_后悔也没用了呀~", "^V^其实是我太懒没加取消点赞功能~", "^:^悲催鸟,要跳转到我微博了……"];
         if (likeTime == 2) {
-            alert("_^后悔点赞了么？");
+
+            if (isApp()) {
+                app.toast(msg[2]);
+            } else {
+                alert(msg[2]);
+            }
+
         } else if (likeTime == 3) {
-            alert("^_后悔也没用了呀~");
+            if (isApp()) {
+                app.toast(msg[3]);
+            } else {
+                alert(msg[3]);
+            }
+
         } else if (likeTime == 4) {
-            alert("^V^其实是我太懒没加取消点赞功能~");
+            if (isApp()) {
+                app.toast(msg[4]);
+            } else {
+                alert(msg[4]);
+            }
         } else if (likeTime > 4) {
-            alert("^:^悲催鸟,要跳转到我微博了……");
+            if (isApp()) {
+                app.toast(msg[5]);
+            } else {
+                alert(msg[5]);
+            }
             window.location.href = "http://m.weibo.cn/u/1136590322";
         } else {
-            alert("^_^你已坚定地赞过!");
+            if (isApp()) {
+                app.toast(msg[0]);
+            } else {
+                alert(msg[0]);
+            }
         }
         likeTime++;
     }
@@ -184,7 +211,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     } else {
         //预览图切换	
         $(".preview").click(function () {
-           $(this).addClass("none").siblings().removeClass("none");               
+            $(this).addClass("none").siblings().removeClass("none");
         });
         //预览图
         if (type == "png") {
@@ -285,4 +312,14 @@ function getsid(sum, num) {
     });
     a.length = num;
     return a;
+}
+
+//运行环境检测
+function isApp() {
+    var ua = navigator.userAgent;
+    if (ua.indexOf('godbiao') > -1) {
+        return true;
+    } else {
+        return false;
+    }
 }
