@@ -125,7 +125,7 @@ $(".like").click(function () {
         if (likeTime == 2) {
 
             if (isApp()) {
-                app.toast(msg[2);
+                app.toast(msg[2]);
             } else {
                 alert(msg[2]);
             }
