@@ -4,7 +4,7 @@ $(document).ready(function () {
         $("#banner").show();
     }
 
-    $("body").show(100);
+    $("body").show();
 
 
     //banner打开微博
@@ -57,7 +57,7 @@ $(document).ready(function () {
 
 
 var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你飞";
-if (isApp) {
+if (isApp()) {
     $("title").html("终极皮肤");
 }
 
@@ -254,6 +254,9 @@ function skinInfo(name, author, size, description, update, star, type, time) {
 
     if (isApp()) {
         $("title").html(name);
+        $("#item").css({
+            "padding-top": "0px"
+        });
     } else {
         $("title").html(name + " - " + author + " - " + title);
     }
