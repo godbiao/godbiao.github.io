@@ -251,7 +251,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     $("title").html(name + " - " + author + " - " + title);
 	if(isApp()){
 		//$(".top-title").hide();
-		app.settitle(name);
+		//app.settitle(name);
 	}
 	
 }
