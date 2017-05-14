@@ -4,7 +4,7 @@ $(document).ready(function () {
         $("#banner").show();
     }
 
-    $("body").show();
+    $("body").fadeIn();
 
 
     //banner打开微博
