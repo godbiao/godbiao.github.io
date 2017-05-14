@@ -4,6 +4,8 @@ $(document).ready(function () {
         $("#banner").show();
     }
 
+    $("body").show();
+
 
     //banner打开微博
     $(".banner-weibo, .insstall-cont").click(function () {
