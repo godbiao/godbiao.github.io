@@ -4,7 +4,10 @@ $(document).ready(function () {
         $("#banner").show();
     }
 	
-	app.settitle("测试一下");
+	if(isApp()){
+		app.settitle("测试一下");
+	}
+	
 
     //banner打开微博
     $(".banner-weibo, .insstall-cont").click(function () {
