@@ -135,6 +135,7 @@ $(".like").click(function () {
 
         } else if (likeTime == 3) {
             if (isApp()) {
+				app.settitle(name);
                 app.toast(msg[3]);
             } else {
                 alert(msg[3]);
