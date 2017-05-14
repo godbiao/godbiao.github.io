@@ -5,7 +5,7 @@ $(document).ready(function () {
     }
 	
 	if(isApp()){
-		app.settitle("测试一下");
+		//app.settitle("测试一下");
 	}
 	
 
