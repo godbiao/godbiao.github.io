@@ -250,7 +250,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     //全局标题
     $("title").html(name + " - " + author + " - " + title);
 	if(isApp()){
-		$(".title-name").hide();
+		$(".top-title").hide();
 		app.settitle(name);
 	}
 	
