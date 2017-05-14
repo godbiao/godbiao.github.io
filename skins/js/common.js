@@ -3,11 +3,7 @@ $(document).ready(function () {
     if (!isApp()) {
         $("#banner").show();
     }
-	
-	if(isApp()){
-		//app.settitle("测试一下");
-	}
-	
+
 
     //banner打开微博
     $(".banner-weibo, .insstall-cont").click(function () {
@@ -53,11 +49,15 @@ $(document).ready(function () {
     });
 
 
+
+
 });
 
 
 var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你飞";
-
+if (isApp) {
+    $("title").html("终极皮肤");
+}
 
 
 //详情页面遍历ID进行匹配数据
@@ -70,7 +70,7 @@ for (var i = 0; i < s_len; i++) {
         var s = skins[i];
         skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time);
         putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
-  		break;
+        break;
     }
 };
 
@@ -134,7 +134,7 @@ $(".like").click(function () {
             }
 
         } else if (likeTime == 3) {
-            if (isApp()) {				
+            if (isApp()) {
                 app.toast(msg[3]);
             } else {
                 alert(msg[3]);
@@ -250,8 +250,13 @@ function skinInfo(name, author, size, description, update, star, type, time) {
         });
     });
 
-    //全局标题
-    $("title").html(name + " - " + author + " - " + title);
+    if (isApp()) {
+        $("title").html(name);
+    } else {
+        $("title").html(name + " - " + author + " - " + title);
+    }
+
+
 
 }
 
