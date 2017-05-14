@@ -67,10 +67,7 @@ for (var i = 0; i < s_len; i++) {
         var s = skins[i];
         skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time);
         putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
-        if(isApp()){
-			app.settitle(name);
-			}
-		break;
+  		break;
     }
 };
 
@@ -128,14 +125,13 @@ $(".like").click(function () {
         if (likeTime == 2) {
 
             if (isApp()) {
-                app.toast(msg[2]);
+                app.settitle("测试");
             } else {
                 alert(msg[2]);
             }
 
         } else if (likeTime == 3) {
-            if (isApp()) {
-				app.settitle(name);
+            if (isApp()) {				
                 app.toast(msg[3]);
             } else {
                 alert(msg[3]);
