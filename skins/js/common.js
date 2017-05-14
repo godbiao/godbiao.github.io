@@ -3,6 +3,8 @@ $(document).ready(function () {
     if (!isApp()) {
         $("#banner").show();
     }
+	
+	app.settitle("测试一下");
 
     //banner打开微博
     $(".banner-weibo, .insstall-cont").click(function () {
@@ -46,8 +48,6 @@ $(document).ready(function () {
         }*/
 
     });
-
-
 
 
 });
@@ -125,7 +125,7 @@ $(".like").click(function () {
         if (likeTime == 2) {
 
             if (isApp()) {
-                app.settitle("测试");
+                app.toast(msg[2);
             } else {
                 alert(msg[2]);
             }
