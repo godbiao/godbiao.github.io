@@ -254,7 +254,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
 
     if (isApp()) {
         $("title").html(name);
-        $("top-title").hide();
+        $(".top-title").hide();
         $("#item").css({
             "padding-top": "0px"
         });
