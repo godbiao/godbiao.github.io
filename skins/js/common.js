@@ -256,7 +256,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
         $("title").html(name);
         $(".top-title").hide();
         $("#item").css({
-            "padding-top": "0px"
+            "padding-top": "5px"
         });
     } else {
         $("title").html(name + " - " + author + " - " + title);
