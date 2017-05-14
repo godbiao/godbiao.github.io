@@ -67,7 +67,10 @@ for (var i = 0; i < s_len; i++) {
         var s = skins[i];
         skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time);
         putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
-        break;
+        if(isApp()){
+			app.settitle(name);
+			}
+		break;
     }
 };
 
@@ -249,11 +252,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
 
     //全局标题
     $("title").html(name + " - " + author + " - " + title);
-	if(isApp()){
-		//$(".top-title").hide();
-		app.settitle(name);
-	}
-	
+
 }
 
 
