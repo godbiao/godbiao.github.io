@@ -140,6 +140,11 @@ ul {
     text-align: center;
 }
 
+.thumbnail:hover,
+.thumbnail:active {
+    transform: scale(0.95)
+}
+
 
 /*皮肤详情*/
 
