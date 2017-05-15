@@ -19,7 +19,12 @@ $(document).ready(function () {
     //打开皮肤详情
     $(".skin-id").click(function () {
         var skinID = $(this).attr('id');
-        window.location.href = "item.html?id=" + skinID;
+        if (isApp()) {
+            window.location.href = "item.html?app=item&id=" + skinID;
+        } else {
+            window.location.href = "item.html?id=" + skinID;
+        }
+
 
     });
 
@@ -122,8 +127,13 @@ $(".like").click(function () {
         });
         $(this).html("&#xe66e;");
         $(this).addClass("liked");
-        _hmt.push(["_trackEvent", "skins", "like", $(".skin-name").html() + "(" + skinID + ")"]);
-        //alert("已赞");
+        if (isApp()) {
+            _hmt.push(["_trackEvent", "skins-app", "like", $(".skin-name").html() + "(" + skinID + ")"]);
+        } else {
+            _hmt.push(["_trackEvent", "skins", "like", $(".skin-name").html() + "(" + skinID + ")"]);
+        }
+
+
     } else {
 
         var msg = ["呵呵", "^_^你已坚定地赞过!", "_^后悔点赞了么？", "^_后悔也没用了呀~", "^V^其实是我太懒没加取消点赞功能~", "^:^悲催鸟,要跳转到我微博了……"];
@@ -239,7 +249,12 @@ function skinInfo(name, author, size, description, update, star, type, time) {
         }
 
         window.location.href = "https://godbiao.github.io/skins/res/it/" + skinID + ".it";
-        _hmt.push(["_trackEvent", "skins", "download", name + "(" + skinID + ")"]);
+        if (isApp()) {
+            _hmt.push(["_trackEvent", "skins-app", "download", name + "(" + skinID + ")"]);
+        } else {
+            _hmt.push(["_trackEvent", "skins", "download", name + "(" + skinID + ")"]);
+        }
+
     });
 
     $("#pop").click(function () {
