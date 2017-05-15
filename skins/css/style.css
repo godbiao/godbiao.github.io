@@ -141,8 +141,7 @@ ul {
     text-align: center;
 }
 
-.thumbnail:hover,
-.thumbnail:active {
+.thumbnail:hover {
     transform: scale(0.95)
 }
 
