@@ -123,6 +123,7 @@ ul {
     border: none;
     padding: 0px;
     margin-bottom: 9px;
+    transition: 0.5s;
 }
 
 .thumbnail .caption {
@@ -140,9 +141,12 @@ ul {
     text-align: center;
 }
 
-.thumbnail:hover,
-.thumbnail:active {
+.thumbnail:hover {
     transform: scale(0.95)
+}
+
+.thumbnail:active {
+    transform: scale(1)
 }
 
 
