@@ -350,3 +350,7 @@ function isApp() {
     var ua = navigator.userAgent;
     return ua.indexOf('Godbiao') >= 0;
 }
+
+function activeUser() {
+    alert("程序激活了");
+}
