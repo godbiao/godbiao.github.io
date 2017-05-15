@@ -141,11 +141,12 @@ ul {
     text-align: center;
 }
 
-.thumbnail:hover {
+.thumbnail:hover,
+.thumbnail:active {
     transform: scale(0.95)
 }
 
-.thumbnail:active {
+.thumbnail:visited {
     transform: scale(1)
 }
 
