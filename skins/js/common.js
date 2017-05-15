@@ -259,7 +259,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
             "padding-top": "0px"
         });
         $(".skin-sas").css({
-            "margin-top": "5px"
+            "padding-top": "12px"
         });
     } else {
         $("title").html(name + " - " + author + " - " + title);
