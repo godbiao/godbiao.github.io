@@ -255,8 +255,11 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     if (isApp()) {
         $("title").html(name);
         $(".top-title").hide();
+        $("#item").css({
+            "padding-top": "0px"
+        });
         $(".skin-sas").css({
-            "padding-top": "5px"
+            "margin-top": "5px"
         });
     } else {
         $("title").html(name + " - " + author + " - " + title);
