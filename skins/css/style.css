@@ -19,7 +19,6 @@ body {
 }
 
 #item {
-    padding-top: 46px;
     background-color: #fff;
     padding-bottom: 60px;
 }
@@ -220,6 +219,7 @@ ul {
     font-size: 11px;
     color: #7f7f7f;
     padding: 6px;
+    padding-top: 52px;
 }
 
 #item .skin-star {
