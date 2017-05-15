@@ -1,11 +1,12 @@
+window.onload = function () {
+    $("body").fadeIn();
+};
+
 $(document).ready(function () {
 
     if (!isApp()) {
         $("#banner").show();
     }
-
-    $("body").fadeIn();
-
 
     //banner打开微博
     $(".banner-weibo, .insstall-cont").click(function () {
