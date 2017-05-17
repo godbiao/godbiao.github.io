@@ -2,7 +2,52 @@
 var _czc = _czc || [];
 _czc.push(["_setAccount", "2604584"]);
 
+window.onload = function () {
+    $("body").css({
+        "background-color": "#f3f3f3"
+    }).fadeIn();
+
+};
+
+if (isApp() && isNew()) {
+    //显示版本号
+    $(".client-version").html("V" + getClientVersion());
+
+    //关闭窗口
+    $(".close-window").show().click(function () {
+        exec("imeExtendComponents", "close_window", []);
+    });
+}
+
+
+//获取客户端版本号
+function getClientVersion() {
+    var client_version = exec("imeExtendComponents", 'ask_client_version', []);
+    var version = convertType(client_version).message;
+    if (version) {
+        return version;
+    }
+    return false;
+}
+
+//运行环境检测
+function isApp() {
+    var ua = navigator.userAgent;
+    return ua.indexOf('iflytek_mmp') >= 0;
+}
+
+function isNew() {
+    if (getClientVersion()) {
+        var current_client_version = getClientVersion().substr(4, 4);
+        return parseInt(current_client_version) >= 4851;
+    }
+    return false;
+}
+
+
 $(document).ready(function () {
+
+
     //logo点击
     $(".logo").click(function () {
         //检查更新
