@@ -2,13 +2,6 @@
 var _czc = _czc || [];
 _czc.push(["_setAccount", "2604584"]);
 
-window.onload = function () {
-    $("body").css({
-        "background-color": "#f3f3f3"
-    }).fadeIn();
-
-};
-
 if (isApp() && isNew()) {
     //显示版本号
     $(".client-version").html("V" + getClientVersion());
@@ -36,6 +29,7 @@ function isApp() {
     return ua.indexOf('iflytek_mmp') >= 0;
 }
 
+//是否支持新功能
 function isNew() {
     if (getClientVersion()) {
         var current_client_version = getClientVersion().substr(4, 4);
@@ -47,6 +41,9 @@ function isNew() {
 
 $(document).ready(function () {
 
+    $("body").css({
+        "background-color": "#f3f3f3"
+    }).fadeIn();
 
     //logo点击
     $(".logo").click(function () {
