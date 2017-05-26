@@ -2,12 +2,6 @@ window.onload = function () {
     $("body").fadeIn();
 };
 
-//运行环境检测
-function isiflyApp() {
-    var ua = navigator.userAgent;
-    return ua.indexOf('iflytek_mmp') >= 0;
-}
-
 $(document).ready(function () {
 
     if (!isApp()) {
@@ -28,15 +22,6 @@ $(document).ready(function () {
         var skinID = $(this).attr('id');
         if (isApp()) {
             window.location.href = "item.html?app=item&id=" + skinID;
-        } else if (isiflyApp()) {
-            exec("imeExtendComponents", "open_download", {
-                "download_res_type": "download_res_type_theme",
-                "download_res_title": "微信Style",
-                "download_res_size": "50KB",
-                "download_res_id": skinID,
-                "download_res_url": "http://ossptest.voicecloud.cn/ftpdownload/opps/20170217172356/wxstyle01.it"
-            });
-
         } else {
             window.location.href = "item.html?id=" + skinID;
         }
@@ -45,11 +30,7 @@ $(document).ready(function () {
 
     });
 
-    //功能未开发
-    $(".unfinished").click(function () {
-        alert("很抱歉，此功能尚未开发完成！");
-    });
-
+    //帮助
     $(".share").click(function () {
         $("#pop").show();
         $(".install,.iclose").slideDown(300);
@@ -60,19 +41,8 @@ $(document).ready(function () {
     //返回
     $(".back").click(function () {
         window.location.href = "index.html";
-        /*var urlNum = getsid(3,1)[0];
-        if(urlNum==0){
-        	window.location.href = "http://godbiao.github.io/skins/index.html";
-        }else if(urlNum==1){
-        	window.location.href = "http://skins.55555.io/";
-        }else
-        {
-        	window.location.href = "http://godbiao.iok.la/skins/";
-        }*/
 
     });
-
-
 
 
 });
@@ -366,8 +336,4 @@ function getsid(sum, num) {
 function isApp() {
     var ua = navigator.userAgent;
     return ua.indexOf('Godbiao') >= 0;
-}
-
-function activeUser() {
-    alert("程序激活了");
 }
