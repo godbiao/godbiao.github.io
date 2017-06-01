@@ -176,6 +176,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     $(".skin-author").html(author);
     $(".skin-size").html(size);
     $(".skin-time").html(time);
+    //评星
     switch (star) {
         case "5":
             $(".skin-star").html("★★★★★");
@@ -197,6 +198,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
             break;
     };
 
+    //描述和升级
     $(".skin-description-content").html(description);
     if (update) {
         $(".skin-description-title").removeClass("none");
@@ -204,17 +206,25 @@ function skinInfo(name, author, size, description, update, star, type, time) {
         $(".skin-description-update").html(update);
     }
 
+    //详情图
     if (type == "gif") {
-        //预览图
+
         $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + ".gif");
         $(".preview_26").hide();
         $('.carousel').carousel({
             interval: 99999
-        })
+        });
+
+    } else if (type == "png") {
+
+        $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_9.png");
+        $(".preview_26").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_26.png");
 
     } else {
-        $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_9." + type);
-        $(".preview_26").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_26." + type);
+
+        $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_9.jpg");
+        $(".preview_26").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_26.jpg");
+
     }
 
     //下载皮肤
@@ -260,7 +270,6 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     }
 
 
-
 }
 
 
@@ -294,7 +303,6 @@ function putLables(moren, primary, success, info, warning, danger) {
         $(".label-danger").removeClass("none").html(danger);
     }
 }
-
 
 
 //获取皮肤ID
