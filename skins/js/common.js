@@ -1,5 +1,7 @@
 window.onload = function () {
+
     $("body").fadeIn();
+
 };
 
 $(document).ready(function () {
