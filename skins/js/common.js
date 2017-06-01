@@ -213,18 +213,9 @@ function skinInfo(name, author, size, description, update, star, type, time) {
         })
 
     } else {
-
-        //预览图
-        if (type == "png") {
-            $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_9.png");
-            $(".preview_26").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_26.png");
-        } else {
-            $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_9.jpg");
-            $(".preview_26").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_26.jpg");
-        }
-
+        $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_9." + type);
+        $(".preview_26").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_26." + type);
     }
-
 
     //下载皮肤
     $(".skin-download").click(function () {
