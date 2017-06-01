@@ -26,8 +26,6 @@ $(document).ready(function () {
             window.location.href = "item.html?id=" + skinID;
         }
 
-
-
     });
 
     //帮助
