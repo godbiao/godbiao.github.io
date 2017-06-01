@@ -117,7 +117,11 @@
         </div>
 
     </div>
+    <div class="split"></div>
+    <div class="container">
+        <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 
+    </div>
     <div class="split"></div>
     <div class="nomore">--- 已经到底了，不要再扯啦 ---
         <br>-版权所有 盗版必究-</div>
@@ -129,6 +133,18 @@
     <script src="https://godbiao.github.io/skins/js/skins.js"></script>
     <script src="https://godbiao.github.io/skins/js/common.js"></script>
 
+    <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+    <script>
+        var cloudTieConfig = {
+            url: document.location.href,
+            sourceId: skinID,
+            productKey: "11cf63647993411b9397c68844ae6af7",
+            target: "cloud-tie-wrapper"
+        };
+        var yunManualLoad = true;
+        Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vbW9iaWxlL2xpdmVzY3JpcHQuaHRtbA==", true);
+
+    </script>
 
 </body>
 
