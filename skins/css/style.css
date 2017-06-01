@@ -245,6 +245,10 @@ ul {
     border-radius: 5px;
 }
 
+#item .carousel {
+    border-radius: 5px;
+}
+
 #item .skin-description {
     padding-left: 6px;
     padding-right: 6px;
