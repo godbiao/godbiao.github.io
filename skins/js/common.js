@@ -208,11 +208,12 @@ function skinInfo(name, author, size, description, update, star, type, time) {
         //预览图
         $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + ".gif");
         $(".preview_26").hide();
+        $('.carousel').carousel({
+            interval: 99999
+        })
+
     } else {
-        //预览图切换	
-        $(".preview").click(function () {
-            $(this).addClass("none").siblings().removeClass("none");
-        });
+
         //预览图
         if (type == "png") {
             $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_9.png");
