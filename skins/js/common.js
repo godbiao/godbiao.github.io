@@ -384,3 +384,36 @@ function touchSlidePreview(e) {
 
     }
 }
+
+
+//下拉
+function touchSlideReload() {
+    var startY, endY;
+    window.addEventListener("touchstart", touchStart, false);
+    window.addEventListener("touchmove", touchMove, false);
+    window.addEventListener("touchend", touchEnd, false);
+
+    function touchStart(event) {
+        var touch = event.touches[0];
+        startY = touch.pageY;
+    }
+
+    function touchMove(event) {
+        var touch = event.touches[0];
+        endY = touch.pageY;
+        $("body").css("padding-top", endY);
+
+    }
+
+    function touchEnd(event) {
+        $("body").css("padding-top", 0);
+        //左滑
+        if ((endY - startY) > 100) {
+
+
+        }
+
+    }
+}
+
+touchSlideReload();
