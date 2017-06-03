@@ -61,7 +61,7 @@
                 <style>
                     .carousel-indicators {
                         bottom: -10px;
-                        opacity: .5;
+                        opacity: 0.5;
                     }
                     
                     .carousel-indicators li,
@@ -70,6 +70,11 @@
                         width: 6px;
                         height: 6px;
                         margin: 0px;
+                        box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+                    }
+                    
+                    .carousel-indicators .active {
+                        background-color: #673ab7;
                     }
 
                 </style>
