@@ -405,7 +405,10 @@ function touchSlideReload() {
     function touchMove(event) {
         var touch = event.touches[0];
         endY = touch.pageY - startY;
-        $("body").css("padding-top", endY);
+        if (endY > 50) {
+            $("body").css("padding-top", endY * 0.618 - 50);
+        }
+
 
     }
 
@@ -415,8 +418,8 @@ function touchSlideReload() {
             "transition": ".5s"
         });
         //左滑
-        if ((endY - startY) > 100) {
-
+        if ((endY - startY) > 61.8) {
+            window.location = location.href;
 
         }
 
