@@ -400,13 +400,24 @@ function touchSlideReload() {
             "padding-top": 0,
             "transition": "0s"
         });
+        $(".navbar-fixed-top").css({
+            "position": "fixed",
+            "top": 0,
+            "transition": "0s"
+        });
     }
 
     function touchMove(event) {
         var touch = event.touches[0];
-        endY = touch.pageY - startY;
-        if (endY > 50) {
-            $("body").css("padding-top", endY * 0.618 - 50);
+        endY = (touch.pageY - startY) * 0.618 - 50;
+        if (endY > 0) {
+            $("body").css("padding-top", endY);
+            $(".navbar-fixed-top").css({
+                "position": "absolute",
+                "top": endY
+
+            });
+
         }
 
 
@@ -416,6 +427,11 @@ function touchSlideReload() {
         $("body").css({
             "padding-top": 0,
             "transition": ".5s"
+        });
+        $(".navbar-fixed-top").css({
+            "position": "fixed",
+            "top": 0,
+            "transition": ".4s"
         });
         //左滑
         if ((endY - startY) > 61.8) {
