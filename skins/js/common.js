@@ -214,6 +214,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
 
         $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + ".gif");
         $(".preview_26").hide();
+        $(".carousel-indicators").hide();
         $('.carousel').carousel({
             interval: 99999
         });

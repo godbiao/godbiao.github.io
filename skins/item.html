@@ -54,12 +54,25 @@
 
         <div class="skin-details-preview">
             <div id="carousel-skin-details-preview" class="carousel slide" data-ride="carousel" data-interval="3500">
-                <!--
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
                 </ol>
--->
+                <style>
+                    .carousel-indicators {
+                        bottom: -10px;
+                        opacity: .5;
+                    }
+                    
+                    .carousel-indicators li,
+                    .carousel-indicators .active {
+                        border-radius: 50%;
+                        width: 6px;
+                        height: 6px;
+                        margin: 0px;
+                    }
+
+                </style>
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <img class="preview_9" alt="" src="https://godbiao.github.io/skins/res/9.png">
