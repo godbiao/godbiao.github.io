@@ -396,17 +396,24 @@ function touchSlideReload() {
     function touchStart(event) {
         var touch = event.touches[0];
         startY = touch.pageY;
+        $("body").css({
+            "padding-top": 0,
+            "transition": "0s"
+        });
     }
 
     function touchMove(event) {
         var touch = event.touches[0];
-        endY = touch.pageY;
+        endY = touch.pageY - startY;
         $("body").css("padding-top", endY);
 
     }
 
     function touchEnd(event) {
-        $("body").css("padding-top", 0);
+        $("body").css({
+            "padding-top": 0,
+            "transition": ".5s"
+        });
         //左滑
         if ((endY - startY) > 100) {
 
