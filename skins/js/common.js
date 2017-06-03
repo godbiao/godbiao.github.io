@@ -401,7 +401,7 @@ function touchSlideReload() {
             "transition": "0s"
         });
         $(".navbar-fixed-top").css({
-            "position": "fixed",
+            "position": "absolute",
             "top": 0,
             "transition": "0s"
         });
