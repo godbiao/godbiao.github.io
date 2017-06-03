@@ -50,9 +50,9 @@ $(document).ready(function () {
     }
 
     //下拉刷新
-
-
-
+    if (!isApp()) {
+        touchSlideReload();
+    }
 
 });
 
@@ -425,5 +425,3 @@ function touchSlideReload() {
 
     }
 }
-
-touchSlideReload();
