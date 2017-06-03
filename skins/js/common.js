@@ -413,10 +413,7 @@ function touchSlideReload() {
         endY = (touch.pageY - startY) - 50;
         if (endY > 0) {
             $("body").css("padding-top", endY);
-            $(".navbar-fixed-top").css({
-                "position": "absolute",
-                "top": endY
-            });
+            $(".navbar-fixed-top").css("top", endY);
         }
 
 
