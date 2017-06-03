@@ -44,6 +44,9 @@ $(document).ready(function () {
 
     });
 
+    //左右滑动详情图
+    touchSlide("carousel-skin-details-preview");
+
 
 });
 
@@ -336,4 +339,41 @@ function getsid(sum, num) {
 function isApp() {
     var ua = navigator.userAgent;
     return ua.indexOf('Godbiao') >= 0;
+}
+
+
+//左右滑动
+function touchSlide(e) {
+    var startX, startY, endX, endY;
+    var el = document.getElementById(e);
+    el.addEventListener("touchstart", touchStart, false);
+    el.addEventListener("touchmove", touchMove, false);
+    el.addEventListener("touchend", touchEnd, false);
+
+    function touchStart(event) {
+        var touch = event.touches[0];
+        startY = touch.pageY;
+        startX = touch.pageX;
+    }
+
+    function touchMove(event) {
+        var touch = event.touches[0];
+        //endY = (startY - touch.pageY);
+        endX = touch.pageX;
+    }
+
+    function touchEnd(event) {
+        //左滑
+        if ((startX - endX) > 100) {
+            $('.carousel').carousel('next');
+
+        }
+
+        //右滑
+        if ((endX - startX) > 100) {
+            $('.carousel').carousel('prev');
+
+        }
+
+    }
 }

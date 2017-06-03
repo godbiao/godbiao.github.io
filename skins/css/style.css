@@ -237,7 +237,7 @@ ul {
 }
 
 #item .skin-details-preview {
-    overflow: none;
+    overflow: hidden;
 }
 
 #item .skin-details-preview img {
