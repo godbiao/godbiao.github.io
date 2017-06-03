@@ -45,7 +45,7 @@ $(document).ready(function () {
     });
 
     //左右滑动详情图
-    if ($("#carousel-skin-details-preview")) {
+    if ($("#carousel-skin-details-preview").length > 0) {
         touchSlidePreview("carousel-skin-details-preview");
     }
 
