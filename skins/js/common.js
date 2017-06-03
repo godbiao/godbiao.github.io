@@ -45,7 +45,13 @@ $(document).ready(function () {
     });
 
     //左右滑动详情图
-    touchSlide("carousel-skin-details-preview");
+    if ($("#carousel-skin-details-preview")) {
+        touchSlidePreview("carousel-skin-details-preview");
+    }
+
+    //下拉刷新
+
+
 
 
 });
@@ -344,7 +350,7 @@ function isApp() {
 
 
 //左右滑动
-function touchSlide(e) {
+function touchSlidePreview(e) {
     var startX, startY, endX, endY;
     var el = document.getElementById(e);
     el.addEventListener("touchstart", touchStart, false);
@@ -353,7 +359,7 @@ function touchSlide(e) {
 
     function touchStart(event) {
         var touch = event.touches[0];
-        startY = touch.pageY;
+        //        startY = touch.pageY;
         startX = touch.pageX;
     }
 

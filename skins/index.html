@@ -58,6 +58,43 @@
     <script src="https://godbiao.github.io/skins/bs3/js/bootstrap.min.js "></script>
     <script src="https://godbiao.github.io/skins/js/skins.js"></script>
     <script src="https://godbiao.github.io/skins/js/common.js "></script>
+    <script>
+        //下拉刷新
+        function touchSlideReload(e) {
+            var startX, startY, endX, endY;
+            el.addEventListener("touchstart", touchStart, false);
+            el.addEventListener("touchmove", touchMove, false);
+            el.addEventListener("touchend", touchEnd, false);
+
+            function touchStart(event) {
+                var touch = event.touches[0];
+                startY = touch.pageY;
+                startX = touch.pageX;
+            }
+
+            function touchMove(event) {
+                var touch = event.touches[0];
+                //endY = (startY - touch.pageY);
+                endX = touch.pageX;
+            }
+
+            function touchEnd(event) {
+                //左滑
+                if ((startX - endX) > 100) {
+                    $('.carousel').carousel('next');
+
+                }
+
+                //右滑
+                if ((endX - startX) > 100) {
+                    $('.carousel').carousel('prev');
+
+                }
+
+            }
+        }
+
+    </script>
 </body>
 
 </html>
