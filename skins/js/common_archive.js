@@ -382,7 +382,6 @@ function touchSlidePreview(e) {
     }
 }
 
-
 //下拉
 function touchSlideReload() {
     var startY, endY;
@@ -398,7 +397,6 @@ function touchSlideReload() {
             "transition": "0s"
         });
         $(".navbar-fixed-top").css({
-            "position": "absolute",
             "top": 0,
             "transition": "0s"
         });
@@ -410,7 +408,11 @@ function touchSlideReload() {
         endY = (touch.pageY - startY) - 50;
         if (endY > 0) {
             $("body").css("padding-top", endY);
-            $(".navbar-fixed-top").css("top", endY);
+            $(".navbar-fixed-top").css({
+                "position": "absolute",
+                "top": endY,
+            });
+            //            $("body").css('transform', 'translateY(' + endY + 'px)');
         }
 
 
