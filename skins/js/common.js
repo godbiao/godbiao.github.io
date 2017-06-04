@@ -1,10 +1,5 @@
-window.onload = function () {
-
-    $("body").fadeIn();
-
-};
-
 $(document).ready(function () {
+    $("body").fadeIn();
 
     if (!isApp()) {
         $("#banner").show();
