@@ -198,7 +198,12 @@ ul {
 }
 
 #pop .ime-update {
-    line-height: 2;
+    line-height: 1.2em;
+}
+
+#pop .insstall-cont {
+    font-size: 12px;
+    line-height: 1.5em;
 }
 
 #item .navbar-fixed-top {
