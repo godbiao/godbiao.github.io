@@ -1,7 +1,12 @@
 body {
-    font-family: serif, sans-serif;
+    /*    font-family: serif, sans-serif;*/
     overflow-x: hidden;
     display: none;
+    white-space: normal;
+    text-align: justify;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
 }
 
 @font-face {
