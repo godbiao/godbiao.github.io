@@ -53,59 +53,71 @@ $(document).ready(function () {
 
 
 var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你飞";
-if (isApp()) {
-    $("title").html("终极皮肤");
-}
-
-
-//详情页面遍历ID进行匹配数据
+var s_len = skins.length;
 var Request = new Object();
 Request = GetRequest();
 var skinID = Request['id'];
-var s_len = skins.length;
-for (var i = 0; i < s_len; i++) {
-    if (skins[i].id == skinID) {
-        var s = skins[i];
-        skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time);
-        putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
-        break;
-    }
-};
+
+if (skinID) {
+    itemSkin();
+    ranRecommend();
+} else {
+    indexSkin();
+}
+
+
+
+//详情页面遍历ID进行匹配数据
+function itemSkin() {
+    for (var i = 0; i < s_len; i++) {
+        if (skins[i].id == skinID) {
+            var s = skins[i];
+            skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time);
+            putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
+            break;
+        }
+    };
+}
+
 
 //首页皮肤列表
-for (var i = 0; i < s_len; i++) {
-    var sid = skins[i].id;
-    var sname = skins[i].name;
-    var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
-    var rowhot = '<div id="' + sid + '" class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
-    var rownew = '<div id="' + sid + '" class="skin-id col-xs-6"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
+function indexSkin() {
+    for (var i = 0; i < s_len; i++) {
+        var sid = skins[i].id;
+        var sname = skins[i].name;
+        var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
+        var rowhot = '<div id="' + sid + '" class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
+        var rownew = '<div id="' + sid + '" class="skin-id col-xs-6"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
 
-    if (i > 3) {
-        $("#row-hot").append(rowhot);
-    } else {
-        $("#row-new").append(rownew);
-    }
+        if (i > 3) {
+            $("#row-hot").append(rowhot);
+        } else {
+            $("#row-new").append(rownew);
+        }
+    };
 }
 
 
 //随机推荐
-var ransid = getsid(s_len, 4);
-for (var i = 0; i < 3; i++) {
-    var j = parseInt(ransid[i]);
-    var sid = skins[j].id;
-    if (sid == skinID) {
-        j = parseInt(ransid[3]);
-        sid = skins[j].id;
+function ranRecommend() {
+    var ransid = getsid(s_len, 4);
+    for (var i = 0; i < 3; i++) {
+        var j = parseInt(ransid[i]);
+        var sid = skins[j].id;
+        if (sid == skinID) {
+            j = parseInt(ransid[3]);
+            sid = skins[j].id;
+            var sname = skins[j].name;
+            var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
+            var rowmore = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
+            $("#row-more").append(rowmore);
+            continue;
+        }
         var sname = skins[j].name;
         var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
         var rowmore = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
         $("#row-more").append(rowmore);
-        continue;
-    }
-    var sname = skins[j].name;
-    var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
-    var rowmore = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
-    $("#row-more").append(rowmore);
+    };
 }
 
 
@@ -345,9 +357,9 @@ function isApp() {
 
 
 //左右滑动
-function touchSlidePreview(e) {
+function touchSlidePreview(eid) {
     var startX, endX;
-    var el = document.getElementById(e);
+    var el = document.getElementById(eid);
     el.addEventListener("touchstart", touchStart, false);
     el.addEventListener("touchmove", touchMove, false);
     el.addEventListener("touchend", touchEnd, false);
@@ -364,18 +376,15 @@ function touchSlidePreview(e) {
         //左滑
         if ((startX - endX) > 50) {
             $('.carousel').carousel('next');
-
         }
 
         //右滑
         if ((endX - startX) > 50) {
             $('.carousel').carousel('prev');
-
         }
     }
 
     function touchEnd(event) {
-
 
     }
 }
