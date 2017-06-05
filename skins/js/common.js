@@ -346,7 +346,7 @@ function isApp() {
 
 //左右滑动
 function touchSlidePreview(e) {
-    var startX, startY, endX, endY;
+    var startX, endX;
     var el = document.getElementById(e);
     el.addEventListener("touchstart", touchStart, false);
     el.addEventListener("touchmove", touchMove, false);
@@ -354,28 +354,28 @@ function touchSlidePreview(e) {
 
     function touchStart(event) {
         var touch = event.touches[0];
-        //        startY = touch.pageY;
         startX = touch.pageX;
     }
 
     function touchMove(event) {
         var touch = event.touches[0];
-        //endY = (startY - touch.pageY);
         endX = touch.pageX;
-    }
 
-    function touchEnd(event) {
         //左滑
-        if ((startX - endX) > 100) {
+        if ((startX - endX) > 50) {
             $('.carousel').carousel('next');
 
         }
 
         //右滑
-        if ((endX - startX) > 100) {
+        if ((endX - startX) > 50) {
             $('.carousel').carousel('prev');
 
         }
+    }
+
+    function touchEnd(event) {
+
 
     }
 }
