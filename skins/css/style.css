@@ -62,9 +62,13 @@ ul {
     text-align: center;
 }
 
-.vac {
+.i-vac {
     display: inline-block;
     height: 100%;
+    vertical-align: middle;
+}
+
+.i-vac {
     vertical-align: middle;
 }
 
@@ -302,7 +306,7 @@ ul {
 #item .back {
     width: 25px;
     height: 25px;
-    line-height: 25px;
+    /*    line-height: 25px;*/
     float: left;
     margin-top: -2px;
     left: 12px;
