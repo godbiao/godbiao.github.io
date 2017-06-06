@@ -315,7 +315,7 @@ ul {
 #item .share {
     width: 25px;
     height: 25px;
-    line-height: 25px;
+    /*    line-height: 25px;*/
     float: left;
     left: 18px;
     margin-top: 4px;
@@ -324,7 +324,7 @@ ul {
 #item .like {
     width: 25px;
     height: 25px;
-    line-height: 25px;
+    /*    line-height: 25px;*/
     right: 18px;
     margin-top: 4px;
 }
