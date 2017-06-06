@@ -125,7 +125,7 @@ $(".like").click(function () {
 });
 
 if ($.cookie(skinID) == 1) {
-    $(".like").html("&#xe66e;");
+    $(".like span").html("&#xe66e;");
     //$(".like").addClass("liked");
 }
 
