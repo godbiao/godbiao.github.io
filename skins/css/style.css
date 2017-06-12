@@ -292,7 +292,7 @@ ul {
 }
 
 #item .label {
-    vertical-align: middle;
+    line-height: 1.5em;
 }
 
 #item .back,
