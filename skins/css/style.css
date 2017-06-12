@@ -291,6 +291,10 @@ ul {
     padding-bottom: 15px;
 }
 
+#item .lable {
+    vertical-align: middle;
+}
+
 #item .back,
 #item .share,
 #item .like {
