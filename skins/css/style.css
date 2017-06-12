@@ -294,6 +294,7 @@ ul {
 #item .label {
     display: inline-block;
     line-height: 1.5em;
+    padding: .2em .6em .2em;
 }
 
 #item .back,
