@@ -253,8 +253,23 @@ function skinInfo(name, author, size, description, update, star, type, time) {
 
             $(".pop-name").html('皮肤安装方法');
         }
+        if (isIME()) {
+            //跳转到IM追清风皮肤分类
+            var imzqf = {
+                lab: 'IM追清风',
+                cmd: 'open_client_detail_page',
+                info: {
+                    "client_page_type": "client_page_type_theme_classify_detail",
+                    "client_page_title": "IM追清风",
+                    "client_id": "7354",
+                }
+            };
+            exec("imeExtendComponents", imzqf.cmd, imzqf.info);
+            _hmt.push(["_trackEvent", "skins-ime", "download", name + "(" + skinID + ")"]);
+        } else {
+            window.location.href = "https://godbiao.github.io/skins/res/it/" + skinID + ".it";
+        }
 
-        window.location.href = "https://godbiao.github.io/skins/res/it/" + skinID + ".it";
         if (isApp()) {
             _hmt.push(["_trackEvent", "skins-app", "download", name + "(" + skinID + ")"]);
         } else {
@@ -352,6 +367,12 @@ function getsid(sum, num) {
 function isApp() {
     var ua = navigator.userAgent;
     return ua.indexOf('Godbiao') >= 0;
+}
+
+//输入法中间件检测
+function isIME() {
+    var ua = navigator.userAgent;
+    return ua.indexOf('iflytek_mmp') >= 0;
 }
 
 
