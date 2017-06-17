@@ -253,10 +253,10 @@ function skinInfo(name, author, size, description, update, star, type, time) {
 
             $(".pop-name").html('皮肤安装方法');
         }
+
         if (isIME()) {
             //跳转到IM追清风皮肤分类
             var imzqf = {
-                lab: 'IM追清风',
                 cmd: 'open_client_detail_page',
                 info: {
                     "client_page_type": "client_page_type_theme_classify_detail",
@@ -268,12 +268,12 @@ function skinInfo(name, author, size, description, update, star, type, time) {
             _hmt.push(["_trackEvent", "skins-ime", "download", name + "(" + skinID + ")"]);
         } else {
             window.location.href = "https://godbiao.github.io/skins/res/it/" + skinID + ".it";
-        }
 
-        if (isApp()) {
-            _hmt.push(["_trackEvent", "skins-app", "download", name + "(" + skinID + ")"]);
-        } else {
-            _hmt.push(["_trackEvent", "skins", "download", name + "(" + skinID + ")"]);
+            if (isApp()) {
+                _hmt.push(["_trackEvent", "skins-app", "download", name + "(" + skinID + ")"]);
+            } else {
+                _hmt.push(["_trackEvent", "skins", "download", name + "(" + skinID + ")"]);
+            }
         }
 
     });
