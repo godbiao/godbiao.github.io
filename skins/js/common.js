@@ -469,5 +469,10 @@ function touchSlideReload() {
 //模板认定
 function isTpl() {
     var herf = window.location.href;
-    return herf.substr(herf.indexOf('?') + 1, herf.length);
+    var flag = herf.substr(herf.indexOf('?') + 1, herf.length);
+    if (flag == 1) {
+        return true;
+    } else {
+        return false;
+    }
 }
