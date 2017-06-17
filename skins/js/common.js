@@ -61,7 +61,7 @@ var skinID = Request['id'];
 if (skinID) {
     itemSkin();
     ranRecommend();
-} else {
+} else if (isTpl()) {
     indexSkin();
 }
 
@@ -464,4 +464,10 @@ function touchSlideReload() {
 
 
     }
+}
+
+//模板认定
+function isTpl() {
+    var herf = window.location.href;
+    return herf.substr(herf.indexOf('?') + 1, herf.length);
 }
