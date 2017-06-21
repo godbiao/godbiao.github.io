@@ -226,7 +226,8 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     if (type == "gif") {
 
         $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + ".gif");
-        $(".preview_26").hide();
+        //        $(".preview_26").hide();
+        $(".skin-details-preview .item2").remove();
         $(".carousel-indicators").hide();
         $('.carousel').carousel({
             interval: 99999
