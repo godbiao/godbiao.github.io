@@ -39,6 +39,14 @@ ul {
     list-style: none;
 }
 
+
+/*按钮*/
+
+.btn-success {
+    background-color: #673ab7;
+    border-color: #693abd;
+}
+
 .split {
     height: 10px;
     background-color: #efeff0;
