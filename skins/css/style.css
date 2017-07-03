@@ -47,6 +47,16 @@ ul {
     border-color: #693abd;
 }
 
+.btn-success:hover {
+    background-color: #57319b;
+    border-color: #57319b;
+}
+
+.btn-success:active {
+    background-color: #673ab7;
+    border-color: #693abd;
+}
+
 .split {
     height: 10px;
     background-color: #efeff0;
