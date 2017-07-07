@@ -148,6 +148,9 @@ function itemSkin() {
 function indexSkin() {
     for (var i = 0; i < s_len; i++) {
         var sid = skins[i].id;
+        if (sid == "") {
+            continue;
+        }
         var sname = skins[i].name;
         var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
         var rowhot = '<div id="' + sid + '" class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
