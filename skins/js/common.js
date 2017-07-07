@@ -148,9 +148,11 @@ function itemSkin() {
 function indexSkin() {
     for (var i = 0; i < s_len; i++) {
         var sid = skins[i].id;
-        if (sid == "") {
+
+        if (sid == "ed7b5da1-4318-11e6-bdf4-0800200c9a66") { //首页隐藏一些皮肤
             continue;
         }
+
         var sname = skins[i].name;
         var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
         var rowhot = '<div id="' + sid + '" class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
