@@ -166,7 +166,6 @@ function indexSkin() {
     };
 }
 
-
 //随机推荐
 function ranRecommend() {
     var ransid = getsid(s_len, 4);
