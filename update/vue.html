@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Vue.js</title>
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="panel panel-default" v-for="release in ime">
+
+
+            <div class="panel-heading" role="tab" id="heading- {{ release.version }}">
+                <h4 class="panel-title">
+                    <a class="version" data-toggle="collapse" data-parent="#accordion" href="#collapse- {{ release.version }}">
+         			 {{ release.title }} 
+          			<span class="badge"><time>  {{ release.updatetime }}</time></span>
+        			</a>
+                </h4>
+            </div>
+            <div id="collapse- {{ release.version }}" class="panel-collapse collapse in" role="tabpanel">
+                <div class="panel-body">
+                    {{ release.description }}
+                    <div class="download">
+                        <a class="btn btn-primary btn-default" href=' ' role="button" target="_blank">下载 »</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="js/vueapp.js"></script>
+</body>
+
+</html>
