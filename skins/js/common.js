@@ -1,8 +1,13 @@
 $(document).ready(function () {
     $("body").fadeIn();
 
+
     if (!isApp()) {
         $("#banner").show();
+    }
+
+    if (isMobile()) {
+        $("#cyReward").hide();
     }
 
     //banner打开微博
@@ -480,4 +485,14 @@ function isTpl() {
     } else {
         return false;
     }
+}
+
+function isMobile() {
+    var ua = navigator.userAgent;
+    var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+        isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+        isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+        ismobile = isIphone || isAndroid;
+
+    return ismobile;
 }
