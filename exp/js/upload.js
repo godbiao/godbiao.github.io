@@ -54,7 +54,7 @@
 					//				post_params: {
 					//					"PHPSESSID": "<?php echo session_id(); ?>"
 					//				},
-					file_size_limit: "600 KB",
+					file_size_limit: "1000 KB",
 					file_types: "*.png;*.gif",
 					file_types_description: "选择图片",
 					file_upload_limit: 0,
