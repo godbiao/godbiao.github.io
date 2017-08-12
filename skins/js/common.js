@@ -1,5 +1,4 @@
-$(document).ready(function () {
-    $("body").fadeIn();
+$(document).ready(function () {   
 
 
     if (!isApp()) {
