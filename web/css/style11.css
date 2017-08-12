@@ -1,0 +1,42 @@
+/*
+CSS3 选择器 hover、focus、active 和 checked
+*/
+
+
+/*
+input[type="text"]:hover {
+    background-color: aqua;
+}
+
+input[type="text"]:focus {
+    background-color: blue;
+}
+
+input[type="text"]:active {
+    background-color: brown;
+
+
+input[type="checkbox"]:checked {
+    outline: 2px solid gold;
+}
+}*/
+
+
+/*enabled和disabled*/
+
+
+/*
+input[type="text"]:enabled {
+    background-color: red;
+}
+
+input[type="text"]:disabled {
+    background-color: darkgray;
+}*/
+
+
+/*通用兄弟元素选择器*/
+
+div ~ p {
+    background-color: red;
+}

@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	overflow-x: hidden;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	left: -200px;
+	position: relative;
+	border: 5px solid #ffffff;
+}
+
+.box1 {
+	background-color: aqua;
+	-webkit-animation: anibox1 20s linear infinite;
+}
+
+.box2 {
+	background-color: chartreuse;
+	-webkit-animation: anibox1 20s linear infinite 10s;
+}
+
+@-webkit-keyframes anibox1 {
+	0% {
+		left: -200px;
+	}
+	23% {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(3);
+	}
+	27% {
+		transform: scale(1);
+	}
+	50% {
+		left: 100%;
+		background-color: red;
+	}
+	100% {
+		left: -200px;
+	}
+}
+
+.xuanzhuan {
+	width: 200px;
+	height: 200px;
+	margin: 100px auto;
+	border: 5px solid #fff;
+	background-color: blueviolet;
+	-webkit-animation: xuanzhuan 10s linear infinite;
+}
+
+@-webkit-keyframes xuanzhuan {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.dm {
+	color: aliceblue;
+}
+
+.dm ul {
+	list-style: none;
+	width: 100%;
+	text-align: right;
+}
+
+.dm ul li {
+	text-align: center;
+	width: 100px;
+	position: relative;
+}
+
+.dm ul li:nth-child(even) {
+	left: 0px;
+	-webkit-animation: anibox1 20s linear infinite;
+}
+
+.dm ul li:nth-child(2n-1) {
+	left: -200px;
+	-webkit-animation: anibox1 10s linear infinite 5s;
+}

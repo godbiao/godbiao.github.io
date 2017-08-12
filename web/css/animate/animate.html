@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3-Animate</title>
+	<link rel="stylesheet" href="animate.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="dm">
+		<ul>
+			<li>弹幕1</li>
+			<li>弹幕2</li>
+			<li>弹幕3</li>
+			<li>弹幕4</li>
+			<li>弹幕5</li>
+			<li>弹幕5</li>
+			<li>弹幕6</li>
+			<li>弹幕7</li>
+			<li>弹幕8</li>
+			<li>弹幕9</li>
+			<li>弹幕10</li>
+		</ul>
+	</div>
+
+
+	<div class="xuanzhuan">
+
+	</div>
+
+
+	<div class="box box1">
+
+	</div>
+	<div class="box box2">
+
+	</div>
+
+
+	<script src="jquery-3.1.1.min.js"></script>
+	<script>
+		$(function() {
+
+			function myani(myclass, myanimate) {
+				myclass.click(function() {
+					myclass.addClass(myanimate);
+					setTimeout(function() {
+						myclass.removeClass(myanimate);
+					}, 2000);
+				});
+			}
+
+			var box1 = $('.box1');
+			var box1_animate = "animated hinge";
+			var box2 = $('.box2');
+			var box2_animate = "animated bounceOutDown";
+			myani(box1, box1_animate);
+			myani(box2, box2_animate);
+
+		});
+
+	</script>
+</body>
+
+</html>

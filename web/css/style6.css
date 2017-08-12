@@ -1,0 +1,88 @@
+/*
+p {
+    color: red;
+}
+*/
+
+
+/*
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2 {
+    font-size: 45px;
+}
+
+p {
+    color: blue;
+    margin: 10px;
+}
+*/
+
+
+/*
+.div {
+    color: blue;
+}
+
+a.div {
+    color: red;
+}*/
+
+
+/*
+
+.p1 {
+    color: blue;
+}
+
+.p2 {
+    font-size: 30px;
+}
+
+.p3 {
+    font-style: italic;
+}
+
+.p1.p2 {
+    font-style: italic;
+}
+
+
+#mydiv {
+    color: cyan;
+}
+*/
+
+
+/*
+[title] {
+    color: red;
+}
+
+[href=http: //www.baidu.com] {
+font-size: 30px;
+
+}
+[title~="title"] {
+    font-size: 50px;
+}
+
+p strong i {
+    color: aqua;
+}
+
+
+p>strong>i {
+    font-size: 50px;
+}
+
+*/
+
+li+li {
+    font-size: 50px;
+    color: blueviolet;
+}

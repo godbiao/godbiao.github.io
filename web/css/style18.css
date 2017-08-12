@@ -1,0 +1,62 @@
+/* 
+移动优先原则，有限实现小屏幕下的布局
+使用颜色，#39ADD1 #3079Ab #982551 #E15258 #CC6699 #52AC43
+*/
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+}
+.menu li{
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	flex: 1 1 100%;
+	
+}
+
+.menu li:nth-child(1){
+	background-color: #39ADD1;
+}
+.menu li:nth-child(2){
+	background-color: #3079Ab;
+}
+
+.menu li:nth-child(3){
+	background-color: #E15258;
+}
+
+.menu li:nth-child(4){
+	background-color: #E15258;
+}
+
+.menu li:nth-child(5){
+	background-color: #CC6699;
+}
+
+.menu li:nth-child(6){
+	background-color: #52AC43;
+}
+
+
+.menu li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+@media(min-width:480px){
+	.menu li{
+		flex:  1 1 50%;
+	}
+}
+
+@media(min-width:768px){
+	.menu {
+		flex-flow: row nowrap;
+	}
+}
+
+
+

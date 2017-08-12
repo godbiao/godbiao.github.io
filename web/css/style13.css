@@ -1,0 +1,80 @@
+/*盒子类型*/
+
+
+/*
+div {
+    background-color: aqua;
+    display: inline-block;
+    width: 300px;
+}
+
+span {
+    background-color: brown;
+    display: inline-block;
+    width: 300px;
+}*/
+
+
+/*
+table {
+    border: 3px solid #00aaff;
+    display: inline-table;
+}
+
+td {
+    border: 1px solid red;
+}*/
+
+
+/*
+div {
+    display: list-item;
+    list-style: circle;
+    margin-left: 30px;
+}*/
+
+
+/*对盒子中容纳不下的内容的显示*/
+
+
+/*
+div {
+    white-space: nowrap;
+    width: 300px;
+    border: solid 1px red;
+    height: 150px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+*/
+
+
+/*盒子的阴影和大小计算方式*/
+
+
+/*
+
+div {
+    margin: 200px auto;
+    background-color: #ffaa00;
+    box-shadow: 0px 0px 20px gray;
+    width: 200px;
+    height: 100px;
+}
+*/
+
+#div1 {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    padding: 30px;
+}
+
+#div2 {
+    box-sizing: content-box;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    padding: 30px;
+}

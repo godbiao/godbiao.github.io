@@ -1,0 +1,63 @@
+/*背景相关新增属性*/
+
+
+/*
+div {
+    background-color: black;
+    border: dashed 15px green;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-image: url(res/1.jpg);
+    background-repeat: no-repeat;
+}
+
+.div1 {
+    background-origin: border-box;
+    background-clip: border-box;
+}
+
+.div2 {
+    background-origin: padding-box;
+    background-clip: padding-box;
+    margin-top: 40px;
+}
+
+.div3 {
+    background-origin: content-box;
+    background-clip: content-box;
+    margin-top: 40px;
+}*/
+
+
+/*
+div {
+    background-image: url('res/1.jpg'), url('res/2.jpg');
+    background-repeat: repeat-x, no-repeat;
+    background-position: 100%, 100%, center, center;
+    width: 1000px;
+    height: 2000px;
+}
+*/
+
+
+/*
+div {
+    background: grey;
+    border: 3px solid #000;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 100px 100px 5px 5px;
+}
+*/
+
+
+/*使用图像边框 9.png */
+
+div {
+    border: 50px;
+    -webkit-border-image: url('res/btn.png') 100;
+    width: 100px;
+}

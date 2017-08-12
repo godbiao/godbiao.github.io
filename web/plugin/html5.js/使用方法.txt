@@ -1,0 +1,4 @@
+让低版本IE支持html5标签
+<!--[if lt IE 9]>
+    <script src="html5shiv.js"></script>
+<![endif]-->

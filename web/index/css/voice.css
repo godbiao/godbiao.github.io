@@ -1,0 +1,198 @@
+* {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body {
+	background-color: #000;
+	/*
+	animation: bgc 15s linear infinite;
+	-webkit-animation: bgc 15s linear infinite;
+	-o-animation: bgc 15s linear infinite;
+	-moz-animation: bgc 15s linear infinite;
+*/
+}
+
+@keyframes bgc {
+	0% {
+		background-color: black;
+	}
+	25% {
+		background-color: brown;
+	}
+	50% {
+		background-color: darkgreen;
+	}
+	50% {
+		background-color: midnightblue;
+	}
+	100% {
+		background-color: black;
+	}
+}
+
+@-webkit-keyframes bgc {
+	0% {
+		background-color: black;
+	}
+	25% {
+		background-color: brown;
+	}
+	50% {
+		background-color: darkgreen;
+	}
+	50% {
+		background-color: midnightblue;
+	}
+	100% {
+		background-color: black;
+	}
+}
+
+@-moz-keyframes bgc {
+	0% {
+		background-color: black;
+	}
+	25% {
+		background-color: brown;
+	}
+	50% {
+		background-color: darkgreen;
+	}
+	50% {
+		background-color: midnightblue;
+	}
+	100% {
+		background-color: black;
+	}
+}
+
+@-o-keyframes bgc {
+	0% {
+		background-color: black;
+	}
+	25% {
+		background-color: brown;
+	}
+	50% {
+		background-color: darkgreen;
+	}
+	50% {
+		background-color: midnightblue;
+	}
+	100% {
+		background-color: black;
+	}
+}
+
+#v {
+	position: relative;
+	margin: 50px auto;
+	box-shadow: 0 0 30px black;
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5)
+}
+
+.bo {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.bo li {
+	position: relative;
+	background-color: lemonchiffon;
+	width: 0.5%;
+	height: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
+	/*	border-radius: 50%;*/
+}
+
+.bo li:nth-child(n) {
+	animation: hv1 1s linear infinite;
+	-webkit-animation: hv1 1s linear infinite;
+	-moz-animation: hv1 1s linear infinite;
+	-o-animation: hv1 1s linear infinite;
+	background-color: aqua;
+}
+
+.bo li:nth-child(2n) {
+	animation: hv1 1s linear infinite 0.1s;
+	-webkit-animation: hv1 1s linear infinite 0.1s;
+	-moz-animation: hv1 1s linear infinite 0.1s;
+	-o-animation: hv1 1s linear infinite 0.1s;
+	background-color: blueviolet;
+}
+
+.bo li:nth-child(3n) {
+	animation: hv1 1s linear infinite 0.2s;
+	-webkit-animation: hv1 1s linear infinite 0.2s;
+	-moz-animation: hv1 1s linear infinite 0.2s;
+	-o-animation: hv1 1s linear infinite 0.2s;
+	background-color: chartreuse;
+}
+
+.bo li:nth-child(4n) {
+	animation: hv1 1s linear infinite 0.3s;
+	-webkit-animation: hv1 1s linear infinite 0.3s;
+	-moz-animation: hv1 1s linear infinite 0.3s;
+	-o-animation: hv1 1s linear infinite 0.3s;
+	background-color: coral;
+}
+
+@keyframes hv1 {
+	0% {
+		transform: scaleY(1);
+	}
+	50% {
+		transform: scaleY(30);
+		/*		background-color: fuchsia;*/
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+@-webkit-keyframes hv1 {
+	0% {
+		transform: scaleY(1);
+	}
+	50% {
+		transform: scaleY(30);
+		/*		background-color: fuchsia;*/
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+@-moz-keyframes hv1 {
+	0% {
+		transform: scaleY(1);
+	}
+	50% {
+		transform: scaleY(30);
+		/*		background-color: fuchsia;*/
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+@-o-keyframes hv1 {
+	0% {
+		transform: scaleY(1);
+	}
+	50% {
+		transform: scaleY(30);
+		/*		background-color: fuchsia;*/
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}

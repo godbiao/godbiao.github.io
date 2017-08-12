@@ -1,0 +1,92 @@
+/*
+选择器：first-child、last-child、nth-child 和 nth-last-child*/
+
+
+/*
+li:first-child {
+    background-color: yellow;
+}
+
+li:last-child {
+    background-color: blue;
+}
+
+li:nth-child(3) {
+    background-color: brown;
+}
+
+li:nth-last-child(3) {
+    background-color: aqua;
+}
+*/
+
+
+/*奇数
+li:nth-last-child(odd) {
+    background-color: brown;
+}
+*/
+
+
+/*偶数
+
+li:nth-last-child(even) {
+    background-color: brown;
+}
+*/
+
+
+/*选择器：nth-of-type 和 nth-last-of-type*/
+
+
+/*
+h2:nth-child(odd) {
+    background-color: firebrick;
+}
+*/
+
+
+/*相同类型标签参与计算
+
+h2:nth-of-type(odd) {
+    background-color: red;
+}
+
+h2:nth-of-type(even) {
+    background-color: yellow;
+}
+*/
+
+
+/*
+nth-child(n)
+an+b
+*/
+
+
+/*
+li:nth-child(4n+1) {
+    background-color: darkgoldenrod;
+}
+
+li:nth-child(4n+2) {
+    background-color: darkgray;
+}
+
+li:nth-child(4n+3) {
+    background-color: darkgreen;
+}
+
+li:nth-child(4n) {
+    background-color: darkcyan;
+}
+*/
+
+
+/*only-child 选择器
+只有一个子元素的
+*/
+
+li:only-child {
+    background-color: aqua;
+}

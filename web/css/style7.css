@@ -1,0 +1,214 @@
+/*
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    text-align: center;
+    line-height: 100px;
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+    transition: width 1s, height 1s, transform 1s;
+    -webkit-transition-delay: 2s;
+}
+
+div:hover {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    transform: rotate(360deg);
+    -webket-transform: rotate(360deg);
+}
+*/
+
+.div-x {
+    transform: translate(100px, 100px);
+    -webkit-transform: translate(200px, 100px);
+    /*safari chrome*/
+    -o-transform: translate(200px, 100px);
+    /*opera*/
+    -ms-transform: translate(200px, 100px);
+    /*IE*/
+    -moz-transform: translate(200px, 100px);
+    /*Firefox*/
+}
+
+
+/*
+.div-y {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(200deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(150deg);
+    -moz-transform: rotate(180deg);
+}
+
+.div-z {
+    margin-top: 200px;
+    transform: scale(1, 2);
+    -webkit-transform: scale(1, 2);
+}
+
+.div-xx {
+    margin: 200px;
+    transform: skew(20deg, 20deg);
+    -webket-transform: skew(20deg, 50deg);
+}
+
+.div2 {
+    transform: rotateZ(120deg);
+    -webket-transform: rotateZ(120deg);
+}*/
+
+
+/*
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: anim 5s infinite alternate;
+    -webkit-animation: anim 5s infinite alternate;
+}
+
+@-webkit-keyframes anim {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: blue;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: #ccffcc;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: #00ffff;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@-o-keyframes anim {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: blue;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: #ccffcc;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: #00ffff;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@-moz-keyframes anim {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: blue;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: #ccffcc;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: #00ffff;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes anim {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: blue;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: #ccffcc;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background: #00ffff;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}*/
+
+
+/*
+.div1 {
+    columns-count: 4;
+    columns-gap: 30px;
+    columns-rule: 5px outset #ff0000;
+    -webkit-columns-count: 4;
+    -webkit-columns-gap: 30px;
+    -webkit-columns-rule: 5px outset #ff0000;
+}
+*/
+
+
+/*瀑布流*/
+
+.container {
+    column-width: 150px;
+    -webkit-column-width: 150px;
+    column-gap: 5px;
+    -webkit-column-gap: 5px;
+}
+
+.container div {
+    width: 150px;
+    margin: 5px 0px;
+}
+
+.container p {
+    font-size: 12px;
+    text-align: center;
+}

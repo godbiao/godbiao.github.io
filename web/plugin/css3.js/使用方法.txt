@@ -1,0 +1,14 @@
+在你需要使用css3的样式里加入
+behavior: url(js/ie-css3.htc);
+ 
+ Webkit内核的浏览器支持“-webkit-border-radius: 10px;”属性（10px是圆角半径），可以直接解析出圆角；Firefox浏览器支持“-moz-border-radius: 10px;”属性，也是可以直接解析出圆角；IE系浏览器则需要加上“border-radius: 15px;”的属性。注意：
+
+1、behavior的url里一定要填写ie-css3.htc的绝对路径，因为 IE浏览器找该文件是相对当前html文件路径来找的，所以对于Wordpress等动态程序生成的页面一定要填写绝对路径。
+
+2、一定要有定位属性：position:relative;
+
+3、因为在IE浏览器下这些CSS3效果的实现是要借助于VML，由VML绘制圆角或是投影效果，所以还需要一个z-index属性。z-index属性最好设置得比较大，如2。
+
+4、如果在IE浏览器下某些模块无法用此渲染，可以试着绝对定位相应的层，即加上“ width: 400px; height:400px;”属性。
+
+5、radius属性的10px是圆角半径，还可以给两个值如“border-radius: 10px 5px;”，这样则左上角与右下角半径为10px，右上角与左下角半径为5px。也可以赋4个值，为“上  右  下  左”。
