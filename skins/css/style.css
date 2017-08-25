@@ -453,3 +453,12 @@ ul {
 .carousel-indicators .active {
     background-color: #673ab7;
 }
+
+#item #tips {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#item #tips img {
+    width: 100%;
+}
