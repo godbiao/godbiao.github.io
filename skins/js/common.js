@@ -505,12 +505,11 @@ function tips() {
 
     var newtips = tipsdata[randomnumber];
 
-    var tips = "<a target='_blank' href='" + newtips.url + "' title='" + newtips.title + "'><img class='tipsimg' src='
-    " + newtips.img + "
-    '></a>";
+    var tips = "<a target='_blank' href='" + newtips.url + "' title='" + newtips.title + "'><img class='tipsimg' src='" + newtips.img + "'></a>";
     $("#tips").append(tips);
 
     $(".tipsimg").click(function () {
         _hmt.push(["_trackEvent", "skins", "tips", newtips.title]);
+        // alert(newtips.title);
     });
 }
