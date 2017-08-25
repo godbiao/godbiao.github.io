@@ -507,4 +507,8 @@ function tips() {
 
     var tips = "<a target='_blank' href='" + newtips.url + "' title='" + newtips.title + "'><img src='" + newtips.img + "'></a>";
     $("#tips").append(tips);
+
+    $("#tips img").click(function () {
+        _hmt.push(["_trackEvent", "skins", "tips", newtips.title]);
+    });
 }
