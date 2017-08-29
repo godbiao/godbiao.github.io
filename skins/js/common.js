@@ -500,16 +500,12 @@ function isMobile() {
 
 //小技巧
 function tips() {
-
     var randomnumber = Math.round(Math.random() * (tipsdata.length - 1));
-
     var newtips = tipsdata[randomnumber];
-
     var tips = "<a target='_blank' href='" + newtips.url + "' title='" + newtips.title + "'><img class='tipsimg' src='" + newtips.img + "'></a>";
     $("#tips").append(tips);
-
+    //TIPS点击统计
     $(".tipsimg").click(function () {
         _hmt.push(["_trackEvent", "skins", "tips", newtips.title]);
-        // alert(newtips.title);
     });
 }
