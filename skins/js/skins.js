@@ -9,7 +9,9 @@ var skins = [
         "star": "4",
         "type": "",
         "lables": ["设计创意", "Android", "谷歌", "白色", "高亮蓝", "轻薄"],
-        "time": "2017-7-30"
+        "time": "2017-7-30",
+        "imgs": ["res/it/08479a95-aea3-49b3-a6bc-d443beca68f7_preview.jpg", "res/it/08479a95-aea3-49b3-a6bc-d443beca68f7_9.jpg", "res/it/08479a95-aea3-49b3-a6bc-d443beca68f7_26.jpg"],
+        "it": "res/it/08479a95-aea3-49b3-a6bc-d443beca68f7.it"
 	},
     {
         "id": "fcb80779-4704-4e32-9144-02dfedb4f191",
@@ -21,7 +23,9 @@ var skins = [
         "star": "5",
         "type": "",
         "lables": ["设计创意", "winphone", "Emoji", "黑色", "高亮蓝", "大空格"],
-        "time": "2017-7-11"
+        "time": "2017-7-11",
+        "imgs": ["res/it/fcb80779-4704-4e32-9144-02dfedb4f191_preview.jpg", "res/it/fcb80779-4704-4e32-9144-02dfedb4f191_9.jpg", "res/it/fcb80779-4704-4e32-9144-02dfedb4f191_26.jpg"],
+        "it": "res/it/fcb80779-4704-4e32-9144-02dfedb4f191.it"
 	},
     {
         "id": "fcb80779-4704-4e32-9144-02dfedb4f190",
@@ -33,7 +37,9 @@ var skins = [
         "star": "3",
         "type": "",
         "lables": ["设计创意", "winphone", "仿制", "黑色", "高亮蓝", "大空格"],
-        "time": "2017-6-2"
+        "time": "2017-6-2",
+        "imgs": ["res/it/fcb80779-4704-4e32-9144-02dfedb4f190_preview.jpg", "res/it/fcb80779-4704-4e32-9144-02dfedb4f190_9.jpg", "res/it/fcb80779-4704-4e32-9144-02dfedb4f190_26.jpg"],
+        "it": "res/it/fcb80779-4704-4e32-9144-02dfedb4f190.it"
 	},
     {
         "id": "638ba2e2-235c-4b82-bbeb-9b3947d3a382",
@@ -45,7 +51,9 @@ var skins = [
         "star": "4",
         "type": "",
         "lables": ["设计创意", "ofo", "小黄车", "商务", "黄色", "低候选栏"],
-        "time": "2017-6-1"
+        "time": "2017-6-1",
+        "imgs": ["res/it/638ba2e2-235c-4b82-bbeb-9b3947d3a382_preview.jpg", "res/it/638ba2e2-235c-4b82-bbeb-9b3947d3a382_9.jpg", "res/it/638ba2e2-235c-4b82-bbeb-9b3947d3a382_26.jpg"],
+        "it": "res/it/638ba2e2-235c-4b82-bbeb-9b3947d3a382.it"
 	},
     {
         "id": "b43bfbe9-d3fb-423d-a759-b99051712013",
@@ -57,7 +65,9 @@ var skins = [
         "star": "3",
         "type": "",
         "lables": ["设计创意", "淘宝", "经典", "简约", "大空格", "橙色"],
-        "time": "2017-6-1"
+        "time": "2017-6-1",
+        "imgs": ["res/it/b43bfbe9-d3fb-423d-a759-b99051712013_preview.jpg", "res/it/b43bfbe9-d3fb-423d-a759-b99051712013_9.jpg", "res/it/b43bfbe9-d3fb-423d-a759-b99051712013_26.jpg"],
+        "it": "res/it/b43bfbe9-d3fb-423d-a759-b99051712013.it"
 	},
     {
         "id": "c41de68f-405d-422e-82f7-b0cedc50cc9c",
@@ -69,7 +79,9 @@ var skins = [
         "star": "5",
         "type": "",
         "lables": ["设计创意", "夜间护眼", "锤子", "商务", "坚果Pro", "酒红色"],
-        "time": "2017-5-11"
+        "time": "2017-5-11",
+        "imgs": ["res/it/c41de68f-405d-422e-82f7-b0cedc50cc9c_preview.jpg", "res/it/c41de68f-405d-422e-82f7-b0cedc50cc9c_9.jpg", "res/it/c41de68f-405d-422e-82f7-b0cedc50cc9c_26.jpg"],
+        "it": "res/it/c41de68f-405d-422e-82f7-b0cedc50cc9c.it"
 	},
     {
         "id": "d32697f4-d850-4af5-93da-b4df99310887",
@@ -81,7 +93,9 @@ var skins = [
         "star": "5",
         "type": "",
         "lables": ["设计创意", "粉色", "哔哩哔哩", "简约", "大空格", "女生"],
-        "time": "2017-4-20"
+        "time": "2017-4-20",
+        "imgs": ["res/it/d32697f4-d850-4af5-93da-b4df99310887_preview.jpg", "res/it/d32697f4-d850-4af5-93da-b4df99310887_9.jpg", "res/it/d32697f4-d850-4af5-93da-b4df99310887_26.jpg"],
+        "it": "res/it/d32697f4-d850-4af5-93da-b4df99310887.it"
 	}, {
         "id": "bc3df4ab-d4fe-4443-a907-779718a55640",
         "name": "iPhone7RED",
@@ -92,7 +106,9 @@ var skins = [
         "star": "2",
         "type": "",
         "lables": ["设计创意", "苹果", "简约", "iPhone 7", "热点", "中国红"],
-        "time": "2017-3-23"
+        "time": "2017-3-23",
+        "imgs": ["res/it/bc3df4ab-d4fe-4443-a907-779718a55640_preview.jpg", "res/it/bc3df4ab-d4fe-4443-a907-779718a55640_9.jpg", "res/it/bc3df4ab-d4fe-4443-a907-779718a55640_26.jpg"],
+        "it": "res/it/bc3df4ab-d4fe-4443-a907-779718a55640.it"
 	}, {
         "id": "bdfba2f0-04bb-11e7-9598-0800200c9a66",
         "name": "Flyme 6",
@@ -103,7 +119,9 @@ var skins = [
         "star": "4",
         "type": "",
         "lables": ["设计创意", "魅族", "简约", "Flyme6", "商务", "精仿"],
-        "time": "2017-3-12"
+        "time": "2017-3-12",
+        "imgs": ["res/it/bdfba2f0-04bb-11e7-9598-0800200c9a66_preview.jpg", "res/it/bdfba2f0-04bb-11e7-9598-0800200c9a66_9.jpg", "res/it/bdfba2f0-04bb-11e7-9598-0800200c9a66_26.jpg"],
+        "it": "res/it/bdfba2f0-04bb-11e7-9598-0800200c9a66.it"
 	}, {
         "id": "bbd806a0-046e-11e7-9598-0800200c9a66",
         "name": "搜狗Style",
@@ -114,7 +132,9 @@ var skins = [
         "star": "3",
         "type": "",
         "lables": ["设计创意", "搜狗", "大空格", "字体", "简约商务", "图标"],
-        "time": "2017-3-10"
+        "time": "2017-3-10",
+        "imgs": ["res/it/bbd806a0-046e-11e7-9598-0800200c9a66_preview.jpg", "res/it/bbd806a0-046e-11e7-9598-0800200c9a66_9.jpg", "res/it/bbd806a0-046e-11e7-9598-0800200c9a66_26.jpg"],
+        "it": "res/it/bbd806a0-046e-11e7-9598-0800200c9a66.it"
 	}, {
         "id": "aee9b17a-95e8-d1f5-c227-58b7e413f319",
         "name": "MIUI 8",
@@ -125,7 +145,9 @@ var skins = [
         "star": "5",
         "type": "",
         "lables": ["设计创意", "小米", "MIUI 8", "简约", "大空格", "小字体"],
-        "time": "2017-3-9"
+        "time": "2017-3-9",
+        "imgs": ["res/it/aee9b17a-95e8-d1f5-c227-58b7e413f319_preview.jpg", "res/it/aee9b17a-95e8-d1f5-c227-58b7e413f319_9.jpg", "res/it/aee9b17a-95e8-d1f5-c227-58b7e413f319_26.jpg"],
+        "it": "res/it/aee9b17a-95e8-d1f5-c227-58b7e413f319.it"
 	}, {
         "id": "4e43b330-ba92-11e6-9598-0800200c9a66",
         "name": "iOS10风格",
@@ -136,7 +158,9 @@ var skins = [
         "star": "4",
         "type": "",
         "lables": ["设计创意", "iOS10", "苹果", "简约", "iPhone", "纤细字体"],
-        "time": "2017-3-11"
+        "time": "2017-3-11",
+        "imgs": ["res/it/4e43b330-ba92-11e6-9598-0800200c9a66_preview.jpg", "res/it/4e43b330-ba92-11e6-9598-0800200c9a66_9.jpg", "res/it/4e43b330-ba92-11e6-9598-0800200c9a66_26.jpg"],
+        "it": "res/it/4e43b330-ba92-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "2863560d-00f2-4115-b042-c3fc29ab8c79",
         "name": "iOS6风格",
@@ -147,7 +171,9 @@ var skins = [
         "star": "3",
         "type": "",
         "lables": ["设计创意", "iOS6", "苹果", "简约", "iPhone", "大空格"],
-        "time": "2017-2-23"
+        "time": "2017-2-23",
+        "imgs": ["res/it/2863560d-00f2-4115-b042-c3fc29ab8c79_preview.jpg", "res/it/2863560d-00f2-4115-b042-c3fc29ab8c79_9.jpg", "res/it/2863560d-00f2-4115-b042-c3fc29ab8c79_26.jpg"],
+        "it": "res/it/2863560d-00f2-4115-b042-c3fc29ab8c79.it"
 	}, {
         "id": "0b7a9a20-dcbe-11e6-9598-0800200c9a66",
         "name": "微信Style",
@@ -158,7 +184,9 @@ var skins = [
         "star": "5",
         "type": "png",
         "lables": ["设计创意", "绿色", "微信", "简约", "大空格", "低候选栏"],
-        "time": "2017-1-21"
+        "time": "2017-1-21",
+        "imgs": ["res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66_preview.jpg", "res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66_9.png", "res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66_26.png"],
+        "it": "res/it/08479a95-aea3-49b3-a6bc-d443beca68f7.it"
 	}, {
         "id": "084b9eb0-dd29-11e6-9598-0800200c9a66",
         "name": "QQStyle",
@@ -169,7 +197,9 @@ var skins = [
         "star": "5",
         "type": "png",
         "lables": ["设计创意", "蓝色", "QQ", "简约", "大空格", "低候选栏"],
-        "time": "2017-2-21"
+        "time": "2017-2-21",
+        "imgs": ["res/it/084b9eb0-dd29-11e6-9598-0800200c9a66_preview.jpg", "res/it/084b9eb0-dd29-11e6-9598-0800200c9a66_9.png", "res/it/084b9eb0-dd29-11e6-9598-0800200c9a66_26.png"],
+        "it": "res/it/084b9eb0-dd29-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "0d6dcee0-02f5-4c96-8fa6-b4dfed394142",
         "name": "酷安Style·水鸭青",
@@ -180,7 +210,9 @@ var skins = [
         "star": "5",
         "type": "png",
         "lables": ["设计创意", "青色", "酷安", "简约", "大空格", "低候选栏"],
-        "time": "2017-2-7"
+        "time": "2017-2-7",
+        "imgs": ["res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142_preview.jpg", "res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142_9.png", "res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142_26.png"],
+        "it": "res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142.it"
 	}, {
         "id": "7bbac9c0-ba58-11e5-a837-0800200c9a66",
         "name": "无缝线框",
@@ -191,7 +223,9 @@ var skins = [
         "star": "3",
         "type": "",
         "lables": ["", "", "", "", "", ""],
-        "time": "2017-2-27"
+        "time": "2017-2-27",
+        "imgs": ["res/it/7bbac9c0-ba58-11e5-a837-0800200c9a66_preview.jpg", "res/it/7bbac9c0-ba58-11e5-a837-0800200c9a66_9.jpg", "res/it/7bbac9c0-ba58-11e5-a837-0800200c9a66_26.jpg"],
+        "it": "res/it/7bbac9c0-ba58-11e5-a837-0800200c9a66.it"
 	}, {
         "id": "11a44990-9a90-11e6-bdf4-0800200c9a66",
         "name": "乳の白",
@@ -202,7 +236,9 @@ var skins = [
         "star": "5",
         "type": "",
         "lables": ["设计创意", "低候选栏", "乳白", "柔美", "大空格", "字体"],
-        "time": "2017-1-16"
+        "time": "2017-1-16",
+        "imgs": ["res/it/11a44990-9a90-11e6-bdf4-0800200c9a66_preview.jpg", "res/it/11a44990-9a90-11e6-bdf4-0800200c9a66_9.jpg", "res/it/11a44990-9a90-11e6-bdf4-0800200c9a66_26.jpg"],
+        "it": "res/it/11a44990-9a90-11e6-bdf4-0800200c9a66.it"
 	}, {
         "id": "91a44990-9a90-11e6-bdf4-0800200c9a66",
         "name": "大空格の韵白[柔美版]",
@@ -213,7 +249,9 @@ var skins = [
         "star": "5",
         "type": "",
         "lables": ["设计创意", "IM追清风", "韵白", "柔美", "大空格", "字体"],
-        "time": "2017-1-16"
+        "time": "2017-1-16",
+        "imgs": ["res/it/91a44990-9a90-11e6-bdf4-0800200c9a66_preview.jpg", "res/it/91a44990-9a90-11e6-bdf4-0800200c9a66_9.jpg", "res/it/91a44990-9a90-11e6-bdf4-0800200c9a66_26.jpg"],
+        "it": "res/it/91a44990-9a90-11e6-bdf4-0800200c9a66.it"
 	}, {
         "id": "75330890-0da2-11e5-b939-0800200c9a66",
         "name": "锤子SmartisanOS2.0",
@@ -224,7 +262,9 @@ var skins = [
         "star": "3",
         "type": "png",
         "lables": ["", "", "", "", "", ""],
-        "time": "2017-2-20"
+        "time": "2017-2-20",
+        "imgs": ["res/it/75330890-0da2-11e5-b939-0800200c9a66_preview.jpg", "res/it/75330890-0da2-11e5-b939-0800200c9a66_9.png", "res/it/75330890-0da2-11e5-b939-0800200c9a66_26.png"],
+        "it": "res/it/75330890-0da2-11e5-b939-0800200c9a66.it"
 	}, {
         "id": "40ed1290-cbd5-11e6-9598-0800200c9a66",
         "name": "贪吃蛇大作战·音乐",
@@ -235,7 +275,9 @@ var skins = [
         "star": "4",
         "type": "",
         "lables": ["", "", "", "", "", ""],
-        "time": "2016-12-27"
+        "time": "2016-12-27",
+        "imgs": ["res/it/40ed1290-cbd5-11e6-9598-0800200c9a66_preview.jpg", "res/it/40ed1290-cbd5-11e6-9598-0800200c9a66_9.jpg", "res/it/40ed1290-cbd5-11e6-9598-0800200c9a66_26.jpg"],
+        "it": "res/it/40ed1290-cbd5-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "69347a70-bc19-11e6-9598-0800200c9a66",
         "name": "王者荣耀·百变",
@@ -246,7 +288,9 @@ var skins = [
         "star": "3",
         "type": "gif",
         "lables": ["游戏动漫", "IM追清风", "王者荣耀", "动态", "音乐", "彩蛋"],
-        "time": "2016-12-9"
+        "time": "2016-12-9",
+        "imgs": ["res/it/69347a70-bc19-11e6-9598-0800200c9a66_preview.jpg", "res/it/69347a70-bc19-11e6-9598-0800200c9a66.gif", ""],
+        "it": "res/it/69347a70-bc19-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "5f7b6940-acaa-11e6-9598-0800200c9a66",
         "name": "扭着扭着·动态",
@@ -257,7 +301,9 @@ var skins = [
         "star": "4",
         "type": "",
         "lables": ["", "", "", "", "", ""],
-        "time": "2016-11-18"
+        "time": "2016-11-18",
+        "imgs": ["res/it/5f7b6940-acaa-11e6-9598-0800200c9a66_preview.jpg", "res/it/5f7b6940-acaa-11e6-9598-0800200c9a66_9.jpg", "res/it/5f7b6940-acaa-11e6-9598-0800200c9a66_26.jpg"],
+        "it": "res/it/5f7b6940-acaa-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "d2af7aa0-2320-11e6-bdf4-0800200c9a66",
         "name": "天空の路✫星轨·动态",
@@ -268,7 +314,9 @@ var skins = [
         "star": "4",
         "type": "gif",
         "lables": ["清新时尚", "IM追清风", "星轨", "动态", "天空", "夜"],
-        "time": "2016-12-6"
+        "time": "2016-12-6",
+        "imgs": ["res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66_preview.jpg", "res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66.gif", ""],
+        "it": "res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66.it"
 	}, {
         "id": "ed7b5da1-4318-11e6-bdf4-0800200c9a66",
         "name": "薛之谦·音乐",
@@ -279,6 +327,8 @@ var skins = [
         "star": "1",
         "type": "",
         "lables": ["", "", "", "", "", ""],
-        "time": "2016-7-6"
+        "time": "2016-7-6",
+        "imgs": ["res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66_preview.jpg", "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66_9.jpg", "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66_26.jpg"],
+        "it": "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66.it"
 	}
 ]

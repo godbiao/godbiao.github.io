@@ -141,7 +141,7 @@ function itemSkin() {
     for (var i = 0; i < s_len; i++) {
         if (skins[i].id == skinID) {
             var s = skins[i];
-            skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time);
+            skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time, s.imgs, s.it);
             putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
             break;
         }
@@ -181,13 +181,15 @@ function ranRecommend() {
             j = parseInt(ransid[3]);
             sid = skins[j].id;
             var sname = skins[j].name;
-            var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
-            var rowmore = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
+            //var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
+            var spreview = skins[j].imgs[0];
+            var rowmore = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview " ><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
             $("#row-more").append(rowmore);
             continue;
         }
         var sname = skins[j].name;
-        var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
+        //var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
+        var spreview = skins[j].imgs[0];
         var rowmore = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
         $("#row-more").append(rowmore);
     };
@@ -196,7 +198,7 @@ function ranRecommend() {
 
 
 //替换皮肤信息
-function skinInfo(name, author, size, description, update, star, type, time) {
+function skinInfo(name, author, size, description, update, star, type, time, imgs, it) {
     $(".skin-name").html(name);
     $(".skin-author").html(author);
     $(".skin-size").html(size);
@@ -234,7 +236,7 @@ function skinInfo(name, author, size, description, update, star, type, time) {
     //详情图
     if (type == "gif") {
 
-        $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + ".gif");
+        $(".preview_9").attr("src", imgs[1]);
         //        $(".preview_26").hide();
         $(".skin-details-preview .item2").remove();
         $(".carousel-indicators").hide();
@@ -242,15 +244,10 @@ function skinInfo(name, author, size, description, update, star, type, time) {
             interval: 99999
         });
 
-    } else if (type == "png") {
-
-        $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_9.png");
-        $(".preview_26").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_26.png");
-
     } else {
 
-        $(".preview_9").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_9.jpg");
-        $(".preview_26").attr("src", "https://godbiao.github.io/skins/res/it/" + skinID + "_26.jpg");
+        $(".preview_9").attr("src", imgs[1]);
+        $(".preview_26").attr("src", imgs[2]);
 
     }
 
@@ -277,7 +274,8 @@ function skinInfo(name, author, size, description, update, star, type, time) {
             exec("imeExtendComponents", imzqf.cmd, imzqf.info);
             _hmt.push(["_trackEvent", "skins-ime", "download", name + "(" + skinID + ")"]);
         } else {
-            window.location.href = "https://godbiao.github.io/skins/res/it/" + skinID + ".it";
+            //            window.location.href = "https://godbiao.github.io/skins/res/it/" + skinID + ".it";
+            window.location.href = it;
 
             if (isApp()) {
                 _hmt.push(["_trackEvent", "skins-app", "download", name + "(" + skinID + ")"]);
