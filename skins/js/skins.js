@@ -66,7 +66,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "淘宝", "经典", "简约", "大空格", "橙色"],
         "time": "2017-6-1",
-        "imgs": ["res/it/b43bfbe9-d3fb-423d-a759-b99051712013_preview.jpg", "res/it/b43bfbe9-d3fb-423d-a759-b99051712013_9.jpg", "res/it/b43bfbe9-d3fb-423d-a759-b99051712013_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSKAEbOCAABcYH9yKjs1008220", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTeAW0XsAADhf0_Djcs7112254", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTeAdDOHAADmTMlF-Fw2897359"],
         "it": "res/it/b43bfbe9-d3fb-423d-a759-b99051712013.it"
 	},
     {
@@ -80,7 +80,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "夜间护眼", "锤子", "商务", "坚果Pro", "酒红色"],
         "time": "2017-5-11",
-        "imgs": ["res/it/c41de68f-405d-422e-82f7-b0cedc50cc9c_preview.jpg", "res/it/c41de68f-405d-422e-82f7-b0cedc50cc9c_9.jpg", "res/it/c41de68f-405d-422e-82f7-b0cedc50cc9c_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsT6Ab3PaAABGiCQk1Xk9266146", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsT2AZejGAAChD9EJ2uY2230595", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsT6AdGFtAAC65gcXkjA4568701"],
         "it": "res/it/c41de68f-405d-422e-82f7-b0cedc50cc9c.it"
 	},
     {
@@ -94,7 +94,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "粉色", "哔哩哔哩", "简约", "大空格", "女生"],
         "time": "2017-4-20",
-        "imgs": ["res/it/d32697f4-d850-4af5-93da-b4df99310887_preview.jpg", "res/it/d32697f4-d850-4af5-93da-b4df99310887_9.jpg", "res/it/d32697f4-d850-4af5-93da-b4df99310887_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsUCAKAHOAABMX1I6Kpo4787596", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsT-AZ9v9AADEiPbX4Dw1310941", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsUCAf3mcAADIwwFBnmo6021212"],
         "it": "res/it/d32697f4-d850-4af5-93da-b4df99310887.it"
 	}, {
         "id": "bc3df4ab-d4fe-4443-a907-779718a55640",
@@ -107,7 +107,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "苹果", "简约", "iPhone 7", "热点", "中国红"],
         "time": "2017-3-23",
-        "imgs": ["res/it/bc3df4ab-d4fe-4443-a907-779718a55640_preview.jpg", "res/it/bc3df4ab-d4fe-4443-a907-779718a55640_9.jpg", "res/it/bc3df4ab-d4fe-4443-a907-779718a55640_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTqAL-iUAABSKuJJL5Y1976410", "https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSKADnLxAADh6G1IA6g0394020", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTqAKuukAAD6q3HijYc3139633"],
         "it": "res/it/bc3df4ab-d4fe-4443-a907-779718a55640.it"
 	}, {
         "id": "bdfba2f0-04bb-11e7-9598-0800200c9a66",
