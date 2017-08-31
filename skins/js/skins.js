@@ -1,5 +1,18 @@
 var skins = [
     {
+        "id": "4b7f558a-baa6-4bcd-aa07-b4d4902a5489",
+        "name": "Android·O风格",
+        "author": "IM标神",
+        "size": "46KB",
+        "description": "Android·O谷歌拼音最新皮肤带框浅白投影按钮风格。个人还是喜欢不带投影的~",
+        "update": "",
+        "star": "3",
+        "type": "",
+        "lables": ["设计创意", "Android", "谷歌O", "按钮投影", "高亮蓝", "轻薄"],
+        "time": "2017-8-31",
+        "imgs": ["https://pic.kuaizhan.com/g2/M00/59/F2/CgpQVFmoBnKAM43bAAA-Z-2exXE6761147", "https://pic.kuaizhan.com/g2/M01/59/F2/CgpQVFmoBnGANAP8AACzk1a5C9g6055067", "https://pic.kuaizhan.com/g2/M01/59/F2/CgpQVFmoBnCAEiDdAADEWMEMFtk5631123"],
+        "it": "res/it/4b7f558a-baa6-4bcd-aa07-b4d4902a5489.it"
+	}, {
         "id": "08479a95-aea3-49b3-a6bc-d443beca68f7",
         "name": "Android轻薄浅",
         "author": "IM标神",
