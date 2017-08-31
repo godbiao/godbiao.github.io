@@ -314,7 +314,7 @@ function skinInfo(name, author, size, description, update, star, type, time, img
 //打标签
 function putLables(moren, primary, success, info, warning, danger) {
     if (moren || primary || success || info || warning || danger) {
-        $(".lables").removeClass("none");
+        $(".lables").show();
     }
 
     if (moren) {
@@ -498,7 +498,6 @@ function isMobile() {
 
 //小技巧
 function tips() {
-    // var randomnumber = Math.round(Math.random() * (tipsdata.length - 1));
     var randomnumber = getsid(tipsdata.length, 1);
     var newtips = tipsdata[randomnumber];
     var tips = "<a target='_blank' href='" + newtips.url + "' title='" + newtips.title + "'><img class='tipsimg' src='" + newtips.img + "'></a>";
