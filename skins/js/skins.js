@@ -185,7 +185,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "绿色", "微信", "简约", "大空格", "低候选栏"],
         "time": "2017-1-21",
-        "imgs": ["res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66_preview.jpg", "res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66_9.png", "res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66_26.png"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsSSARmZHAABOjv16FxE0402916", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUiAJ3MkAACXaq2qo5s9844756", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUmAVUj8AACsr_-Yp0s6884797"],
         "it": "res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "084b9eb0-dd29-11e6-9598-0800200c9a66",
