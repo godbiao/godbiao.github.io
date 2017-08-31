@@ -3,7 +3,7 @@ var skins = [
         "id": "4b7f558a-baa6-4bcd-aa07-b4d4902a5489",
         "name": "Android·O风格",
         "author": "IM标神",
-        "size": "46KB",
+        "size": "47KB",
         "description": "Android·O谷歌拼音最新皮肤带框浅白投影按钮风格。个人还是喜欢不带投影的~",
         "update": "",
         "star": "3",
