@@ -153,7 +153,8 @@ function indexSkin() {
         }
 
         var sname = skins[i].name;
-        var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
+        //        var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
+        var spreview = skins[i].imgs[0];
         var rowhot = '<div id="' + sid + '" class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
         var rownew = '<div id="' + sid + '" class="skin-id col-xs-6"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
 

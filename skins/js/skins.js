@@ -315,7 +315,7 @@ var skins = [
         "type": "gif",
         "lables": ["清新时尚", "IM追清风", "星轨", "动态", "天空", "夜"],
         "time": "2016-12-6",
-        "imgs": ["https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSOAe8UtAACayDOD23Q1424039", "https://pic.kuaizhan.com/g1/M00/66/4B/CgpQU1mnr9-AV9MmABMRjKVqCDU6644411", ""],
+        "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsT6AXI2BAAB7diPhOc07043658", "https://pic.kuaizhan.com/g1/M00/66/4B/CgpQU1mnr9-AV9MmABMRjKVqCDU6644411", ""],
         "it": "res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66.it"
 	}, {
         "id": "ed7b5da1-4318-11e6-bdf4-0800200c9a66",
@@ -328,7 +328,7 @@ var skins = [
         "type": "",
         "lables": ["", "", "", "", "", ""],
         "time": "2016-7-6",
-        "imgs": ["res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66_preview.jpg", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsUGANHnnAAHA0ejh53U4064536", "https://pic.kuaizhan.com/g1/M00/66/55/CgpQU1mnsUKAaOvOAAG_-P70swQ0387602"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSOAe8UtAACayDOD23Q1424039", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsUGANHnnAAHA0ejh53U4064536", "https://pic.kuaizhan.com/g1/M00/66/55/CgpQU1mnsUKAaOvOAAG_-P70swQ0387602"],
         "it": "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66.it",
         "hide": "1"
 	}
