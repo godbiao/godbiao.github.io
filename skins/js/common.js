@@ -504,6 +504,15 @@ function tips() {
     });
 }
 
+//百度统计
+var _hmt = _hmt || [];
+(function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?fa9dd4e58caec08d0c9ef7f4f34aab15";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+
 
 console.log("%c ->我这烂代码\n %c->就不要偷了吧~\n %c->我只是个菜鸟┭┮﹏┭┮", "color:red", "color:green", "color:blue");
 console.log("关注我微博吧：http://www.weibo.com/522239219");
