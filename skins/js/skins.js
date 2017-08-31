@@ -289,7 +289,7 @@ var skins = [
         "type": "gif",
         "lables": ["游戏动漫", "IM追清风", "王者荣耀", "动态", "音乐", "彩蛋"],
         "time": "2016-12-9",
-        "imgs": ["res/it/69347a70-bc19-11e6-9598-0800200c9a66_preview.jpg", "res/it/69347a70-bc19-11e6-9598-0800200c9a66.gif", ""],
+        "imgs": ["res/it/69347a70-bc19-11e6-9598-0800200c9a66_preview.jpg", "https://pic.kuaizhan.com/g1/M01/66/4B/CgpQU1mnr-GAVWA1AAkjt-bXiy09158915", ""],
         "it": "res/it/69347a70-bc19-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "5f7b6940-acaa-11e6-9598-0800200c9a66",
@@ -315,7 +315,7 @@ var skins = [
         "type": "gif",
         "lables": ["清新时尚", "IM追清风", "星轨", "动态", "天空", "夜"],
         "time": "2016-12-6",
-        "imgs": ["res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66_preview.jpg", "res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66.gif", ""],
+        "imgs": ["res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66_preview.jpg", "https://pic.kuaizhan.com/g1/M00/66/4B/CgpQU1mnr9-AV9MmABMRjKVqCDU6644411", ""],
         "it": "res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66.it"
 	}, {
         "id": "ed7b5da1-4318-11e6-bdf4-0800200c9a66",
