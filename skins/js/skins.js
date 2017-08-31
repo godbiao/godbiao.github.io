@@ -274,7 +274,7 @@ var skins = [
         "update": "",
         "star": "4",
         "type": "",
-        "lables": ["", "", "", "", "", ""],
+        "lables": ["游戏", "贪吃蛇", "", "", "", ""],
         "time": "2016-12-27",
         "imgs": ["res/it/40ed1290-cbd5-11e6-9598-0800200c9a66_preview.jpg", "res/it/40ed1290-cbd5-11e6-9598-0800200c9a66_9.jpg", "res/it/40ed1290-cbd5-11e6-9598-0800200c9a66_26.jpg"],
         "it": "res/it/40ed1290-cbd5-11e6-9598-0800200c9a66.it"

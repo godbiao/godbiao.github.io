@@ -313,31 +313,31 @@ function skinInfo(name, author, size, description, update, star, type, time, img
 
 //打标签
 function putLables(moren, primary, success, info, warning, danger) {
-    if (moren !== "" || primary !== "" || success !== "" || info !== "" || warning !== "" || danger !== "") {
+    if (moren || primary || success || info || warning || danger) {
         $(".lables").removeClass("none");
     }
 
-    if (moren !== "") {
+    if (moren) {
         $(".lables").append('<span class="label label-default">' + moren + '</span>');
     }
 
-    if (primary !== "") {
+    if (primary) {
         $(".lables").append('<span class="label label-primary">' + primary + '</span>');
     }
 
-    if (success !== "") {
+    if (success) {
         $(".lables").append('<span class="label label-success">' + success + '</span>');
     }
 
-    if (info !== "") {
+    if (info) {
         $(".lables").append('<span class="label label-info">' + info + '</span>');
     }
 
-    if (warning !== "") {
+    if (warning) {
         $(".lables").append('<span class="label label-warning">' + warning + '</span>');
     }
 
-    if (danger !== "") {
+    if (danger) {
         $(".lables").append('<span class="label label-danger">' + danger + '</span>');
     }
 }
