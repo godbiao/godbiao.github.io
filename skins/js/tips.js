@@ -41,5 +41,11 @@ var tipsdata = [
         "url": "http://mp.weixin.qq.com/s/MtZ-ZUeniOe86TL6EN1Pwg",
         "img": "res/tips7.jpg",
         "time": "2017-08-25"
+        }, {
+        "id": 8,
+        "title": "IM追清风的微博",
+        "url": "http://m.weibo.cn/u/1136590322",
+        "img": "res/banner1.png",
+        "time": "2017-08-31"
         }
 ];
