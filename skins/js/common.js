@@ -24,16 +24,16 @@ $(document).ready(function () {
         window.location.href = "https://godbiao.github.io/update/beta.html";
     });
 
-    //打开皮肤详情
-    $(".skin-id").click(function () {
-        var skinID = $(this).attr('id');
-        if (isApp()) {
-            window.location.href = "item.html?app=item&id=" + skinID;
-        } else {
-            window.location.href = "item.html?id=" + skinID;
-        }
-
-    });
+    //    //打开皮肤详情
+    //    $(".skin-id").click(function () {
+    //        var skinID = $(this).attr('id');
+    //        if (isApp()) {
+    //            window.location.href = "item.html?app=item&id=" + skinID;
+    //        } else {
+    //            window.location.href = "item.html?id=" + skinID;
+    //        }
+    //
+    //    });
 
     //帮助
     $(".share").click(function () {
@@ -146,17 +146,14 @@ function itemSkin() {
 function indexSkin() {
     for (var i = 0; i < s_len; i++) {
         var sid = skins[i].id;
-
         //首页隐藏一些皮肤
         if (skins[i].hide) {
             continue;
         }
-
         var sname = skins[i].name;
-        //        var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
         var spreview = skins[i].imgs[0];
-        var rowhot = '<div id="' + sid + '" class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
-        var rownew = '<div id="' + sid + '" class="skin-id col-xs-6"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
+        var rowhot = '<div class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
+        var rownew = '<div class="skin-id col-xs-6"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
 
         if (i > 3) {
             $("#row-hot").append(rowhot);
@@ -176,16 +173,14 @@ function ranRecommend() {
             j = parseInt(ransid[3]);
             sid = skins[j].id;
             var sname = skins[j].name;
-            //var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
             var spreview = skins[j].imgs[0];
-            var rowmore = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview " ><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
+            var rowmore = '<div class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
             $("#row-more").append(rowmore);
             continue;
         }
         var sname = skins[j].name;
-        //var spreview = "https://godbiao.github.io/skins/res/it/" + sid + "_preview.jpg";
         var spreview = skins[j].imgs[0];
-        var rowmore = '<div id="' + sid + '" class="skin-id col-xs-4"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview "><div class="caption"><div class="skin-name">' + sname + '</div></div></div></div>';
+        var rowmore = '<div class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
         $("#row-more").append(rowmore);
     };
 }
