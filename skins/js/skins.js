@@ -120,7 +120,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "魅族", "简约", "Flyme6", "商务", "精仿"],
         "time": "2017-3-12",
-        "imgs": ["res/it/bdfba2f0-04bb-11e7-9598-0800200c9a66_preview.jpg", "res/it/bdfba2f0-04bb-11e7-9598-0800200c9a66_9.jpg", "res/it/bdfba2f0-04bb-11e7-9598-0800200c9a66_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTyAUXGfAABEfte7GKI2211389", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTuAPagXAAC32Phix4w3391683", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTyAawhwAADELfrZ3eM4635333"],
         "it": "res/it/bdfba2f0-04bb-11e7-9598-0800200c9a66.it"
 	}, {
         "id": "bbd806a0-046e-11e7-9598-0800200c9a66",
@@ -133,7 +133,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "搜狗", "大空格", "字体", "简约商务", "图标"],
         "time": "2017-3-10",
-        "imgs": ["res/it/bbd806a0-046e-11e7-9598-0800200c9a66_preview.jpg", "res/it/bbd806a0-046e-11e7-9598-0800200c9a66_9.jpg", "res/it/bbd806a0-046e-11e7-9598-0800200c9a66_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTmAXCA1AABLPP3iXCA6855334", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTiAUlhBAADC910IHfA4015330", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTmASRbEAADQ1SAWN1w9918960"],
         "it": "res/it/bbd806a0-046e-11e7-9598-0800200c9a66.it"
 	}, {
         "id": "aee9b17a-95e8-d1f5-c227-58b7e413f319",
@@ -146,7 +146,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "小米", "MIUI 8", "简约", "大空格", "小字体"],
         "time": "2017-3-9",
-        "imgs": ["res/it/aee9b17a-95e8-d1f5-c227-58b7e413f319_preview.jpg", "res/it/aee9b17a-95e8-d1f5-c227-58b7e413f319_9.jpg", "res/it/aee9b17a-95e8-d1f5-c227-58b7e413f319_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTaAQHuQAABMHv_7UXg8154629", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTWABe4bAADIzO53A8o0562090", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTaAEi6-AADoFDf8rZc4182910"],
         "it": "res/it/aee9b17a-95e8-d1f5-c227-58b7e413f319.it"
 	}, {
         "id": "4e43b330-ba92-11e6-9598-0800200c9a66",
@@ -159,7 +159,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "iOS10", "苹果", "简约", "iPhone", "纤细字体"],
         "time": "2017-3-11",
-        "imgs": ["res/it/4e43b330-ba92-11e6-9598-0800200c9a66_preview.jpg", "res/it/4e43b330-ba92-11e6-9598-0800200c9a66_9.jpg", "res/it/4e43b330-ba92-11e6-9598-0800200c9a66_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsSaAH3JZAABRg8CyAn44081348", "https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsSWARxkTAADKn4kp-501019672", "https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSaAO_T2AADj_rIAeH80579242"],
         "it": "res/it/4e43b330-ba92-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "2863560d-00f2-4115-b042-c3fc29ab8c79",
@@ -172,7 +172,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "iOS6", "苹果", "简约", "iPhone", "大空格"],
         "time": "2017-2-23",
-        "imgs": ["res/it/2863560d-00f2-4115-b042-c3fc29ab8c79_preview.jpg", "res/it/2863560d-00f2-4115-b042-c3fc29ab8c79_9.jpg", "res/it/2863560d-00f2-4115-b042-c3fc29ab8c79_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTOAM7fgAABnpYQ6fs09615386", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTKAQ3APAAELCZvADa84345414", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTOAEF39AAEnG3f8yDQ1656612"],
         "it": "res/it/2863560d-00f2-4115-b042-c3fc29ab8c79.it"
 	}, {
         "id": "0b7a9a20-dcbe-11e6-9598-0800200c9a66",
@@ -198,7 +198,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "蓝色", "QQ", "简约", "大空格", "低候选栏"],
         "time": "2017-2-21",
-        "imgs": ["res/it/084b9eb0-dd29-11e6-9598-0800200c9a66_preview.jpg", "res/it/084b9eb0-dd29-11e6-9598-0800200c9a66_9.png", "res/it/084b9eb0-dd29-11e6-9598-0800200c9a66_26.png"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSyAButRAABbloRgEEA2815635", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUmAbxBjAACwEDCmbIY3732638", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUqAQXiMAADczNpK98k2213146"],
         "it": "res/it/084b9eb0-dd29-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "0d6dcee0-02f5-4c96-8fa6-b4dfed394142",
@@ -211,7 +211,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "青色", "酷安", "简约", "大空格", "低候选栏"],
         "time": "2017-2-7",
-        "imgs": ["res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142_preview.jpg", "res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142_9.png", "res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142_26.png"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsR-AOUIwAABU2a9QNdc5140788", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUeAd9BJAAB8J1KF-mY2700603", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUeAX-MkAACC_UfDYLg3727524"],
         "it": "res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142.it"
 	}, {
         "id": "7bbac9c0-ba58-11e5-a837-0800200c9a66",
@@ -222,9 +222,9 @@ var skins = [
         "update": "",
         "star": "3",
         "type": "",
-        "lables": ["", "", "", "", "", ""],
+        "lables": ["设计创意", "无缝", "大空格", "", "", ""],
         "time": "2017-2-27",
-        "imgs": ["res/it/7bbac9c0-ba58-11e5-a837-0800200c9a66_preview.jpg", "res/it/7bbac9c0-ba58-11e5-a837-0800200c9a66_9.jpg", "res/it/7bbac9c0-ba58-11e5-a837-0800200c9a66_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSmAGtR3AABEVZhzUBU5156685", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSiAaZgAAACx7EMhivs8675690", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSiAIffVAADCZzQbJ3c2714384"],
         "it": "res/it/7bbac9c0-ba58-11e5-a837-0800200c9a66.it"
 	}, {
         "id": "11a44990-9a90-11e6-bdf4-0800200c9a66",
@@ -237,7 +237,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "低候选栏", "乳白", "柔美", "大空格", "字体"],
         "time": "2017-1-16",
-        "imgs": ["res/it/11a44990-9a90-11e6-bdf4-0800200c9a66_preview.jpg", "res/it/11a44990-9a90-11e6-bdf4-0800200c9a66_9.jpg", "res/it/11a44990-9a90-11e6-bdf4-0800200c9a66_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSGAaIdZAABMUHIb9yc7518397", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSmAGnMjAAC-geMzsKc9467645", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSqAaJkfAADTcEry2V87763331"],
         "it": "res/it/11a44990-9a90-11e6-bdf4-0800200c9a66.it"
 	}, {
         "id": "91a44990-9a90-11e6-bdf4-0800200c9a66",
@@ -250,7 +250,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "IM追清风", "韵白", "柔美", "大空格", "字体"],
         "time": "2017-1-16",
-        "imgs": ["res/it/91a44990-9a90-11e6-bdf4-0800200c9a66_preview.jpg", "res/it/91a44990-9a90-11e6-bdf4-0800200c9a66_9.jpg", "res/it/91a44990-9a90-11e6-bdf4-0800200c9a66_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUWAAMtAAABXd7DiVYQ8847568", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsS2ATF_ZAAES2k77U4c9730303", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsS6AbdhWAAEsaz941_w9960300"],
         "it": "res/it/91a44990-9a90-11e6-bdf4-0800200c9a66.it"
 	}, {
         "id": "75330890-0da2-11e5-b939-0800200c9a66",
@@ -263,7 +263,7 @@ var skins = [
         "type": "",
         "lables": ["", "", "", "", "", ""],
         "time": "2017-2-20",
-        "imgs": ["res/it/75330890-0da2-11e5-b939-0800200c9a66_preview.jpg", "res/it/75330890-0da2-11e5-b939-0800200c9a66_9.png", "res/it/75330890-0da2-11e5-b939-0800200c9a66_26.png"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTSAXrurAABQNvxzQs86178384", "https://pic.kuaizhan.com/g1/M00/66/55/CgpQU1mnsUaAARl-AACzHuL6MS09285979", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUaADmJVAADRJcAB97A0850779"],
         "it": "res/it/75330890-0da2-11e5-b939-0800200c9a66.it"
 	}, {
         "id": "40ed1290-cbd5-11e6-9598-0800200c9a66",
@@ -274,9 +274,9 @@ var skins = [
         "update": "",
         "star": "4",
         "type": "",
-        "lables": ["游戏", "贪吃蛇", "", "", "", ""],
+        "lables": ["游戏动漫", "贪吃蛇", "", "", "", ""],
         "time": "2016-12-27",
-        "imgs": ["res/it/40ed1290-cbd5-11e6-9598-0800200c9a66_preview.jpg", "res/it/40ed1290-cbd5-11e6-9598-0800200c9a66_9.jpg", "res/it/40ed1290-cbd5-11e6-9598-0800200c9a66_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSyALtyQAABItDINjM41070160", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSuAF7jkAADcrlZk5fs9405279", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSuAbuhyAADZhYsDGvc9238291"],
         "it": "res/it/40ed1290-cbd5-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "69347a70-bc19-11e6-9598-0800200c9a66",
@@ -302,7 +302,7 @@ var skins = [
         "type": "",
         "lables": ["", "", "", "", "", ""],
         "time": "2016-11-18",
-        "imgs": ["res/it/5f7b6940-acaa-11e6-9598-0800200c9a66_preview.jpg", "res/it/5f7b6940-acaa-11e6-9598-0800200c9a66_9.jpg", "res/it/5f7b6940-acaa-11e6-9598-0800200c9a66_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSeAEkobAABu4h0FoO45825517", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSeAEiQ0AAFVAAcdE8I7770248", "https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSCAQ3p2AAF8PWYA5tI4499379"],
         "it": "res/it/5f7b6940-acaa-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "d2af7aa0-2320-11e6-bdf4-0800200c9a66",
@@ -326,7 +326,7 @@ var skins = [
         "update": "",
         "star": "1",
         "type": "",
-        "lables": ["", "", "", "", "", ""],
+        "lables": ["明星人物", "", "", "", "", ""],
         "time": "2016-7-6",
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSOAe8UtAACayDOD23Q1424039", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsUGANHnnAAHA0ejh53U4064536", "https://pic.kuaizhan.com/g1/M00/66/55/CgpQU1mnsUKAaOvOAAG_-P70swQ0387602"],
         "it": "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66.it",
