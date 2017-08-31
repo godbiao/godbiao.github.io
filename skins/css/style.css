@@ -242,10 +242,12 @@ ul {
     background-color: #f8f8f8;
     font-size: 16px;
     padding: 12px 0px;
+    z-index: 940;
 }
 
 #item .navbar-fixed-bottom {
     background-color: rgba(247, 247, 247, 0.9);
+    z-index: 940;
 }
 
 #item .skin-name {
