@@ -503,3 +503,6 @@ function tips() {
         _hmt.push(["_trackEvent", "skins", "tips", newtips.title]);
     });
 }
+
+
+console.log("%c -我这烂代码\n %c-就不要偷了吧~\n %c-我只是个菜鸟┭┮﹏┭┮", "color:red", "color:green", "color:blue");
