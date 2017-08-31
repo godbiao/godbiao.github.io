@@ -1,3 +1,5 @@
+$("#index,#item").fadeIn();
+
 var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你飞";
 
 var s_len = skins.length;
@@ -14,7 +16,6 @@ if (skinID) { //皮肤详情页
 
 
 $(document).ready(function () {
-    $("#index,#item").fadeIn();
 
     //banner打开微博
     $(".banner-weibo, .insstall-cont").click(function () {
