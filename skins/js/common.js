@@ -15,11 +15,6 @@ if (skinID) { //皮肤详情页
 
 $(document).ready(function () {
 
-
-    if (!isApp()) {
-        $("#banner").show();
-    }
-
     //banner打开微博
     $(".banner-weibo, .insstall-cont").click(function () {
         window.location.href = "http://m.weibo.cn/u/1136590322";
