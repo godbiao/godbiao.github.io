@@ -505,4 +505,5 @@ function tips() {
 }
 
 
-console.log("%c -我这烂代码\n %c-就不要偷了吧~\n %c-我只是个菜鸟┭┮﹏┭┮", "color:red", "color:green", "color:blue");
+console.log("%c ->我这烂代码\n %c->就不要偷了吧~\n %c->我只是个菜鸟┭┮﹏┭┮", "color:red", "color:green", "color:blue");
+console.log("关注我微博吧：http://www.weibo.com/522239219");
