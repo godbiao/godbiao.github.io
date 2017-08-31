@@ -10,7 +10,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "Android", "谷歌O", "按钮投影", "高亮蓝", "轻薄"],
         "time": "2017-8-31",
-        "imgs": ["https://pic.kuaizhan.com/g2/M00/59/F2/CgpQVFmoBnKAM43bAAA-Z-2exXE6761147", "https://pic.kuaizhan.com/g2/M01/59/F2/CgpQVFmoBnGANAP8AACzk1a5C9g6055067", "https://pic.kuaizhan.com/g2/M01/59/F2/CgpQVFmoBnCAEiDdAADEWMEMFtk5631123"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/69/92/CgpQU1moCh6AZeAOAAA-hDFdnms1398318", "https://pic.kuaizhan.com/g1/M00/69/91/CgpQU1moCh2AX0n-AAC1Crb613A3710017", "https://pic.kuaizhan.com/g1/M00/69/92/CgpQU1moCh2Ac7uJAADGJIb8CEA3531248"],
         "it": "res/it/4b7f558a-baa6-4bcd-aa07-b4d4902a5489.it"
 	}, {
         "id": "08479a95-aea3-49b3-a6bc-d443beca68f7",
