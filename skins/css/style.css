@@ -173,7 +173,8 @@ ul {
     text-align: center;
 }
 
-.thumbnail:active {
+.thumbnail:active,
+.thumbnail:hover {
     transform: scale(0.95)
 }
 
