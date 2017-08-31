@@ -312,6 +312,7 @@ ul {
     display: inline-block;
     line-height: 1.5em;
     padding: .2em .6em .2em;
+    margin: 0.2em;
 }
 
 #item .back,
@@ -464,4 +465,3 @@ ul {
     width: 100%;
     border-radius: 5px;
 }
-

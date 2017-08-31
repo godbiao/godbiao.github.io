@@ -318,27 +318,27 @@ function putLables(moren, primary, success, info, warning, danger) {
     }
 
     if (moren !== "") {
-        $(".label-default").removeClass("none").html(moren);
+        $(".lables").append('<span class="label label-default">' + moren + '</span>');
     }
 
     if (primary !== "") {
-        $(".label-primary").removeClass("none").html(primary);
+        $(".lables").append('<span class="label label-primary">' + primary + '</span>');
     }
 
     if (success !== "") {
-        $(".label-success").removeClass("none").html(success);
+        $(".lables").append('<span class="label label-success">' + success + '</span>');
     }
 
     if (info !== "") {
-        $(".label-info").removeClass("none").html(info);
+        $(".lables").append('<span class="label label-info">' + info + '</span>');
     }
 
     if (warning !== "") {
-        $(".label-warning").removeClass("none").html(warning);
+        $(".lables").append('<span class="label label-warning">' + warning + '</span>');
     }
 
     if (danger !== "") {
-        $(".label-danger").removeClass("none").html(danger);
+        $(".lables").append('<span class="label label-danger">' + danger + '</span>');
     }
 }
 
