@@ -182,11 +182,11 @@ var skins = [
         "description": "完美复刻微信界面UI，欢迎下载体验~<br>皮肤特色：<br>1.低候选栏<br>2.大空格<br>3.完美英文字体",
         "update": "",
         "star": "5",
-        "type": "png",
+        "type": "",
         "lables": ["设计创意", "绿色", "微信", "简约", "大空格", "低候选栏"],
         "time": "2017-1-21",
         "imgs": ["res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66_preview.jpg", "res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66_9.png", "res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66_26.png"],
-        "it": "res/it/08479a95-aea3-49b3-a6bc-d443beca68f7.it"
+        "it": "res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "084b9eb0-dd29-11e6-9598-0800200c9a66",
         "name": "QQStyle",
@@ -195,7 +195,7 @@ var skins = [
         "description": "完美复刻手机QQ界面UI，欢迎下载体验~<br>皮肤特色：<br>1.低候选栏<br>2.大空格<br>3.完美英文字体",
         "update": "",
         "star": "5",
-        "type": "png",
+        "type": "",
         "lables": ["设计创意", "蓝色", "QQ", "简约", "大空格", "低候选栏"],
         "time": "2017-2-21",
         "imgs": ["res/it/084b9eb0-dd29-11e6-9598-0800200c9a66_preview.jpg", "res/it/084b9eb0-dd29-11e6-9598-0800200c9a66_9.png", "res/it/084b9eb0-dd29-11e6-9598-0800200c9a66_26.png"],
@@ -208,7 +208,7 @@ var skins = [
         "description": "完美复刻酷安APP水鸭青主题界面UI，欢迎下载体验~<br>皮肤特色：<br>1.低候选栏<br>2.大空格<br>3.完美英文字体",
         "update": "",
         "star": "5",
-        "type": "png",
+        "type": "",
         "lables": ["设计创意", "青色", "酷安", "简约", "大空格", "低候选栏"],
         "time": "2017-2-7",
         "imgs": ["res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142_preview.jpg", "res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142_9.png", "res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142_26.png"],
@@ -260,7 +260,7 @@ var skins = [
         "description": "锤子手机默认输入法官方界面风格2.0升级版，欢迎下载体验。<br>->界面配色为锤子手机量身定做<br>->你要的大空格键",
         "update": "--2017年1月21日<br> 优化 去除空格键正常状态的讯飞商标",
         "star": "3",
-        "type": "png",
+        "type": "",
         "lables": ["", "", "", "", "", ""],
         "time": "2017-2-20",
         "imgs": ["res/it/75330890-0da2-11e5-b939-0800200c9a66_preview.jpg", "res/it/75330890-0da2-11e5-b939-0800200c9a66_9.png", "res/it/75330890-0da2-11e5-b939-0800200c9a66_26.png"],
@@ -329,6 +329,7 @@ var skins = [
         "lables": ["", "", "", "", "", ""],
         "time": "2016-7-6",
         "imgs": ["res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66_preview.jpg", "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66_9.jpg", "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66_26.jpg"],
-        "it": "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66.it"
+        "it": "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66.it",
+        "hide": "1"
 	}
 ]

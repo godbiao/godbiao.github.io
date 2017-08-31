@@ -1,12 +1,23 @@
+var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你飞";
+
+var s_len = skins.length;
+var skinID = getskinid().id;
+
+if (skinID) { //皮肤详情页
+    itemSkin();
+    ranRecommend();
+    tips();
+    likeskin();
+} else if (isTpl()) { //首页模板
+    indexSkin();
+}
+
+
 $(document).ready(function () {
 
 
     if (!isApp()) {
         $("#banner").show();
-    }
-
-    if (isMobile()) {
-        $("#cyReward").hide();
     }
 
     //banner打开微博
@@ -55,88 +66,75 @@ $(document).ready(function () {
 
 });
 
-
-var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你飞";
-var s_len = skins.length;
-var Request = new Object();
-Request = GetRequest();
-var skinID = Request['id'];
-
-if (skinID) {
-    itemSkin();
-    ranRecommend();
-    tips();
-} else if (isTpl()) {
-    indexSkin();
-}
-
-
-//点赞逻辑
-var likeTime = 1;
-$(".like").click(function () {
-    if ($.cookie(skinID) != 1) {
-        $.cookie(skinID, 1, {
-            expires: 365
-        });
-        $(this).html("&#xe66e;");
-        $(this).addClass("liked");
-        if (isApp()) {
-            _hmt.push(["_trackEvent", "skins-app", "like", $(".skin-name").html() + "(" + skinID + ")"]);
-        } else {
-            _hmt.push(["_trackEvent", "skins", "like", $(".skin-name").html() + "(" + skinID + ")"]);
-        }
-
-
-    } else {
-
-        var msg = ["呵呵", "^_^你已坚定地赞过!", "_^后悔点赞了么？", "^_后悔也没用了呀~", "^V^其实是我太懒没加取消点赞功能~", "^:^悲催鸟,要跳转到我微博了……"];
-        if (likeTime == 2) {
-
-            if (isApp()) {
-                app.toast(msg[2]);
-            } else {
-                alert(msg[2]);
-            }
-
-        } else if (likeTime == 3) {
-            if (isApp()) {
-                app.toast(msg[3]);
-            } else {
-                alert(msg[3]);
-            }
-
-        } else if (likeTime == 4) {
-            if (isApp()) {
-                app.toast(msg[4]);
-            } else {
-                alert(msg[4]);
-            }
-        } else if (likeTime > 4) {
-            if (isApp()) {
-                app.toast(msg[5]);
-            } else {
-                alert(msg[5]);
-            }
-            window.location.href = "http://m.weibo.cn/u/1136590322";
-        } else {
-            if (isApp()) {
-                app.toast(msg[1]);
-            } else {
-                alert(msg[1]);
-            }
-        }
-        likeTime++;
-    }
-});
-
-if ($.cookie(skinID) == 1) {
-    $(".like span").html("&#xe66e;");
-    //$(".like").addClass("liked");
-}
-
-
 //下面是一些函数
-//详情页面遍历ID进行匹配数据
+//点赞
+function likeskin() {
+
+    var likeTime = 1;
+    $(".like").click(function () {
+        if ($.cookie(skinID) != 1) {
+            $.cookie(skinID, 1, {
+                expires: 365
+            });
+            $(this).html("&#xe66e;");
+            $(this).addClass("liked");
+            if (isApp()) {
+                _hmt.push(["_trackEvent", "skins-app", "like", $(".skin-name").html() + "(" + skinID + ")"]);
+            } else {
+                _hmt.push(["_trackEvent", "skins", "like", $(".skin-name").html() + "(" + skinID + ")"]);
+            }
+
+
+        } else {
+
+            var msg = ["呵呵", "^_^你已坚定地赞过!", "_^后悔点赞了么？", "^_后悔也没用了呀~", "^V^其实是我太懒没加取消点赞功能~", "^:^悲催鸟,要跳转到我微博了……"];
+            if (likeTime == 2) {
+
+                if (isApp()) {
+                    app.toast(msg[2]);
+                } else {
+                    alert(msg[2]);
+                }
+
+            } else if (likeTime == 3) {
+                if (isApp()) {
+                    app.toast(msg[3]);
+                } else {
+                    alert(msg[3]);
+                }
+
+            } else if (likeTime == 4) {
+                if (isApp()) {
+                    app.toast(msg[4]);
+                } else {
+                    alert(msg[4]);
+                }
+            } else if (likeTime > 4) {
+                if (isApp()) {
+                    app.toast(msg[5]);
+                } else {
+                    alert(msg[5]);
+                }
+                window.location.href = "http://m.weibo.cn/u/1136590322";
+            } else {
+                if (isApp()) {
+                    app.toast(msg[1]);
+                } else {
+                    alert(msg[1]);
+                }
+            }
+            likeTime++;
+        }
+    });
+
+    if ($.cookie(skinID) == 1) {
+        $(".like span").html("&#xe66e;");
+        //$(".like").addClass("liked");
+    }
+
+}
+
+//皮肤详情页填充
 function itemSkin() {
     for (var i = 0; i < s_len; i++) {
         if (skins[i].id == skinID) {
@@ -154,7 +152,8 @@ function indexSkin() {
     for (var i = 0; i < s_len; i++) {
         var sid = skins[i].id;
 
-        if (sid == "ed7b5da1-4318-11e6-bdf4-0800200c9a66") { //首页隐藏一些皮肤
+        //首页隐藏一些皮肤
+        if (skins[i].hide) {
             continue;
         }
 
@@ -344,8 +343,8 @@ function putLables(moren, primary, success, info, warning, danger) {
 }
 
 
-//获取皮肤ID
-function GetRequest() {
+//获取链接中皮肤ID
+function getskinid() {
     var url = location.search;
     var theRequest = new Object();
     if (url.indexOf("?") != -1) {
@@ -384,7 +383,7 @@ function isIME() {
 }
 
 
-//左右滑动
+//左右滑动切换
 function touchSlidePreview(eid) {
     var startX, endX;
     var el = document.getElementById(eid);
@@ -418,7 +417,7 @@ function touchSlidePreview(eid) {
 }
 
 
-//下拉
+//下拉刷新
 function touchSlideReload() {
     var startY, endY;
     window.addEventListener("touchstart", touchStart, false);
@@ -485,6 +484,7 @@ function isTpl() {
     }
 }
 
+//手机端判定
 function isMobile() {
     var ua = navigator.userAgent;
     var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
@@ -498,7 +498,8 @@ function isMobile() {
 
 //小技巧
 function tips() {
-    var randomnumber = Math.round(Math.random() * (tipsdata.length - 1));
+    // var randomnumber = Math.round(Math.random() * (tipsdata.length - 1));
+    var randomnumber = getsid(tipsdata.length, 1);
     var newtips = tipsdata[randomnumber];
     var tips = "<a target='_blank' href='" + newtips.url + "' title='" + newtips.title + "'><img class='tipsimg' src='" + newtips.img + "'></a>";
     $("#tips").append(tips);
