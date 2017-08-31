@@ -155,7 +155,7 @@ ul {
     border: none;
     padding: 0px;
     margin-bottom: 9px;
-    transition: 0.1s;
+    /*      transition: 0.1s;*/
 }
 
 .thumbnail .caption {
@@ -173,9 +173,56 @@ ul {
     text-align: center;
 }
 
-.thumbnail:active,
 .thumbnail:hover {
-    transform: scale(0.95)
+    animation: scalethumb 0.3s linear;
+}
+
+@-webkit-keyframes scalethumb {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(0.95)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@-o-keyframes scalethumb {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(0.95)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@-moz-keyframes scalethumb {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(0.95)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes scalethumb {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(0.95)
+    }
+    100% {
+        transform: scale(1)
+    }
 }
 
 .thumbnail:visited {
