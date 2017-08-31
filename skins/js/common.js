@@ -14,6 +14,7 @@ if (skinID) { //皮肤详情页
 
 
 $(document).ready(function () {
+    $("#index,#item").fadeIn();
 
     //banner打开微博
     $(".banner-weibo, .insstall-cont").click(function () {

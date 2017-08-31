@@ -25,6 +25,11 @@ body {
 #item {
     background-color: #fff;
     padding-bottom: 60px;
+    display: none;
+}
+
+#index {
+    display: none;
 }
 
 a,
