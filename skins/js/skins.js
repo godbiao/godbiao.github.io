@@ -10,7 +10,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "Android", "谷歌", "白色", "高亮蓝", "轻薄"],
         "time": "2017-7-30",
-        "imgs": ["res/it/08479a95-aea3-49b3-a6bc-d443beca68f7_preview.jpg", "res/it/08479a95-aea3-49b3-a6bc-d443beca68f7_9.jpg", "res/it/08479a95-aea3-49b3-a6bc-d443beca68f7_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTGAGrZSAABDw3kYOdw8944670", "https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSGAJqKkAACuomZSQjc3406316", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTCACeg9AAC2wKuDhck5616321"],
         "it": "res/it/08479a95-aea3-49b3-a6bc-d443beca68f7.it"
 	},
     {
@@ -24,7 +24,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "winphone", "Emoji", "黑色", "高亮蓝", "大空格"],
         "time": "2017-7-11",
-        "imgs": ["res/it/fcb80779-4704-4e32-9144-02dfedb4f191_preview.jpg", "res/it/fcb80779-4704-4e32-9144-02dfedb4f191_9.jpg", "res/it/fcb80779-4704-4e32-9144-02dfedb4f191_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/55/CgpQU1mnsUSAX66NAABIr2VgaUg4577727", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUOAb1adAAC1B0tDT_05804470", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUSAKkXZAADABNWXfVI8611212"],
         "it": "res/it/fcb80779-4704-4e32-9144-02dfedb4f191.it"
 	},
     {
@@ -38,7 +38,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "winphone", "仿制", "黑色", "高亮蓝", "大空格"],
         "time": "2017-6-2",
-        "imgs": ["res/it/fcb80779-4704-4e32-9144-02dfedb4f190_preview.jpg", "res/it/fcb80779-4704-4e32-9144-02dfedb4f190_9.jpg", "res/it/fcb80779-4704-4e32-9144-02dfedb4f190_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/55/CgpQU1mnsUOALgbTAABNAVGxRsM4342598", "https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsSSAenXZAACxsh8GZT01680192", "https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsSSAenXZAACxsh8GZT01680192"],
         "it": "res/it/fcb80779-4704-4e32-9144-02dfedb4f190.it"
 	},
     {
@@ -52,7 +52,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "ofo", "小黄车", "商务", "黄色", "低候选栏"],
         "time": "2017-6-1",
-        "imgs": ["res/it/638ba2e2-235c-4b82-bbeb-9b3947d3a382_preview.jpg", "res/it/638ba2e2-235c-4b82-bbeb-9b3947d3a382_9.jpg", "res/it/638ba2e2-235c-4b82-bbeb-9b3947d3a382_26.jpg"],
+        "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTCAJX49AABRapX5aLU0772339", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsS-AE0RDAADSVdc3wy80432306", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsS-Ab7jTAADYIc-YrKo1245044"],
         "it": "res/it/638ba2e2-235c-4b82-bbeb-9b3947d3a382.it"
 	},
     {
@@ -289,7 +289,7 @@ var skins = [
         "type": "gif",
         "lables": ["游戏动漫", "IM追清风", "王者荣耀", "动态", "音乐", "彩蛋"],
         "time": "2016-12-9",
-        "imgs": ["res/it/69347a70-bc19-11e6-9598-0800200c9a66_preview.jpg", "https://pic.kuaizhan.com/g1/M01/66/4B/CgpQU1mnr-GAVWA1AAkjt-bXiy09158915", ""],
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTGAYpbfAACpwTs14Fo0031774", "https://pic.kuaizhan.com/g1/M01/66/4B/CgpQU1mnr-GAVWA1AAkjt-bXiy09158915", ""],
         "it": "res/it/69347a70-bc19-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "5f7b6940-acaa-11e6-9598-0800200c9a66",
@@ -315,7 +315,7 @@ var skins = [
         "type": "gif",
         "lables": ["清新时尚", "IM追清风", "星轨", "动态", "天空", "夜"],
         "time": "2016-12-6",
-        "imgs": ["res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66_preview.jpg", "https://pic.kuaizhan.com/g1/M00/66/4B/CgpQU1mnr9-AV9MmABMRjKVqCDU6644411", ""],
+        "imgs": ["https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSOAe8UtAACayDOD23Q1424039", "https://pic.kuaizhan.com/g1/M00/66/4B/CgpQU1mnr9-AV9MmABMRjKVqCDU6644411", ""],
         "it": "res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66.it"
 	}, {
         "id": "ed7b5da1-4318-11e6-bdf4-0800200c9a66",
@@ -328,7 +328,7 @@ var skins = [
         "type": "",
         "lables": ["", "", "", "", "", ""],
         "time": "2016-7-6",
-        "imgs": ["res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66_preview.jpg", "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66_9.jpg", "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66_26.jpg"],
+        "imgs": ["res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66_preview.jpg", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsUGANHnnAAHA0ejh53U4064536", "https://pic.kuaizhan.com/g1/M00/66/55/CgpQU1mnsUKAaOvOAAG_-P70swQ0387602"],
         "it": "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66.it",
         "hide": "1"
 	}
