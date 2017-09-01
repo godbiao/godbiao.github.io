@@ -491,7 +491,8 @@ function isMobile() {
 
 //小技巧
 function tips() {
-    var randomnumber = getsid(tipsdata.length, 1);
+    //    var randomnumber = getsid(tipsdata.length, 1);
+    var randomnumber = Math.floor(Math.random() * tipsdata.length);
     var newtips = tipsdata[randomnumber];
     var tips = "<a target='_blank' href='" + newtips.url + "' title='" + newtips.title + "'><img class='tipsimg' src='" + newtips.img + "'></a>";
     $("#tips").append(tips);
