@@ -1,5 +1,11 @@
 var tipsdata = [
     {
+        "id": 0,
+        "title": "IM追清风的微博",
+        "url": "https://m.weibo.cn/u/1136590322",
+        "img": "https://pic.kuaizhan.com/g2/M01/57/40/CgpQVFmnx_iAHFG-AABeIxE62182957803",
+        "time": "2017-08-31"
+        }, {
         "id": 1,
         "title": "还有这种操作？这个手势有点炫酷！",
         "url": "https://mp.weixin.qq.com/s/55KNrkTMD3qEpYQD7zq9kg",
@@ -43,9 +49,9 @@ var tipsdata = [
         "time": "2017-08-25"
         }, {
         "id": 8,
-        "title": "IM追清风的微博",
-        "url": "https://m.weibo.cn/u/1136590322",
-        "img": "https://pic.kuaizhan.com/g2/M01/57/40/CgpQVFmnx_iAHFG-AABeIxE62182957803",
-        "time": "2017-08-31"
+        "title": "懒癌必备！拯救【(￢_￢)瞄Xiao#2】多合一字符串输入！",
+        "url": "https://mp.weixin.qq.com/s/yjlmyMsz8w-JNsxYptPntQ",
+        "img": "https://pic.kuaizhan.com/g2/M00/5E/EB/CgpQVFmpD2OAG5SuAABchhCAXY41543195",
+        "time": "2017-09-01"
         }
 ];

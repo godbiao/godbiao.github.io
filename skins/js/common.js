@@ -498,6 +498,7 @@ function tips() {
     //TIPS点击统计
     $(".tipsimg").click(function () {
         _hmt.push(["_trackEvent", "skins", "tips", newtips.title]);
+
     });
 }
 
