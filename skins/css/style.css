@@ -8,10 +8,20 @@ body {
     letter-spacing: 0.0625rem;
 }
 
+
+/*
 @font-face {
     font-family: 'iconfont';
     src: url('font/iconfont.eot');
     src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), url('font/iconfont.woff') format('woff'), url('font/iconfont.ttf') format('truetype'), url('font/iconfont.svg#iconfontyyy') format('svg');
+}
+*/
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 251342 */
+    src: url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.eot');
+    src: url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.eot?#iefix') format('embedded-opentype'), url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.woff') format('woff'), url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.ttf') format('truetype'), url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.svg#iconfont') format('svg');
 }
 
 .iconfont {
