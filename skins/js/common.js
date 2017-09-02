@@ -1,3 +1,12 @@
+//百度统计
+var _hmt = _hmt || [];
+(function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?fa9dd4e58caec08d0c9ef7f4f34aab15";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+
 $("#index,#item").fadeIn();
 
 var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你飞";
@@ -126,7 +135,6 @@ function likeskin() {
 
     if ($.cookie(skinID) == 1) {
         $(".like span").html("&#xe66e;");
-        //$(".like").addClass("liked");
     }
 
 }
@@ -220,8 +228,7 @@ function skinInfo(name, author, size, description, update, star, type, time, img
     //描述和升级
     $(".skin-description-content").html(description);
     if (update) {
-        $(".skin-description-title").removeClass("none");
-        $(".skin-description-update").removeClass("none");
+        $("#skin-description-update").show();
         $(".skin-description-update").html(update);
     }
 
@@ -501,15 +508,6 @@ function tips() {
 
     });
 }
-
-//百度统计
-var _hmt = _hmt || [];
-(function () {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?fa9dd4e58caec08d0c9ef7f4f34aab15";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-})();
 
 
 console.log("%c ->我这烂代码\n %c->就不要偷了吧~\n %c->我只是个菜鸟┭┮﹏┭┮", "color:red", "color:green", "color:blue");

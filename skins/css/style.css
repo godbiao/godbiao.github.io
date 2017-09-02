@@ -260,7 +260,7 @@ ul {
 }
 
 #pop .install {
-    width: 75%;
+    width: 80%;
     margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
@@ -299,6 +299,7 @@ ul {
 #pop .insstall-cont {
     font-size: 14px;
     line-height: 1.5em;
+    margin-top: 10px;
 }
 
 #item .navbar-fixed-top {
@@ -369,8 +370,14 @@ ul {
     padding-bottom: 15px;
 }
 
+#item #skin-description-update{
+    display: none;
+}
+
+
 #item .lables {
     padding-bottom: 15px;
+    display: none;
 }
 
 #item .label {
