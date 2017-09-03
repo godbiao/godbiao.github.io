@@ -500,10 +500,11 @@ function isMobile() {
 function tips() {
     var randomnumber = Math.floor(Math.random() * tipsdata.length);
     var newtips = tipsdata[randomnumber];
-    var tips = "<a target='_blank' href='" + newtips.url + "' title='" + newtips.title + "'><img class='tipsimg' src='" + newtips.img + "'></a>";
+    var tips = "<img class='tipsimg' alt='"+newtips.title+"' src='" + newtips.img + "'>";
     $("#tips").append(tips);
     //TIPS点击统计
     $(".tipsimg").click(function () {
+         window.location.href = newtips.url;
         _hmt.push(["_trackEvent", "skins", "tips", newtips.title]);
 
     });
