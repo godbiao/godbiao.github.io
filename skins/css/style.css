@@ -188,7 +188,7 @@ ul {
     text-align: center;
 }
 
-.thumbnail:hover {
+.thumbnail:hover,#tips:hover {
     animation: scalethumb 0.3s linear;
 }
 
@@ -531,6 +531,7 @@ ul {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 #item #tips img {
