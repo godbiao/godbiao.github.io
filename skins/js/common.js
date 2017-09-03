@@ -500,16 +500,16 @@ function isMobile() {
 function tips() {
     var randomnumber = Math.floor(Math.random() * tipsdata.length);
     var newtips = tipsdata[randomnumber];
-    var tips = "<img class='tipsimg' alt='"+newtips.title+"' src='" + newtips.img + "'>";
+    var tips = '<a href="'+newtips.url+'" title="'+newtips.title+'"><img class="tipsimg" alt="'+newtips.title+'" src="'+newtips.img+'"></a>';
     $("#tips").append(tips);
     //TIPS点击统计
     $(".tipsimg").click(function () {
-         window.location.href = newtips.url;
+         //window.location.href = newtips.url;
         _hmt.push(["_trackEvent", "skins", "tips", newtips.title]);
 
     });
 }
 
-
+//装x
 console.log("%c ->我这烂代码\n %c->就不要偷了吧~\n %c->我只是个菜鸟┭┮﹏┭┮", "color:red", "color:green", "color:blue");
 console.log("关注我微博吧：http://www.weibo.com/522239219");
