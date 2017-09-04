@@ -53,5 +53,11 @@ var tipsdata = [
         "url": "https://mp.weixin.qq.com/s/yjlmyMsz8w-JNsxYptPntQ",
         "img": "https://pic.kuaizhan.com/g2/M00/5E/EB/CgpQVFmpD2OAG5SuAABchhCAXY41543195",
         "time": "2017-09-01"
+        }, {
+        "id": 101,
+        "title": "王者荣耀高清无损纯净击杀音效",
+        "url": "https://pan.baidu.com/s/1eSmwCgi",
+        "img": "https://pic.kuaizhan.com/g1/M00/81/E5/CgpQU1mszGKAeRSlAAAoO0p0U0o9416505",
+        "time": "2017-09-04"
         }
 ];

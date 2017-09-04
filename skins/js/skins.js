@@ -1,5 +1,5 @@
 var skins = [
- 
+
     {
         "id": "4b7f558a-baa6-4bcd-aa07-b4d4902a5489",
         "name": "Android·O风格",
@@ -59,7 +59,7 @@ var skins = [
         "name": "王者荣耀·百变",
         "author": "IM标神",
         "size": "1.8MB",
-        "description": "亲爱的召唤师们，小飞为大家带来一款超级帅气的皮肤，8款王者荣耀游戏中帅到爆炸的英雄皮肤变变变！嗷嗷嗷～快来翻牌子吧！<br>Tips:输入皮肤中英雄的名字上屏后可触发彩蛋哦~<br>欢迎关注我的微博获取最新皮肤动态：<a href='https://m.weibo.cn/u/1136590322'>IM追清风</a><br><br>音乐彩蛋：<br>成吉思汗,维京,掠夺,驰骋,草原,星辰<br>狄仁杰,超时空,战士,真相<br>兰陵王,暗影,刀锋,疆土<br>虞姬,森之,风灵,明媚,轻盈<br>李白,青莲,剑仙,大河<br>露娜,紫霞,仙子<br>小乔,天鹅,之梦,恋爱,战斗,勇往直前<br>赵云,苍天,翔龙,子龙,参见<br>韩信,做梦,无法实现<br>花木兰,传说<br>欢迎,猥琐,稳住",
+        "description": "亲爱的召唤师们，小飞为大家带来一款超级帅气的皮肤，8款王者荣耀游戏中帅到爆炸的英雄皮肤变变变！嗷嗷嗷～快来翻牌子吧！<br>Tips:输入皮肤中英雄的名字上屏后可触发彩蛋哦~<br>欢迎关注我的微博获取最新皮肤动态：<a href='https://m.weibo.cn/u/1136590322'>IM追清风</a><br><br><a href='https://pan.baidu.com/s/1eSmwCgi' title='王者荣耀高清无损纯净击杀音效'><img width='100%' src='https://pic.kuaizhan.com/g1/M00/81/E5/CgpQU1mszGKAeRSlAAAoO0p0U0o9416505' /></a><br><br>音乐彩蛋：<br>成吉思汗,维京,掠夺,驰骋,草原,星辰<br>狄仁杰,超时空,战士,真相<br>兰陵王,暗影,刀锋,疆土<br>虞姬,森之,风灵,明媚,轻盈<br>李白,青莲,剑仙,大河<br>露娜,紫霞,仙子<br>小乔,天鹅,之梦,恋爱,战斗,勇往直前<br>赵云,苍天,翔龙,子龙,参见<br>韩信,做梦,无法实现<br>花木兰,传说<br>欢迎,猥琐,稳住",
         "update": "--2017年9月4日<br>新增韩信、花木兰两个英雄背景及彩蛋<br>替换齿轮及收起按键音效<br>新增三个其他彩蛋",
         "star": "4",
         "type": "gif",
@@ -67,7 +67,7 @@ var skins = [
         "time": "2017-9-4",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTGAYpbfAACpwTs14Fo0031774", "https://pic.kuaizhan.com/g1/M01/66/4B/CgpQU1mnr-GAVWA1AAkjt-bXiy09158915", ""],
         "it": "res/it/69347a70-bc19-11e6-9598-0800200c9a66.it"
-	}, 
+	},
     {
         "id": "638ba2e2-235c-4b82-bbeb-9b3947d3a382",
         "name": "ofo小黄车Style",
@@ -305,7 +305,7 @@ var skins = [
         "time": "2016-12-27",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSyALtyQAABItDINjM41070160", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSuAF7jkAADcrlZk5fs9405279", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSuAbuhyAADZhYsDGvc9238291"],
         "it": "res/it/40ed1290-cbd5-11e6-9598-0800200c9a66.it"
-	},{
+	}, {
         "id": "5f7b6940-acaa-11e6-9598-0800200c9a66",
         "name": "扭着扭着·动态",
         "author": "IM追清风",
