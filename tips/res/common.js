@@ -10,6 +10,7 @@ var _hmt = _hmt || [];
 
 
 $(document).ready(function () {
+	$("#tips").fadeIn();
     tips();
 
 });

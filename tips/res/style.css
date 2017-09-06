@@ -15,6 +15,10 @@ body {
     src: url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.eot?#iefix') format('embedded-opentype'), url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.woff') format('woff'), url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.ttf') format('truetype'), url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.svg#iconfont') format('svg');
 }
 
+#tips{
+	display:none;
+}
+
 .split {
     height: 10px;
     background-color: #efeff0;
