@@ -6,6 +6,7 @@ body {
     word-wrap: break-word;
     letter-spacing: 1px;
     letter-spacing: 0.0625rem;
+    padding-top: 5px;
 }
 
 @font-face {
@@ -15,8 +16,8 @@ body {
     src: url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.eot?#iefix') format('embedded-opentype'), url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.woff') format('woff'), url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.ttf') format('truetype'), url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.svg#iconfont') format('svg');
 }
 
-#tips{
-	display:none;
+#tips {
+    display: none;
 }
 
 .split {
@@ -42,7 +43,7 @@ body {
     text-align: center;
 }
 
-.tipsimg:hover {
+.tips:hover {
     animation: scaletipsimg 0.3s linear;
 }
 
@@ -94,13 +95,42 @@ body {
     }
 }
 
-.tipsimg:visited {
+..=tips:visited {
     transform: scale(1)
+}
+
+.tips {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.tipstitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 5px;
+    display: block;
+    width: 95%;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .tipsimg {
     width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tipsid {
+    position: absolute;
+    width: 70px;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom-right-radius: 5px;
 }
