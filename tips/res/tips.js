@@ -4,7 +4,8 @@ var tipsdata = [
         "title": "IM追清风的微博",
         "url": "https://m.weibo.cn/u/1136590322",
         "img": "https://pic.kuaizhan.com/g2/M01/57/40/CgpQVFmnx_iAHFG-AABeIxE62182957803",
-        "time": "2017-08-31"
+        "time": "2017-08-31",
+        "isTips": "0"
         }, {
         "id": 1,
         "title": "还有这种操作？这个手势有点炫酷！",
@@ -58,6 +59,7 @@ var tipsdata = [
         "title": "王者荣耀高清无损纯净击杀音效",
         "url": "https://pan.baidu.com/s/1eSmwCgi",
         "img": "https://pic.kuaizhan.com/g1/M00/81/E5/CgpQU1mszGKAeRSlAAAoO0p0U0o9416505",
-        "time": "2017-09-04"
+        "time": "2017-09-04",
+        "isTips": "0"
         }
 ];

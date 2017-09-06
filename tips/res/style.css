@@ -1,0 +1,46 @@
+body {
+    /*    font-family: serif, sans-serif;*/
+    overflow-x: hidden;
+    white-space: normal;
+    text-align: justify;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 251342 */
+    src: url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.eot');
+    src: url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.eot?#iefix') format('embedded-opentype'), url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.woff') format('woff'), url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.ttf') format('truetype'), url('https://at.alicdn.com/t/font_yv7pi257c1tyy14i.svg#iconfont') format('svg');
+}
+
+.split {
+    height: 10px;
+    background-color: #efeff0;
+}
+
+.nomore {
+    font-size: 12px;
+    color: #ccc;
+    height: 45px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #efeff0;
+    transition: 1s;
+}
+
+.none {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.tipsimg {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
