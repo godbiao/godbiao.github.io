@@ -11,8 +11,15 @@ var _hmt = _hmt || [];
 
 $(document).ready(function () {
     $("#tips").fadeIn();
-    tips();
+	if(isTpl()){
+		tips();
+	}
+    
+   //TIPS点击统计
+    $(".tipsimg").click(function () {
+        _hmt.push(["_trackEvent", "tips", "首页", this.alt]);
 
+    });
 });
 
 
@@ -43,9 +50,17 @@ function tips() {
     }
 
 
-    //TIPS点击统计
-    $(".tipsimg").click(function () {
-        _hmt.push(["_trackEvent", "tips", "首页", this.alt]);
+ 
+}
 
-    });
+
+//模板认定
+function isTpl() {
+    var herf = window.location.href;
+    var flag = herf.substr(herf.indexOf('?') + 1, herf.length);
+    if (flag == 1) {
+        return true;
+    } else {
+        return false;
+    }
 }
