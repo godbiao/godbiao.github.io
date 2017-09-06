@@ -38,7 +38,61 @@ body {
     text-align: center;
 }
 
+.tipsimg:hover {
+    animation: scaletipsimg 0.3s linear;
+}
 
+@-webkit-keyframes scaletipsimg {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(0.95)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@-o-keyframes scaletipsimg {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(0.95)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@-moz-keyframes scaletipsimg {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(0.95)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes scaletipsimg {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(0.95)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+.tipsimg:visited {
+    transform: scale(1)
+}
 
 .tipsimg {
     width: 100%;
