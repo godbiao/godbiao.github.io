@@ -17,7 +17,7 @@ $(document).ready(function () {
     
    //TIPS点击统计
     $(".tipsimg").click(function () {
-        _hmt.push(["_trackEvent", "tips", "首页", this.alt]);
+        _hmt.push(["_trackEvent", "tips", "clicktips", this.alt]);
 
     });
 });
