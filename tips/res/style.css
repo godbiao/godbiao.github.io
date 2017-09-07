@@ -107,7 +107,7 @@ body {
     }
 }
 
-..=tips:visited {
+.tips:visited {
     transform: scale(1)
 }
 
@@ -116,6 +116,7 @@ body {
     margin-bottom: 15px;
     background-color: #f2f2f2;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .tipstitle {
@@ -138,17 +139,16 @@ body {
 }
 
 .tipsid {
-    position: absolute;
-    /*    width: 70px;*/
+    position: relative;
+    height: 18px;
+    float: right;
+    margin-top: -18px;
     padding-left: 4px;
+    line-height: 18px;
     padding-right: 4px;
-    padding-top: 2px;
-    padding-bottom: 1px;
     color: #fff;
     font-size: 1.3rem;
-    /*    line-height: 1.3rem;*/
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
     border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
 }

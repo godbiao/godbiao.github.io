@@ -11,11 +11,11 @@ var _hmt = _hmt || [];
 
 $(document).ready(function () {
     $("#tips").fadeIn();
-	if(isTpl()){
-		tips();
-	}
-    
-   //TIPS点击统计
+    if (isTpl()) {
+        tips();
+    }
+
+    //TIPS点击统计
     $(".tipsimg").click(function () {
         _hmt.push(["_trackEvent", "tips", "clicktips", this.alt]);
 
@@ -45,12 +45,12 @@ function tips() {
         if (newtips.isTips == "0") {
             continue;
         }
-        var tips = '<div class="tips"><div class="tipsid">第-' + newtips.id + '-期</div><a href="' + newtips.url + '" title="' + newtips.title + '"><img class="tipsimg" alt="' + newtips.title + '" src="' + newtips.img + '" ></a><span class="tipstitle">' + newtips.title + '</span></div>';
+        var tips = '<div class="tips"><a href="' + newtips.url + '" title="' + newtips.title + '"><img class="tipsimg" alt="' + newtips.title + '" src="' + newtips.img + '" ></a><div class="tipsid">第-' + newtips.id + '-期</div><span class="tipstitle">' + newtips.title + '</span></div>';
         $("#tips-container").append(tips);
     }
 
 
- 
+
 }
 
 
