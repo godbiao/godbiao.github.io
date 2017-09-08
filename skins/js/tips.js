@@ -61,5 +61,11 @@ var tipsdata = [
         "img": "https://pic.kuaizhan.com/g1/M00/81/E5/CgpQU1mszGKAeRSlAAAoO0p0U0o9416505",
         "time": "2017-09-04",
         "isTips": "0"
+        }, {
+        "id": "09",
+        "title": "写出一个魑，把剩下的魅魍魉都召唤出来了！",
+        "url": "https://mp.weixin.qq.com/s/x_2xvZ1fN8--vTL1hdOR3A",
+        "img": "https://pic.kuaizhan.com/g3/1a/42/dd47-f115-4ff7-90c9-5d92bf42b0c655",
+        "time": "2017-09-08"
         }
 ];
