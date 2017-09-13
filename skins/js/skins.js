@@ -1,6 +1,18 @@
 var skins = [
-
     {
+        "id": "da091547-d127-4f5f-8f00-dfd2a119036a",
+        "name": "安卓奥利奥·浅色无框",
+        "author": "IM追清风",
+        "size": "45KB",
+        "description": "完美复刻了安卓Android谷歌奥利奥拼音输入法目前最新版的默认皮肤。设计中尽量保证原汁原味，但由于输入法布局的限制，必然会有些许遗憾。<br>值得一提的时，使用齿轮替换原讯飞图标，去除了空格键上的讯飞商标，但保留了按下的语音麦克风。<br><br>已知问题：自定义工具栏的时候，图标违和，能力有限，无法解决。<br><br>小技巧：点击左上角齿轮-按键设置中可调节字母大小写字号等",
+        "update": "",
+        "star": "5",
+        "type": "",
+        "lables": ["设计创意", "谷歌", "奥利奥", "无边框", "", ""],
+        "time": "2017-9-12",
+        "imgs": ["https://pic.kuaizhan.com/g3/a1/2f/a582-333d-43b3-914f-351821ffa1e964", "https://pic.kuaizhan.com/g3/e1/be/ad24-88db-4122-9333-6df8180d653337", "https://pic.kuaizhan.com/g3/1c/6e/65e5-ac1d-462f-9cab-724e4588f35729"],
+        "it": "res/it/da091547-d127-4f5f-8f00-dfd2a119036a.it"
+	}, {
         "id": "4b7f558a-baa6-4bcd-aa07-b4d4902a5489",
         "name": "Android·O风格",
         "author": "IM标神",
