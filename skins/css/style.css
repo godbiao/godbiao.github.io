@@ -79,9 +79,9 @@ ul {
 .nomore {
     font-size: 12px;
     color: #ccc;
-    height: 45px;
+    height: 80px;
     text-align: center;
-    line-height: 20px;
+    line-height: 80px;
     background-color: #efeff0;
     transition: 1s;
 }
