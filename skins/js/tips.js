@@ -67,6 +67,12 @@ var tipsdata = [
         "img": "res/tips9.jpg",
         "time": "2017-09-15"
         }, {
+        "id": "11",
+        "title": "拼音漏打错打？这个技巧拯救你的手滑！",
+        "url": "http://mp.weixin.qq.com/s/0Jt34BoWSwnEyZzIR1CViQ",
+        "img": "https://pic.kuaizhan.com/g3/35/f3/1a97-acf1-4ff9-a1b1-8273f5cbf9ff94",
+        "time": "2017-09-22"
+        }, {
         "id":"101",
         "title": "王者荣耀高清无损纯净击杀音效",
         "url": "https://pan.baidu.com/s/1eSmwCgi",
