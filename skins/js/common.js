@@ -500,11 +500,11 @@ function isMobile() {
 function tips() {
     var randomnumber = Math.floor(Math.random() * tipsdata.length);
     var newtips = tipsdata[randomnumber];
-    var tips = '<a href="'+newtips.url+'" title="'+newtips.title+'"><img class="tipsimg" alt="'+newtips.title+'" src="'+newtips.img+'"></a>';
+    var tips = '<a href="' + newtips.url + '" title="' + newtips.title + '"><img class="tipsimg" alt="' + newtips.title + '" src="' + newtips.img + '"></a>';
     $("#tips").append(tips);
     //TIPS点击统计
     $(".tipsimg").click(function () {
-         //window.location.href = newtips.url;
+        //window.location.href = newtips.url;
         _hmt.push(["_trackEvent", "skins", "tips", newtips.title]);
 
     });
@@ -513,3 +513,32 @@ function tips() {
 //装x
 console.log("%c ->我这烂代码\n %c->就不要偷了吧~\n %c->我只是个菜鸟┭┮﹏┭┮", "color:red", "color:green", "color:blue");
 console.log("关注我微博吧：http://www.weibo.com/522239219");
+
+/* 鼠标特效 */
+var a_idx = 0;
+jQuery(document).ready(function ($) {
+    $("body").click(function (e) {
+        var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+        var $i = $("<span/>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+            y = e.pageY;
+        $i.css({
+            "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "#ff6651"
+        });
+        $("body").append($i);
+        $i.animate({
+                "top": y - 180,
+                "opacity": 0
+            },
+            1500,
+            function () {
+                $i.remove();
+            });
+    });
+});
