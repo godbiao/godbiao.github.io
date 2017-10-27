@@ -75,7 +75,7 @@ var tipsdata = [
         }, {
         "id":"101",
         "title": "王者荣耀高清无损纯净击杀音效",
-        "url": "https://pan.baidu.com/s/1eSmwCgi",
+        "url": "https://godbiao.github.io/wzry",
         "img": "https://pic.kuaizhan.com/g1/M00/81/E5/CgpQU1mszGKAeRSlAAAoO0p0U0o9416505",
         "time": "2017-09-04",
         "isTips": "0"
