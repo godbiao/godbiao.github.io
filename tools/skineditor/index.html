@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="colorpicker/css/colorpicker.css" type="text/css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/layout.css" />
+    <title>ColorPicker - jQuery plugin</title>
+    <script type="text/javascript" src="colorpicker/js/jquery.js"></script>
+    <script type="text/javascript" src="colorpicker/js/colorpicker.js"></script>
+    <script type="text/javascript" src="colorpicker/js/eye.js"></script>
+    <script type="text/javascript" src="colorpicker/js/utils.js"></script>
+    <script type="text/javascript" src="colorpicker/js/layout.js?ver=1.0.2"></script>
+
+    <style>
+        body,
+        input {
+            color: #333333;
+            font-size: 14px;
+        }
+
+        body {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background-color: #c0ff38;
+        }
+
+        #main {
+            text-align: left;
+
+        }
+
+        .color-hex {
+            display: inline-block;
+            height: 35px;
+            margin: 5px;
+            width: 80px;
+            text-align: center;
+            border: 1px slid #ccc;
+
+        }
+
+        .colorc {
+            display: inline-block;
+            position: relative;
+            top: 12px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+
+        前景颜色<input class="color-hex" type="text" value="#c0ff38">
+        <span class="colorc">
+           <div id="colorSelector">
+            <div style="background-color: #c0ff38"></div>
+        </div>
+        </span>
+
+    </div>
+    <script>
+        $('#colorSelector').ColorPicker({
+            color: '#c0ff38',
+            onShow: function(colpkr) {
+                $(colpkr).fadeIn(500);
+                return false;
+            },
+            onHide: function(colpkr) {
+                $(colpkr).fadeOut(500);
+                return false;
+            },
+            onChange: function(hsb, hex, rgb) {
+                $('#colorSelector div').css('backgroundColor', '#' + hex);
+
+                $(".color-hex").val('#' + hex);
+                $('body').css('backgroundColor', '#' + hex);
+                console.log(hsb);
+                console.log(hex);
+                console.log(rgb);
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
