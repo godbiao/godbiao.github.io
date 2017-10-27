@@ -63,8 +63,8 @@ var tipsdata = [
         }, {
         "id": "10",
         "title": "这些不为人知的输入法小功能，发现之后好用到爆！",
-        "url": "https://pic.kuaizhan.com/g3/90/70/0ffb-e0af-431b-94a0-cf8e725d3a1504",
-        "img": "res/tips9.jpg",
+        "url": "http://mp.weixin.qq.com/s/rJ_MP5aVW45B9IDONWSUcg",
+        "img": "https://pic.kuaizhan.com/g3/90/70/0ffb-e0af-431b-94a0-cf8e725d3a1504",
         "time": "2017-09-15"
         }, {
         "id": "11",
@@ -72,6 +72,24 @@ var tipsdata = [
         "url": "http://mp.weixin.qq.com/s/0Jt34BoWSwnEyZzIR1CViQ",
         "img": "https://pic.kuaizhan.com/g3/35/f3/1a97-acf1-4ff9-a1b1-8273f5cbf9ff94",
         "time": "2017-09-22"
+        }, {
+        "id": "12",
+        "title": "旅游没做攻略？妙招帮你一站式解决",
+        "url": "https://mp.weixin.qq.com/s/DwkJmEGKGNZxgUkNtvj4NA",
+        "img": "https://pic.kuaizhan.com/g3/f7/a3/e882-2b6d-4a2d-98f1-e014283aebcf17",
+        "time": "2017-09-29"
+        }, {
+        "id": "13",
+        "title": "自定义颜文字速成教程~卖萌属性满血！",
+        "url": "https://mp.weixin.qq.com/s/2ft3RFHWahQjh2T5d6SGiw",
+        "img": "https://pic.kuaizhan.com/g3/da/15/926b-b37e-483b-9cde-b93c6ae8162a13",
+        "time": "2017-10-13"
+        }, {
+        "id": "14",
+        "title": "说话就能出表情，这种斗图神力怕是封印不住了！",
+        "url": "http://mp.weixin.qq.com/s/lzcr7LHbY3VxPdS-ZuV1hQ",
+        "img": "https://pic.kuaizhan.com/g3/a2/09/39d3-2bdc-408e-a881-daa097cf10df71",
+        "time": "2017-10-20"
         }, {
         "id":"101",
         "title": "王者荣耀高清无损纯净击杀音效",
