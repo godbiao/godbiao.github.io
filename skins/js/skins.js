@@ -1,5 +1,18 @@
 var skins = [
     {
+        "id": "0701de54-f2a6-4dec-94b0-f73aeb5b5a7c",
+        "name": "iPhone X·动画",
+        "author": "不吃鱼的猫",
+        "size": "172KB",
+        "description": "以苹果iPhone X手机锁屏界面为原型皮肤上线啦~",
+        "update": "",
+        "star": "1",
+        "type": "gif",
+        "lables": ["设计创意", "苹果", "简约", "iPhone X", "热点", "刘海"],
+        "time": "2017-11-06",
+        "imgs": ["https://pic.kuaizhan.com/g3/c6/eb/4d67-25c2-4e98-8b33-632a1b1d8b6c61", "https://pic.kuaizhan.com/g3/f8/16/2b3e-c67e-44d1-a4c8-afe809ec592643", ""],
+        "it": "res/it/0701de54-f2a6-4dec-94b0-f73aeb5b5a7c.it"
+	}, {
         "id": "da091547-d127-4f5f-8f00-dfd2a119036a",
         "name": "安卓奥利奥·浅色无框",
         "author": "IM追清风",
