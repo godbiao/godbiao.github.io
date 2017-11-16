@@ -357,6 +357,19 @@ var skins = [
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsT6AXI2BAAB7diPhOc07043658", "https://pic.kuaizhan.com/g1/M00/66/4B/CgpQU1mnr9-AV9MmABMRjKVqCDU6644411", ""],
         "it": "res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66.it"
 	}, {
+        "id": "96f22772-9732-11e6-bdf4-0800200c9a66",
+        "name": "看直播专用透明皮肤",
+        "author": "IM追清风",
+        "size": "44KB",
+        "description": "透明皮肤专为直播APP适配，透明键盘，输入时不遮挡主播身体部位，全网独家发布！为保证您的输入体验，请仅在看直播时选择使用此皮肤。预览图中美女大背景仅供展示皮肤使用，请以实际使用时效果为准。PS：部分APP未完美适配，敬请期待~",
+        "update": "",
+        "star": "1",
+        "type": "",
+        "lables": ["设计创意", "", "", "", "", ""],
+        "time": "2017-11-16",
+        "imgs": ["https://pic.kuaizhan.com/g3/64/50/4246-0bd9-4467-bacf-8bae0c4c96b367", "https://pic.kuaizhan.com/g3/15/19/63c9-fab4-4c44-9d94-7729feaeb2be22", "https://pic.kuaizhan.com/g3/15/19/63c9-fab4-4c44-9d94-7729feaeb2be22"],
+        "it": "res/it/96f22772-9732-11e6-bdf4-0800200c9a66.it"
+	}, {
         "id": "ed7b5da1-4318-11e6-bdf4-0800200c9a66",
         "name": "薛之谦·音乐",
         "author": "苳辰",
