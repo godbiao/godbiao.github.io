@@ -1,4 +1,4 @@
-var tipsdata = [
+ var tipsdata = [
     {
         "id": "0",
         "title": "IM追清风的微博",
@@ -90,6 +90,24 @@ var tipsdata = [
         "url": "http://mp.weixin.qq.com/s/lzcr7LHbY3VxPdS-ZuV1hQ",
         "img": "https://pic.kuaizhan.com/g3/a2/09/39d3-2bdc-408e-a881-daa097cf10df71",
         "time": "2017-10-20"
+        }, {
+        "id": "15",
+        "title": "一边喷砸Q，一边发消息！王者荣耀carry全场秘密在这！",
+        "url": "https://mp.weixin.qq.com/s/M81QZpJGkEQkTN-xXImOnw",
+        "img": "https://pic.kuaizhan.com/g3/a0/ad/4ab6-18d7-47a2-9700-a8132049658029",
+        "time": "2017-11-3"
+        }, {
+        "id": "16",
+        "title": "一个按键竟成双11秒杀神器？",
+        "url": "https://mp.weixin.qq.com/s/TIR-ZCdKSl8AAGAcYV0y1g",
+        "img": "https://pic.kuaizhan.com/g3/54/cf/1d99-5e9a-4a22-99b2-4bdc983105eb61",
+        "time": "2017-11-10"
+        }, {
+        "id": "17",
+        "title": "有一种友谊，叫你的名字连我的输入法都记得…",
+        "url": "https://mp.weixin.qq.com/s/sRwZiA5NUxMXAlkJULoAfg",
+        "img": "https://pic.kuaizhan.com/g3/51/f8/2933-5bf7-4b02-ad80-3fab5c769fa885",
+        "time": "2017-11-17"
         }, {
         "id":"101",
         "title": "王者荣耀高清无损纯净击杀音效",
