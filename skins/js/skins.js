@@ -7,10 +7,10 @@ var skins = [
         "description": "以坚果手机足迹系列之留声机保护套为原型的皮肤上线，还有美妙的音符飘舞，欢迎下载体验。",
         "update": "",
         "star": "3",
-        "type": "",
+        "type": "gif",
         "lables": ["设计创意", "锤子坚果", "简约", "足迹", "无框", ""],
         "time": "2017-11-20",
-        "imgs": ["https://pic.kuaizhan.com/g3/03/0c/09f3-c561-4cef-a46d-77e5e180d28b27", "https://pic.kuaizhan.com/g3/8b/11/c671-a031-4707-8b24-ded52eae94a184", "https://pic.kuaizhan.com/g3/44/94/86de-3f55-4c91-a4a5-afda6c187c1440"],
+        "imgs": ["https://pic.kuaizhan.com/g3/03/0c/09f3-c561-4cef-a46d-77e5e180d28b27", "https://pic.kuaizhan.com/g3/1c/a4/1722-4ea6-493d-b4a3-61e7eb6c681766", ""],
         "it": "res/it/eb563f47-512e-47af-b871-2a5cfec673c5.it"
 	}, {
         "id": "0701de54-f2a6-4dec-94b0-f73aeb5b5a7c",
