@@ -8,3 +8,9 @@ body {}
 .btn {
     margin-bottom: 6px;
 }
+
+.list-title {
+    padding-left: 5px;
+    border-radius: 4px;
+    width: 100%;
+}
