@@ -529,12 +529,15 @@ jQuery(document).ready(function ($) {
             "left": x,
             "position": "absolute",
             "font-weight": "bold",
-            "color": "#ff6651"
+            "color": "#ff6651",
+            "text-shadow": "0 5px 5px #ccc",
+            "font-size": "18px"
         });
         $("body").append($i);
         $i.animate({
                 "top": y - 180,
-                "opacity": 0
+                "opacity": 0,
+
             },
             1500,
             function () {
