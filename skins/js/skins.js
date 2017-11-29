@@ -4,7 +4,7 @@ var skins = [
         "name": "Android轻薄浅·大回车版",
         "author": "IM标神",
         "size": "44KB",
-        "description": "<span style='color:red'>需要切换到搜狗布局才可以有大回车的效果！！！</span><br>依次点击工具栏键盘图标-切换布局图标-搜狗布局~<br>其他布局暂不未做支持！",
+        "description": "<span style='color:red'>需要切换到搜狗布局才可以有大回车的效果！！！</span><br>依次点击工具栏键盘图标-切换布局图标-搜狗布局~<br>本皮肤仅供尝鲜，后面不再更新！",
         "update": "",
         "star": "4",
         "type": "",
