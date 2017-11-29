@@ -1,5 +1,18 @@
 var skins = [
     {
+        "id": "fa79c97d-b2de-486b-98c2-aeb9e0e9ad69",
+        "name": "Android轻薄浅·大回车版",
+        "author": "IM标神",
+        "size": "44KB",
+        "description": "<span style='color:red'>需要切换到搜狗布局才可以有大回车的效果！！！</span><br>依次点击工具栏键盘图标-切换布局图标-搜狗布局~<br>其他布局暂不未做支持！",
+        "update": "",
+        "star": "4",
+        "type": "",
+        "lables": ["设计创意", "谷歌", "大回车", "白色", "高亮蓝", "轻薄"],
+        "time": "2017-11-29",
+        "imgs": ["https://pic.kuaizhan.com/g3/9a/44/fe92-c873-4445-9108-1509e12d322398", "https://pic.kuaizhan.com/g3/52/83/e0fa-c823-4859-9c1b-6ba183d54f8817", "https://pic.kuaizhan.com/g3/f2/7e/5daa-0781-472e-ab5a-f92ffb3c306788"],
+        "it": "res/it/fa79c97d-b2de-486b-98c2-aeb9e0e9ad69.it"
+	}, {
         "id": "eb563f47-512e-47af-b871-2a5cfec673c5",
         "name": "足迹之留声机·动画",
         "author": "不吃鱼的猫",
