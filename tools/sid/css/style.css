@@ -6,11 +6,16 @@
 body {
     background-color: #fff;
     font-family: '微软雅黑';
+
 }
 
 @font-face {
     font-family: 'gd';
     src: url('font.ttf');
+}
+
+.key {
+    font-family: 'gd';
 }
 
 #popup {
@@ -143,7 +148,6 @@ li:active {
     border: 1px solid #ccc;
     border-radius: 12px;
     box-shadow: 0 0 10px #ccc;
-    font-family: 'gd';
 }
 
 
@@ -190,7 +194,7 @@ li:active {
     border: 1px solid #ccc;
     border-radius: 12px;
     box-shadow: 0 0 10px #ccc;
-    font-family: 'gd';
+
 }
 
 
@@ -210,7 +214,7 @@ li:active {
     border: 1px solid #ccc;
     border-radius: 12px;
     box-shadow: 0 0 10px #ccc;
-    font-family: 'gd';
+
 }
 
 
@@ -225,12 +229,12 @@ li:active {
     height: 114px;
     line-height: 112px;
     background-color: #fff;
-    font-size: 35px;
+    font-size: 30px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 12px;
     box-shadow: 0 0 10px #ccc;
-    font-family: 'gd';
+
 }
 
 #py26 .space {
