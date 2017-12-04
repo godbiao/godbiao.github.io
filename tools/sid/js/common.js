@@ -37,7 +37,7 @@ function showID(key) {
             $("#popup").show().html("1119(回车),1120(前往),1121(完成),1122(下个),1123(搜索),1124(清除),1245(发送)");
         }
         if (sid == "1116") {
-            $("#popup").show().html("1116(ab),1117(分词)");
+            $("#popup").show().html("1116(ab),1117(分词),1158(小写),1159(大写),1160(锁定)");
         }
 
         if (sid == "1110") {
@@ -57,10 +57,17 @@ function showID(key) {
     });
 }
 
-
 $(document).ready(function () {
 
     showID(".icon");
     showID(".key");
     showID(".func");
+
+
+    $("#py9 .switch").click(function () {
+        window.location.href = "py26.html";
+    });
+    $("#py26 .switch").click(function () {
+        window.location.href = "index.html";
+    });
 });
