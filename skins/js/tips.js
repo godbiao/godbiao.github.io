@@ -142,8 +142,8 @@
         "id": "23",
         "title": "元旦祝福你试过这样么？最后一招简直是祝福界的良心！",
         "url": "https://mp.weixin.qq.com/s/Co2yia0MBgSU-WRNTbMHpw",
-        "img": "res/tips23.jpg",
-        "time": "https://pic.kuaizhan.com/g3/7b/a3/55b7-aede-400c-9354-0a7eec7954ea30"
+        "img": "https://pic.kuaizhan.com/g3/7b/a3/55b7-aede-400c-9354-0a7eec7954ea30",
+        "time": "2017-12-27"
         }, {
         "id": "24",
         "title": "英语学渣如何一秒变身多语种沟通达人？",
