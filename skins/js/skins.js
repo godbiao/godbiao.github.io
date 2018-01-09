@@ -49,7 +49,7 @@ var skins = [
         "type": "gif",
         "lables": ["设计创意", "苹果", "简约", "iPhone X", "热点", "刘海"],
         "time": "2017-11-06",
-        "imgs": ["https://pic.kuaizhan.com/g3/c6/eb/4d67-25c2-4e98-8b33-632a1b1d8b6c61", "https://pic.kuaizhan.com/g3/f8/16/2b3e-c67e-44d1-a4c8-afe809ec592643", ""],
+        "imgs": ["https://pic.kuaizhan.com/g3/81/8f/ac23-e5e2-4b3a-bea0-4dd15ecfe5aa43", "https://pic.kuaizhan.com/g3/18/91/7608-d6ff-4557-8a08-e5a7e81006bb30", ""],
         "it": "res/it/0701de54-f2a6-4dec-94b0-f73aeb5b5a7c.it"
 	}, {
         "id": "da091547-d127-4f5f-8f00-dfd2a119036a",
