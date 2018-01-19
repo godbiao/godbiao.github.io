@@ -1,5 +1,18 @@
 var skins = [
         {
+        "id": "5638fe94-7820-4226-9fb3-7172faf50494",
+        "name": "iOS11·Style",
+        "author": "IM追清风",
+        "size": "61KB",
+        "description": "苹果iPhone系统iOS 11默认输入法风格~",
+        "update": "",
+        "star": "3",
+        "type": "",
+        "lables": ["设计创意", "苹果", "iOS11", "简约商务", "", ""],
+        "time": "2018-1-19",
+        "imgs": ["https://pic.kuaizhan.com/g3/e1/04/a2e6-ed3a-40c7-9dfb-d5b31ff152a138", "https://pic.kuaizhan.com/g3/3c/80/e82f-9ce5-4629-a537-0934bc0291c198", "https://pic.kuaizhan.com/g3/ca/e0/38bd-4452-4e11-90f9-d98506d1920329"],
+        "it": "res/it/5638fe94-7820-4226-9fb3-7172faf50494.it"
+	}, {
         "id": "cedfbb47-fe26-4d69-ab40-18353cd94215",
         "name": "安卓奥利奥·深色无框",
         "author": "IM追清风",
