@@ -4,11 +4,11 @@ var skins = [
         "name": "iOS11·Style",
         "author": "IM追清风",
         "size": "61KB",
-        "description": "苹果iPhone系统iOS 11默认输入法风格~",
+        "description": "苹果iPhone系统iOS 11默认输入法风格~<br>其实与原iOS10几乎无差别，这边只是为了更新一个大空格矮候选栏。",
         "update": "",
         "star": "3",
         "type": "",
-        "lables": ["设计创意", "苹果", "iOS11", "简约商务", "", ""],
+        "lables": ["设计创意", "苹果", "iOS11", "简约商务", "大空格", ""],
         "time": "2018-1-19",
         "imgs": ["https://pic.kuaizhan.com/g3/e1/04/a2e6-ed3a-40c7-9dfb-d5b31ff152a138", "https://pic.kuaizhan.com/g3/3c/80/e82f-9ce5-4629-a537-0934bc0291c198", "https://pic.kuaizhan.com/g3/ca/e0/38bd-4452-4e11-90f9-d98506d1920329"],
         "it": "res/it/5638fe94-7820-4226-9fb3-7172faf50494.it"
