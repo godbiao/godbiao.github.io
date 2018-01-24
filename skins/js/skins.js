@@ -3,7 +3,7 @@ var skins = [
         "id": "57e9aa00-246c-42a7-a157-40677f719b58",
         "name": "旅行の青蛙·音乐",
         "author": "IM追清风",
-        "size": "604KB",
+        "size": "614KB",
         "description": "我蛙出去一天了怎么还不回来，我蛙怎么不出门就知道看书，我蛙一回来就背着我写信也不让我看，我蛙你在外面还好吗……没错，这就是最近出现的又一现象级手游，它的名字叫做“旅行青蛙”。",
         "update": "",
         "star": "4",
@@ -25,6 +25,19 @@ var skins = [
         "time": "2018-1-19",
         "imgs": ["https://pic.kuaizhan.com/g3/e1/04/a2e6-ed3a-40c7-9dfb-d5b31ff152a138", "https://pic.kuaizhan.com/g3/3c/80/e82f-9ce5-4629-a537-0934bc0291c198", "https://pic.kuaizhan.com/g3/ca/e0/38bd-4452-4e11-90f9-d98506d1920329"],
         "it": "res/it/5638fe94-7820-4226-9fb3-7172faf50494.it"
+	}, {
+        "id": "b5ef201b-8f9a-4962-92a4-43d9601f1145",
+        "name": "A屏黑·Style",
+        "author": "IM追清风",
+        "size": "51KB",
+        "description": "这可能是你要的A屏黑吧~",
+        "update": "",
+        "star": "2",
+        "type": "",
+        "lables": ["设计创意", "A屏", "纯黑", "无边框", "暗色", ""],
+        "time": "2018-1-24",
+        "imgs": ["https://pic.kuaizhan.com/g3/7d/38/858c-285d-497d-80d7-476d11874ec279", "https://pic.kuaizhan.com/g3/45/39/4b04-da3c-458b-8856-afa70e3f6ff325", "https://pic.kuaizhan.com/g3/15/65/75bc-0d20-4cea-8864-f8afcdbaf80483"],
+        "it": "res/it/b5ef201b-8f9a-4962-92a4-43d9601f1145.it"
 	}, {
         "id": "cedfbb47-fe26-4d69-ab40-18353cd94215",
         "name": "安卓奥利奥·深色无框",
