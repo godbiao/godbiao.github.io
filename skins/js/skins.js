@@ -1,5 +1,18 @@
 var skins = [
         {
+        "id": "57e9aa00-246c-42a7-a157-40677f719b58",
+        "name": "旅行の青蛙·音乐",
+        "author": "IM追清风",
+        "size": "604KB",
+        "description": "我蛙出去一天了怎么还不回来，我蛙怎么不出门就知道看书，我蛙一回来就背着我写信也不让我看，我蛙你在外面还好吗……没错，这就是最近出现的又一现象级手游，它的名字叫做“旅行青蛙”。",
+        "update": "",
+        "star": "4",
+        "type": "",
+        "lables": ["动漫游戏", "旅行青蛙", "游戏", "佛系", "原汁原味", ""],
+        "time": "2018-1-19",
+        "imgs": ["https://pic.kuaizhan.com/g3/9b/1e/cf27-761c-4edb-9ead-1e0f6f58b1c665", "https://pic.kuaizhan.com/g3/7c/42/097d-2d7c-4437-abe3-0763592cbed027", "https://pic.kuaizhan.com/g3/4a/2b/8602-6c87-42cd-8c13-a44673a9b60134"],
+        "it": "res/it/57e9aa00-246c-42a7-a157-40677f719b58.it"
+	},         {
         "id": "5638fe94-7820-4226-9fb3-7172faf50494",
         "name": "iOS11·Style",
         "author": "IM追清风",
