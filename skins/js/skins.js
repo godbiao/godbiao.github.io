@@ -9,8 +9,8 @@ var skins = [
         "star": "4",
         "type": "",
         "lables": ["动漫游戏", "旅行青蛙", "游戏", "佛系", "原汁原味", ""],
-        "time": "2018-1-19",
-        "imgs": ["https://pic.kuaizhan.com/g3/9b/1e/cf27-761c-4edb-9ead-1e0f6f58b1c665", "https://pic.kuaizhan.com/g3/7c/42/097d-2d7c-4437-abe3-0763592cbed027", "https://pic.kuaizhan.com/g3/4a/2b/8602-6c87-42cd-8c13-a44673a9b60134"],
+        "time": "2018-1-24",
+        "imgs": ["https://pic.kuaizhan.com/g3/a9/bf/2ea9-b9e4-4607-904c-815912376bbf27", "https://pic.kuaizhan.com/g3/a2/78/0510-7714-4ee2-b8b6-73f900cc7aac33", "https://pic.kuaizhan.com/g3/a5/0e/3db6-1100-4502-af47-5463c5c88d1563"],
         "it": "res/it/57e9aa00-246c-42a7-a157-40677f719b58.it"
 	},         {
         "id": "5638fe94-7820-4226-9fb3-7172faf50494",
