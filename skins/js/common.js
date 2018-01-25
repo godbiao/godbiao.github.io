@@ -144,7 +144,7 @@ function itemSkin() {
     for (var i = 0; i < s_len; i++) {
         if (skins[i].id == skinID) {
             var s = skins[i];
-            skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time, s.imgs, s.it);
+            skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time, s.imgs, s.it, s.beta);
             putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
             break;
         }
@@ -271,7 +271,7 @@ function skinInfo(name, author, size, description, update, star, type, time, img
             exec("imeExtendComponents", myskin.cmd, myskin.info);
             _hmt.push(["_trackEvent", "skins-ime", "download", name + "(" + skinID + ")"]);
         } else {
-            if (beta == true) {
+            if (beta) {
                 window.location.href = it;
             } else {
                 window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
