@@ -144,9 +144,10 @@ function itemSkin() {
     for (var i = 0; i < s_len; i++) {
         if (skins[i].id == skinID) {
             var s = skins[i];
+            var l = s.lables;
             skinInfo(s);
-            //            skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time, s.imgs, s.it, s.beta);
-            putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
+            //            putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
+            putLables(l);
             break;
         }
     };
@@ -248,7 +249,7 @@ function skinInfo(s) {
         }
 
         if (isIME()) {
-            //跳转到IM追清风皮肤分类
+            //跳转到皮肤详情
             var myskin = {
                 cmd: 'open_client_detail_page',
                 info: {
@@ -301,33 +302,17 @@ function skinInfo(s) {
 
 
 //打标签
-function putLables(moren, primary, success, info, warning, danger) {
-    if (moren || primary || success || info || warning || danger) {
+function putLables(l) {
+
+    var labs = ["default", "primary", "success", "info", "warning", "danger"];
+
+    if (l[0] || l[1] || l[2] || l[3] || l[4] || l[5]) {
         $(".lables").show();
     }
-
-    if (moren) {
-        $(".lables").append('<span class="label label-default">' + moren + '</span>');
-    }
-
-    if (primary) {
-        $(".lables").append('<span class="label label-primary">' + primary + '</span>');
-    }
-
-    if (success) {
-        $(".lables").append('<span class="label label-success">' + success + '</span>');
-    }
-
-    if (info) {
-        $(".lables").append('<span class="label label-info">' + info + '</span>');
-    }
-
-    if (warning) {
-        $(".lables").append('<span class="label label-warning">' + warning + '</span>');
-    }
-
-    if (danger) {
-        $(".lables").append('<span class="label label-danger">' + danger + '</span>');
+    for (i = 0; i < 6; i++) {
+        if (l[i]) {
+            $(".lables").append('<span class="label label-' + labs[i] + '">' + l[i] + '</span>');
+        }
     }
 }
 
