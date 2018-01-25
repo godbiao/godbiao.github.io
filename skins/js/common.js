@@ -35,17 +35,6 @@ $(document).ready(function () {
         window.location.href = "https://godbiao.github.io/update/beta.html";
     });
 
-    //    //打开皮肤详情
-    //    $(".skin-id").click(function () {
-    //        var skinID = $(this).attr('id');
-    //        if (isApp()) {
-    //            window.location.href = "item.html?app=item&id=" + skinID;
-    //        } else {
-    //            window.location.href = "item.html?id=" + skinID;
-    //        }
-    //
-    //    });
-
     //帮助
     $(".share").click(function () {
         $("#pop").show();
@@ -146,7 +135,6 @@ function itemSkin() {
             var s = skins[i];
             var l = s.lables;
             skinInfo(s);
-            //            putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
             putLables(l);
             break;
         }
@@ -307,7 +295,7 @@ function putLables(l) {
     var labs = ["default", "primary", "success", "info", "warning", "danger"];
 
     if (l[0] || l[1] || l[2] || l[3] || l[4] || l[5]) {
-        $(".lables").show();
+        $(".lables").empty().show();
     }
     for (i = 0; i < 6; i++) {
         if (l[i]) {
