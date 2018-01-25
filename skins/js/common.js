@@ -247,19 +247,24 @@ function skinInfo(s) {
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
             _hmt.push(["_trackEvent", "skins-ime", "download", s.name + "(" + skinID + ")"]);
-        } else {
-            if (!s.beta || isQQ() || isWeiXin()) {
-                window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
-            } else {
+        } else if (isQQ() || isWeiXin()) {
+
+            if (s.beta) {
                 window.location.href = s.it;
+            } else {
+                window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
             }
 
-            if (isApp()) {
-                _hmt.push(["_trackEvent", "skins-app", "download", s.name + "(" + skinID + ")"]);
-            } else {
-                _hmt.push(["_trackEvent", "skins", "download", s.name + "(" + skinID + ")"]);
-            }
+        } else {
+            window.location.href = s.it;
         }
+
+        if (isApp()) {
+            _hmt.push(["_trackEvent", "skins-app", "download", s.name + "(" + skinID + ")"]);
+        } else {
+            _hmt.push(["_trackEvent", "skins", "download", s.name + "(" + skinID + ")"]);
+        }
+
 
     });
 
