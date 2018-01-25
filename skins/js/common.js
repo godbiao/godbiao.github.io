@@ -144,7 +144,8 @@ function itemSkin() {
     for (var i = 0; i < s_len; i++) {
         if (skins[i].id == skinID) {
             var s = skins[i];
-            skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time, s.imgs, s.it, s.beta);
+            skinInfo(s);
+            //            skinInfo(s.name, s.author, s.size, s.description, s.update, s.star, s.type, s.time, s.imgs, s.it, s.beta);
             putLables(s.lables[0], s.lables[1], s.lables[2], s.lables[3], s.lables[4], s.lables[5]);
             break;
         }
@@ -197,44 +198,31 @@ function ranRecommend() {
 
 
 //替换皮肤信息
-function skinInfo(name, author, size, description, update, star, type, time, imgs, it, beta) {
-    $(".skin-name").html(name);
-    $(".skin-author").html(author);
-    $(".skin-size").html(size);
-    $(".skin-time").html(time);
-    //评星
-    switch (star) {
-        case "5":
-            $(".skin-star").html("★★★★★");
-            break;
-        case "4":
-            $(".skin-star").html("★★★★☆");
-            break;
-        case "3":
-            $(".skin-star").html("★★★☆☆");
-            break;
-        case "2":
-            $(".skin-star").html("★★☆☆☆");
-            break;
-        case "1":
-            $(".skin-star").html("★☆☆☆☆");
-            break;
-        default:
-            $(".skin-star").html("☆☆☆☆☆");
-            break;
-    };
+function skinInfo(s) {
+    $(".skin-name").html(s.name);
+    $(".skin-author").html(s.author);
+    $(".skin-size").html(s.size);
+    $(".skin-time").html(s.time);
+
+    $(".skin-star").empty();
+    for (i = 0; i < s.star; i++) {
+        $(".skin-star").append("★");
+    }
+    for (i = 0; i < 5 - s.star; i++) {
+        $(".skin-star").append("☆");
+    }
 
     //描述和升级
-    $(".skin-description-content").html(description);
-    if (update) {
+    $(".skin-description-content").html(s.description);
+    if (s.update) {
         $("#skin-description-update").show();
-        $(".skin-description-update").html(update);
+        $(".skin-description-update").html(s.update);
     }
 
     //详情图
-    if (type == "gif") {
+    if (s.type == "gif") {
 
-        $(".preview_9").attr("src", imgs[1]);
+        $(".preview_9").attr("src", s.imgs[1]);
         //        $(".preview_26").hide();
         $(".skin-details-preview .item2").remove();
         $(".carousel-indicators").hide();
@@ -244,8 +232,8 @@ function skinInfo(name, author, size, description, update, star, type, time, img
 
     } else {
 
-        $(".preview_9").attr("src", imgs[1]);
-        $(".preview_26").attr("src", imgs[2]);
+        $(".preview_9").attr("src", s.imgs[1]);
+        $(".preview_26").attr("src", s.imgs[2]);
 
     }
 
@@ -269,18 +257,18 @@ function skinInfo(name, author, size, description, update, star, type, time, img
                 }
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
-            _hmt.push(["_trackEvent", "skins-ime", "download", name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "skins-ime", "download", s.name + "(" + skinID + ")"]);
         } else {
             if (beta) {
-                window.location.href = it;
+                window.location.href = s.it;
             } else {
                 window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
             }
 
             if (isApp()) {
-                _hmt.push(["_trackEvent", "skins-app", "download", name + "(" + skinID + ")"]);
+                _hmt.push(["_trackEvent", "skins-app", "download", s.name + "(" + skinID + ")"]);
             } else {
-                _hmt.push(["_trackEvent", "skins", "download", name + "(" + skinID + ")"]);
+                _hmt.push(["_trackEvent", "skins", "download", s.name + "(" + skinID + ")"]);
             }
         }
 
@@ -306,7 +294,7 @@ function skinInfo(name, author, size, description, update, star, type, time, img
             "padding-top": "12px"
         });
     } else {
-        $("title").html(name + " - " + author + " - " + title);
+        $("title").html(s.name + " - " + s.author + " - " + title);
     }
 
 }
