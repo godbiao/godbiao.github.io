@@ -197,7 +197,7 @@ function ranRecommend() {
 
 
 //替换皮肤信息
-function skinInfo(name, author, size, description, update, star, type, time, imgs, it) {
+function skinInfo(name, author, size, description, update, star, type, time, imgs, it, beta) {
     $(".skin-name").html(name);
     $(".skin-author").html(author);
     $(".skin-size").html(size);
@@ -271,9 +271,11 @@ function skinInfo(name, author, size, description, update, star, type, time, img
             exec("imeExtendComponents", skin.cmd, skin.info);
             _hmt.push(["_trackEvent", "skins-ime", "download", name + "(" + skinID + ")"]);
         } else {
-
-            //            window.location.href = it;
-            window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
+            if (beta) {
+                window.location.href = it;
+            } else {
+                window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
+            }
 
             if (isApp()) {
                 _hmt.push(["_trackEvent", "skins-app", "download", name + "(" + skinID + ")"]);

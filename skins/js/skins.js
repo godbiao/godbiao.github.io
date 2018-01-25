@@ -1,5 +1,5 @@
 var skins = [
-        {
+    {
         "id": "57e9aa00-246c-42a7-a157-40677f719b58",
         "name": "旅行の青蛙·音乐",
         "author": "IM追清风",
@@ -12,7 +12,7 @@ var skins = [
         "time": "2018-1-24",
         "imgs": ["https://pic.kuaizhan.com/g3/a9/bf/2ea9-b9e4-4607-904c-815912376bbf27", "https://pic.kuaizhan.com/g3/a2/78/0510-7714-4ee2-b8b6-73f900cc7aac33", "https://pic.kuaizhan.com/g3/a5/0e/3db6-1100-4502-af47-5463c5c88d1563"],
         "it": "res/it/57e9aa00-246c-42a7-a157-40677f719b58.it"
-	},         {
+	}, {
         "id": "5638fe94-7820-4226-9fb3-7172faf50494",
         "name": "iOS11·Style",
         "author": "IM追清风",
@@ -37,7 +37,8 @@ var skins = [
         "lables": ["设计创意", "A屏", "纯黑", "无边框", "暗色", ""],
         "time": "2018-1-24",
         "imgs": ["https://pic.kuaizhan.com/g3/7d/38/858c-285d-497d-80d7-476d11874ec279", "https://pic.kuaizhan.com/g3/45/39/4b04-da3c-458b-8856-afa70e3f6ff325", "https://pic.kuaizhan.com/g3/15/65/75bc-0d20-4cea-8864-f8afcdbaf80483"],
-        "it": "res/it/b5ef201b-8f9a-4962-92a4-43d9601f1145.it"
+        "it": "res/it/b5ef201b-8f9a-4962-92a4-43d9601f1145.it",
+        "beta": true;
 	}, {
         "id": "cedfbb47-fe26-4d69-ab40-18353cd94215",
         "name": "安卓奥利奥·深色无框",
