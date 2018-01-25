@@ -260,10 +260,10 @@ function skinInfo(s) {
             exec("imeExtendComponents", myskin.cmd, myskin.info);
             _hmt.push(["_trackEvent", "skins-ime", "download", s.name + "(" + skinID + ")"]);
         } else {
-            if (s.beta) {
-                window.location.href = s.it;
-            } else {
+            if (!s.beta || isQQ() || isWeiXin()) {
                 window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
+            } else {
+                window.location.href = s.it;
             }
 
             if (isApp()) {
@@ -482,6 +482,31 @@ function tips() {
         _hmt.push(["_trackEvent", "skins", "tips", newtips.title]);
 
     });
+}
+
+/**
+ * 判断是否在微信里打开
+ */
+function isWeiXin() {
+    var ua = window.navigator.userAgent.toLowerCase();
+    if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+        return true;
+
+    } else {
+        return false;
+    }
+}
+
+/**
+ * 判断是否在QQ里打开
+ */
+function isQQ() {
+    var ua = window.navigator.userAgent.toLowerCase();
+    if (ua.match(/QQ/i) == 'qq') {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 //装x
