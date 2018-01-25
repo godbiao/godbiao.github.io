@@ -271,7 +271,7 @@ function skinInfo(name, author, size, description, update, star, type, time, img
             exec("imeExtendComponents", myskin.cmd, myskin.info);
             _hmt.push(["_trackEvent", "skins-ime", "download", name + "(" + skinID + ")"]);
         } else {
-            if (beta) {
+            if (beta == true) {
                 window.location.href = it;
             } else {
                 window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
