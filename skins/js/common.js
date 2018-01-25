@@ -261,14 +261,14 @@ function skinInfo(name, author, size, description, update, star, type, time, img
 
         if (isIME()) {
             //跳转到IM追清风皮肤分类
-            var skin = {
+            var myskin = {
                 cmd: 'open_client_detail_page',
                 info: {
                     "client_page_type": "client_page_type_theme_detail",
                     "client_id": skinID,
                 }
             };
-            exec("imeExtendComponents", skin.cmd, skin.info);
+            exec("imeExtendComponents", myskin.cmd, myskin.info);
             _hmt.push(["_trackEvent", "skins-ime", "download", name + "(" + skinID + ")"]);
         } else {
             if (beta) {
