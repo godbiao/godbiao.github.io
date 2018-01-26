@@ -253,7 +253,7 @@ function skinInfo(s) {
                     "download_res_title": s.name,
                     "download_res_size": s.size,
                     "download_res_id": skinID,
-                    "download_res_url": s.it
+                    "download_res_url": "https://godbiao.github.io/skins/" + s.it
                 }
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
@@ -266,18 +266,8 @@ function skinInfo(s) {
             }
 
         } else {
-            //            window.location.href = s.it;           
-            var myskin = {
-                cmd: 'open_download',
-                info: {
-                    "client_page_type": "download_res_type_theme",
-                    "download_res_title": s.name,
-                    "download_res_size": s.size,
-                    "download_res_id": skinID,
-                    "download_res_url": "https://godbiao.github.io/skins/" + s.it
-                }
-            };
-            exec("imeExtendComponents", myskin.cmd, myskin.info);
+            window.location.href = s.it;
+
         }
 
         if (isApp()) {
