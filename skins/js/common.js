@@ -152,8 +152,8 @@ function indexSkin() {
         }
         var sname = skins[i].name;
         var spreview = skins[i].imgs[0];
-        var rowhot = skin([4,sid,sname,spreview]);
-        var rownew = skin([6,sid,sname,spreview]);
+        var rowhot = skin([4, sid, sname, spreview]);
+        var rownew = skin([6, sid, sname, spreview]);
 
         if (i > 3) {
             $("#row-hot").append(rowhot);
@@ -169,22 +169,22 @@ function ranRecommend() {
     for (var i = 0; i < 3; i++) {
         var j = parseInt(ransid[i]);
         var sid = skins[j].id;
-		//过滤
+        //过滤
         if (sid == skinID) {
             j = parseInt(ransid[3]);
             sid = skins[j].id;
         }
         var sname = skins[j].name;
         var spreview = skins[j].imgs[0];
-        var rowmore =skin([4,sid,sname,spreview]);
+        var rowmore = skin([4, sid, sname, spreview]);
         $("#row-more").append(rowmore);
     };
 }
 
 //4-6;sid;sname
-function skin(s){
-	return '<div class="skin-id col-xs-'+s[0]+'"><a href="item.html?id=' + s[1] + '" title="' + s[2] + '"><div class="thumbnail"><img src="' + s[3] + '" class="skin-preview"><div class="caption"><div class="skin-name">' + s[2] + '</div></div></div></a></div>';
-	
+function skin(s) {
+    return '<div class="skin-id col-xs-' + s[0] + '"><a href="item.html?id=' + s[1] + '" title="' + s[2] + '"><div class="thumbnail"><img src="' + s[3] + '" class="skin-preview"><div class="caption"><div class="skin-name">' + s[2] + '</div></div></div></a></div>';
+
 }
 
 //替换皮肤信息
@@ -239,15 +239,24 @@ function skinInfo(s) {
 
         if (isIME()) {
             //跳转到皮肤详情
+            //            var myskin = {
+            //                cmd: 'open_client_detail_page',
+            //                info: {
+            //                    "client_page_type": "client_page_type_theme_detail",
+            //                    "client_id": skinID,
+            //                }
+            //            };
             var myskin = {
-                cmd: 'open_client_detail_page',
+                cmd: 'open_download',
                 info: {
-                    "client_page_type": "client_page_type_theme_detail",
-                    "client_id": skinID,
+                    "client_page_type": "download_res_type_theme",
+                    "download_res_title": s.name,
+                    "download_res_size": s.size,
+                    "download_res_id": skinID,
+                    "download_res_url": s.it
                 }
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
-            _hmt.push(["_trackEvent", "skins-ime", "download", s.name + "(" + skinID + ")"]);
         } else if (isQQ() || isWeiXin()) {
 
             if (s.beta) {
@@ -262,15 +271,17 @@ function skinInfo(s) {
 
         if (isApp()) {
             _hmt.push(["_trackEvent", "skins-app", "download", s.name + "(" + skinID + ")"]);
-        } else if(isQQ()) {
+        } else if (isQQ()) {
             _hmt.push(["_trackEvent", "skins-QQ", "download", s.name + "(" + skinID + ")"]);
-        }else if(isWeiXin()){
-			 _hmt.push(["_trackEvent", "skins-WeiXin", "download", s.name + "(" + skinID + ")"]);
-		}else if(isWeiBo()){
-			 _hmt.push(["_trackEvent", "skins-Weibo", "download", s.name + "(" + skinID + ")"]);
-		}else{
-			 _hmt.push(["_trackEvent", "skins", "download", s.name + "(" + skinID + ")"]);
-		}
+        } else if (isWeiXin()) {
+            _hmt.push(["_trackEvent", "skins-WeiXin", "download", s.name + "(" + skinID + ")"]);
+        } else if (isWeiBo()) {
+            _hmt.push(["_trackEvent", "skins-Weibo", "download", s.name + "(" + skinID + ")"]);
+        } else if (isIME()) {
+            _hmt.push(["_trackEvent", "skins-ime", "download", s.name + "(" + skinID + ")"]);
+        } else {
+            _hmt.push(["_trackEvent", "skins", "download", s.name + "(" + skinID + ")"]);
+        }
 
     });
 
@@ -532,7 +543,7 @@ jQuery(document).ready(function ($) {
             "text-shadow": "0 5px 5px #ccc",
             "font-size": "16px"
         });
-        $("body").append($i); 
+        $("body").append($i);
         $i.animate({
                 "top": y - 180,
                 "opacity": 0,
