@@ -172,11 +172,11 @@ function ranRecommend() {
         if (sid == skinID) {
             j = parseInt(ransid[3]);
             sid = skins[j].id;
-            var sname = skins[j].name;
+          /*  var sname = skins[j].name;
             var spreview = skins[j].imgs[0];
             var rowmore = '<div class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
             $("#row-more").append(rowmore);
-            continue;
+            continue;*/
         }
         var sname = skins[j].name;
         var spreview = skins[j].imgs[0];
@@ -194,10 +194,10 @@ function skinInfo(s) {
     $(".skin-time").html(s.time);
 
     $(".skin-star").empty();
-    for (i = 0; i < s.star; i++) {
+    for (var i = 0; i < s.star; i++) {
         $(".skin-star").append("★");
     }
-    for (i = 0; i < 5 - s.star; i++) {
+    for (var i = 0; i < 5 - s.star; i++) {
         $(".skin-star").append("☆");
     }
 
@@ -306,7 +306,7 @@ function putLables(l) {
     if (l[0] || l[1] || l[2] || l[3] || l[4] || l[5]) {
         $(".lables").empty().show();
     }
-    for (i = 0; i < 6; i++) {
+    for (var i = 0; i < 6; i++) {
         if (l[i]) {
             $(".lables").append('<span class="label label-' + labs[i] + '">' + l[i] + '</span>');
         }
@@ -420,8 +420,6 @@ function touchSlideReload() {
             });
             //            $("body").css('transform', 'translateY(' + endY + 'px)');
         }
-
-
     }
 
     function touchEnd(event) {
@@ -531,7 +529,7 @@ jQuery(document).ready(function ($) {
             "font-weight": "bold",
             "color": "#ff6651",
             "text-shadow": "0 5px 5px #ccc",
-            "font-size": "18px"
+            "font-size": "16px"
         });
         $("body").append($i);
         $i.animate({
