@@ -155,7 +155,13 @@
         "title": "yanan是念延安还是亚男？输入法跟自己打起来了！",
         "url": "https://mp.weixin.qq.com/s/X4tF81eVDYPRnW1FcEFLZQ",
         "img": "https://pic.kuaizhan.com/g3/7a/b1/400c-65a3-45a9-acf1-a36cafdd03bc55",
-        "time": "2018-01-12"
+        "time": "2018-01-16"
+        }, {
+        "id": "26",
+        "title": "小声说：这个功能只悄悄告诉你一个人",
+        "url": "https://mp.weixin.qq.com/s/fPWrtgwBPIDqRw9bGc9leQ",
+        "img": "res/tips26.jpg",
+        "time": "2018-01-19"
         }, {
         "id":"101",
         "title": "王者荣耀高清无损纯净击杀音效",
