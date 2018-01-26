@@ -250,7 +250,7 @@ function skinInfo(s) {
             var myskin = {
                 cmd: 'open_download',
                 info: {
-                    "client_page_type": "download_res_type_theme",
+                    "download_res_type": "download_res_type_theme",
                     "download_res_title": s.name,
                     "download_res_size": s.size,
                     "download_res_id": skinID,
@@ -258,6 +258,7 @@ function skinInfo(s) {
                 }
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
+
         } else if (isQQ() || isWeiXin()) {
 
             if (s.beta) {
@@ -267,18 +268,7 @@ function skinInfo(s) {
             }
 
         } else {
-            //            window.location.href = s.it;
-            var myskin = {
-                cmd: 'open_download',
-                info: {
-                    "download_res_type": "download_res_type_theme",
-                    "download_res_title": s.name,
-                    "download_res_size": s.size,
-                    "download_res_id": skinID,
-                    "download_res_url": "https://godbiao.github.io/skins/" + s.it
-                }
-            };
-            exec("imeExtendComponents", myskin.cmd, myskin.info);
+            window.location.href = s.it;
 
         }
 
