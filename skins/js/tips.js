@@ -160,7 +160,7 @@
         "id": "26",
         "title": "小声说：这个功能只悄悄告诉你一个人",
         "url": "https://mp.weixin.qq.com/s/fPWrtgwBPIDqRw9bGc9leQ",
-        "img": "res/tips26.jpg",
+        "img": "https://pic.kuaizhan.com/g3/52/fd/6f9e-2cfa-442f-91ec-719c3b74e7c332",
         "time": "2018-01-19"
         }, {
         "id":"101",
