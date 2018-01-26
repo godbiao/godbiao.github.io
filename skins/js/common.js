@@ -152,8 +152,8 @@ function indexSkin() {
         }
         var sname = skins[i].name;
         var spreview = skins[i].imgs[0];
-        var rowhot = '<div class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
-        var rownew = '<div class="skin-id col-xs-6"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
+        var rowhot = skin([4,sid,sname,spreview]);
+        var rownew = skin([6,sid,sname,spreview]);
 
         if (i > 3) {
             $("#row-hot").append(rowhot);
@@ -169,22 +169,23 @@ function ranRecommend() {
     for (var i = 0; i < 3; i++) {
         var j = parseInt(ransid[i]);
         var sid = skins[j].id;
+		//过滤
         if (sid == skinID) {
             j = parseInt(ransid[3]);
             sid = skins[j].id;
-          /*  var sname = skins[j].name;
-            var spreview = skins[j].imgs[0];
-            var rowmore = '<div class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
-            $("#row-more").append(rowmore);
-            continue;*/
         }
         var sname = skins[j].name;
         var spreview = skins[j].imgs[0];
-        var rowmore = '<div class="skin-id col-xs-4"><a href="item.html?id=' + sid + '" title="' + sname + '"><div class="thumbnail"><img src="' + spreview + '" class="skin-preview"><div class="caption"><div class="skin-name">' + sname + '</div></div></div></a></div>';
+        var rowmore =skin([4,sid,sname,spreview]);
         $("#row-more").append(rowmore);
     };
 }
 
+//4-6;sid;sname
+function skin(s){
+	return '<div class="skin-id col-xs-'+s[0]+'"><a href="item.html?id=' + s[1] + '" title="' + s[2] + '"><div class="thumbnail"><img src="' + s[3] + '" class="skin-preview"><div class="caption"><div class="skin-name">' + s[2] + '</div></div></div></a></div>';
+	
+}
 
 //替换皮肤信息
 function skinInfo(s) {
@@ -531,7 +532,7 @@ jQuery(document).ready(function ($) {
             "text-shadow": "0 5px 5px #ccc",
             "font-size": "16px"
         });
-        $("body").append($i);
+        $("body").append($i); 
         $i.animate({
                 "top": y - 180,
                 "opacity": 0,
