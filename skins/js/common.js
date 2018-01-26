@@ -261,10 +261,15 @@ function skinInfo(s) {
 
         if (isApp()) {
             _hmt.push(["_trackEvent", "skins-app", "download", s.name + "(" + skinID + ")"]);
-        } else {
-            _hmt.push(["_trackEvent", "skins", "download", s.name + "(" + skinID + ")"]);
-        }
-
+        } else if(isQQ()) {
+            _hmt.push(["_trackEvent", "skins-QQ", "download", s.name + "(" + skinID + ")"]);
+        }else if(isWeiXin()){
+			 _hmt.push(["_trackEvent", "skins-WeiXin", "download", s.name + "(" + skinID + ")"]);
+		}else if(isWeiBo()){
+			 _hmt.push(["_trackEvent", "skins-Weibo", "download", s.name + "(" + skinID + ")"]);
+		}else{
+			 _hmt.push(["_trackEvent", "skins", "download", s.name + "(" + skinID + ")"]);
+		}
 
     });
 
@@ -292,7 +297,6 @@ function skinInfo(s) {
     }
 
 }
-
 
 //打标签
 function putLables(l) {
@@ -475,9 +479,7 @@ function tips() {
     });
 }
 
-/**
- * 判断是否在微信里打开
- */
+//判断是否在微信里打开
 function isWeiXin() {
     var ua = window.navigator.userAgent.toLowerCase();
     if (ua.match(/MicroMessenger/i) == 'micromessenger') {
@@ -488,12 +490,20 @@ function isWeiXin() {
     }
 }
 
-/**
- * 判断是否在QQ里打开
- */
+//判断是否在QQ里打开 
 function isQQ() {
     var ua = window.navigator.userAgent.toLowerCase();
     if (ua.match(/QQ/i) == 'qq') {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//判断是否在微博里打开
+function isWeiBo() {
+    var ua = window.navigator.userAgent.toLowerCase();
+    if (ua.match(/WeiBo/i) == 'weibo') {
         return true;
     } else {
         return false;
