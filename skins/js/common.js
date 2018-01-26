@@ -252,7 +252,7 @@ function skinInfo(s) {
             if (s.beta) {
                 window.location.href = s.it;
             } else {
-                window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
+                window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&ckey=CK1373472118157&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
             }
 
         } else {
@@ -435,8 +435,6 @@ function touchSlideReload() {
         if (endY > 120 && $(document).scrollTop() < 10) {
             window.location = location.href;
         }
-
-
     }
 }
 
