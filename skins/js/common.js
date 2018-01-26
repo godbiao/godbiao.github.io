@@ -278,14 +278,14 @@ function skinInfo(s) {
         $("#pop").fadeOut(300);
         $(".install,.iclose").slideUp(200);
 
-        $(".pop-name").html(name);
+        $(".pop-name").html(s.name);
         $.cookie('installed', 1, {
             expires: 365
         });
     });
 
     if (isApp()) {
-        $("title").html(name);
+        $("title").html(s.name);
         $(".top-title").hide();
         $("#item").css({
             "padding-top": "0px"
