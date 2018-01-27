@@ -432,7 +432,7 @@ var skins = [
         "star": "4",
         "type": "gif",
         "lables": ["清新时尚", "IM追清风", "星轨", "动态", "天空", "夜"],
-        "time": "2016-12-6",
+        "time": "2018-1-27",
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsT6AXI2BAAB7diPhOc07043658", "https://pic.kuaizhan.com/g1/M00/66/4B/CgpQU1mnr9-AV9MmABMRjKVqCDU6644411", ""],
         "it": "res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66.it"
 	}, {
