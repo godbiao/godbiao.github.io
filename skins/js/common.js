@@ -168,6 +168,7 @@ function skin(s) {
 
 //替换皮肤信息
 function skinInfo(s) {
+
     $(".skin-name").html(s.name);
     $(".skin-author").html(s.author);
     $(".skin-size").html(s.size);
@@ -237,13 +238,7 @@ function skinInfo(s) {
                 }
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
-            //下载统计
-            if (s.rid) {
-                $.ajax({
-                    url: 'http://log.voicecloud.cn/resredirect?gid=7&cid=7606&rid=' + s.rid + '&a=download&uid=0&imei=00&cv=' + getClientVersion() + '&df=0&biz=100IME&os=android&ap=wifi',
-                    async: true
-                });
-            }
+
 
         } else if (isQQ() || isWeiXin()) {
 
@@ -256,7 +251,7 @@ function skinInfo(s) {
         } else {
             window.location.href = s.it;
         }
-
+        //下载日志
         if (isApp()) {
             _hmt.push(["_trackEvent", "skins-app", "download", s.name + "(" + skinID + ")"]);
         } else if (isQQ()) {
@@ -267,6 +262,12 @@ function skinInfo(s) {
             _hmt.push(["_trackEvent", "skins-Weibo", "download", s.name + "(" + skinID + ")"]);
         } else if (isIME()) {
             _hmt.push(["_trackEvent", "skins-ime", "download", s.name + "(" + skinID + ")"]);
+            if (s.rid) {
+                $.ajax({
+                    url: 'http://log.voicecloud.cn/resredirect?gid=7&cid=7606&rid=' + s.rid + '&a=download&uid=0&imei=00&cv=' + getClientVersion() + '&df=0&biz=100IME&os=android&ap=wifi',
+                    async: true
+                });
+            }
         } else {
             _hmt.push(["_trackEvent", "skins", "download", s.name + "(" + skinID + ")"]);
         }
@@ -294,6 +295,21 @@ function skinInfo(s) {
         });
     } else {
         $("title").html(s.name + " - " + s.author + " - " + title);
+    }
+
+    //浏览日志
+    if (isApp()) {
+        _hmt.push(["_trackEvent", "skins-app", "pv", s.name + "(" + skinID + ")"]);
+    } else if (isQQ()) {
+        _hmt.push(["_trackEvent", "skins-QQ", "pv", s.name + "(" + skinID + ")"]);
+    } else if (isWeiXin()) {
+        _hmt.push(["_trackEvent", "skins-WeiXin", "pv", s.name + "(" + skinID + ")"]);
+    } else if (isWeiBo()) {
+        _hmt.push(["_trackEvent", "skins-Weibo", "pv", s.name + "(" + skinID + ")"]);
+    } else if (isIME()) {
+        _hmt.push(["_trackEvent", "skins-ime", "pv", s.name + "(" + skinID + ")"]);
+    } else {
+        _hmt.push(["_trackEvent", "skins", "download", s.name + "(" + skinID + ")"]);
     }
 
 }
