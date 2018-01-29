@@ -39,7 +39,7 @@ var skins = [
         "time": "2018-1-24",
         "imgs": ["https://pic.kuaizhan.com/g3/7d/38/858c-285d-497d-80d7-476d11874ec279", "https://pic.kuaizhan.com/g3/45/39/4b04-da3c-458b-8856-afa70e3f6ff325", "https://pic.kuaizhan.com/g3/15/65/75bc-0d20-4cea-8864-f8afcdbaf80483"],
         "it": "res/it/b5ef201b-8f9a-4962-92a4-43d9601f1145.it",
-        "beta": true,
+        "beta": false,
 	}, {
         "id": "cedfbb47-fe26-4d69-ab40-18353cd94215",
         "name": "安卓奥利奥·深色无框",
