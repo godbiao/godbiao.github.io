@@ -13,7 +13,7 @@ var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你�
 
 var s_len = skins.length;
 var skinID = getskinid().id;
-
+var url = window.location.href;
 if (skinID) { //皮肤详情页
     itemSkin();
     ranRecommend();
@@ -21,6 +21,21 @@ if (skinID) { //皮肤详情页
     likeskin();
 } else if (isTpl()) { //首页模板
     indexSkin();
+} else {
+    //首页浏览日志
+    if (isApp()) {
+        _hmt.push(["_trackEvent", "index-pv", "APP", url]);
+    } else if (isQQ()) {
+        _hmt.push(["_trackEvent", "index-pv", "QQ", url]);
+    } else if (isWeiXin()) {
+        _hmt.push(["_trackEvent", "index-pv", "WeiXin", url]);
+    } else if (isWeiBo()) {
+        _hmt.push(["_trackEvent", "index-pv", "Weibo", url]);
+    } else if (isIME()) {
+        _hmt.push(["_trackEvent", "index-pv", "IME", url]);
+    } else {
+        _hmt.push(["_trackEvent", "index-pv", "Others", url]);
+    }
 }
 
 
@@ -253,15 +268,15 @@ function skinInfo(s) {
         }
         //下载日志
         if (isApp()) {
-            _hmt.push(["_trackEvent", "skins-app", "download", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "download", "APP", s.name + "(" + skinID + ")"]);
         } else if (isQQ()) {
-            _hmt.push(["_trackEvent", "skins-QQ", "download", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "download", "QQ", s.name + "(" + skinID + ")"]);
         } else if (isWeiXin()) {
-            _hmt.push(["_trackEvent", "skins-WeiXin", "download", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "download", "WeiXin", s.name + "(" + skinID + ")"]);
         } else if (isWeiBo()) {
-            _hmt.push(["_trackEvent", "skins-Weibo", "download", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "download", "Weibo", s.name + "(" + skinID + ")"]);
         } else if (isIME()) {
-            _hmt.push(["_trackEvent", "skins-ime", "download", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "download", "IME", s.name + "(" + skinID + ")"]);
             if (s.rid) {
                 $.ajax({
                     url: 'http://log.voicecloud.cn/resredirect?gid=7&cid=7606&rid=' + s.rid + '&a=download&uid=0&imei=00&cv=' + getClientVersion() + '&df=0&biz=100IME&os=android&ap=wifi',
@@ -269,7 +284,7 @@ function skinInfo(s) {
                 });
             }
         } else {
-            _hmt.push(["_trackEvent", "skins", "download", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "download", "Others", s.name + "(" + skinID + ")"]);
         }
 
     });
@@ -297,23 +312,22 @@ function skinInfo(s) {
         $("title").html(s.name + " - " + s.author + " - " + title);
     }
 
-    //浏览日志
+    //详情页浏览日志
     if (isApp()) {
-        _hmt.push(["_trackEvent", "skins-app", "item-pv", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "item-pv", "APP", s.name + "(" + skinID + ")"]);
     } else if (isQQ()) {
-        _hmt.push(["_trackEvent", "skins-QQ", "item-pv", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "item-pv", "QQ", s.name + "(" + skinID + ")"]);
     } else if (isWeiXin()) {
-        _hmt.push(["_trackEvent", "skins-WeiXin", "item-pv", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "item-pv", "WeiXin", s.name + "(" + skinID + ")"]);
     } else if (isWeiBo()) {
-        _hmt.push(["_trackEvent", "skins-Weibo", "item-pv", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "item-pv", "Weibo", s.name + "(" + skinID + ")"]);
     } else if (isIME()) {
-        _hmt.push(["_trackEvent", "skins-ime", "item-pv", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "item-pv", "IME", s.name + "(" + skinID + ")"]);
     } else {
-        _hmt.push(["_trackEvent", "skins", "item-pv", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "item-pv", "Others", s.name + "(" + skinID + ")"]);
     }
 
 }
-5
 
 //打标签
 function putLables(l) {
