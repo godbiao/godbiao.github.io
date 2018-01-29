@@ -11,7 +11,8 @@ var skins = [
         "lables": ["动漫游戏", "旅行青蛙", "游戏", "佛系", "原汁原味", ""],
         "time": "2018-1-24",
         "imgs": ["https://pic.kuaizhan.com/g3/a9/bf/2ea9-b9e4-4607-904c-815912376bbf27", "https://pic.kuaizhan.com/g3/a2/78/0510-7714-4ee2-b8b6-73f900cc7aac33", "https://pic.kuaizhan.com/g3/a5/0e/3db6-1100-4502-af47-5463c5c88d1563"],
-        "it": "res/it/57e9aa00-246c-42a7-a157-40677f719b58.it"
+        "it": "res/it/57e9aa00-246c-42a7-a157-40677f719b58.it",
+        "rid": "8904"
 	}, {
         "id": "5638fe94-7820-4226-9fb3-7172faf50494",
         "name": "iOS11·Style",
@@ -170,7 +171,8 @@ var skins = [
         "lables": ["游戏动漫", "IM追清风", "王者荣耀", "动态", "音乐", "彩蛋"],
         "time": "2017-9-4",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTGAYpbfAACpwTs14Fo0031774", "https://pic.kuaizhan.com/g1/M01/66/4B/CgpQU1mnr-GAVWA1AAkjt-bXiy09158915", ""],
-        "it": "res/it/69347a70-bc19-11e6-9598-0800200c9a66.it"
+        "it": "res/it/69347a70-bc19-11e6-9598-0800200c9a66.it",
+        "rid": "3093"
 	},
     {
         "id": "638ba2e2-235c-4b82-bbeb-9b3947d3a382",

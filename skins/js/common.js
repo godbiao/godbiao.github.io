@@ -239,13 +239,14 @@ function skinInfo(s) {
 
         if (isIME()) {
             //跳转到皮肤详情
-            //            var myskin = {
-            //                cmd: 'open_client_detail_page',
-            //                info: {
-            //                    "client_page_type": "client_page_type_theme_detail",
-            //                    "client_id": skinID,
-            //                }
-            //            };
+            /* var myskin = {
+                cmd: 'open_client_detail_page',
+                info: {
+                "client_page_type": "client_page_type_theme_detail",
+                 "client_id": skinID,
+                }
+            };*/
+
             //直接下载皮肤
             var myskin = {
                 cmd: 'open_download',
@@ -258,6 +259,13 @@ function skinInfo(s) {
                 }
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
+            //下载统计
+            if (s.rid) {
+                $.ajax({
+                    url: 'http://log.voicecloud.cn/resredirect?gid=7&cid=7606&rid=' + s.rid + '&a=download&uid=0&imei=00&cv=' + getClientVersion() + '&df=0&biz=100IME&os=android&ap=wifi',
+                    async: true
+                });
+            }
 
         } else if (isQQ() || isWeiXin()) {
 
@@ -269,7 +277,6 @@ function skinInfo(s) {
 
         } else {
             window.location.href = s.it;
-
         }
 
         if (isApp()) {
@@ -366,6 +373,16 @@ function isApp() {
 function isIME() {
     var ua = navigator.userAgent;
     return ua.indexOf('iflytek_mmp') >= 0;
+}
+
+//获取客户端版本号
+function getClientVersion() {
+    var client_version = exec("imeExtendComponents", 'ask_client_version', []);
+    var version = convertType(client_version).message;
+    if (version) {
+        return version;
+    }
+    return 0;
 }
 
 
