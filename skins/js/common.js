@@ -299,20 +299,21 @@ function skinInfo(s) {
 
     //浏览日志
     if (isApp()) {
-        _hmt.push(["_trackEvent", "skins-app", "pv", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "skins-app", "item-pv", s.name + "(" + skinID + ")"]);
     } else if (isQQ()) {
-        _hmt.push(["_trackEvent", "skins-QQ", "pv", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "skins-QQ", "item-pv", s.name + "(" + skinID + ")"]);
     } else if (isWeiXin()) {
-        _hmt.push(["_trackEvent", "skins-WeiXin", "pv", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "skins-WeiXin", "item-pv", s.name + "(" + skinID + ")"]);
     } else if (isWeiBo()) {
-        _hmt.push(["_trackEvent", "skins-Weibo", "pv", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "skins-Weibo", "item-pv", s.name + "(" + skinID + ")"]);
     } else if (isIME()) {
-        _hmt.push(["_trackEvent", "skins-ime", "pv", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "skins-ime", "item-pv", s.name + "(" + skinID + ")"]);
     } else {
-        _hmt.push(["_trackEvent", "skins", "download", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "skins", "item-pv", s.name + "(" + skinID + ")"]);
     }
 
 }
+5
 
 //打标签
 function putLables(l) {
