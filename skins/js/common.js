@@ -64,7 +64,7 @@ $(document).ready(function () {
 //下面是一些函数
 //点赞
 function likeskin() {
-
+    var msg = ["呵呵", "^_^你已坚定地赞过!", "_^后悔点赞了么？", "^_后悔也没用了呀~", "^V^其实是我太懒没加取消点赞功能~", "^:^悲催鸟,要跳转到我微博了……"];
     var likeTime = 1;
     $(".like").click(function () {
         if ($.cookie(skinID) != 1) {
@@ -82,29 +82,7 @@ function likeskin() {
 
         } else {
 
-            var msg = ["呵呵", "^_^你已坚定地赞过!", "_^后悔点赞了么？", "^_后悔也没用了呀~", "^V^其实是我太懒没加取消点赞功能~", "^:^悲催鸟,要跳转到我微博了……"];
-            if (likeTime == 2) {
-
-                if (isApp()) {
-                    app.toast(msg[2]);
-                } else {
-                    alert(msg[2]);
-                }
-
-            } else if (likeTime == 3) {
-                if (isApp()) {
-                    app.toast(msg[3]);
-                } else {
-                    alert(msg[3]);
-                }
-
-            } else if (likeTime == 4) {
-                if (isApp()) {
-                    app.toast(msg[4]);
-                } else {
-                    alert(msg[4]);
-                }
-            } else if (likeTime > 4) {
+            if (likeTime > 4) {
                 if (isApp()) {
                     app.toast(msg[5]);
                 } else {
@@ -113,11 +91,12 @@ function likeskin() {
                 window.location.href = "http://m.weibo.cn/u/1136590322";
             } else {
                 if (isApp()) {
-                    app.toast(msg[1]);
+                    app.toast(msg[likeTime]);
                 } else {
-                    alert(msg[1]);
+                    alert(msg[likeTime]);
                 }
             }
+
             likeTime++;
         }
     });
@@ -213,7 +192,6 @@ function skinInfo(s) {
     if (s.type == "gif") {
 
         $(".preview_9").attr("src", s.imgs[1]);
-        //        $(".preview_26").hide();
         $(".skin-details-preview .item2").remove();
         $(".carousel-indicators").hide();
         $('.carousel').carousel({
