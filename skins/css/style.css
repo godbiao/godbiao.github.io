@@ -562,7 +562,7 @@ ul {
 
 #share-win {
     display: none;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     z-index: 999999;
     padding: 10px;
