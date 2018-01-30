@@ -344,7 +344,7 @@ function skinInfo(s) {
 
             $(".share-wxf").click(function () {
 
-                exec("imeExtendComponents", 'share_mm', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
+                exec("imeExtendComponents", 'share_mm_friend', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
                     'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
                 $(".shade").hide();
