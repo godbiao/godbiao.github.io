@@ -331,9 +331,48 @@ function skinInfo(s) {
         $(".help").hide();
         $(".share").show();
         $(".share").click(function () {
-            exec("imeExtendComponents", 'share_qq', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
-                'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
-            }]);
+            $(".shade").show();
+            $("#share-win").slideToggle();
+            $(".share-qq").click(function () {
+                exec("imeExtendComponents", 'share_qq', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
+                    'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
+                }]);
+                $(".shade").hide();
+                $("#share-win").slideToggle();
+
+            });
+
+            $(".share-wxf").click(function () {
+
+                exec("imeExtendComponents", 'share_mm', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
+                    'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
+                }]);
+                $(".shade").hide();
+                $("#share-win").slideToggle();
+
+            });
+
+            $(".share-pyq").click(function () {
+
+                exec("imeExtendComponents", 'share_mm', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
+                    'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
+                }]);
+                $(".shade").hide();
+                $("#share-win").slideToggle();
+
+            });
+
+            $(".share-wb").click(function () {
+
+                exec("imeExtendComponents", 'share_weibo', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
+                    'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
+                }]);
+                $(".shade").hide();
+                $("#share-win").slideToggle();
+
+            });
+
+
         });
     } else if (isWeiXin() || isQQ()) {
         $(".help").hide();
@@ -347,6 +386,10 @@ function skinInfo(s) {
         });
     }
 
+    $(".shade").click(function () {
+        $(".shade").hide();
+        $("#share-win").slideToggle();
+    });
 
 }
 
