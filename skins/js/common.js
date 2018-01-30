@@ -50,13 +50,6 @@ $(document).ready(function () {
         window.location.href = "https://godbiao.github.io/update/beta.html";
     });
 
-    //帮助
-    $(".share").click(function () {
-        $("#pop").show();
-        $(".install,.iclose").slideDown(300);
-
-        $(".pop-name").html('皮肤安装方法');
-    });
 
     //返回
     $(".back").click(function () {
@@ -81,6 +74,7 @@ $(document).ready(function () {
 function likeskin() {
     var msg = ["呵呵", "^_^你已坚定地赞过!", "_^后悔点赞了么？", "^_后悔也没用了呀~", "^V^其实是我太懒没加取消点赞功能~", "^:^悲催鸟,要跳转到我微博了……"];
     var likeTime = 1;
+
     $(".like").click(function () {
         if ($.cookie(skinID) != 1) {
             $.cookie(skinID, 1, {
@@ -223,6 +217,11 @@ function skinInfo(s) {
 
     //下载皮肤
     $(".skin-download").click(function () {
+        if (isIME() || isQQ() || isWeiXin()) {
+            $.cookie(skinID, 1, {
+                expires: 365
+            });
+        }
         if ($.cookie('installed') != 1) {
 
             $("#pop").show();
@@ -326,6 +325,28 @@ function skinInfo(s) {
     } else {
         _hmt.push(["_trackEvent", "item-pv", "Others", s.name + "(" + skinID + ")"]);
     }
+
+    //分享及帮助
+    if (isIME()) {
+        $(".help").hide();
+        $(".share").show();
+        $(".share").click(function () {
+            exec("imeExtendComponents", 'share_qq', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
+                'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
+            }]);
+        });
+    } else if (isWeiXin() || isQQ()) {
+        $(".help").hide();
+    } else {
+        //帮助
+        $(".help").click(function () {
+            $("#pop").show();
+            $(".install,.iclose").slideDown(300);
+
+            $(".pop-name").html('皮肤安装方法');
+        });
+    }
+
 
 }
 
