@@ -340,6 +340,7 @@ function skinInfo(s) {
                 $(".shade").hide();
                 $("#share-win").slideToggle();
 
+                _hmt.push(["_trackEvent", "share", "share_QQ", s.name + "(" + skinID + ")"]);
             });
 
             $(".share-wxf").click(function () {
@@ -350,6 +351,7 @@ function skinInfo(s) {
                 $(".shade").hide();
                 $("#share-win").slideToggle();
 
+                _hmt.push(["_trackEvent", "share", "share_WeiXin_friend", s.name + "(" + skinID + ")"]);
             });
 
             $(".share-pyq").click(function () {
@@ -359,6 +361,8 @@ function skinInfo(s) {
                 }]);
                 $(".shade").hide();
                 $("#share-win").slideToggle();
+
+                _hmt.push(["_trackEvent", "share", "share_WeiXin_pyq", s.name + "(" + skinID + ")"]);
 
             });
 
@@ -370,6 +374,18 @@ function skinInfo(s) {
                 $(".shade").hide();
                 $("#share-win").slideToggle();
 
+                _hmt.push(["_trackEvent", "share", "share_weibo", s.name + "(" + skinID + ")"]);
+            });
+
+            $(".share-qzone").click(function () {
+
+                exec("imeExtendComponents", 'share_qzone', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
+                    'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
+                }]);
+                $(".shade").hide();
+                $("#share-win").slideToggle();
+
+                _hmt.push(["_trackEvent", "share", "share_qzone", s.name + "(" + skinID + ")"]);
             });
 
 
@@ -617,7 +633,7 @@ function isWeiBo() {
 console.log("%c ->我这烂代码\n %c->就不要偷了吧~\n %c->我只是个菜鸟┭┮﹏┭┮", "color:red", "color:green", "color:blue");
 console.log("关注我微博吧：http://www.weibo.com/522239219");
 
-/* 鼠标特效 */
+/* 鼠标特效 
 var a_idx = 0;
 jQuery(document).ready(function ($) {
     $("body").click(function (e) {
@@ -648,3 +664,4 @@ jQuery(document).ready(function ($) {
             });
     });
 });
+*/
