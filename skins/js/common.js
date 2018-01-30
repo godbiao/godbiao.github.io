@@ -218,7 +218,7 @@ function skinInfo(s) {
     //下载皮肤
     $(".skin-download").click(function () {
         if (isIME() || isQQ() || isWeiXin()) {
-            $.cookie(skinID, 1, {
+            $.cookie('installed', 1, {
                 expires: 365
             });
         }
