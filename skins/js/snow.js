@@ -1,5 +1,5 @@
 //飘雪花
-var snow = '<div class="snow-container" style=" position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;z-index: 100001;"></div>';
+var snow = '<div class="snow-container" style=" position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;z-index: 9999999999999999999;"></div>';
 $('body').prepend(snow);
 
 var THREE = THREE || {};
