@@ -403,8 +403,8 @@ function skinInfo(s) {
     }
 
     //debug
-//    $(".shade").show();
-//    $("#share-win").slideToggle(200);
+    $(".shade").show();
+    $("#share-win").slideToggle(200);
 
     $(".shade, .clear").click(function () {
         $(".shade").hide();

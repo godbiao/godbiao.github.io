@@ -565,15 +565,15 @@ ul {
     position: fixed;
     bottom: 0px;
     z-index: 999999;
-    padding: 10px;
+
     text-align: center;
     background-color: #fff;
     border-top: 1px solid #f2f2f2;
 }
 
 #item #share-win img {
-    width: 16%;
-    margin: 10px;
+    width: 15%;
+    margin: 15px;
 }
 
 /*蒙板*/
@@ -588,10 +588,12 @@ ul {
 }
 
 #item .clear {
-    border-top: 1px solid #f1f1f1;
+    border-top: 1px solid #f2f2f2;
+    background-color: #f8f8f8;
     margin-top: 5px;
     padding-top: 10px;
-    font-size: 20px;
+    padding-bottom: 10px;
+    font-size: 16px;
     line-height: 30px;
     cursor: pointer;
 }
