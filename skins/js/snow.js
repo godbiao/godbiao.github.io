@@ -1,5 +1,5 @@
 //飘雪花
-var snow = '<div class="snow-container"></div>';
+var snow = '<div class="snow-container" style=" position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;z-index: 100001;"></div>';
 $('body').prepend(snow);
 
 var THREE = THREE || {};
@@ -2749,7 +2749,7 @@ $(function () {
     var particles = [];
     var particleImage = new Image();
     particleImage.src = "res/snow.png";
-    var snowNum = 100;
+    var snowNum = 300;
 
     function init() {
         camera = new THREE.PerspectiveCamera(75, containerWidth / containerHeight, 1, 10000);
