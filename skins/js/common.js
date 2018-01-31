@@ -327,6 +327,9 @@ function skinInfo(s) {
     }
 
     //分享及帮助
+    var win_share = ' <img class="share-qq" src="res/share_ic_qq_friend.png" alt="">        <img class="share-wxf" src="res/share_ic_wechat_friend.png" alt="">        <img class="share-pyq" src="res/share_ic_time_line.png" alt="">        <img class="share-wb" src="res/share_ic_weibo.png" alt="">        <div class="clear">取消</div>';
+    $('#share-win').html(win_share);
+
     if (isIME()) {
         $(".help").hide();
         $(".share").show();
