@@ -560,10 +560,9 @@ ul {
     border-radius: 5px;
 }
 
-#share-win {
+#item #share-win {
     display: none;
-    position: fixed
-        ;
+    position: fixed;
     bottom: 0px;
     z-index: 999999;
     padding: 10px;
@@ -572,18 +571,27 @@ ul {
     border-top: 1px solid #f2f2f2;
 }
 
-#share-win img {
+#item #share-win img {
     width: 16%;
     margin: 10px;
 }
 
 /*蒙板*/
 
-.shade {
+#item .shade {
     display: none;
     position: fixed;
     z-index: 98;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .5);
+}
+
+#item .clear {
+    border-top: 1px solid #f1f1f1;
+    margin-top: 5px;
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
 }

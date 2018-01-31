@@ -402,7 +402,11 @@ function skinInfo(s) {
         });
     }
 
-    $(".shade").click(function () {
+    //debug
+//    $(".shade").show();
+//    $("#share-win").slideToggle(200);
+
+    $(".shade, .clear").click(function () {
         $(".shade").hide();
         $("#share-win").slideToggle(200);
     });
