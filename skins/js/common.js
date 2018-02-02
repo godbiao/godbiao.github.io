@@ -335,8 +335,7 @@ function skinInfo(s) {
         $(".share").show();
         $(".share").click(function () {
             $(".shade").show();
-            $("#share-win").slideToggle(200);         
-
+            $("#share-win").slideToggle(200);
         });
 		
 		$(".share-qq").click(function () {
