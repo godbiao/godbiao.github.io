@@ -335,8 +335,11 @@ function skinInfo(s) {
         $(".share").show();
         $(".share").click(function () {
             $(".shade").show();
-            $("#share-win").slideToggle(200);
-            $(".share-qq").click(function () {
+            $("#share-win").slideToggle(200);         
+
+        });
+		
+		$(".share-qq").click(function () {
                 exec("imeExtendComponents", 'share_qq', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
                     'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
@@ -391,8 +394,7 @@ function skinInfo(s) {
                 _hmt.push(["_trackEvent", "share", "share_qzone", s.name + "(" + skinID + ")"]);
             });
 
-
-        });
+		
     } else if (isWeiXin() || isQQ()) {
         $(".help").hide();
     } else {
@@ -406,8 +408,8 @@ function skinInfo(s) {
     }
 
     //debug
-    //        $(".shade").show();
-    //        $("#share-win").slideToggle(200);
+    //$(".shade").show();
+    //$("#share-win").slideToggle(200);
 
     $(".shade, .clear").click(function () {
         $(".shade").hide();
