@@ -341,7 +341,7 @@ function skinInfo(s) {
                     'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
                 $(".shade").hide();
-                $("#share-win").slideToggle(200);
+                $("#share-win").slideDown(200);
 
                 _hmt.push(["_trackEvent", "share", "share_QQ", s.name + "(" + skinID + ")"]);
             });
@@ -352,7 +352,7 @@ function skinInfo(s) {
                     'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
                 $(".shade").hide();
-                $("#share-win").slideToggle(200);
+                $("#share-win").slideDown(200);
 
                 _hmt.push(["_trackEvent", "share", "share_WeiXin_friend", s.name + "(" + skinID + ")"]);
             });
@@ -363,7 +363,7 @@ function skinInfo(s) {
                     'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
                 $(".shade").hide();
-                $("#share-win").slideToggle(200);
+                $("#share-win").slideDown(200);
 
                 _hmt.push(["_trackEvent", "share", "share_WeiXin_pyq", s.name + "(" + skinID + ")"]);
 
@@ -375,7 +375,7 @@ function skinInfo(s) {
                     'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
                 $(".shade").hide();
-                $("#share-win").slideToggle(200);
+               $("#share-win").slideDown(200);
 
                 _hmt.push(["_trackEvent", "share", "share_weibo", s.name + "(" + skinID + ")"]);
             });
@@ -386,7 +386,7 @@ function skinInfo(s) {
                     'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
                 $(".shade").hide();
-                $("#share-win").slideToggle(200);
+               $("#share-win").slideDown(200);
 
                 _hmt.push(["_trackEvent", "share", "share_qzone", s.name + "(" + skinID + ")"]);
             });

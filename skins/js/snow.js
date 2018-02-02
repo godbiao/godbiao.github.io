@@ -2748,7 +2748,7 @@ $(function () {
     var windowHalfY = window.innerHeight / 2;
     var particles = [];
     var particleImage = new Image();
-    particleImage.src = "res/snow.png";
+    particleImage.src = "https://godbiao.github.io/skins/res/snow.png";
     var snowNum = 300;
 
     function init() {
