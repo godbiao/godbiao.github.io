@@ -82,12 +82,8 @@ function likeskin() {
             });
             $(this).html("&#xe66e;");
             $(this).addClass("liked");
-            if (isApp()) {
-                _hmt.push(["_trackEvent", "skins-app", "like", $(".skin-name").html() + "(" + skinID + ")"]);
-            } else {
-                _hmt.push(["_trackEvent", "skins", "like", $(".skin-name").html() + "(" + skinID + ")"]);
-            }
 
+            _hmt.push(["_trackEvent", "skins", "like", $(".skin-name").html() + "(" + skinID + ")"]);
 
         } else {
 
