@@ -177,31 +177,43 @@ function skin(s) {
 
 //替换皮肤信息
 function skinInfo(s) {
+    var name = s.name;
+    var author = s.author;
+    var size = s.size;
+    var time = s.time;
+    var star = s.star;
+    var description = s.description;
+    var update = s.update;
+    var imgs = s.imgs;
+    var it = s.it;
+    var beta = s.beta;
+    var type = s.type;
+    var rid = s.rid;
 
-    $(".skin-name").html(s.name);
-    $(".skin-author").html(s.author);
-    $(".skin-size").html(s.size);
-    $(".skin-time").html(s.time);
+    $(".skin-name").html(name);
+    $(".skin-author").html(author);
+    $(".skin-size").html(size);
+    $(".skin-time").html(time);
 
     $(".skin-star").empty();
-    for (var i = 0; i < s.star; i++) {
+    for (var i = 0; i < star; i++) {
         $(".skin-star").append("★");
     }
-    for (var i = 0; i < 5 - s.star; i++) {
+    for (var i = 0; i < 5 - star; i++) {
         $(".skin-star").append("☆");
     }
 
     //描述和升级
-    $(".skin-description-content").html(s.description);
-    if (s.update) {
+    $(".skin-description-content").html(description);
+    if (update) {
         $("#skin-description-update").show();
-        $(".skin-description-update").html(s.update);
+        $(".skin-description-update").html(update);
     }
 
     //详情图
-    if (s.type == "gif") {
+    if (type == "gif") {
 
-        $(".preview_9").attr("src", s.imgs[1]);
+        $(".preview_9").attr("src", imgs[1]);
         $(".skin-details-preview .item2").remove();
         $(".carousel-indicators").hide();
         $('.carousel').carousel({
@@ -210,8 +222,8 @@ function skinInfo(s) {
 
     } else {
 
-        $(".preview_9").attr("src", s.imgs[1]);
-        $(".preview_26").attr("src", s.imgs[2]);
+        $(".preview_9").attr("src", imgs[1]);
+        $(".preview_26").attr("src", imgs[2]);
 
     }
 
@@ -245,10 +257,10 @@ function skinInfo(s) {
                 cmd: 'open_download',
                 info: {
                     "download_res_type": "download_res_type_theme",
-                    "download_res_title": s.name,
-                    "download_res_size": s.size,
+                    "download_res_title": name,
+                    "download_res_size": size,
                     "download_res_id": skinID,
-                    "download_res_url": "https://godbiao.github.io/skins/" + s.it
+                    "download_res_url": "https://godbiao.github.io/skins/" + it
                 }
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
@@ -256,34 +268,34 @@ function skinInfo(s) {
 
         } else if (isQQ() || isWeiXin()) {
 
-            if (s.beta) {
-                window.location.href = s.it;
+            if (beta) {
+                window.location.href = it;
             } else {
                 window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&ckey=CK1373472118157&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
             }
 
         } else {
-            window.location.href = s.it;
+            window.location.href = it;
         }
         //下载日志
         if (isApp()) {
-            _hmt.push(["_trackEvent", "download", "APP", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "download", "APP", name + "(" + skinID + ")"]);
         } else if (isQQ()) {
-            _hmt.push(["_trackEvent", "download", "QQ", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "download", "QQ", name + "(" + skinID + ")"]);
         } else if (isWeiXin()) {
-            _hmt.push(["_trackEvent", "download", "WeiXin", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "download", "WeiXin", name + "(" + skinID + ")"]);
         } else if (isWeiBo()) {
-            _hmt.push(["_trackEvent", "download", "Weibo", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "download", "Weibo", name + "(" + skinID + ")"]);
         } else if (isIME()) {
-            _hmt.push(["_trackEvent", "download", "IME", s.name + "(" + skinID + ")"]);
-            if (s.rid) {
+            _hmt.push(["_trackEvent", "download", "IME", name + "(" + skinID + ")"]);
+            if (rid) {
                 $.ajax({
-                    url: 'http://log.voicecloud.cn/resredirect?gid=7&cid=7606&rid=' + s.rid + '&a=download&uid=0&imei=00&cv=' + getClientVersion() + '&df=0&biz=100IME&os=android&ap=wifi',
+                    url: 'http://log.voicecloud.cn/resredirect?gid=7&cid=7606&rid=' + rid + '&a=download&uid=0&imei=00&cv=' + getClientVersion() + '&df=0&biz=100IME&os=android&ap=wifi',
                     async: true
                 });
             }
         } else {
-            _hmt.push(["_trackEvent", "download", "Others", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "download", "Others", name + "(" + skinID + ")"]);
         }
 
     });
@@ -292,14 +304,14 @@ function skinInfo(s) {
         $("#pop").fadeOut(300);
         $(".install,.iclose").slideUp(200);
 
-        $(".pop-name").html(s.name);
+        $(".pop-name").html(name);
         $.cookie('installed', 1, {
             expires: 365
         });
     });
 
     if (isApp()) {
-        $("title").html(s.name);
+        $("title").html(name);
         $(".top-title").hide();
         $("#item").css({
             "padding-top": "0px"
@@ -308,26 +320,26 @@ function skinInfo(s) {
             "padding-top": "12px"
         });
     } else {
-        $("title").html(s.name + " - " + s.author + " - " + title);
+        $("title").html(name + " - " + author + " - " + title);
     }
 
     //详情页浏览日志
     if (isApp()) {
-        _hmt.push(["_trackEvent", "item-pv", "APP", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "item-pv", "APP", name + "(" + skinID + ")"]);
     } else if (isQQ()) {
-        _hmt.push(["_trackEvent", "item-pv", "QQ", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "item-pv", "QQ", name + "(" + skinID + ")"]);
     } else if (isWeiXin()) {
-        _hmt.push(["_trackEvent", "item-pv", "WeiXin", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "item-pv", "WeiXin", name + "(" + skinID + ")"]);
     } else if (isWeiBo()) {
-        _hmt.push(["_trackEvent", "item-pv", "Weibo", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "item-pv", "Weibo", name + "(" + skinID + ")"]);
     } else if (isIME()) {
-        _hmt.push(["_trackEvent", "item-pv", "IME", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "item-pv", "IME", name + "(" + skinID + ")"]);
     } else {
-        _hmt.push(["_trackEvent", "item-pv", "Others", s.name + "(" + skinID + ")"]);
+        _hmt.push(["_trackEvent", "item-pv", "Others", name + "(" + skinID + ")"]);
     }
 
     //分享及帮助
-    var win_share = ' <img class="share-qq" src="res/share_ic_qq_friend.png" alt="">        <img class="share-wxf" src="res/share_ic_wechat_friend.png" alt="">        <img class="share-pyq" src="res/share_ic_time_line.png" alt="">        <img class="share-wb" src="res/share_ic_weibo.png" alt="">        <div class="clear">取消</div>';
+    var win_share = '<img class="share-qq" src="res/share_ic_qq_friend.png" alt=""><img class="share-wxf" src="res/share_ic_wechat_friend.png" alt=""><img class="share-pyq" src="res/share_ic_time_line.png" alt=""><img class="share-wb" src="res/share_ic_weibo.png" alt=""><div class="clear">取消</div>';
     $('#share-win').html(win_share);
 
     if (isIME()) {
@@ -339,58 +351,59 @@ function skinInfo(s) {
         });
 
         $(".share-qq").click(function () {
-            exec("imeExtendComponents", 'share_qq', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
+            exec("imeExtendComponents", 'share_qq', [name, description, url, imgs[0], imgs[1], {
                 'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
             $(".shade").hide();
             $("#share-win").slideToggle(200);
 
-            _hmt.push(["_trackEvent", "share", "share_QQ", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "share", "share_QQ", name + "(" + skinID + ")"]);
+
         });
 
         $(".share-wxf").click(function () {
 
-            exec("imeExtendComponents", 'share_mm_friend', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
+            exec("imeExtendComponents", 'share_mm_friend', [name, description, url, imgs[0], imgs[1], {
                 'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
             $(".shade").hide();
             $("#share-win").slideToggle(200);
 
-            _hmt.push(["_trackEvent", "share", "share_WeiXin_friend", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "share", "share_WeiXin_friend", name + "(" + skinID + ")"]);
         });
 
         $(".share-pyq").click(function () {
 
-            exec("imeExtendComponents", 'share_mm', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
+            exec("imeExtendComponents", 'share_mm', [name, description, url, imgs[0], imgs[1], {
                 'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
             $(".shade").hide();
             $("#share-win").slideToggle(200);
 
-            _hmt.push(["_trackEvent", "share", "share_WeiXin_pyq", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "share", "share_WeiXin_pyq", name + "(" + skinID + ")"]);
 
         });
 
         $(".share-wb").click(function () {
 
-            exec("imeExtendComponents", 'share_weibo', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
+            exec("imeExtendComponents", 'share_weibo', [name, description, url, imgs[0], imgs[1], {
                 'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
             $(".shade").hide();
             $("#share-win").slideToggle(200);
 
-            _hmt.push(["_trackEvent", "share", "share_weibo", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "share", "share_weibo", name + "(" + skinID + ")"]);
         });
 
         $(".share-qzone").click(function () {
 
-            exec("imeExtendComponents", 'share_qzone', [s.name, s.description, url, s.imgs[0], s.imgs[1], {
+            exec("imeExtendComponents", 'share_qzone', [name, description, url, imgs[0], imgs[1], {
                 'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
             $(".shade").hide();
             $("#share-win").slideToggle(200);
 
-            _hmt.push(["_trackEvent", "share", "share_qzone", s.name + "(" + skinID + ")"]);
+            _hmt.push(["_trackEvent", "share", "share_qzone", name + "(" + skinID + ")"]);
         });
 
 
@@ -405,10 +418,6 @@ function skinInfo(s) {
             $(".pop-name").html('皮肤安装方法');
         });
     }
-
-    //debug
-    //$(".shade").show();
-    //$("#share-win").slideToggle(200);
 
     $(".shade, .clear").click(function () {
         $(".shade").hide();
