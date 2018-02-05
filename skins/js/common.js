@@ -347,59 +347,61 @@ function skinInfo(s) {
         });
 
         $(".share-qq").click(function () {
+            _hmt.push(["_trackEvent", "share", "share_QQ", name + "(" + skinID + ")"]);
+
             exec("imeExtendComponents", 'share_qq', [name, description, url, imgs[0], imgs[1], {
                 'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
             $(".shade").hide();
             $("#share-win").slideToggle(200);
 
-            _hmt.push(["_trackEvent", "share", "share_QQ", name + "(" + skinID + ")"]);
+
 
         });
 
         $(".share-wxf").click(function () {
-
+            _hmt.push(["_trackEvent", "share", "share_WeiXin_friend", name + "(" + skinID + ")"]);
             exec("imeExtendComponents", 'share_mm_friend', [name, description, url, imgs[0], imgs[1], {
                 'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
             $(".shade").hide();
             $("#share-win").slideToggle(200);
 
-            _hmt.push(["_trackEvent", "share", "share_WeiXin_friend", name + "(" + skinID + ")"]);
+
         });
 
         $(".share-pyq").click(function () {
-
+            _hmt.push(["_trackEvent", "share", "share_WeiXin_pyq", name + "(" + skinID + ")"]);
             exec("imeExtendComponents", 'share_mm', [name, description, url, imgs[0], imgs[1], {
                 'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
             $(".shade").hide();
             $("#share-win").slideToggle(200);
 
-            _hmt.push(["_trackEvent", "share", "share_WeiXin_pyq", name + "(" + skinID + ")"]);
+
 
         });
 
         $(".share-wb").click(function () {
-
+            _hmt.push(["_trackEvent", "share", "share_weibo", name + "(" + skinID + ")"]);
             exec("imeExtendComponents", 'share_weibo', [name, description, url, imgs[0], imgs[1], {
                 'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
             $(".shade").hide();
             $("#share-win").slideToggle(200);
 
-            _hmt.push(["_trackEvent", "share", "share_weibo", name + "(" + skinID + ")"]);
+
         });
 
         $(".share-qzone").click(function () {
-
+            _hmt.push(["_trackEvent", "share", "share_qzone", name + "(" + skinID + ")"]);
             exec("imeExtendComponents", 'share_qzone', [name, description, url, imgs[0], imgs[1], {
                 'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
             $(".shade").hide();
             $("#share-win").slideToggle(200);
 
-            _hmt.push(["_trackEvent", "share", "share_qzone", name + "(" + skinID + ")"]);
+
         });
 
 
