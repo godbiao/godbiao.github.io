@@ -350,9 +350,6 @@ function skinInfo(s) {
                 }]);
             $(".shade").hide();
             $("#share-win").slideToggle(200);
-
-
-
         });
 
         $(".share-wxf").click(function () {
