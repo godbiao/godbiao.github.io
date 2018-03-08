@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UUID生成 - By GodBiao</title>
     <script src="https://godbiao.github.io/common/js/head.js"></script>
-    <script src="https://godbiao.github.io/common/js/clipboard.min.js"></script>
 
     <style>
         body {
@@ -27,9 +27,8 @@
         }
 
     </style>
-</head>
 
-<body>
+
     <script>
         function uuid(len, radix) {
             var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
@@ -75,15 +74,32 @@
 
     </script>
 
+</head>
+
+<body>
     <div id="uuid" class="uuid">
     </div>
     <script>
         var uid = uuid().toLowerCase();
         document.getElementById("uuid").innerHTML = uid + "<br>";
-        copytext("uuid");
-        window.clipboardData.setData("Text", uid);
+        // copytext("uuid"); // window.clipboardData.setData("Text", uid);
 
     </script>
+    <div id="uid">你好
+    </div>
+    <button class="btn" data-clipboard-action="copy" data-clipboard-target="uid">复制到剪贴板</button>
+    <script src="https://godbiao.github.io/common/js/clipboard.min.js"></script>
+    <script>
+        var clipboard = new ClipboardJS('.btn');
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+
+    </script>
+
 
 </body>
 
