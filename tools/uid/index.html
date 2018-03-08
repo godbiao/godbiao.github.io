@@ -10,7 +10,7 @@
             background-color: #000;
             color: aqua;
         }
-        
+
         .uuid {
             font-family: Code;
             font-size: 40px;
@@ -18,7 +18,7 @@
             margin: 300px auto;
             text-align: center;
         }
-        
+
         @font-face {
             font-family: Code;
             src: url("CourierNew.ttf");
@@ -59,15 +59,30 @@
             return uuid.join('');
         }
 
+        function copytext(e) {
+            var text = document.getElementById(e).innerText;
+            var oInput = document.createElement('input');
+            oInput.value = text;
+            document.body.appendChild(oInput);
+            oInput.select(); // 选择对象
+            document.execCommand("Copy"); // 执行浏览器复制命令
+            oInput.className = 'oInput';
+            oInput.style.display = 'none';
+            console.log("已复制");
+        }
+
     </script>
 
     <div id="uuid" class="uuid">
-        <script>
-            document.write(uuid().toLowerCase() + "<br>");
-
-        </script>
-
     </div>
+    <script>
+        var uid = uuid().toLowerCase();
+        document.getElementById("uuid").innerHTML = uid + "<br>";
+        copytext("uuid");
+        window.clipboardData.setData("Text", uid);
+
+    </script>
+
 </body>
 
 </html>
