@@ -19,6 +19,7 @@
             width: 80%;
             margin: 300px auto;
             text-align: center;
+
         }
 
         @font-face {
@@ -69,7 +70,7 @@
             document.execCommand("Copy"); // 执行浏览器复制命令
             oInput.className = 'oInput';
             oInput.style.display = 'none';
-            console.log("已复制");
+            //console.log("已复制");
         }
 
     </script>
@@ -77,26 +78,28 @@
 </head>
 
 <body>
-    <div id="uuid" class="uuid">
+    <div id="uuid" class="uuid" data-clipboard-action="copy" data-clipboard-target="#uuid">
     </div>
     <script>
         var uid = uuid().toLowerCase();
         document.getElementById("uuid").innerHTML = uid + "<br>";
-        // copytext("uuid"); // window.clipboardData.setData("Text", uid);
 
     </script>
-    <div id="uid">你好
-    </div>
-    <button class="btn" data-clipboard-action="copy" data-clipboard-target="uid">复制到剪贴板</button>
+
+
     <script src="https://godbiao.github.io/common/js/clipboard.min.js"></script>
     <script>
-        var clipboard = new ClipboardJS('.btn');
+        var clipboard = new ClipboardJS('.uuid');
         clipboard.on('success', function(e) {
             console.log(e);
         });
         clipboard.on('error', function(e) {
             console.log(e);
         });
+
+
+        document.getElementById('uuid').click();
+        // document.getElementById('uuid').onclick();
 
     </script>
 
