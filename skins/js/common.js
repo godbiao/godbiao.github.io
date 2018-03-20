@@ -8,6 +8,9 @@ var _hmt = _hmt || [];
 })();
 
 $("#index,#item").fadeIn();
+if (!isMobile()) {
+    $(".container").css("width", "50%");
+}
 
 var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你飞";
 
@@ -145,6 +148,8 @@ function indexSkin() {
             $("#row-new").append(rownew);
         }
     };
+
+
 }
 
 //随机推荐
