@@ -37,7 +37,7 @@
             async: false,
             data: {},
             success: function(result) {
-                obj = eval(reconvert(result));
+                obj = result;
             }
         });
 
@@ -45,20 +45,20 @@
         document.write("<h1>#" + obj.name + "#</h1>")
         for (var i in obj.categories) {
             var categories = obj.categories[i];
-            document.write("<h2>##" + categories.name + "##</h2>");
+            document.write("<h2>##" + reconvert(categories.name) + "##</h2>");
             var sessions = categories.sessions;
             for (var j in sessions) {
-                document.write("<h3>###" + sessions[j].name + "###</h3>");
+                document.write("<h3>###" + reconvert(sessions[j].name) + "###</h3>");
                 var contents = sessions[j].contents;
                 for (var k in contents) {
                     if (i == 0) {
-                        document.write("<h4>####" + contents[k].text + "####</h4>");
+                        document.write("<h4>####" + reconvert(contents[k].text) + "####</h4>");
                     } else {
-                        document.write("<div>" + contents[k].text + "</<div>");
+                        document.write("<div>" + reconvert(contents[k].text) + "</<div>");
                     }
                     var statements = contents[k].statements;
                     for (var l in statements) {
-                        document.write("<div>" + statements[l].text + "</div>");
+                        document.write("<div>" + reconvert(statements[l].text) + "</div>");
                     }
                 }
             }
