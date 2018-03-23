@@ -37,7 +37,7 @@
             async: false,
             data: {},
             success: function(result) {
-                obj = veval(reconvert(result));
+                obj = eval(reconvert(result));
             }
         });
 
