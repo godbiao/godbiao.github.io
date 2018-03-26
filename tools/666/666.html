@@ -10,11 +10,6 @@
     <title>66键盘</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script>
-        var jsname = window.location.search.substr(1);
-        document.writeln('<script src="js/' + jsname + '.json"><\/script>');
-
-    </script>
 
     <style>
 
@@ -32,7 +27,7 @@
     <script>
         var obj = {};
         $.ajax({
-            url: "js/" + jsname + ".json",
+            url: "js/" + window.location.search.substr(1) + ".json",
             datatype: "json",
             async: false,
             data: {},
