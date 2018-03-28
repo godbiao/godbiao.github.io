@@ -261,7 +261,7 @@ function skinInfo(s) {
                     "download_res_title": name,
                     "download_res_size": size,
                     "download_res_id": skinID,
-                    "download_res_url": "https://godbiao.github.io/skins/" + it,
+                    "download_res_url": it,
                     "download_res_package_name": " "
                 }
             };

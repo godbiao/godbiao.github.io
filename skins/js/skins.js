@@ -11,7 +11,7 @@ var skins = [
         "lables": ["动漫游戏", "旅行青蛙", "游戏", "佛系", "原汁原味", ""],
         "time": "2018-1-24",
         "imgs": ["https://pic.kuaizhan.com/g3/a9/bf/2ea9-b9e4-4607-904c-815912376bbf27", "https://pic.kuaizhan.com/g3/a2/78/0510-7714-4ee2-b8b6-73f900cc7aac33", "https://pic.kuaizhan.com/g3/a5/0e/3db6-1100-4502-af47-5463c5c88d1563"],
-        "it": "res/it/57e9aa00-246c-42a7-a157-40677f719b58.it",
+        "it": "https://godbiao.github.io/skins/res/it/57e9aa00-246c-42a7-a157-40677f719b58.it",
         "rid": "8904"
 	}, {
         "id": "5638fe94-7820-4226-9fb3-7172faf50494",
@@ -25,7 +25,7 @@ var skins = [
         "lables": ["设计创意", "苹果", "iOS11", "简约商务", "大空格", ""],
         "time": "2018-1-19",
         "imgs": ["https://pic.kuaizhan.com/g3/e1/04/a2e6-ed3a-40c7-9dfb-d5b31ff152a138", "https://pic.kuaizhan.com/g3/3c/80/e82f-9ce5-4629-a537-0934bc0291c198", "https://pic.kuaizhan.com/g3/ca/e0/38bd-4452-4e11-90f9-d98506d1920329"],
-        "it": "res/it/5638fe94-7820-4226-9fb3-7172faf50494.it"
+        "it": "https://godbiao.github.io/skins/res/it/5638fe94-7820-4226-9fb3-7172faf50494.it"
 	}, {
         "id": "b5ef201b-8f9a-4962-92a4-43d9601f1145",
         "name": "A屏黑·Style",
@@ -38,7 +38,7 @@ var skins = [
         "lables": ["设计创意", "A屏", "纯黑", "无边框", "暗色", ""],
         "time": "2018-1-24",
         "imgs": ["https://pic.kuaizhan.com/g3/7d/38/858c-285d-497d-80d7-476d11874ec279", "https://pic.kuaizhan.com/g3/45/39/4b04-da3c-458b-8856-afa70e3f6ff325", "https://pic.kuaizhan.com/g3/15/65/75bc-0d20-4cea-8864-f8afcdbaf80483"],
-        "it": "res/it/b5ef201b-8f9a-4962-92a4-43d9601f1145.it",
+        "it": "https://godbiao.github.io/skins/res/it/b5ef201b-8f9a-4962-92a4-43d9601f1145.it",
         "beta": false,
 	}, {
         "id": "cedfbb47-fe26-4d69-ab40-18353cd94215",
@@ -52,7 +52,7 @@ var skins = [
         "lables": ["设计创意", "谷歌", "奥利奥", "无边框", "暗色", "夜间护眼"],
         "time": "2018-1-2",
         "imgs": ["https://pic.kuaizhan.com/g3/c3/5b/0cab-82b9-4c19-b062-2a98625959b701", "https://pic.kuaizhan.com/g3/96/04/a701-7420-46f6-9425-12faec69e06742", "https://pic.kuaizhan.com/g3/55/18/5297-37e2-4f35-acb2-2b8c023c196010"],
-        "it": "res/it/cedfbb47-fe26-4d69-ab40-18353cd94215.it"
+        "it": "https://godbiao.github.io/skins/res/it/cedfbb47-fe26-4d69-ab40-18353cd94215.it"
 	}, {
         "id": "fa79c97d-b2de-486b-98c2-aeb9e0e9ad69",
         "name": "Android轻薄浅·大回车版",
@@ -65,7 +65,7 @@ var skins = [
         "lables": ["设计创意", "谷歌", "大回车", "白色", "高亮蓝", "轻薄"],
         "time": "2017-11-29",
         "imgs": ["https://pic.kuaizhan.com/g3/9a/44/fe92-c873-4445-9108-1509e12d322398", "https://pic.kuaizhan.com/g3/52/83/e0fa-c823-4859-9c1b-6ba183d54f8817", "https://pic.kuaizhan.com/g3/f2/7e/5daa-0781-472e-ab5a-f92ffb3c306788"],
-        "it": "res/it/fa79c97d-b2de-486b-98c2-aeb9e0e9ad69.it"
+        "it": "https://godbiao.github.io/skins/res/it/fa79c97d-b2de-486b-98c2-aeb9e0e9ad69.it"
 	}, {
         "id": "eb563f47-512e-47af-b871-2a5cfec673c5",
         "name": "足迹之留声机·动画",
@@ -78,7 +78,7 @@ var skins = [
         "lables": ["设计创意", "锤子坚果", "简约", "足迹", "无框", ""],
         "time": "2017-11-20",
         "imgs": ["https://pic.kuaizhan.com/g3/03/0c/09f3-c561-4cef-a46d-77e5e180d28b27", "https://pic.kuaizhan.com/g3/1c/a4/1722-4ea6-493d-b4a3-61e7eb6c681766", ""],
-        "it": "res/it/eb563f47-512e-47af-b871-2a5cfec673c5.it"
+        "it": "https://godbiao.github.io/skins/res/it/eb563f47-512e-47af-b871-2a5cfec673c5.it"
 	}, {
         "id": "0701de54-f2a6-4dec-94b0-f73aeb5b5a7c",
         "name": "iPhone X·动画",
@@ -91,7 +91,7 @@ var skins = [
         "lables": ["设计创意", "苹果", "简约", "iPhone X", "热点", "刘海"],
         "time": "2017-11-06",
         "imgs": ["https://pic.kuaizhan.com/g3/81/8f/ac23-e5e2-4b3a-bea0-4dd15ecfe5aa43", "https://pic.kuaizhan.com/g3/18/91/7608-d6ff-4557-8a08-e5a7e81006bb30", ""],
-        "it": "res/it/0701de54-f2a6-4dec-94b0-f73aeb5b5a7c.it"
+        "it": "https://godbiao.github.io/skins/res/it/0701de54-f2a6-4dec-94b0-f73aeb5b5a7c.it"
 	}, {
         "id": "da091547-d127-4f5f-8f00-dfd2a119036a",
         "name": "安卓奥利奥·浅色无框",
@@ -104,7 +104,7 @@ var skins = [
         "lables": ["设计创意", "谷歌", "奥利奥", "无边框", "亮色", ""],
         "time": "2017-9-12",
         "imgs": ["https://pic.kuaizhan.com/g3/a1/2f/a582-333d-43b3-914f-351821ffa1e964", "https://pic.kuaizhan.com/g3/e1/be/ad24-88db-4122-9333-6df8180d653337", "https://pic.kuaizhan.com/g3/1c/6e/65e5-ac1d-462f-9cab-724e4588f35729"],
-        "it": "res/it/da091547-d127-4f5f-8f00-dfd2a119036a.it"
+        "it": "https://godbiao.github.io/skins/res/it/da091547-d127-4f5f-8f00-dfd2a119036a.it"
 	}, {
         "id": "4b7f558a-baa6-4bcd-aa07-b4d4902a5489",
         "name": "Android·O风格",
@@ -117,7 +117,7 @@ var skins = [
         "lables": ["设计创意", "Android", "谷歌O", "按钮投影", "高亮蓝", "轻薄"],
         "time": "2017-8-31",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/69/92/CgpQU1moCh6AZeAOAAA-hDFdnms1398318", "https://pic.kuaizhan.com/g1/M00/69/91/CgpQU1moCh2AX0n-AAC1Crb613A3710017", "https://pic.kuaizhan.com/g1/M00/69/92/CgpQU1moCh2Ac7uJAADGJIb8CEA3531248"],
-        "it": "res/it/4b7f558a-baa6-4bcd-aa07-b4d4902a5489.it"
+        "it": "https://godbiao.github.io/skins/res/it/4b7f558a-baa6-4bcd-aa07-b4d4902a5489.it"
 	}, {
         "id": "08479a95-aea3-49b3-a6bc-d443beca68f7",
         "name": "Android轻薄浅",
@@ -130,7 +130,7 @@ var skins = [
         "lables": ["设计创意", "Android", "谷歌", "白色", "高亮蓝", "轻薄"],
         "time": "2017-7-30",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTGAGrZSAABDw3kYOdw8944670", "https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSGAJqKkAACuomZSQjc3406316", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTCACeg9AAC2wKuDhck5616321"],
-        "it": "res/it/08479a95-aea3-49b3-a6bc-d443beca68f7.it"
+        "it": "https://godbiao.github.io/skins/res/it/08479a95-aea3-49b3-a6bc-d443beca68f7.it"
 	},
     {
         "id": "fcb80779-4704-4e32-9144-02dfedb4f191",
@@ -144,7 +144,7 @@ var skins = [
         "lables": ["设计创意", "winphone", "Emoji", "黑色", "高亮蓝", "大空格"],
         "time": "2017-7-11",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/55/CgpQU1mnsUSAX66NAABIr2VgaUg4577727", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUOAb1adAAC1B0tDT_05804470", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUSAKkXZAADABNWXfVI8611212"],
-        "it": "res/it/fcb80779-4704-4e32-9144-02dfedb4f191.it"
+        "it": "https://godbiao.github.io/skins/res/it/fcb80779-4704-4e32-9144-02dfedb4f191.it"
 	},
     {
         "id": "fcb80779-4704-4e32-9144-02dfedb4f190",
@@ -158,7 +158,7 @@ var skins = [
         "lables": ["设计创意", "winphone", "仿制", "黑色", "高亮蓝", "大空格"],
         "time": "2017-6-2",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/55/CgpQU1mnsUOALgbTAABNAVGxRsM4342598", "https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsSSAenXZAACxsh8GZT01680192", "https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsSSAenXZAACxsh8GZT01680192"],
-        "it": "res/it/fcb80779-4704-4e32-9144-02dfedb4f190.it"
+        "it": "https://godbiao.github.io/skins/res/it/fcb80779-4704-4e32-9144-02dfedb4f190.it"
 	}, {
         "id": "69347a70-bc19-11e6-9598-0800200c9a66",
         "name": "王者荣耀·百变",
@@ -171,7 +171,7 @@ var skins = [
         "lables": ["游戏动漫", "IM追清风", "王者荣耀", "动态", "音乐", "彩蛋"],
         "time": "2017-9-4",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTGAYpbfAACpwTs14Fo0031774", "https://pic.kuaizhan.com/g1/M01/66/4B/CgpQU1mnr-GAVWA1AAkjt-bXiy09158915", ""],
-        "it": "res/it/69347a70-bc19-11e6-9598-0800200c9a66.it",
+        "it": "https://godbiao.github.io/skins/res/it/69347a70-bc19-11e6-9598-0800200c9a66.it",
         "rid": "3093"
 	},
     {
@@ -186,7 +186,7 @@ var skins = [
         "lables": ["设计创意", "ofo", "小黄车", "商务", "黄色", "低候选栏"],
         "time": "2017-6-1",
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTCAJX49AABRapX5aLU0772339", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsS-AE0RDAADSVdc3wy80432306", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsS-Ab7jTAADYIc-YrKo1245044"],
-        "it": "res/it/638ba2e2-235c-4b82-bbeb-9b3947d3a382.it"
+        "it": "https://godbiao.github.io/skins/res/it/638ba2e2-235c-4b82-bbeb-9b3947d3a382.it"
 	},
     {
         "id": "b43bfbe9-d3fb-423d-a759-b99051712013",
@@ -200,7 +200,7 @@ var skins = [
         "lables": ["设计创意", "淘宝", "经典", "简约", "大空格", "橙色"],
         "time": "2017-6-1",
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSKAEbOCAABcYH9yKjs1008220", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTeAW0XsAADhf0_Djcs7112254", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTeAdDOHAADmTMlF-Fw2897359"],
-        "it": "res/it/b43bfbe9-d3fb-423d-a759-b99051712013.it"
+        "it": "https://godbiao.github.io/skins/res/it/b43bfbe9-d3fb-423d-a759-b99051712013.it"
 	},
     {
         "id": "c41de68f-405d-422e-82f7-b0cedc50cc9c",
@@ -214,7 +214,7 @@ var skins = [
         "lables": ["设计创意", "夜间护眼", "锤子", "商务", "坚果Pro", "酒红色"],
         "time": "2017-5-11",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsT6Ab3PaAABGiCQk1Xk9266146", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsT2AZejGAAChD9EJ2uY2230595", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsT6AdGFtAAC65gcXkjA4568701"],
-        "it": "res/it/c41de68f-405d-422e-82f7-b0cedc50cc9c.it"
+        "it": "https://godbiao.github.io/skins/res/it/c41de68f-405d-422e-82f7-b0cedc50cc9c.it"
 	},
     {
         "id": "d32697f4-d850-4af5-93da-b4df99310887",
@@ -228,7 +228,7 @@ var skins = [
         "lables": ["设计创意", "粉色", "哔哩哔哩", "简约", "大空格", "女生"],
         "time": "2017-4-20",
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsUCAKAHOAABMX1I6Kpo4787596", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsT-AZ9v9AADEiPbX4Dw1310941", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsUCAf3mcAADIwwFBnmo6021212"],
-        "it": "res/it/d32697f4-d850-4af5-93da-b4df99310887.it"
+        "it": "https://godbiao.github.io/skins/res/it/d32697f4-d850-4af5-93da-b4df99310887.it"
 	}, {
         "id": "bc3df4ab-d4fe-4443-a907-779718a55640",
         "name": "iPhone7RED",
@@ -241,7 +241,7 @@ var skins = [
         "lables": ["设计创意", "苹果", "简约", "iPhone 7", "热点", "中国红"],
         "time": "2017-3-23",
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTqAL-iUAABSKuJJL5Y1976410", "https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSKADnLxAADh6G1IA6g0394020", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTqAKuukAAD6q3HijYc3139633"],
-        "it": "res/it/bc3df4ab-d4fe-4443-a907-779718a55640.it"
+        "it": "https://godbiao.github.io/skins/res/it/bc3df4ab-d4fe-4443-a907-779718a55640.it"
 	}, {
         "id": "bdfba2f0-04bb-11e7-9598-0800200c9a66",
         "name": "Flyme 6",
@@ -254,7 +254,7 @@ var skins = [
         "lables": ["设计创意", "魅族", "简约", "Flyme6", "商务", "精仿"],
         "time": "2017-3-12",
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTyAUXGfAABEfte7GKI2211389", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTuAPagXAAC32Phix4w3391683", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTyAawhwAADELfrZ3eM4635333"],
-        "it": "res/it/bdfba2f0-04bb-11e7-9598-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/bdfba2f0-04bb-11e7-9598-0800200c9a66.it"
 	}, {
         "id": "bbd806a0-046e-11e7-9598-0800200c9a66",
         "name": "搜狗Style",
@@ -267,7 +267,7 @@ var skins = [
         "lables": ["设计创意", "搜狗", "大空格", "字体", "简约商务", "图标"],
         "time": "2017-3-10",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTmAXCA1AABLPP3iXCA6855334", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTiAUlhBAADC910IHfA4015330", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTmASRbEAADQ1SAWN1w9918960"],
-        "it": "res/it/bbd806a0-046e-11e7-9598-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/bbd806a0-046e-11e7-9598-0800200c9a66.it"
 	}, {
         "id": "aee9b17a-95e8-d1f5-c227-58b7e413f319",
         "name": "MIUI 8",
@@ -280,7 +280,7 @@ var skins = [
         "lables": ["设计创意", "小米", "MIUI 8", "简约", "大空格", "小字体"],
         "time": "2017-3-9",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTaAQHuQAABMHv_7UXg8154629", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTWABe4bAADIzO53A8o0562090", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTaAEi6-AADoFDf8rZc4182910"],
-        "it": "res/it/aee9b17a-95e8-d1f5-c227-58b7e413f319.it"
+        "it": "https://godbiao.github.io/skins/res/it/aee9b17a-95e8-d1f5-c227-58b7e413f319.it"
 	}, {
         "id": "4e43b330-ba92-11e6-9598-0800200c9a66",
         "name": "iOS10风格",
@@ -293,7 +293,7 @@ var skins = [
         "lables": ["设计创意", "iOS10", "苹果", "简约", "iPhone", "纤细字体"],
         "time": "2017-3-11",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsSaAH3JZAABRg8CyAn44081348", "https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsSWARxkTAADKn4kp-501019672", "https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSaAO_T2AADj_rIAeH80579242"],
-        "it": "res/it/4e43b330-ba92-11e6-9598-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/4e43b330-ba92-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "2863560d-00f2-4115-b042-c3fc29ab8c79",
         "name": "iOS6风格",
@@ -306,7 +306,7 @@ var skins = [
         "lables": ["设计创意", "iOS6", "苹果", "简约", "iPhone", "大空格"],
         "time": "2017-2-23",
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsTOAM7fgAABnpYQ6fs09615386", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTKAQ3APAAELCZvADa84345414", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTOAEF39AAEnG3f8yDQ1656612"],
-        "it": "res/it/2863560d-00f2-4115-b042-c3fc29ab8c79.it"
+        "it": "https://godbiao.github.io/skins/res/it/2863560d-00f2-4115-b042-c3fc29ab8c79.it"
 	}, {
         "id": "0b7a9a20-dcbe-11e6-9598-0800200c9a66",
         "name": "微信Style",
@@ -319,7 +319,7 @@ var skins = [
         "lables": ["设计创意", "绿色", "微信", "简约", "大空格", "低候选栏"],
         "time": "2017-1-21",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsSSARmZHAABOjv16FxE0402916", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUiAJ3MkAACXaq2qo5s9844756", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUmAVUj8AACsr_-Yp0s6884797"],
-        "it": "res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/0b7a9a20-dcbe-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "084b9eb0-dd29-11e6-9598-0800200c9a66",
         "name": "QQStyle",
@@ -332,7 +332,7 @@ var skins = [
         "lables": ["设计创意", "蓝色", "QQ", "简约", "大空格", "低候选栏"],
         "time": "2017-2-21",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSyAButRAABbloRgEEA2815635", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUmAbxBjAACwEDCmbIY3732638", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUqAQXiMAADczNpK98k2213146"],
-        "it": "res/it/084b9eb0-dd29-11e6-9598-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/084b9eb0-dd29-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "0d6dcee0-02f5-4c96-8fa6-b4dfed394142",
         "name": "酷安Style·水鸭青",
@@ -345,7 +345,7 @@ var skins = [
         "lables": ["设计创意", "青色", "酷安", "简约", "大空格", "低候选栏"],
         "time": "2017-2-7",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsR-AOUIwAABU2a9QNdc5140788", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUeAd9BJAAB8J1KF-mY2700603", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUeAX-MkAACC_UfDYLg3727524"],
-        "it": "res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142.it"
+        "it": "https://godbiao.github.io/skins/res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142.it"
 	}, {
         "id": "7bbac9c0-ba58-11e5-a837-0800200c9a66",
         "name": "无缝线框",
@@ -358,7 +358,7 @@ var skins = [
         "lables": ["设计创意", "无缝", "大空格", "", "", ""],
         "time": "2017-2-27",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSmAGtR3AABEVZhzUBU5156685", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSiAaZgAAACx7EMhivs8675690", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSiAIffVAADCZzQbJ3c2714384"],
-        "it": "res/it/7bbac9c0-ba58-11e5-a837-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/7bbac9c0-ba58-11e5-a837-0800200c9a66.it"
 	}, {
         "id": "11a44990-9a90-11e6-bdf4-0800200c9a66",
         "name": "乳の白",
@@ -371,7 +371,7 @@ var skins = [
         "lables": ["设计创意", "低候选栏", "乳白", "柔美", "大空格", "字体"],
         "time": "2017-1-16",
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSGAaIdZAABMUHIb9yc7518397", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSmAGnMjAAC-geMzsKc9467645", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSqAaJkfAADTcEry2V87763331"],
-        "it": "res/it/11a44990-9a90-11e6-bdf4-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/11a44990-9a90-11e6-bdf4-0800200c9a66.it"
 	}, {
         "id": "91a44990-9a90-11e6-bdf4-0800200c9a66",
         "name": "大空格の韵白[柔美版]",
@@ -384,7 +384,7 @@ var skins = [
         "lables": ["设计创意", "IM追清风", "韵白", "柔美", "大空格", "字体"],
         "time": "2017-1-16",
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUWAAMtAAABXd7DiVYQ8847568", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsS2ATF_ZAAES2k77U4c9730303", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsS6AbdhWAAEsaz941_w9960300"],
-        "it": "res/it/91a44990-9a90-11e6-bdf4-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/91a44990-9a90-11e6-bdf4-0800200c9a66.it"
 	}, {
         "id": "75330890-0da2-11e5-b939-0800200c9a66",
         "name": "锤子SmartisanOS2.0",
@@ -397,7 +397,7 @@ var skins = [
         "lables": ["", "", "", "", "", ""],
         "time": "2017-2-20",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsTSAXrurAABQNvxzQs86178384", "https://pic.kuaizhan.com/g1/M00/66/55/CgpQU1mnsUaAARl-AACzHuL6MS09285979", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUaADmJVAADRJcAB97A0850779"],
-        "it": "res/it/75330890-0da2-11e5-b939-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/75330890-0da2-11e5-b939-0800200c9a66.it"
 	}, {
         "id": "40ed1290-cbd5-11e6-9598-0800200c9a66",
         "name": "贪吃蛇大作战·音乐",
@@ -410,7 +410,7 @@ var skins = [
         "lables": ["游戏动漫", "贪吃蛇", "", "", "", ""],
         "time": "2016-12-27",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSyALtyQAABItDINjM41070160", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSuAF7jkAADcrlZk5fs9405279", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSuAbuhyAADZhYsDGvc9238291"],
-        "it": "res/it/40ed1290-cbd5-11e6-9598-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/40ed1290-cbd5-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "5f7b6940-acaa-11e6-9598-0800200c9a66",
         "name": "扭着扭着·动态",
@@ -423,7 +423,7 @@ var skins = [
         "lables": ["", "", "", "", "", ""],
         "time": "2016-11-18",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSeAEkobAABu4h0FoO45825517", "https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSeAEiQ0AAFVAAcdE8I7770248", "https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSCAQ3p2AAF8PWYA5tI4499379"],
-        "it": "res/it/5f7b6940-acaa-11e6-9598-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/5f7b6940-acaa-11e6-9598-0800200c9a66.it"
 	}, {
         "id": "d2af7aa0-2320-11e6-bdf4-0800200c9a66",
         "name": "天空の路✫星轨·动态",
@@ -436,7 +436,7 @@ var skins = [
         "lables": ["清新时尚", "IM追清风", "星轨", "动态", "天空", "夜"],
         "time": "2018-1-27",
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsT6AXI2BAAB7diPhOc07043658", "https://pic.kuaizhan.com/g1/M00/66/4B/CgpQU1mnr9-AV9MmABMRjKVqCDU6644411", ""],
-        "it": "res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/d2af7aa0-2320-11e6-bdf4-0800200c9a66.it"
 	}, {
         "id": "96f22772-9732-11e6-bdf4-0800200c9a66",
         "name": "看直播专用透明皮肤",
@@ -449,7 +449,7 @@ var skins = [
         "lables": ["设计创意", "", "", "", "", ""],
         "time": "2017-11-16",
         "imgs": ["https://pic.kuaizhan.com/g3/64/50/4246-0bd9-4467-bacf-8bae0c4c96b367", "https://pic.kuaizhan.com/g3/15/19/63c9-fab4-4c44-9d94-7729feaeb2be22", "https://pic.kuaizhan.com/g3/15/19/63c9-fab4-4c44-9d94-7729feaeb2be22"],
-        "it": "res/it/96f22772-9732-11e6-bdf4-0800200c9a66.it"
+        "it": "https://godbiao.github.io/skins/res/it/96f22772-9732-11e6-bdf4-0800200c9a66.it"
 	}, {
         "id": "ed7b5da1-4318-11e6-bdf4-0800200c9a66",
         "name": "薛之谦·音乐",
@@ -462,7 +462,7 @@ var skins = [
         "lables": ["明星人物", "", "", "", "", ""],
         "time": "2016-7-6",
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSOAe8UtAACayDOD23Q1424039", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsUGANHnnAAHA0ejh53U4064536", "https://pic.kuaizhan.com/g1/M00/66/55/CgpQU1mnsUKAaOvOAAG_-P70swQ0387602"],
-        "it": "res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66.it",
+        "it": "https://godbiao.github.io/skins/res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66.it",
         "hide": "1"
 	}
 ]
