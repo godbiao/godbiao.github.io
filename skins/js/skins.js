@@ -477,6 +477,7 @@ var skins = [
         "time": "2018-04-02",
         "imgs": ["https://pic.kuaizhan.com/g3/9d/f7/8f89-be7f-48f8-92bd-258e6751b90779", "https://pic.kuaizhan.com/g3/8c/79/f8d6-1cfe-4fd4-82c5-d0be813e6fc018", ""],
         "it": "https://godbiao.github.io/skins/res/it/ea89e22a-9dae-4b8b-94a2-d91d5d233046.it",
-        "hide": "1"
+        "hide": "1",
+        "beta": true
 	}
 ]
