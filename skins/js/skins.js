@@ -464,5 +464,19 @@ var skins = [
         "imgs": ["https://pic.kuaizhan.com/g1/M01/66/53/CgpQU1mnsSOAe8UtAACayDOD23Q1424039", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsUGANHnnAAHA0ejh53U4064536", "https://pic.kuaizhan.com/g1/M00/66/55/CgpQU1mnsUKAaOvOAAG_-P70swQ0387602"],
         "it": "https://godbiao.github.io/skins/res/it/ed7b5da1-4318-11e6-bdf4-0800200c9a66.it",
         "hide": "1"
+	}, {
+        "id": "ea89e22a-9dae-4b8b-94a2-d91d5d233046",
+        "name": "无尾熊",
+        "author": "IM追清风",
+        "size": "1.5MB",
+        "description": "你要的无尾熊CP~!",
+        "update": "",
+        "star": "1",
+        "type": "gif",
+        "lables": ["明星人物", "", "", "", "", ""],
+        "time": "2018-04-02",
+        "imgs": ["https://pic.kuaizhan.com/g3/9d/f7/8f89-be7f-48f8-92bd-258e6751b90779", "https://pic.kuaizhan.com/g3/8c/79/f8d6-1cfe-4fd4-82c5-d0be813e6fc018", ""],
+        "it": "https://godbiao.github.io/skins/res/it/ea89e22a-9dae-4b8b-94a2-d91d5d233046.it",
+        "hide": "1"
 	}
 ]
