@@ -469,7 +469,7 @@ var skins = [
         "name": "无尾熊",
         "author": "IM追清风",
         "size": "1.5MB",
-        "description": "你要的无尾熊CP~!",
+        "description": "你要的无尾熊CP~~!",
         "update": "",
         "star": "1",
         "type": "gif",
