@@ -20,7 +20,7 @@ var url = window.location.href;
 if (skinID) { //皮肤详情页
     itemSkin();
     ranRecommend();
-    tips();
+    //tips();
     likeskin();
 } else if (isTpl()) { //首页模板
     indexSkin();
