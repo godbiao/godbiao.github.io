@@ -190,6 +190,7 @@ function skinInfo(s) {
     var beta = s.beta;
     var type = s.type;
     var rid = s.rid;
+    var hide = s.hide;
 
     $(".skin-name").html(name);
     $(".skin-author").html(author);
@@ -270,7 +271,7 @@ function skinInfo(s) {
 
         } else if (isQQ() || isWeiXin()) {
 
-            if (beta) {
+            if (beta || hide) {
                 window.location.href = it;
             } else {
                 window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&ckey=CK1373472118157&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
