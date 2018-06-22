@@ -12,7 +12,7 @@ var skins = [
         "time": "2018-06-21",
         "imgs": ["https://pic.kuaizhan.com/g3/87/69/3bfd-14f8-492c-b993-45f5474a7dbb31", "https://pic.kuaizhan.com/g3/2b/ce/89c8-98ee-430f-b93f-6579b716050014", "https://pic.kuaizhan.com/g3/5d/59/85f9-78d6-487c-861a-9ef241cee5e282"],
         "it": "https://godbiao.github.io/skins/res/it/a6d3bb24-783d-43d9-a8f3-eee28d64f114.it",
-        "beta": true
+        "beta": false
 	}, {
         "id": "57e9aa00-246c-42a7-a157-40677f719b58",
         "name": "旅行の青蛙·音乐",
