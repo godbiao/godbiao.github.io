@@ -344,7 +344,15 @@ function skinInfo(s) {
     if (isIME()) {
         $(".help").hide();
         $(".share").show();
+        //支持获取版本号的版本
+        var new_v = 5065;
+        //修复微博分享版本号
+        var fix_swb_v = 7077;
         $(".share").click(function () {
+            if (!isNew(fix_swb_v)) {
+                $(".share-wb")[0].src = "res/share_ic_qzone.png";
+            }
+
             $(".shade").show();
             $("#share-win").slideToggle(200);
         });
@@ -383,14 +391,22 @@ function skinInfo(s) {
         });
 
         $(".share-wb").click(function () {
-            _hmt.push(["_trackEvent", "share", "share_weibo", name + "(" + skinID + ")"]);
-            exec("imeExtendComponents", 'share_weibo', [name, description, url, imgs[0], imgs[1], {
-                'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
+
+            if (!isNew(fix_swb_v)) {
+                _hmt.push(["_trackEvent", "share", "share_qzone", name + "(" + skinID + ")"]);
+                exec("imeExtendComponents", 'share_qzone', [name, description, url, imgs[0], imgs[1], {
+                    'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
                 }]);
+            } else {
+                _hmt.push(["_trackEvent", "share", "share_weibo", name + "(" + skinID + ")"]);
+                exec("imeExtendComponents", 'share_weibo', [name, description, url, imgs[0], imgs[1], {
+                    'sharesuccesspageUrl': 'https://godbiao.github.io/skins/index.html'
+                }]);
+            }
+
+
             $(".shade").hide();
             $("#share-win").slideToggle(200);
-
-
         });
 
         $(".share-qzone").click(function () {
@@ -487,6 +503,16 @@ function getClientVersion() {
         return version;
     }
     return 0;
+}
+
+
+//是否支持新功能
+function isNew(version) {
+    if (getClientVersion()) {
+        var current_client_version = getClientVersion().substr(4, 4);
+        return parseInt(current_client_version) >= version;
+    }
+    return false;
 }
 
 
