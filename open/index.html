@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>讯飞输入法跳转中...</title>
+    <script src="platform.js"></script>
+    <script>
+        //使用方法：https://srf.xunfei.cn/open/?url=http%3a%2f%2fsrf.xunfei.cn%2f%3fdf%3d01010026&df=01010026&src=weixin&type=skin$uid=658f8ead-efe2-44c9-a77b-3072b5e5558b
+
+        var url = getUrlparam("url"); //跳转链接
+        var df = getUrlparam("df"); //渠道号
+        var src = getUrlparam("src"); //来源
+        var type = getUrlparam("type"); //链接类型
+        var uid = getUrlparam("uid"); //资源UID
+        /*
+                document.write("链接：");
+                document.write(url);
+                document.write("<br>渠道：");
+                document.write(df);
+                document.write("<br>来源：");
+                document.write(src);
+                document.write("<br>链接类型：");
+                document.write(type);
+        */
+        if (type == "skin") {
+            detailSkin(uid);
+            window.history.go(-1);
+        }
+
+        if (url !== undefined) {
+            window.location.href = url;
+        }
+
+        function detailSkin(uid) {
+            //跳转到皮肤详情
+            var myskin = {
+                cmd: 'open_client_detail_page',
+                info: {
+                    "client_page_type": "client_page_type_theme_detail",
+                    "client_id": uid,
+                }
+            };
+            exec("imeExtendComponents", myskin.cmd, myskin.info);
+        }
+
+        //链接参数获取
+        function getUrlparam(name) {
+            var url = location.search;
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest[name];
+        }
+
+
+        //输入法中间件检测
+        function isIME() {
+            var ua = navigator.userAgent;
+            return ua.indexOf('iflytek_mmp') >= 0;
+        }
+
+        //是否支持新功能
+        function isNew(version) {
+            if (getClientVersion()) {
+                var current_client_version = getClientVersion().substr(4, 4);
+                return parseInt(current_client_version) >= version;
+            }
+            return false;
+        }
+
+        //获取客户端版本号
+        function getClientVersion() {
+            var client_version = exec("imeExtendComponents", 'ask_client_version', []);
+            var version = convertType(client_version).message;
+            if (version) {
+                return version;
+            }
+            return 0;
+        }
+
+        //手机端判定
+        function isMobile() {
+            var ua = navigator.userAgent;
+            var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+                isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+                isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+                ismobile = isIphone || isAndroid;
+
+            return ismobile;
+        }
+
+        //判断是否在微信里打开
+        function isWeiXin() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                return true;
+
+            } else {
+                return false;
+            }
+        }
+
+        //判断是否在QQ里打开 
+        function isQQ() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/QQ/i) == 'qq') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        //判断是否在微博里打开
+        function isWeiBo() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/WeiBo/i) == 'weibo') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+    </script>
+</head>
+<!-- 数据统计 -->
+<div style="display:none">
+    <script type="text/javascript" src="//s13.cnzz.com/z_stat.php?id=2604584&web_id=2604584"></script>
+</div>
+
+<body>
+
+</body>
+
+</html>
