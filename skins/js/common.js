@@ -305,7 +305,7 @@ function skinInfo(s) {
         }
 
         //领个红包玩玩呀，打扰了
-        window.open('http://m.jianfengstudio.com/index.html?tkey=cpx04176ehghlwmd2cpaybf');
+        //window.open('http://m.jianfengstudio.com/index.html?tkey=cpx04176ehghlwmd2cpaybf');
 
 
     });
