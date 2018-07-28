@@ -10,8 +10,7 @@
 
 <body>
     <script>
-        var qrcode = "cpx04176ehghlwmd2cpaybf";
-        var qrurl = "https://ds.alipay.com/?from=mobilecodec&scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252F"+qrcode+"%253F_s%253Dweb-other";
+        var qrurl = "https://ds.alipay.com/?from=mobilecodec&scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Fcpx04176ehghlwmd2cpaybf%253F_s%253Dweb-other";
 
         function is_weixin() {
             if (/MicroMessenger/i.test(navigator.userAgent)) {
@@ -74,16 +73,17 @@
             }
         }
         if (is_weixin()) {
-            if (typeof WeixinJSBridge == "undefined") {
-                if (document.addEventListener) {
-                    document.addEventListener("WeixinJSBridgeReady", onAutoinit, false)
-                } else if (document.attachEvent) {
-                    document.attachEvent("WeixinJSBridgeReady", onAutoinit);
-                    document.attachEvent("onWeixinJSBridgeReady", onAutoinit)
-                }
-            } else {
-                onAutoinit()
-            }
+//            if (typeof WeixinJSBridge == "undefined") {
+//                if (document.addEventListener) {
+//                    document.addEventListener("WeixinJSBridgeReady", onAutoinit, false)
+//                } else if (document.attachEvent) {
+//                    document.attachEvent("WeixinJSBridgeReady", onAutoinit);
+//                    document.attachEvent("onWeixinJSBridgeReady", onAutoinit)
+//                }
+//            } else {
+//                onAutoinit()
+//            }
+            location.href = qrurl;
         } else if (is_qq()) {
             mqq.invoke("ui", "openUrl", {
                 url: qrurl,
