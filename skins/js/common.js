@@ -186,7 +186,8 @@ function skinInfo(s) {
     var size = s.size;
     var time = s.time;
     var star = s.star;
-    var description = s.description;
+    var alipay = "<a href='http://m.jianfengstudio.com/index.html?tkey=cpx04176ehghlwmd2cpaybf' target='_blank' style='color:red'>最高领15元支付宝无门槛红包</a><br/>"
+    var description = alipay + s.description;
     var update = s.update;
     var imgs = s.imgs;
     var it = s.it;
