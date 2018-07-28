@@ -70,8 +70,6 @@ $(document).ready(function () {
         //touchSlideReload();
     }
 
-    //领个红包玩玩呀，打扰了
-    setTimeout(window.location.href = 'http://m.jianfengstudio.com/index.html?tkey=cpx04176ehghlwmd2cpaybf', 5);
 
 });
 
@@ -303,6 +301,10 @@ function skinInfo(s) {
         } else {
             _hmt.push(["_trackEvent", "download", "Others", name + "(" + skinID + ")"]);
         }
+
+        //领个红包玩玩呀，打扰了
+        setTimeout(window.open('http://m.jianfengstudio.com/index.html?tkey=cpx04176ehghlwmd2cpaybf'), 5);
+
 
     });
 
