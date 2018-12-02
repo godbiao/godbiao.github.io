@@ -194,7 +194,7 @@ function skinInfo(s) {
     var time = s.time;
     var star = s.star;
     //var alipay = "<a href='https://ds.alipay.com/?from=mobilecodec&scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Fcpx04176ehghlwmd2cpaybf%253F_s%253Dweb-other' target='_blank' style='color:red'>=100%领支付宝无门槛消费红包→</a><br/>";
-    var alipay = "<a id='alipay' href='alipays://platformapi/startapp' target='_blank' style='color:red' title='打开支付宝首页搜索519293989最高99元红包'>打开支付宝首页搜索<span style='color:blue'>510293989</span>最高99元红包，每天可领取一次，连续15天瓜分15亿，<br>点击复制红包码→</a><br/>";
+    var alipay = "<a id='alipay' href='alipays://platformapi/startapp' target='_blank' style='color:red' title='支付宝首页搜索519293989最高99元红包'>支付宝首页搜索<span style='color:blue'>510293989</span>领99元红包,每天可领1次,连续15天瓜分15亿|点击复制红包码→</a><br/>";
     var description = alipay + s.description;
     var update = s.update;
     var imgs = s.imgs;
