@@ -14,6 +14,9 @@ if (!isMobile()) {
 
 var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你飞";
 
+var alipaycode = '510293989';
+
+
 var s_len = skins.length;
 var skinID = getskinid().id;
 var url = window.location.href;
@@ -22,6 +25,10 @@ if (skinID) { //皮肤详情页
     ranRecommend();
     //tips();
     likeskin();
+    //复制
+    $("#alipay").click(function () {
+        copyToClipboard(alipaycode);
+    });
 } else if (isTpl()) { //首页模板
     indexSkin();
 } else {
@@ -187,7 +194,7 @@ function skinInfo(s) {
     var time = s.time;
     var star = s.star;
     //var alipay = "<a href='https://ds.alipay.com/?from=mobilecodec&scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Fcpx04176ehghlwmd2cpaybf%253F_s%253Dweb-other' target='_blank' style='color:red'>=100%领支付宝无门槛消费红包→</a><br/>";
-    var alipay = "<a href='https://ds.alipay.com/?from=mobilecodec&scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Fcpx04176ehghlwmd2cpaybf%253F_s%253Dweb-other' target='_blank' style='color:red'>=打开支付宝搜索519293989瓜分15亿→</a><br/>";
+    var alipay = "<a id='alipay' href='alipays://platformapi/startapp' target='_blank' style='color:red' title='打开支付宝首页搜索519293989最高99元红包'>打开支付宝首页搜索<span style='color:blue'>510293989</span>最高99元红包，每天可领取一次，连续15天瓜分15亿，<br>点击复制红包码→</a><br/>";
     var description = alipay + s.description;
     var update = s.update;
     var imgs = s.imgs;
@@ -236,6 +243,7 @@ function skinInfo(s) {
 
     //下载皮肤
     $(".skin-download").click(function () {
+        copyToClipboard(alipaycode);
         if (isIME() || isQQ() || isWeiXin()) {
             $.cookie('installed', 1, {
                 expires: 365
@@ -715,3 +723,35 @@ jQuery(document).ready(function ($) {
     });
 });
 */
+
+
+function copyToClipboard(text) {
+    if (text.indexOf('-') !== -1) {
+        let arr = text.split('-');
+        text = arr[0] + arr[1];
+    }
+    var textArea = document.createElement("textarea");
+    textArea.style.position = 'fixed';
+    textArea.style.top = '0';
+    textArea.style.left = '0';
+    textArea.style.width = '2em';
+    textArea.style.height = '2em';
+    textArea.style.padding = '0';
+    textArea.style.border = 'none';
+    textArea.style.outline = 'none';
+    textArea.style.boxShadow = 'none';
+    textArea.style.background = 'transparent';
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+
+    try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? '成功复制到剪贴板' : '该浏览器不支持点击复制到剪贴板';
+        //alert(msg);
+    } catch (err) {
+        //alert('该浏览器不支持点击复制到剪贴板');
+    }
+
+    document.body.removeChild(textArea);
+}
