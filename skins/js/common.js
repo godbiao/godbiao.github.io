@@ -14,7 +14,7 @@ if (!isMobile()) {
 
 var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你飞";
 
-var alipaycode = '510293989';
+var alipaycode = '支付宝搜索510293989领红包';
 
 
 var s_len = skins.length;
@@ -28,6 +28,7 @@ if (skinID) { //皮肤详情页
     //复制
     $("#alipay").click(function () {
         copyToClipboard(alipaycode);
+        alert("红包码复制成功快去支付宝搜索领红包吧");
     });
 } else if (isTpl()) { //首页模板
     indexSkin();
