@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
-    <title>讯飞输入法表情包在线制作工具</title>
+    <title>讯飞输入法表情包制作工具</title>
     <link rel="icon" href="http://www.xunfei.cn/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="http://www.xunfei.cn/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://srf.xunfei.cn/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
