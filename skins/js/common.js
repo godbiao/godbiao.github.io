@@ -292,9 +292,9 @@ function skinInfo(s) {
             }
 
         } else {
-            window.open("open://inputmethod.iflytek.com/7424/" + skinID);
+            window.location.href = "open://inputmethod.iflytek.com/7424/" + skinID;           
             setTimeout(function () {//1s后下载皮肤包
-                window.location.href = it;
+                 window.open(it);
             }, 1000);
         }
         
@@ -318,9 +318,6 @@ function skinInfo(s) {
         } else {
             _hmt.push(["_trackEvent", "download", "Others", name + "(" + skinID + ")"]);
         }
-
-        //领个红包玩玩呀，打扰了
-        //window.open('http://m.jianfengstudio.com/index.html?tkey=cpx04176ehghlwmd2cpaybf');
 
 
     });
