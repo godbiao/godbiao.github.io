@@ -296,10 +296,10 @@ function skinInfo(s) {
             if (beta || hide) {
                 window.location.href = it;
             } else {
-                window.location.href = "open://inputmethod.iflytek.com/7424/" + skinID;
                 setTimeout(function () { //1s后下载皮肤包
                     window.open(it);
                 }, 1000);
+                window.location.href = "open://inputmethod.iflytek.com/7424/" + skinID;
             }
 
         }
