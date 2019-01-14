@@ -292,7 +292,7 @@ function skinInfo(s) {
             }
 
         } else {
-            window.open("open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID);
+            window.open("open://inputmethod.iflytek.com/7424/" + skinID);
             setTimeout(function () {//1s后下载皮肤包
                 window.location.href = it;
             }, 1000);
