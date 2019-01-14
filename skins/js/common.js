@@ -294,15 +294,18 @@ function skinInfo(s) {
         } else {
             window.location.href = it;
 
-//            if (beta || hide) {
-//                window.location.href = it;
-//            } else {
-//                setTimeout(function () { //1s后下载皮肤包
-//                    window.open(it);
-//                }, 1000);
-//                window.location.href = "open://inputmethod.iflytek.com/7424/" + skinID;
-//            }
+            //            if (beta || hide) {
+            //                window.location.href = it;
+            //            } else {
+            //                setTimeout(function () { //1s后下载皮肤包
+            //                    window.open(it);
+            //                }, 1000);
+            //                window.location.href = "open://inputmethod.iflytek.com/7424/" + skinID;
+            //            }
 
+        }
+        if (isKuAn() || isQQ()) {
+            window.location.href = "open://inputmethod.iflytek.com/7424/" + skinID;
         }
 
         //下载日志
@@ -690,6 +693,16 @@ function isQQ() {
 function isWeiBo() {
     var ua = window.navigator.userAgent.toLowerCase();
     if (ua.match(/WeiBo/i) == 'weibo') {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//判断是否在酷安里打开
+function isKuAn() {
+    var ua = window.navigator.userAgent.toLowerCase();
+    if (ua.match(/CoolMarket/i) == 'coolmarket') {
         return true;
     } else {
         return false;
