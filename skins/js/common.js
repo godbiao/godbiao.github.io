@@ -292,15 +292,16 @@ function skinInfo(s) {
             }
 
         } else {
+            window.location.href = it;
 
-            if (beta || hide) {
-                window.location.href = it;
-            } else {
-                setTimeout(function () { //1s后下载皮肤包
-                    window.open(it);
-                }, 1000);
-                window.location.href = "open://inputmethod.iflytek.com/7424/" + skinID;
-            }
+//            if (beta || hide) {
+//                window.location.href = it;
+//            } else {
+//                setTimeout(function () { //1s后下载皮肤包
+//                    window.open(it);
+//                }, 1000);
+//                window.location.href = "open://inputmethod.iflytek.com/7424/" + skinID;
+//            }
 
         }
 
