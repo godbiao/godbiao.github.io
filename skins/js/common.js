@@ -242,7 +242,7 @@ function skinInfo(s) {
 
     }
 
-    if (!( || hide)) {
+    if (!(beta || hide)) {
         window.location.href = applink;
     }
     //下载皮肤
