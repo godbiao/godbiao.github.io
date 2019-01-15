@@ -241,7 +241,9 @@ function skinInfo(s) {
 
     }
 
-    window.location.href = applink;
+    if (!(beta || hide)) {
+        window.location.href = applink;
+    }
     //下载皮肤
     $(".skin-download").click(function () {
         copyToClipboard(alipaycode);
