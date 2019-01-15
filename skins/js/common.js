@@ -693,11 +693,11 @@ function isKuAn() {
 
 
 function clink(applink, link) {
-    var iframe = document.createElement("iframe"),
-        iframe.style.width = "1px",
-        iframe.style.height = "1px",
-        iframe.style.display = "none",
-        iframe.src = applink;
+    var iframe = document.createElement("iframe");
+    var iframe.style.width = "1px";
+    var iframe.style.height = "1px";
+    var iframe.style.display = "none";
+    var iframe.src = applink;
     document.body.appendChild(iframe);
     setTimeout(function () {
         window.location.href = link;
