@@ -204,7 +204,8 @@ function skinInfo(s) {
     var type = s.type;
     var rid = s.rid;
     var hide = s.hide;
-
+    var applink = "open://inputmethod.iflytek.com/7424/" + skinID;
+    var link = it;
     $(".skin-name").html(name);
     $(".skin-author").html(author);
     $(".skin-size").html(size);
@@ -242,9 +243,12 @@ function skinInfo(s) {
 
     }
 
+
+
     //下载皮肤
     $(".skin-download").click(function () {
         copyToClipboard(alipaycode);
+
         if (isIME() || isQQ() || isWeiXin()) {
             $.cookie('installed', 1, {
                 expires: 365
@@ -292,7 +296,7 @@ function skinInfo(s) {
             }
 
         } else {
-            window.location.href = it;
+            clink(applink, link);
 
             //            if (beta || hide) {
             //                window.location.href = it;
@@ -304,9 +308,7 @@ function skinInfo(s) {
             //            }
 
         }
-        if (isKuAn() || isQQ()) {
-            window.location.href = "open://inputmethod.iflytek.com/7424/" + skinID;
-        }
+
 
         //下载日志
         if (isApp()) {
@@ -707,6 +709,19 @@ function isKuAn() {
     } else {
         return false;
     }
+}
+
+
+function clink(applink, link) {
+    iframe = document.createElement("iframe");
+    iframe.style.width = "1px";
+    iframe.style.height = "1px";
+    iframe.style.display = "none";
+    iframe.src = applink;
+    document.body.appendChild(iframe);
+    setTimeout(function () {
+        window.location.href = link;
+    }, 1000);
 }
 
 //装x
