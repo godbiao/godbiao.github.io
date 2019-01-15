@@ -275,7 +275,7 @@ function skinInfo(s) {
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
         } else if (isWeiXin()) {
-            alert("需要点击右上角在浏览器中打开才能下载哟^_^");
+            alert("需要点击右上角->在浏览器打开才能下载哟^_^");
             /*if (beta || hide) {
                 window.location.href = it;
             } else {
