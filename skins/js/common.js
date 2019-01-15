@@ -16,7 +16,6 @@ var title = "讯飞输入法Android版皮肤 - 1分钟400字,语音输入带你�
 
 var alipaycode = '支付宝搜索510293989领红包';
 
-
 var s_len = skins.length;
 var skinID = getskinid().id;
 var url = window.location.href;
@@ -195,7 +194,7 @@ function skinInfo(s) {
     var time = s.time;
     var star = s.star;
     //var alipay = "<a href='https://ds.alipay.com/?from=mobilecodec&scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FsaId%3D10000007%26clientVersion%3D3.7.0.0718%26qrcode%3Dhttps%253A%252F%252Fqr.alipay.com%252Fcpx04176ehghlwmd2cpaybf%253F_s%253Dweb-other' target='_blank' style='color:red'>=100%领支付宝无门槛消费红包→</a><br/>";
-    var alipay = "<a id='alipay' href='alipays://platformapi/startapp' target='_blank' style='color:red' title='支付宝首页搜索519293989最高99元红包'>支付宝首页搜索<span style='color:blue'>510293989</span>领99元红包,每天可领1次,连续15天瓜分15亿|点击复制红包码→</a><br/>";
+    var alipay = "<a id='alipay' href='alipays://platformapi/startapp' target='_blank' style='color:red' title='支付宝搜索519293989领现金红包'>支付宝首页搜索<span style='color:blue'>510293989</span>领99元红包,每天可领1次|点击复制红包码→</a><br/>";
     var description = alipay + s.description;
     var update = s.update;
     var imgs = s.imgs;
@@ -237,28 +236,21 @@ function skinInfo(s) {
         });
 
     } else {
-
         $(".preview_9").attr("src", imgs[1]);
         $(".preview_26").attr("src", imgs[2]);
 
     }
 
-
-    if (isKuAn() || isQQ()) {
-        window.location.href = applink;
-    }
-
+    window.location.href = applink;
     //下载皮肤
     $(".skin-download").click(function () {
         copyToClipboard(alipaycode);
-
         if (isIME() || isQQ() || isWeiXin()) {
             $.cookie('installed', 1, {
                 expires: 365
             });
         }
         if ($.cookie('installed') != 1) {
-
             $("#pop").show();
             $(".install,.iclose").slideDown(300);
 
@@ -266,15 +258,6 @@ function skinInfo(s) {
         }
 
         if (isIME()) {
-            //跳转到皮肤详情
-            /* var myskin = {
-                cmd: 'open_client_detail_page',
-                info: {
-                "client_page_type": "client_page_type_theme_detail",
-                 "client_id": skinID,
-                }
-            };*/
-
             //直接下载皮肤
             var myskin = {
                 cmd: 'open_download',
@@ -288,10 +271,7 @@ function skinInfo(s) {
                 }
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
-
-
         } else if (isQQ() || isWeiXin()) {
-
             if (beta || hide) {
                 window.location.href = it;
             } else {
@@ -300,16 +280,6 @@ function skinInfo(s) {
 
         } else {
             clink(applink, link);
-
-            //            if (beta || hide) {
-            //                window.location.href = it;
-            //            } else {
-            //                setTimeout(function () { //1s后下载皮肤包
-            //                    window.open(it);
-            //                }, 1000);
-            //                window.location.href = "open://inputmethod.iflytek.com/7424/" + skinID;
-            //            }
-
         }
 
 
@@ -333,8 +303,6 @@ function skinInfo(s) {
         } else {
             _hmt.push(["_trackEvent", "download", "Others", name + "(" + skinID + ")"]);
         }
-
-
     });
 
     $("#pop").click(function () {
