@@ -244,6 +244,9 @@ function skinInfo(s) {
     }
 
 
+    if (isKuAn() || isQQ()) {
+        window.location.href = applink;
+    }
 
     //下载皮肤
     $(".skin-download").click(function () {
