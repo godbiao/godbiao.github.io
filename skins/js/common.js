@@ -204,6 +204,7 @@ function skinInfo(s) {
     var rid = s.rid;
     var hide = s.hide;
     var applink = "open://inputmethod.iflytek.com/7424/" + skinID;
+    var wxzlink = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&ckey=CK1373472118157&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
     var link = it;
     $(".skin-name").html(name);
     $(".skin-author").html(author);
@@ -241,7 +242,7 @@ function skinInfo(s) {
 
     }
 
-    if (!(beta || hide)) {
+    if (!( || hide)) {
         window.location.href = applink;
     }
     //下载皮肤
@@ -273,15 +274,21 @@ function skinInfo(s) {
                 }
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
-        } else if (isQQ() || isWeiXin()) {
+        } else if (isWeiXin()) {
+            alert("需要点击右上角在浏览器中打开才能下载哟^_^");
+            /*if (beta || hide) {
+                window.location.href = it;
+            } else {
+                window.location.href = wxzlink;                
+            }*/
+
+        } else {
             if (beta || hide) {
                 window.location.href = it;
             } else {
-                window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.iflytek.inputmethod&ckey=CK1373472118157&android_schema=open%3a%2f%2finputmethod.iflytek.com%2f7424%2f" + skinID;
+                clink(applink, it);
             }
 
-        } else {
-            clink(applink, link);
         }
 
 
@@ -686,11 +693,11 @@ function isKuAn() {
 
 
 function clink(applink, link) {
-    iframe = document.createElement("iframe");
-    iframe.style.width = "1px";
-    iframe.style.height = "1px";
-    iframe.style.display = "none";
-    iframe.src = applink;
+    var iframe = document.createElement("iframe"),
+        iframe.style.width = "1px",
+        iframe.style.height = "1px",
+        iframe.style.display = "none",
+        iframe.src = applink;
     document.body.appendChild(iframe);
     setTimeout(function () {
         window.location.href = link;
