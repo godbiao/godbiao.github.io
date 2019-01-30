@@ -149,7 +149,7 @@ function indexSkin() {
         }
         var sname = skins[i].name;
         var spreview = skins[i].imgs[0];
-        var rowhot = skin([4, sid, sname, spreview]);
+        var rowhot = skin([6, sid, sname, spreview]);
         var rownew = skin([6, sid, sname, spreview]);
 
         if (i > 3) {
@@ -694,7 +694,9 @@ function isKuAn() {
     }
 }
 
-
+/*applink:打开app链接
+  link:第二个链接
+*/
 function clink(applink, link) {
     var iframe = document.createElement("iframe");
     iframe.style.width = "1px";
