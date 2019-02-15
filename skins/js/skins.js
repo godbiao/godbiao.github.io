@@ -1,5 +1,19 @@
 var skins = [
     {
+        "id": "c7a12683-6844-4d8d-b7fe-74daa6efc664",
+        "name": "笑哭了盲打",
+        "author": "IM追清风",
+        "size": "95KB",
+        "description": "笑哭了盲打皮肤上线，欢迎下载体验~",
+        "update": "",
+        "star": "5",
+        "type": "",
+        "lables": ["设计创意", "盲打", "大黄脸", "快手", "", ""],
+        "time": "2018-06-21",
+        "imgs": ["https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664_preview.jpg", "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664_9.jpg", "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664_26.jpg"],
+        "it": "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664.it",
+        "beta": false
+	},{
         "id": "a6d3bb24-783d-43d9-a8f3-eee28d64f114",
         "name": "MIUI 10",
         "author": "IM追清风",
