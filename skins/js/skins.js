@@ -10,7 +10,7 @@ var skins = [
         "type": "",
         "lables": ["设计创意", "盲打", "大黄脸", "快手", "", ""],
         "time": "2018-06-21",
-        "imgs": ["https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664_preview.jpg", "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664_9.jpg", "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664_26.jpg"],
+        "imgs": ["https://s2.ax1x.com/2019/02/15/kr1MJ1.jpg", "https://s2.ax1x.com/2019/02/15/kr1QRx.jpg", "https://s2.ax1x.com/2019/02/15/kr1KiR.jpg"],
         "it": "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664.it",
         "beta": false
 	},{
