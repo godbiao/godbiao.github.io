@@ -1,6 +1,6 @@
 var skins = [
     {
-        "id": "c7a12683-6844-4d8d-b7fe-74daa6efc664",
+        "id": "e3538f35-2a21-4c9a-907f-52db6ce30348",
         "name": "Doge真盲打键盘",
         "author": "IM追清风",
         "size": "53KB",
@@ -13,7 +13,21 @@ var skins = [
         "imgs": ["https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348_preview.jpg", "https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348_9.jpg", "https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348_26.jpg"],
         "it": "https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348.it",
         "beta": true
-	},    {
+	},{
+        "id": "12484c28-2b83-4e6d-a95e-c710927897f2",
+        "name": "滑稽盲打",
+        "author": "IM追清风",
+        "size": "53KB",
+        "description": "滑稽盲打皮肤上线，欢迎下载体验~",
+        "update": "",
+        "star": "5",
+        "type": "",
+        "lables": ["设计创意", "盲打", "大黄脸", "泡泡", "", ""],
+        "time": "2019-02-16",
+        "imgs": ["https://godbiao.github.io/skins/res/it/12484c28-2b83-4e6d-a95e-c710927897f2_preview.jpg", "https://godbiao.github.io/skins/res/it/12484c28-2b83-4e6d-a95e-c710927897f2_9.jpg", "https://godbiao.github.io/skins/res/it/12484c28-2b83-4e6d-a95e-c710927897f2_26.jpg"],
+        "it": "https://godbiao.github.io/skins/res/it/12484c28-2b83-4e6d-a95e-c710927897f2.it",
+        "beta": false
+	},{
         "id": "c7a12683-6844-4d8d-b7fe-74daa6efc664",
         "name": "笑哭了盲打",
         "author": "IM追清风",
