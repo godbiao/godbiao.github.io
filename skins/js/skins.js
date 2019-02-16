@@ -17,7 +17,7 @@ var skins = [
         "id": "12484c28-2b83-4e6d-a95e-c710927897f2",
         "name": "滑稽盲打",
         "author": "IM追清风",
-        "size": "53KB",
+        "size": "47KB",
         "description": "滑稽盲打皮肤上线，欢迎下载体验~",
         "update": "",
         "star": "5",
