@@ -1,6 +1,20 @@
 var skins = [
     {
         "id": "c7a12683-6844-4d8d-b7fe-74daa6efc664",
+        "name": "Doge真盲打键盘",
+        "author": "IM追清风",
+        "size": "53KB",
+        "description": "Doge真盲打键盘皮肤上线，真的一个按键都看不到哟，欢迎下载体验~",
+        "update": "",
+        "star": "5",
+        "type": "",
+        "lables": ["设计创意", "盲打", "狗狗", "快手", "Doge", ""],
+        "time": "2019-02-16",
+        "imgs": ["https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348_preview.jpg", "https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348_9.jpg", "https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348_26.jpg"],
+        "it": "https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348.it",
+        "beta": true
+	},    {
+        "id": "c7a12683-6844-4d8d-b7fe-74daa6efc664",
         "name": "笑哭了盲打",
         "author": "IM追清风",
         "size": "95KB",
@@ -9,8 +23,8 @@ var skins = [
         "star": "5",
         "type": "",
         "lables": ["设计创意", "盲打", "大黄脸", "快手", "", ""],
-        "time": "2018-06-21",
-        "imgs": ["https://s2.ax1x.com/2019/02/15/kr1MJ1.jpg", "https://s2.ax1x.com/2019/02/15/kr1QRx.jpg", "https://s2.ax1x.com/2019/02/15/kr1KiR.jpg"],
+        "time": "2019-02-15",
+        "imgs": ["https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664_preview.jpg", "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664_9.jpg", "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664_26.jpg"],
         "it": "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664.it",
         "beta": false
 	},{
