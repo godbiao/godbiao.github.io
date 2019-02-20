@@ -113,7 +113,7 @@ ul {
 #banner {
     width: 100%;
     cursor: pointer;
-    display: none;
+/*    display: none;*/
 }
 
 #banner img {

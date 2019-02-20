@@ -53,7 +53,10 @@ $(document).ready(function () {
 
     //banner打开微博
     $(".banner-weibo, .insstall-cont").click(function () {
-        window.location.href = "http://m.weibo.cn/u/1136590322";
+        _hmt.push(["_trackEvent", "首页banner", "点击", '盲打皮肤']);
+//        window.location.href = "http://m.weibo.cn/u/1136590322";
+        window.location.href = "https://www.godbiao.com/md/?s=skins";
+        
     });
 
     $(".ime-update").click(function () {
