@@ -1,5 +1,57 @@
 var skins = [
     {
+        "id": "c1ea5aff-b19e-4a8a-b28a-1e5dc5608af8",
+        "name": "墨羽黑圆角版",
+        "author": "IM标神",
+        "size": "54.1KB",
+        "description": "雅韵白皮肤适配全面屏圆角手机~",
+        "update": "",
+        "star": "5",
+        "type": "",
+        "lables": ["设计创意", "简约", "大空格", "黑色", "深色", "圆角"],
+        "time": "2019-04-10",
+        "imgs": ["https://godbiao.github.io/skins/res/it/c1ea5aff-b19e-4a8a-b28a-1e5dc5608af8_preview.png", "https://godbiao.github.io/skins/res/it/c1ea5aff-b19e-4a8a-b28a-1e5dc5608af8_9.jpg", "https://godbiao.github.io/skins/res/it/c1ea5aff-b19e-4a8a-b28a-1e5dc5608af8_26.jpg"],
+        "it": "https://godbiao.github.io/skins/res/it/c1ea5aff-b19e-4a8a-b28a-1e5dc5608af8.it"
+	},{
+        "id": "4fce2eaa-4ffc-4df7-ada6-a5b627a5156b",
+        "name": "墨羽黑",
+        "author": "IM标神",
+        "size": "52.9KB",
+        "description": "墨羽黑直角版本~",
+        "update": "",
+        "star": "5",
+        "type": "",
+        "lables": ["设计创意", "简约", "大空格", "黑色", "深色", "夜间"],
+        "time": "2019-04-10",
+        "imgs": ["https://godbiao.github.io/skins/res/it/4fce2eaa-4ffc-4df7-ada6-a5b627a5156b_preview.png", "https://godbiao.github.io/skins/res/it/4fce2eaa-4ffc-4df7-ada6-a5b627a5156b_9.jpg", "https://godbiao.github.io/skins/res/it/4fce2eaa-4ffc-4df7-ada6-a5b627a5156b_26.jpg"],
+        "it": "https://godbiao.github.io/skins/res/it/4fce2eaa-4ffc-4df7-ada6-a5b627a5156b.it"
+	},{
+        "id": "0508993d-d635-466f-b4d7-36d2c2f73c86",
+        "name": "雅韵白圆角版",
+        "author": "IM标神",
+        "size": "67.4KB",
+        "description": "雅韵白皮肤适配全面屏圆角手机~",
+        "update": "",
+        "star": "5",
+        "type": "",
+        "lables": ["设计创意", "简约", "大空格", "圆角", "全面屏", ""],
+        "time": "2019-04-04",
+        "imgs": ["https://godbiao.github.io/skins/res/it/0508993d-d635-466f-b4d7-36d2c2f73c86_preview.png", "https://godbiao.github.io/skins/res/it/0508993d-d635-466f-b4d7-36d2c2f73c86_9.jpg", "https://godbiao.github.io/skins/res/it/0508993d-d635-466f-b4d7-36d2c2f73c86_26.jpg"],
+        "it": "https://godbiao.github.io/skins/res/it/0508993d-d635-466f-b4d7-36d2c2f73c86.it"
+	},{
+        "id": "092a640a-4718-4ed2-ae99-7250be5fe5e3",
+        "name": "雅韵白",
+        "author": "IM标神",
+        "size": "66.5KB",
+        "description": "雅韵白直角版，欢迎下载体验~",
+        "update": "",
+        "star": "3",
+        "type": "",
+        "lables": ["设计创意", "简约", "大空格", "", "", ""],
+        "time": "2019-04-04",
+        "imgs": ["https://godbiao.github.io/skins/res/it/092a640a-4718-4ed2-ae99-7250be5fe5e3_preview.png", "https://godbiao.github.io/skins/res/it/092a640a-4718-4ed2-ae99-7250be5fe5e3_9.jpg", "https://godbiao.github.io/skins/res/it/092a640a-4718-4ed2-ae99-7250be5fe5e3_26.jpg"],
+        "it": "https://godbiao.github.io/skins/res/it/092a640a-4718-4ed2-ae99-7250be5fe5e3.it"
+	},{
         "id": "e3538f35-2a21-4c9a-907f-52db6ce30348",
         "name": "Doge真盲打键盘",
         "author": "IM追清风",
@@ -11,8 +63,7 @@ var skins = [
         "lables": ["设计创意", "盲打", "狗狗", "快手", "Doge", ""],
         "time": "2019-02-16",
         "imgs": ["https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348_preview.jpg", "https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348_9.jpg", "https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348_26.jpg"],
-        "it": "https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348.it",
-        "beta": true
+        "it": "https://godbiao.github.io/skins/res/it/e3538f35-2a21-4c9a-907f-52db6ce30348.it"
 	},{
         "id": "12484c28-2b83-4e6d-a95e-c710927897f2",
         "name": "滑稽盲打",
@@ -25,8 +76,7 @@ var skins = [
         "lables": ["设计创意", "盲打", "大黄脸", "泡泡", "", ""],
         "time": "2019-02-16",
         "imgs": ["https://godbiao.github.io/skins/res/it/12484c28-2b83-4e6d-a95e-c710927897f2_preview.jpg", "https://godbiao.github.io/skins/res/it/12484c28-2b83-4e6d-a95e-c710927897f2_9.jpg", "https://godbiao.github.io/skins/res/it/12484c28-2b83-4e6d-a95e-c710927897f2_26.jpg"],
-        "it": "https://godbiao.github.io/skins/res/it/12484c28-2b83-4e6d-a95e-c710927897f2.it",
-        "beta": false
+        "it": "https://godbiao.github.io/skins/res/it/12484c28-2b83-4e6d-a95e-c710927897f2.it"
 	},{
         "id": "c7a12683-6844-4d8d-b7fe-74daa6efc664",
         "name": "笑哭了盲打",
@@ -39,8 +89,7 @@ var skins = [
         "lables": ["设计创意", "盲打", "大黄脸", "快手", "", ""],
         "time": "2019-02-15",
         "imgs": ["https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664_preview.jpg", "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664_9.jpg", "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664_26.jpg"],
-        "it": "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664.it",
-        "beta": false
+        "it": "https://godbiao.github.io/skins/res/it/c7a12683-6844-4d8d-b7fe-74daa6efc664.it"
 	},{
         "id": "a6d3bb24-783d-43d9-a8f3-eee28d64f114",
         "name": "MIUI 10",
@@ -53,8 +102,7 @@ var skins = [
         "lables": ["设计创意", "MIUI 10", "小米", "简约", "大空格", "小字体"],
         "time": "2018-06-21",
         "imgs": ["https://pic.kuaizhan.com/g3/87/69/3bfd-14f8-492c-b993-45f5474a7dbb31", "https://pic.kuaizhan.com/g3/2b/ce/89c8-98ee-430f-b93f-6579b716050014", "https://pic.kuaizhan.com/g3/5d/59/85f9-78d6-487c-861a-9ef241cee5e282"],
-        "it": "https://godbiao.github.io/skins/res/it/a6d3bb24-783d-43d9-a8f3-eee28d64f114.it",
-        "beta": false
+        "it": "https://godbiao.github.io/skins/res/it/a6d3bb24-783d-43d9-a8f3-eee28d64f114.it"
 	}, {
         "id": "57e9aa00-246c-42a7-a157-40677f719b58",
         "name": "旅行の青蛙·音乐",
