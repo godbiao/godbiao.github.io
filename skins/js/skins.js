@@ -1,5 +1,31 @@
 var skins = [
     {
+        "id": "50fba336-ec4f-4195-af07-ec7f869ab681",
+        "name": "无缝线框·深色模式",
+        "author": "IM标神",
+        "size": "27KB",
+        "description": "您期待已久的无缝线框深色模式上线啦~",
+        "update": "",
+        "star": "5",
+        "type": "",
+        "lables": ["设计创意", "简约", "无缝", "深色", "大空格", ""],
+        "time": "2019-04-24",
+        "imgs": ["https://godbiao.github.io/skins/res/it/50fba336-ec4f-4195-af07-ec7f869ab681_preview.png", "https://godbiao.github.io/skins/res/it/50fba336-ec4f-4195-af07-ec7f869ab681_9.jpg", "https://godbiao.github.io/skins/res/it/50fba336-ec4f-4195-af07-ec7f869ab681_26.jpg"],
+        "it": "https://godbiao.github.io/skins/res/it/50fba336-ec4f-4195-af07-ec7f869ab681.it"
+	},{
+        "id": "7bbac9c0-ba58-11e5-a837-0800200c9a66",
+        "name": "无缝线框",
+        "author": "IM追清风",
+        "size": "42KB",
+        "description": "我就想问这四不四你想要的无缝线框,大空格版哦~",
+        "update": "",
+        "star": "3",
+        "type": "",
+        "lables": ["设计创意", "无缝", "大空格", "简约", "", ""],
+        "time": "2017-2-27",
+        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSmAGtR3AABEVZhzUBU5156685", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSiAaZgAAACx7EMhivs8675690", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSiAIffVAADCZzQbJ3c2714384"],
+        "it": "https://godbiao.github.io/skins/res/it/7bbac9c0-ba58-11e5-a837-0800200c9a66.it"
+	},{
         "id": "c1ea5aff-b19e-4a8a-b28a-1e5dc5608af8",
         "name": "墨羽黑圆角版",
         "author": "IM标神",
@@ -450,20 +476,7 @@ var skins = [
         "time": "2017-2-7",
         "imgs": ["https://pic.kuaizhan.com/g1/M00/66/53/CgpQU1mnsR-AOUIwAABU2a9QNdc5140788", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUeAd9BJAAB8J1KF-mY2700603", "https://pic.kuaizhan.com/g1/M01/66/55/CgpQU1mnsUeAX-MkAACC_UfDYLg3727524"],
         "it": "https://godbiao.github.io/skins/res/it/0d6dcee0-02f5-4c96-8fa6-b4dfed394142.it"
-	}, {
-        "id": "7bbac9c0-ba58-11e5-a837-0800200c9a66",
-        "name": "无缝线框",
-        "author": "IM追清风",
-        "size": "42KB",
-        "description": "我就想问这四不四你想要的无缝线框,大空格版哦~",
-        "update": "",
-        "star": "3",
-        "type": "",
-        "lables": ["设计创意", "无缝", "大空格", "", "", ""],
-        "time": "2017-2-27",
-        "imgs": ["https://pic.kuaizhan.com/g1/M00/66/54/CgpQU1mnsSmAGtR3AABEVZhzUBU5156685", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSiAaZgAAACx7EMhivs8675690", "https://pic.kuaizhan.com/g1/M01/66/54/CgpQU1mnsSiAIffVAADCZzQbJ3c2714384"],
-        "it": "https://godbiao.github.io/skins/res/it/7bbac9c0-ba58-11e5-a837-0800200c9a66.it"
-	}, {
+	},  {
         "id": "11a44990-9a90-11e6-bdf4-0800200c9a66",
         "name": "乳の白",
         "author": "IM标神",
