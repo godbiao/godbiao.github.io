@@ -54,9 +54,9 @@ $(document).ready(function () {
     //banner打开微博
     $(".banner-weibo, .insstall-cont").click(function () {
         _hmt.push(["_trackEvent", "首页banner", "点击", '盲打皮肤']);
-//        window.location.href = "http://m.weibo.cn/u/1136590322";
+        //        window.location.href = "http://m.weibo.cn/u/1136590322";
         window.location.href = "https://www.godbiao.com/md/?s=skins";
-        
+
     });
 
     $(".ime-update").click(function () {
@@ -249,8 +249,13 @@ function skinInfo(s) {
     }
 
     if (!(beta || hide)) {
-        window.location.href = applink;
+        if (isWeiXin() && isAndroid()) {
+            androidWXjump();
+        } else {
+            window.location.href = applink;
+        }
     }
+
     //下载皮肤
     $(".skin-download").click(function () {
         copyToClipboard(alipaycode);
@@ -281,14 +286,13 @@ function skinInfo(s) {
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
         } else if (isWeiXin()) {
-			
-			if(isAndroid()){
-				window.location.href = "https://godbiao.com/wx/gdit/?uid="+ skinID;
-			}
-			else{
-				 alert("需要点击右上角->在浏览器打开才能下载哟^_^");
-			}
-           
+
+            if (isAndroid()) {
+                androidWXjump();
+            } else {
+                alert("需要点击右上角->在浏览器打开才能下载哟^_^");
+            }
+
 
         } else {
             if (beta || hide) {
@@ -534,6 +538,12 @@ function isNew(version) {
     return false;
 }
 
+//安卓微信内跳转
+function androidWXjump() {
+    if (isAndroid() && isWeiXin()) {
+        window.location.href = "https://godbiao.com/wx/gdit/?uid=" + skinID;
+    }
+}
 
 //左右滑动切换
 function touchSlidePreview(eid) {
