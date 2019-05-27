@@ -644,6 +644,13 @@ function isMobile() {
 }
 
 
+//安卓判定
+function isAndroid() {
+    var ua = navigator.userAgent;
+    var isAndroid = ua.match(/(Android)\s+([\d.]+)/)
+    return isAndroid;
+}
+
 //小技巧展示
 function tips() {
     var randomnumber = Math.floor(Math.random() * tipsdata.length);
