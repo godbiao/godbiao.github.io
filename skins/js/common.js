@@ -281,12 +281,14 @@ function skinInfo(s) {
             };
             exec("imeExtendComponents", myskin.cmd, myskin.info);
         } else if (isWeiXin()) {
-            alert("需要点击右上角->在浏览器打开才能下载哟^_^");
-            /*if (beta || hide) {
-                window.location.href = it;
-            } else {
-                window.location.href = wxzlink;                
-            }*/
+			
+			if(isAndroid()){
+				window.location.href = "https://godbiao.com/wx/gdit/?uid="+ skinID;
+			}
+			else{
+				 alert("需要点击右上角->在浏览器打开才能下载哟^_^");
+			}
+           
 
         } else {
             if (beta || hide) {
