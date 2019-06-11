@@ -249,11 +249,11 @@ function skinInfo(s) {
     }
 
     if (!(beta || hide)) {
-        if (isWeiXin() && isAndroid()) {
-            androidWXjump();
-        } else {
+//        if (isWeiXin() && isAndroid()) {
+//            androidWXjump();
+//        } else {
             window.location.href = applink;
-        }
+       // }
     }
 
     //下载皮肤
