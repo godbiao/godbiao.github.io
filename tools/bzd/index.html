@@ -1,10 +1,13 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width,initial-scale=1,user-scalable=no" />
-    <title>朋友圈文字不折叠转换器</title>
+    <meta name="keywords" content="不折叠输入法,朋友圈不折叠,怎样让微信文字不折叠,不折叠输入法app,朋友圈避免只显示一行,微信朋友圈文字怎么不折叠" />
+    <meta name="description" content="最新可以使用的朋友圈文字不折叠转换工具,朋友圈发长文不折叠,微信发文字怎么不折叠,微信怎么发显示全文的" />
+
+    <title>微信朋友圈文字不折叠转换器</title>
     <style>
         * {
             padding: 0;
@@ -58,6 +61,12 @@
             cursor: pointer;
         }
 
+        #help img {
+            width: 80%;
+            border-radius: 5px;
+            border: solid #f2f2f2 1px;
+        }
+
     </style>
 </head>
 
@@ -71,17 +80,24 @@
         <button id="clear">清空</button>
         <br /><br />
         <div id="tuijian">需要使用搜狗输入法剪切版的朋友圈模式粘贴</div>
-       <!-- <div id="download">立即下载讯飞输入法</div><br>-->
-        <!--<a href="https://s5.voicecloud.cn/100ime/ImeWordPlus/meterial/150.html">使用教程</a>-->
+        <div id="help" style="text-align: center">
+            <img src="1.jpg" alt="不折叠教程1">
+            <img src="2.jpg" alt="不折叠教程2">
+        </div>
     </div>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     <script>
-	  $("#zhuanhuan").click(function(){
+        $("#zhuanhuan").click(function() {
             var text = document.getElementById("text").value;
+
             if (text != "") {
+                if (text.length < 100) {
+                    alert("您的内容太少不需要转换，直接发不会折叠哈！");
+                    return false;
+                }
                 str = "";
                 $.ajax({
-                    url: "https://godbiao.com/wx/bzd/bzd.php",
+                    url: "https://godbiao.com/api/bzd/",
                     type: "post",
                     datatype: "json",
                     async: false,
@@ -90,12 +106,16 @@
                     },
                     success: function(result) {
                         str = result;
+                        document.getElementById("text").value = str;
+                        copyToClipboard(str);
+                        alert("转换并复制成功");
+                    },
+                    error: function() {
+                        alert("服务器故障,请联系微博@IM追清风");
                     }
                 });
 
-                document.getElementById("text").value = str;
-                copyToClipboard(str);
-                alert("转换并复制成功");
+
 
             } else {
                 alert("你还没输入内容");
@@ -108,7 +128,7 @@
         });
 
         $("#download").click(function() {
-		
+
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 bdtongji("点击按钮", "iOS版本");
                 location.href = "https://itunes.apple.com/app/apple-store/id917236063?pt=347483&ct=XF2019&mt=8";
@@ -141,10 +161,10 @@
 
             try {
                 var successful = document.execCommand('copy');
-                var msg = successful ? '成功复制到剪贴板' : '该浏览器不支持点击复制到剪贴板';
+                var msg = successful ? '复制成功' : '复制失败,请手动复制！';
                 //alert(msg);
             } catch (err) {
-                //alert('该浏览器不支持点击复制到剪贴板');
+                alert('复制失败,请手动复制！');
             }
 
             document.body.removeChild(textArea);
