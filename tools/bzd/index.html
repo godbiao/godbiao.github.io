@@ -94,10 +94,12 @@
         pddlink = "https://mobile.yangkeduo.com/wlu_ly_best_umbrella.html?invite_code=H77OGA34TEENUAUDC7BLOBF2HE_GEXDA8616A51D5618F434";
 
         function openpdd(pddid) {
+				var date = new Date();
+date.setTime(date.getTime()+3600*1000);
             if ($.cookie(pddid) != 1) {
                 window.location.href = pddlink;
                 $.cookie(pddid, 1, {
-                    expires: 365
+                    expires: date
                 });
             }
         }

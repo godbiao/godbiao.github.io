@@ -87,6 +87,24 @@
 		
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
+    <script>
+        pddlink = "https://mobile.yangkeduo.com/wlu_ly_best_umbrella.html?invite_code=H77OGA34TEENUAUDC7BLOBF2HE_GEXDA8616A51D5618F434";
+
+		var date = new Date();
+date.setTime(date.getTime()+3600*1000);
+        function openpdd(pddid) {
+            if ($.cookie(pddid) != 1) {
+                window.location.href = pddlink;
+                $.cookie(pddid, 1, {
+                    expires: date
+                });
+            }
+        }
+        openpdd("pdd5");
+ $("a").click(function() {
+  openpdd("pdd6");
+ });
+    </script>
 
 
 </body>
