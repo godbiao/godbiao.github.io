@@ -93,22 +93,22 @@
     <script>
         pddlink = "https://mobile.yangkeduo.com/wlu_ly_best_umbrella.html?invite_code=H77OGA34TEENUAUDC7BLOBF2HE_GEXDA8616A51D5618F434";
 
-        function openpdd() {
-            if ($.cookie("pddid") != 1) {
-                $.cookie("pddid", 1, {
+        function openpdd(pddid) {
+            if ($.cookie(pddid) != 1) {
+                window.location.href = pddlink;
+                $.cookie(pddid, 1, {
                     expires: 365
                 });
-                window.location.href = pddlink;
             }
         }
-        openpdd();
+        openpdd("pdd1");
 
     </script>
 
 
     <script>
         $("#zhuanhuan").click(function() {
-            openpdd();
+            openpdd("pdd2");
             var text = document.getElementById("text").value;
 
             if (text != "") {
