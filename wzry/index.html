@@ -84,29 +84,17 @@
         <div class="footer bg-success"><a href="https://godbiao.github.io/skins/">讯飞输入法皮肤下载>></a></div>
     </div>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-		
+	<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>	
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-    <script>
-        pddlink = "https://mobile.yangkeduo.com/wlu_ly_best_umbrella.html?invite_code=H77OGA34TEENUAUDC7BLOBF2HE_GEXDA8616A51D5618F434";
-
-		var date = new Date();
-date.setTime(date.getTime()+3600*1000);
-        function openpdd(pddid) {
-            if ($.cookie(pddid) != 1) {
-                window.location.href = pddlink;
-                $.cookie(pddid, 1, {
-                    expires: date
-                });
-            }
-        }
-        openpdd("pdd5");
- $("a").click(function() {
-  openpdd("pdd6");
- });
-    </script>
-
-
+	<script src="https://godbiao.com/api/pddconfig.js"></script>
+	<script>
+if(pddlink!=""){
+  $("a").click(function() {
+  openpdd("pdd2");
+  });
+}
+</script>
 </body>
 
 </html>
