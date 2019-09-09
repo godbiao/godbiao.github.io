@@ -89,11 +89,14 @@
 	
 	<script src="https://godbiao.com/api/pddconfig.js"></script>
 	<script>
-if(pddlink!=""){
+
   $("a").click(function() {
-  openpdd("pdd2");
+	aclick("cdownload");
+	if(pddlink!=""){		
+			openpdd("pdd2");
+		}
   });
-}
+
 </script>
 </body>
 
