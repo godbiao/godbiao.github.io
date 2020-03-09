@@ -2,15 +2,17 @@
 <html lang="cn">
 
 <head>
- <script>
-	window.location.href="https://godbiao.com/tools/bzd";
-	 </script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width,initial-scale=1,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="keywords" content="不折叠输入法,朋友圈不折叠,怎样让微信文字不折叠,不折叠输入法app,朋友圈避免只显示一行,微信朋友圈文字怎么不折叠" />
     <meta name="description" content="最新可以使用的朋友圈文字不折叠转换工具,朋友圈发长文不折叠,微信发文字怎么不折叠,微信怎么发显示全文的" />
 
-    <title>微信朋友圈文字不折叠转换器</title>
+    <title>微信朋友圈文字不折叠转换器完全免费100%不折叠</title>
     <style>
         * {
             padding: 0;
@@ -48,7 +50,7 @@
             margin: 0 auto;
             padding-top: 10px;
             color: red;
-            font-size: 12px;
+            font-size: 20px;
 
         }
 
@@ -64,17 +66,23 @@
             cursor: pointer;
         }
 
+        #help {
+            width: 80%;
+            text-align: left;
+            margin: 0 auto;
+        }
+
         #help img {
             width: 80%;
             border-radius: 5px;
             border: solid #f2f2f2 1px;
         }
-
     </style>
 </head>
 
 <body>
-    <div class="main">
+    <div class="main">   
+<div id="result" style="display:none"></div>    
         <textarea id="text" rows="" cols="" style="overflow:hidden; resize:none;" autofocus></textarea>
         <br>
         <br>
@@ -82,28 +90,41 @@
         <button id="zhuanhuan">转换并复制</button>
         <button id="clear">清空</button>
         <br /><br />
-        <div id="tuijian">需要使用搜狗输入法剪切版的朋友圈模式粘贴</div>
+
+        <div id="tuijian">使用方法<br></div>
+        
         <div id="help" style="text-align: center">
-            <img src="1.jpg" alt="不折叠教程1">
-            <img src="2.jpg" alt="不折叠教程2">
-            <img src="3.jpg" alt="不折叠教程3">
-            <img src="4.jpg" alt="不折叠教程4">
+            1、将您需要转换的文字粘贴到上面的输入框中，点击转换并复制<br>
+            2、回到朋友圈，正常粘贴即可，发表成功之后需要下拉刷新一下朋友圈<br>
+            3、如果文字显示有异常，重新点击一次转换按钮
+            <br>
+            <br>
+            <a href="https://srf.xunfei.cn/?df=01010399">
+                <!--<p style="color: red;">注意：请不要使用系统的长按或者输入法的粘贴功能，必须在剪切板中点击内容，否则可能不生效，目前测试讯飞输入法正常，点击去下载讯飞输入法</p>
+                -->
+				<p style="color: red;">推荐使用讯飞输入法的【剪切板】功能粘贴增加朋友圈不折叠概率，点击去下载讯飞输入法</p>
+            </a>
+            <br><br>
+            <a href="https://weibo.com/522239219">点击这里微博私信反馈问题</a>
+            <br>
+            <br>
         </div>
+        <div>皖ICP备19002710号-1 版权所有</div>
     </div>
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-	<script src="https://godbiao.com/api/pddconfig.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="jquery.cookie.min.js"></script>
+    <script src="https://godbiao.com/api/pddconfig.js"></script>
 
 
     <script>
-        $("#zhuanhuan").click(function() {
-		aclick("cdownload");
-		if(pddlink!=""){		
-			openpdd("pdd2");
-		}
-		
-		
-            
+        $("#zhuanhuan").click(function () {
+            aclick("cdownload");
+            if (pddlink != "") {
+                openpdd("pdd2");
+            }
+
+
+
             var text = document.getElementById("text").value;
 
             if (text != "") {
@@ -120,13 +141,14 @@
                     data: {
                         "text": text
                     },
-                    success: function(result) {
+                    success: function (result) {
                         str = result;
-                        document.getElementById("text").value = str;
-                        copyToClipboard(str);
+                        //document.getElementById("text").value = str;
+						 document.getElementById("result").innerHTML= str;
+                        copyToClipboard($("#result")[0].innerHTML);
                         alert("转换并复制成功");
                     },
-                    error: function() {
+                    error: function () {
                         alert("服务器故障,请联系微博@IM追清风");
                     }
                 });
@@ -139,11 +161,11 @@
             bdtongji("点击按钮", "转换并复制");
         });
 
-        $("#clear").click(function() {
+        $("#clear").click(function () {
             document.getElementById("text").value = "";
         });
 
-        $("#download").click(function() {
+        $("#download").click(function () {
 
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 bdtongji("点击按钮", "iOS版本");
@@ -185,9 +207,9 @@
 
             document.body.removeChild(textArea);
         }
-        (function() {
+        (function () {
             var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?e7f780681614d583b133e3f9f1d3f446";
+            hm.src = "https://hm.baidu.com/hm.js?3220c00d97e55efab45434dcd29ad31e";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })();
@@ -197,6 +219,16 @@
             _hmt.push(['_trackEvent', category, action + "(" + window.location.href + ")"]);
         }
 
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-151018391-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151018391-1');
     </script>
 </body>
 
