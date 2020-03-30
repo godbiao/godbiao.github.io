@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="keywords" content="不折叠输入法,朋友圈不折叠,怎样让微信文字不折叠,不折叠输入法app,朋友圈避免只显示一行,微信朋友圈文字怎么不折叠" />
     <meta name="description" content="最新可以使用的朋友圈文字不折叠转换工具,朋友圈发长文不折叠,微信发文字怎么不折叠,微信怎么发显示全文的" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>微信朋友圈文字不折叠转换器完全免费100%不折叠</title>
     <style>
         * {
@@ -26,7 +28,8 @@
             padding-top: 20%;
 
         }
-        a{
+
+        a {
             text-decoration: none;
         }
 
@@ -89,7 +92,7 @@
             overflow: hidden;
         }
 
-        #copyright{
+        #copyright {
             font-size: 12px;
             color: #666;
         }
@@ -98,13 +101,13 @@
 
 <body>
     <div class="main">
-        <div id="result"></div>
-        <textarea id="text" rows="" cols="" style="overflow:hidden; resize:none;" autofocus
-            data-clipboard-action="copy"></textarea>
+        <!-- <div id="result"></div> -->
+        <textarea id="text" rows="" cols="" style="overflow:hidden; resize:none;" autofocus data-clipboard-text=""></textarea>
         <br>
         <br>
 
-        <button id="zhuanhuan" class="zhuanhuan" data-clipboard-target="#result">转换并复制</button>
+        <button id="zhuanhuan" class="zhuanhuan" data-clipboard-target="#zhuanhuan"
+            data-clipboard-action="copy">转换并复制</button>
         <button id="clear">清空</button>
         <br />
         <div id="historyRecord"></div>
@@ -166,17 +169,20 @@
                     success: function (result) {
                         str = result;
                         //document.getElementById("text").value = str;
-                        document.getElementById("result").innerHTML = str;
+                        //document.getElementById("result").innerHTML = str;
                         //$("#text").innerText = str;
                         //copyToClipboard($("#result")[0].innerHTML);
-                        var clipboard = new Clipboard('.zhuanhuan');
+                        
+                        $('.zhuanhuan').attr('data-clipboard-text', str);
+
+                        var myclipboard = new ClipboardJS('.zhuanhuan');
                         //setHistory(text);
 
-                        clipboard.on('success', function (e) {
+                        myclipboard.on('success', function (e) {
                             alert("转换并复制成功");
                         });
 
-                        clipboard.on('error', function (e) {
+                        myclipboard.on('error', function (e) {
                             alert("复制失败，请换个浏览器试一下");
                         });
 
