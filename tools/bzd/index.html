@@ -3,11 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-	 <script>
-	 if(window.location.host!=="godbiao.github.io"){
-	 window.location.href="https://godbiao.github.io/tools/bzd"
-	 }
-	 </script>
+    <script>
+	// if(window.location.host!=="godbiao.github.io"){ window.location.href="https://godbiao.github.io/tools/bzd" }
+    </script>
     <meta http-equiv="Cache-Control" content="no-transform">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Pragma" content="no-cache">
@@ -27,6 +25,9 @@
             text-align: center;
             padding-top: 20%;
 
+        }
+        a{
+            text-decoration: none;
         }
 
         #text {
@@ -81,47 +82,63 @@
             border-radius: 5px;
             border: solid #f2f2f2 1px;
         }
+
+        #reault {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        #copyright{
+            font-size: 12px;
+            color: #666;
+        }
     </style>
 </head>
 
 <body>
-    <div class="main">   
-<div id="result" style="display:none"></div>    
-        <textarea id="text" rows="" cols="" style="overflow:hidden; resize:none;" autofocus></textarea>
+    <div class="main">
+        <div id="result"></div>
+        <textarea id="text" rows="" cols="" style="overflow:hidden; resize:none;" autofocus
+            data-clipboard-action="copy"></textarea>
         <br>
         <br>
 
-        <button id="zhuanhuan">转换并复制</button>
+        <button id="zhuanhuan" class="zhuanhuan" data-clipboard-target="#result">转换并复制</button>
         <button id="clear">清空</button>
-        <br /><br />
+        <br />
+        <div id="historyRecord"></div>
+        <br />
 
-        <div id="tuijian">使用方法<br></div>
-        
+        <div id="tuijian">【使用必读】<br></div>
+
         <div id="help" style="text-align: center">
             1、将您需要转换的文字粘贴到上面的输入框中，点击转换并复制<br>
             2、回到朋友圈，正常粘贴即可，发表成功之后需要下拉刷新一下朋友圈<br>
             3、如果文字显示有异常，重新点击一次转换按钮<br>
-			<strong>4、转换一次只可发表一次朋友圈，如果想发多次需要进行多次转换</strong>
+            <strong>4、转换一次只可发表一次朋友圈，如果想发多次需要进行多次转换</strong>
             <br>
             <br>
             <a href="https://srf.xunfei.cn/?df=01010399">
                 <!--<p style="color: red;">注意：请不要使用系统的长按或者输入法的粘贴功能，必须在剪切板中点击内容，否则可能不生效，目前测试讯飞输入法正常，点击去下载讯飞输入法</p>
                 -->
-				<p style="color: red;">推荐使用讯飞输入法的【剪切板】功能粘贴增加朋友圈不折叠概率，点击去下载讯飞输入法</p>
+                <p style="color: red;">推荐使用讯飞输入法的【剪切板】功能粘贴增加朋友圈不折叠概率<br>👉点击去下载讯飞输入法</p>
             </a>
             <br><br>
             <a href="https://weibo.com/522239219">点击这里微博私信反馈问题</a>
             <br>
             <br>
         </div>
-        <div>皖ICP备19002710号-1 版权所有</div>
+        <div id="copyright">皖ICP备19002710号-1 版权所有</div>
     </div>
     <script src="jquery-3.1.1.min.js"></script>
     <script src="jquery.cookie.min.js"></script>
+    <script src="clipboard.min.js"></script>
     <script src="https://godbiao.com/api/pddconfig.js"></script>
 
 
     <script>
+
         $("#zhuanhuan").click(function () {
             aclick("cdownload");
             if (pddlink != "") {
@@ -149,9 +166,20 @@
                     success: function (result) {
                         str = result;
                         //document.getElementById("text").value = str;
-						 document.getElementById("result").innerHTML= str;
-                        copyToClipboard($("#result")[0].innerHTML);
-                        alert("转换并复制成功");
+                        document.getElementById("result").innerHTML = str;
+                        //$("#text").innerText = str;
+                        //copyToClipboard($("#result")[0].innerHTML);
+                        var clipboard = new Clipboard('.zhuanhuan');
+                        //setHistory(text);
+
+                        clipboard.on('success', function (e) {
+                            alert("转换并复制成功");
+                        });
+
+                        clipboard.on('error', function (e) {
+                            alert("复制失败，请换个浏览器试一下");
+                        });
+
                     },
                     error: function () {
                         alert("服务器故障,请联系微博@IM追清风");
@@ -181,6 +209,70 @@
             }
 
         });
+
+
+        var historyCount = 10; //保存历史记录个数
+
+        /**
+         * 增加浏览历史记录
+         * @return
+         */
+        function setHistory(keyWord) {
+            var keyWords = $.cookie('keyWord');
+            if (keyWords) {
+                if (keyWord) {
+                    var keys = keyWords.split(",");
+                    for (var i = keys.length - 1; i >= 0; i--) {
+                        if (keys[i] == keyWord) {
+                            keys.splice(i, 1);
+                        }
+                    }
+                    keys.push(keyWord);
+                    if (keys.length >= historyCount) {
+                        //删除最开始的多余记录
+                        var count = keys.length - historyCount + 1; //需要删除的个数
+                        keys.splice(0, count); //开始位置,删除个数
+                    }
+                    $.cookie('keyWord', keys.join(','), {
+                        expires: 365,
+                        path: '/'
+                    });
+                }
+            } else {
+                $.cookie('keyWord', keyWord, {
+                    expires: 365,
+                    path: '/'
+                });
+            }
+        }
+
+        function delHistory() {
+            $.cookie("keyWord", null, {
+                path: "/",
+                expires: -1
+            });
+        }
+
+        function getHistory() {
+            var keyWords = $.cookie('keyWord');
+            if (keyWords) {
+                var keys = keyWords.split(",");
+                var length = keys.length;
+                if (length > 0) {
+                    $("#historyRecord").empty();
+                    var htmlString = "<ul style='text-align:left'>";
+                    for (var i = length - 1; i >= 0; i--) {
+                        htmlString += "<li style='line-height:1.5;white-space:nowrap;'>" + keys[i] + "</li>";
+                    }
+                    htmlString += "</ul>";
+                    $("#historyRecord").html(htmlString)
+                }
+            }
+        }
+
+        //getHistory();
+
+
 
         function copyToClipboard(text) {
             if (text.indexOf('-') !== -1) {
