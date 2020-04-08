@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <script>
-	// if(window.location.host!=="godbiao.github.io"){ window.location.href="https://godbiao.github.io/tools/bzd" }
+        // if(window.location.host!=="godbiao.github.io"){ window.location.href="https://godbiao.github.io/tools/bzd" }
     </script>
     <meta http-equiv="Cache-Control" content="no-transform">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,6 +17,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>微信朋友圈文字不折叠转换器完全免费100%不折叠</title>
+    <link rel="stylesheet" href="css/jquery.toast.css">
     <style>
         * {
             padding: 0;
@@ -102,7 +103,8 @@
 <body>
     <div class="main">
         <!-- <div id="result"></div> -->
-        <textarea id="text" rows="" cols="" style="overflow:hidden; resize:none;" autofocus data-clipboard-text=""></textarea>
+        <textarea id="text" rows="" cols="" style="overflow:hidden; resize:none;" autofocus
+            data-clipboard-text=""></textarea>
         <br>
         <br>
 
@@ -134,14 +136,14 @@
         </div>
         <div id="copyright">皖ICP备19002710号-1 版权所有</div>
     </div>
-    <script src="jquery-3.1.1.min.js"></script>
-    <script src="jquery.cookie.min.js"></script>
-    <script src="clipboard.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.cookie.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/jquery.toast.js"></script>
     <script src="https://godbiao.com/api/pddconfig.js"></script>
 
 
     <script>
-
         $("#zhuanhuan").click(function () {
             aclick("cdownload");
             if (pddlink != "") {
@@ -154,7 +156,8 @@
 
             if (text != "") {
                 if (text.length < 100) {
-                    alert("您的内容太少不需要转换，直接发不会折叠哈！");
+                    //alert("您的内容太少不需要转换，直接发不会折叠哈！");
+                    myalert("您的内容太少不需要转换，直接发不会折叠哈","info");
                     return false;
                 }
                 str = "";
@@ -172,35 +175,40 @@
                         //document.getElementById("result").innerHTML = str;
                         //$("#text").innerText = str;
                         //copyToClipboard($("#result")[0].innerHTML);
-                        
+
                         $('.zhuanhuan').attr('data-clipboard-text', str);
 
                         var myclipboard = new ClipboardJS('.zhuanhuan');
                         //setHistory(text);
 
                         myclipboard.on('success', function (e) {
-                            alert("转换并复制成功");
+                            //alert("转换并复制成功");
+                            myalert("转换并复制成功!","success");
                         });
 
                         myclipboard.on('error', function (e) {
-                            alert("复制失败，请换个浏览器试一下");
+                            // alert("复制失败，请换个浏览器试一下");
+                            myalert("复制失败，请换个浏览器试一下!","error");
                         });
 
                     },
                     error: function () {
-                        alert("服务器故障,请联系微博@IM追清风");
+                        //alert("服务器故障,请联系微博@IM追清风");
+                        myalert("服务器故障,请联系微博@IM追清风!","warning");
                     }
                 });
 
 
 
             } else {
-                alert("你还没输入内容");
+                myalert("你还没输入内容!","error");
+                //alert("你还没输入内容");
             }
             bdtongji("点击按钮", "转换并复制");
         });
 
         $("#clear").click(function () {
+            text = "";
             document.getElementById("text").value = "";
         });
 
@@ -215,6 +223,20 @@
             }
 
         });
+
+        function myalert(text,icon) {
+            $.toast({
+                text: text,
+                //textAlign: 'center',
+                // text: '去朋友圈发表就不会折叠啦',
+                // showHideTransition: 'slide',
+                icon: icon,
+                hideAfter: 2000,
+                stack: false,
+                position: 'top-left'
+            });
+            
+        }
 
 
         var historyCount = 10; //保存历史记录个数
@@ -321,14 +343,16 @@
         function bdtongji(category, action) {
             _hmt.push(['_trackEvent', category, action + "(" + window.location.href + ")"]);
         }
-
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-151018391-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-151018391-1');
