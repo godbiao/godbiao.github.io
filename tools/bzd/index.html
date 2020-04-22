@@ -27,7 +27,6 @@
         .main {
             text-align: center;
             padding-top: 20%;
-
         }
 
         a {
@@ -51,7 +50,6 @@
             color: #fff;
             padding: 10px;
             cursor: pointer;
-
         }
 
         #tuijian {
@@ -60,11 +58,9 @@
             padding-top: 10px;
             color: red;
             font-size: 20px;
-
         }
 
         #download {
-
             width: 200px;
             margin: 0 auto;
             border-radius: 5px;
@@ -118,9 +114,9 @@
         <div id="tuijian">【使用必读】<br></div>
 
         <div id="help" style="text-align: center">
-            1、将您需要转换的文字粘贴到上面的输入框中，点击转换并复制<br>
-            2、回到朋友圈，正常粘贴即可，发表成功之后需要下拉刷新一下朋友圈<br>
-            3、如果文字显示有异常，重新点击一次转换按钮<br>
+            1、将您需要转换的文字粘贴到上面的输入框中，点击转换并复制<br> 2、回到朋友圈，正常粘贴即可，发表成功之后需要下拉刷新一下朋友圈
+            <br> 3、如果文字显示有异常，重新点击一次转换按钮
+            <br>
             <strong>4、转换一次只可发表一次朋友圈，如果想发多次需要进行多次转换</strong>
             <br>
             <br>
@@ -155,53 +151,51 @@
             var text = document.getElementById("text").value;
 
             if (text != "") {
-                if (text.length < 100) {
+                if (getStringLength(trimStr(text)) <= 172) {
                     //alert("您的内容太少不需要转换，直接发不会折叠哈！");
-                    myalert("您的内容太少不需要转换，直接发不会折叠哈","info");
-                    return false;
+                    myalert("您的内容太少不需要转换，直接发不会折叠哈", "info");
+                    //return false;
+                } else {
+                    str = "";
+                    $.ajax({
+                        url: "https://godbiao.com/api/bzd/",
+                        type: "post",
+                        datatype: "json",
+                        async: false,
+                        data: {
+                            "text": text
+                        },
+                        success: function (result) {
+                            str = result;
+                            //document.getElementById("text").value = str;
+                            //document.getElementById("result").innerHTML = str;
+                            //$("#text").innerText = str;
+                            //copyToClipboard($("#result")[0].innerHTML);
+
+                            $('.zhuanhuan').attr('data-clipboard-text', str);
+
+                            var myclipboard = new ClipboardJS('.zhuanhuan');
+                            //setHistory(text);
+
+                            myclipboard.on('success', function (e) {
+                                //alert("转换并复制成功");
+                                myalert("转换并复制成功!", "success");
+                            });
+
+                            myclipboard.on('error', function (e) {
+                                // alert("复制失败，请换个浏览器试一下");
+                                myalert("复制失败，请换个浏览器试一下!", "error");
+                            });
+
+                        },
+                        error: function () {
+                            //alert("服务器故障,请联系微博@IM追清风");
+                            myalert("服务器故障,请联系微博@IM追清风!", "warning");
+                        }
+                    });
                 }
-                str = "";
-                $.ajax({
-                    url: "https://godbiao.com/api/bzd/",
-                    type: "post",
-                    datatype: "json",
-                    async: false,
-                    data: {
-                        "text": text
-                    },
-                    success: function (result) {
-                        str = result;
-                        //document.getElementById("text").value = str;
-                        //document.getElementById("result").innerHTML = str;
-                        //$("#text").innerText = str;
-                        //copyToClipboard($("#result")[0].innerHTML);
-
-                        $('.zhuanhuan').attr('data-clipboard-text', str);
-
-                        var myclipboard = new ClipboardJS('.zhuanhuan');
-                        //setHistory(text);
-
-                        myclipboard.on('success', function (e) {
-                            //alert("转换并复制成功");
-                            myalert("转换并复制成功!","success");
-                        });
-
-                        myclipboard.on('error', function (e) {
-                            // alert("复制失败，请换个浏览器试一下");
-                            myalert("复制失败，请换个浏览器试一下!","error");
-                        });
-
-                    },
-                    error: function () {
-                        //alert("服务器故障,请联系微博@IM追清风");
-                        myalert("服务器故障,请联系微博@IM追清风!","warning");
-                    }
-                });
-
-
-
             } else {
-                myalert("你还没输入内容!","error");
+                myalert("你还没输入内容!", "error");
                 //alert("你还没输入内容");
             }
             bdtongji("点击按钮", "转换并复制");
@@ -224,7 +218,7 @@
 
         });
 
-        function myalert(text,icon) {
+        function myalert(text, icon) {
             $.toast({
                 text: text,
                 //textAlign: 'center',
@@ -235,9 +229,25 @@
                 stack: false,
                 position: 'top-left'
             });
-            
+
         }
 
+        function trimStr(str) {
+            return str.replace(/(^\s*)|(\s*$)/g, "");
+        }
+
+        function getStringLength(Str) {
+            var i, len, code;
+            if (Str == null || Str == "") return 0;
+            len = Str.length;
+            for (i = 0; i < Str.length; i++) {
+                code = Str.charCodeAt(i);
+                if (code > 255) {
+                    len += 1
+                }
+            }
+            return len;
+        }
 
         var historyCount = 10; //保存历史记录个数
 
@@ -299,7 +309,18 @@
         }
 
         //getHistory();
-
+        function getStringLength(Str) {
+            var i, len, code;
+            if (Str == null || Str == "") return 0;
+            len = Str.length;
+            for (i = 0; i < Str.length; i++) {
+                code = Str.charCodeAt(i);
+                if (code > 255) {
+                    len += 1
+                }
+            }
+            return len;
+        }
 
 
         function copyToClipboard(text) {
@@ -343,6 +364,7 @@
         function bdtongji(category, action) {
             _hmt.push(['_trackEvent', category, action + "(" + window.location.href + ")"]);
         }
+
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
