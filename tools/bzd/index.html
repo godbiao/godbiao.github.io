@@ -233,7 +233,7 @@
         }
 
         function trimStr(str) {
-            return str.replace(/(^\s*)|(\s*$)/g, "");
+            return str.replace(/(^\s*)|(\s*$)|(^\r\n)|(\r\n$)/g, "");
         }
 
         function getStringLength(Str) {
